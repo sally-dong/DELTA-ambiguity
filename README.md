@@ -3,6 +3,8 @@
 Code and data for *A Contextual Measure of Ambiguity in Prescriptive Text*
 (Dong, Thorburn, Konya, Bakker; EMNLP 2026).
 
+**Paper:** [sallydong.me/ambiguity.pdf](https://sallydong.me/ambiguity.pdf)
+
 DELTA measures the ambiguity of a policy as disagreement about its
 consequences. It pairs the policy with concrete cases, asks a diverse pool of
 raters whether each case is permitted, and scores how far their verdicts
