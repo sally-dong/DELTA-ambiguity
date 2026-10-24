@@ -1,0 +1,11 @@
+{
+  "model": "gemini-2.5-flash",
+  "is_openrouter": false,
+  "get_logprobs": false,
+  "k_logprobs": 5,
+  "temperature": 1,
+  "thinking": false,
+  "thinking_budget": 0,
+  "response_type": "classification",
+  "source": "api"
+}

@@ -1,0 +1,1460 @@
+{
+  "sample_query": {
+    "custom_id": "rater-0_policy-0_case-0_prompt-0",
+    "system_prompt": "Answer ONLY 'yes' or 'no' only to the question below. Do not provide an explanation.",
+    "user_prompt": "This person is a Vienna landlord association representative managing pre-war apartment blocks, who warns that strict, rapid retrofit mandates without generous grants will spike renovation costs and force rent hikes. They advocate phased timelines, generous grants and low-interest loans—plus flexibility for historic buildings—arguing that unfunded rapid retrofits will drive up renovation costs and rents. They back climate goals but want phased retrofit mandates with generous grants, cheap loans, and heritage flexibility to prevent contractor bottlenecks and tenant rent hikes. He backs the targets but wants grants and 0% loans before mandates—and heritage flexibility—to avoid contractor bottlenecks, stranded costs, and rent hikes in Vienna’s pre-war stock. He urges Austria to fund 0% loans and generous grants and expand retrofit workforce capacity before phasing in mandates—with heritage flexibility—to meet climate goals without triggering rent hikes.\n\nThey are reviewing opinion statements on the question: \"How should Austria regulate production and consumption to meet climate goals?\"\n\nOPINION STATEMENT:\nLess or hardly any cement; favor timber construction and clay and straw construction. Also consider ecological aspects in the choice of building materials for industrial buildings, bridges, etc.\n\nThey consider how the opinion statement would translate into real-world policy actions. A candidate proposal is given below:\n\nPOLICY PROPOSAL:\nAirports and rail freight terminals with over 20,000 m² of sealed apron, rooftop, or parking area must install rooftop/canopy solar and on-site batteries covering at least 40% of eligible surfaces by 2028; operators may comply through third-party PPAs from foreign-owned developers using imported equipment, supported by a green customs fast lane that clears non-EU PV kits within five days (no EU preference). The Transport and Climate ministries collect semiannual progress reports and may suspend certain operating subsidies for noncompliance.\n\nAfter thinking carefully from their own point of view, they answer a yes/no question.\nQuestion: Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?"
+  },
+  "prompt_construction": "def prompt_fn(*, rater:str, policy:str, case:str, scenario_params:dict, instruct_tuned:bool=False) -> list[str]:\n    \"\"\"\n    Opinion statement template.\n\n    Required scenario_params keys:\n        question: the policy question being reviewed\n        positive_question: the affirmative question text\n        negative_question: the contradicting question text\n    \"\"\"\n\n    base_context = (\n        f\"{rater}\\n\\n\"\n        f\"They are reviewing opinion statements on the question: \\\"{scenario_params['question']}\\\"\\n\\n\"\n        f\"OPINION STATEMENT:\\n{policy}\\n\\n\"\n        f\"They consider how the opinion statement would translate into real-world policy actions. A candidate proposal is given below:\\n\\n\"\n        f\"POLICY PROPOSAL:\\n{case}\\n\\n\"\n        \"After thinking carefully from their own point of view, they answer a yes/no question.\\n\"\n    )\n\n    prompt1 = base_context + f\"Question: {scenario_params['positive_question']}\"\n    prompt2 = base_context + f\"Question: {scenario_params['negative_question']}\"\n\n    if instruct_tuned:\n        return [prompt1, prompt2]\n\n    prompts = [prompt1, prompt2]\n    prompts = [p + \"\\nAnswer:\" for p in prompts]\n    return prompts\n",
+  "raters": [
+    "This person is a Vienna landlord association representative managing pre-war apartment blocks, who warns that strict, rapid retrofit mandates without generous grants will spike renovation costs and force rent hikes. They advocate phased timelines, generous grants and low-interest loans—plus flexibility for historic buildings—arguing that unfunded rapid retrofits will drive up renovation costs and rents. They back climate goals but want phased retrofit mandates with generous grants, cheap loans, and heritage flexibility to prevent contractor bottlenecks and tenant rent hikes. He backs the targets but wants grants and 0% loans before mandates—and heritage flexibility—to avoid contractor bottlenecks, stranded costs, and rent hikes in Vienna’s pre-war stock. He urges Austria to fund 0% loans and generous grants and expand retrofit workforce capacity before phasing in mandates—with heritage flexibility—to meet climate goals without triggering rent hikes.",
+    "This person is a tenants' union organizer in Linz pushing for ambitious minimum energy performance standards, heat pump rollouts, and rent caps so efficiency gains lower bills, not profits. They press for binding minimum energy performance standards and publicly funded heat‑pump retrofits in rentals, paired with rent caps and cost‑pass‑through limits so Austria’s climate transition lowers tenants’ bills. They urge EPBD-aligned rental MEPS and publicly funded heat‑pump retrofits, conditioned on rent caps and no‑eviction rules, so upgrades lower tenants’ energy use and bills. They urge Austria’s climate-friendly consumption policy to hardwire EPBD‑aligned rental MEPS and publicly funded heat‑pump retrofits, conditioned on rent caps and no‑eviction rules so savings reach tenants, not landlords. They want Austria’s consumption policy to mandate EPBD‑aligned rental MEPS and publicly funded heat‑pump retrofits, tied to rent caps, no‑eviction guarantees, and pass‑through limits so savings cut energy poverty.",
+    "This person is a Salzburg dairy cooperative director defending pasture-based cattle and opposing meat- and dairy-reduction targets in public canteens that could erode rural incomes. They argue Austria’s climate policy should reward pasture-based dairying and have public canteens prioritize regional sourcing, not blanket meat- and dairy-reduction mandates that jeopardize rural incomes. They urge policymakers to reward pasture-based dairying in climate policy and require regional sourcing in public canteens, opposing blanket meat/dairy reduction targets that would erode rural incomes. They argue Austria should credit pasture-grazed dairy in climate policy and require public canteens to source regionally, not impose blanket meat/dairy cuts that would undermine rural incomes. They push Austria’s climate strategy to grant GHG credits and investment aid for pasture‑grazed dairying and to require regional sourcing in public canteens instead of blanket meat/dairy reductions.",
+    "This person is a plant-based food startup founder in Vienna advocating procurement rules that prioritize low-emission menus and support for alternative proteins sourced from Austrian crops. She urges Austria to tie public procurement to low-emission menu standards and boost support for Austrian legume-based alternative proteins. She advocates binding low-emission menu standards in public catering and targeted support to build Austrian pea, fava, and lupin protein supply chains. She urges Austria to mandate low-emission menu quotas in public catering and co-finance Austrian pea, fava, and lupin protein processing with long-term procurement contracts to scale climate-friendly consumption. She urges Austria to mandate low‑emission menu quotas in public catering and co‑finance Austrian pea, fava, and lupin protein processing to build local supply chains that cut food‑sector emissions.",
+    "This person is a Tyrol haulage company owner relying on diesel trucks, critical of urban low-emission zones and delivery time windows that raise logistics costs and slow commerce. He wants Austria’s climate policies to phase in low-emission zones and delivery limits with freight exemptions and funding to help hauliers upgrade fleets, rather than squeezing diesel-dependent logistics. He supports climate aims but wants gradual, harmonized low-emission zones, freight exemptions, and co-financed cleaner fleets and infrastructure so Tyrol’s supply chains remain reliable and competitive. He urges harmonized, phased low-emission zones with freight exemptions, scrappage grants, and Alpine charging/refuelling corridors so Tyrolean logistics can decarbonize without crippling delivery times or SME costs. He supports climate goals but wants Austria to harmonize and phase in low‑emission zones with temporary freight exemptions, scrappage grants, and co-financed e‑truck/HVO upgrades plus Alpine charging corridors to keep Tyrol’s SME logistics reliable.",
+    "This person is a Graz e-cargo bike delivery cooperative manager urging citywide low-emission zones, microhubs, and subsidies to shift last-mile freight away from vans. He urges Austria’s climate-friendly consumption policy to co-fund low-emission zones, urban microhubs, and e-cargo bike subsidies in Graz to shift last-mile freight away from vans. He urges the national consumption strategy to co-fund Graz-wide low-emission zones and microhubs, raise e-cargo bike subsidies, and require zero-emission last-mile delivery in public contracts. He urges Austria’s consumption policy to co-fund Graz-wide low-emission zones and microhubs, boost e-cargo bike subsidies, and require zero-emission delivery in public tenders to shift last-mile freight off vans. He argues that national co-funding and zero-emission procurement rules would let Graz pair citywide low‑emission zones with microhubs and higher e‑cargo bike subsidies to quickly replace diesel vans, cutting CO2, noise, and congestion.",
+    "This person is a Styria steelworks operations director cautioning that green hydrogen requirements and higher electricity costs could jeopardize international competitiveness and jobs. He urges Austria to adopt phased hydrogen mandates, competitive industrial power tariffs, and strong transition support to prevent carbon leakage and protect jobs. He warns abrupt green hydrogen targets and high power prices could push steelmaking abroad, urging phased mandates, competitive industrial tariffs, and robust transition aid to protect Austrian jobs. He supports decarbonization but insists on phased hydrogen targets, industrial power price relief, and retrofit aid to prevent carbon leakage and safeguard Styrian steel jobs. He urges Austria to phase hydrogen mandates with supply ramp-up, offer competitive industrial power tariffs and retrofit CfDs, and tap EU funds to prevent carbon leakage and protect Styrian steel jobs.",
+    "This person is a green-hydrogen project developer in Upper Austria promoting contracts for difference and green-steel quotas in public procurement to de-risk decarbonizing heavy industry. They push for Austrian carbon contracts for difference and binding green-steel procurement quotas to secure hydrogen offtake and de-risk heavy-industry decarbonization. They urge Austria to adopt carbon contracts for difference and binding green‑steel quotas in public procurement to guarantee hydrogen offtake and accelerate cost‑effective industrial decarbonization. They urge channeling ETS revenues into carbon CfDs and mandatory green‑steel shares in public tenders to secure hydrogen offtake, crowd‑in private capital, and anchor low‑carbon steel production in Austria. They urge earmarking ETS revenues for carbon CfDs and binding green‑steel quotas in public procurement to secure hydrogen offtake, unlock private finance, and keep Austria’s steel low‑carbon and competitive.",
+    "This person is a plastics packaging plant manager in Lower Austria opposing bans and high EPR fees on certain polymers, arguing recycled content mandates outpace available supply. The manager urges Austria to delay polymer bans and steep EPR fees, citing recycled-content shortages and favoring phased targets with recycling investment. The manager urges policymakers to replace immediate polymer bans and steep EPR hikes with phased recycled-content targets and EPR-funded upgrades to Austria’s recycling capacity. He warns that abrupt polymer bans and steep EPR hikes would disrupt supply and jobs, urging Austria to phase in recycled-content targets and invest EPR funds in domestic recycling capacity. He supports climate goals but urges Austria to replace abrupt polymer bans and steep EPR hikes with phased recycled-content targets and EPR-funded recycling upgrades to protect jobs and ensure stable, climate-friendly packaging.",
+    "This person is a zero-waste shop owner in Innsbruck backing stronger extended producer responsibility, deposit-return expansion, and single-use restrictions to drive reuse systems. They urge Austria to tighten extended producer responsibility, expand deposit-return to more packaging, and restrict single-use items to scale reuse systems and cut waste and emissions. They argue that higher EPR fees, a deposit-return scheme covering more packaging (including cartons), and tighter single-use curbs would spur refill infrastructure, reduce municipal waste costs, and align Austria with EU circular-economy targets. They urge Vienna to adopt eco-modulated EPR fees, expand deposit-return to beverage cartons, set binding reuse targets with stricter single-use curbs, and co-fund refill infrastructure to cut emissions and municipal costs while aligning with EU circular goals. They advocate eco-modulated EPR with higher fees on hard-to-recycle packaging, DRS expansion to beverage cartons, binding reuse targets, and co-funded refill hubs to cut waste and emissions and align Austria with EU circular goals.",
+    "This person is a dairy cooperative board member from Tyrol who opposes school canteen rules favoring plant-based menus, fearing lost demand for local milk. They contend Austria’s climate-friendly procurement should favor local Tyrolean dairy with short supply chains, not blanket plant-based menus that threaten regional farms. They argue Austria’s climate-friendly procurement should credit short-supply-chain, pasture-based Tyrolean dairy as low-impact and reject blanket plant-based canteen mandates that would sap demand from regional farms. They urge climate procurement to credit short-chain, pasture-based Tyrolean milk via lifecycle metrics and replace plant-only canteen mandates with regional-dairy quotas. He pushes to revise climate-friendly procurement to credit short-supply, pasture-based Tyrolean milk via lifecycle metrics and replace plant-only school menus with regional-dairy quotas.",
+    "This person is a plant-based protein startup founder in Graz who supports public procurement prioritizing low-emission foods to scale climate-friendly diets. They lobby for CO2-based criteria and plant-forward targets in Austria’s public procurement so canteens favor local plant proteins and cut emissions. They urge Austria’s naBe procurement rules to set CO2-per-meal caps and plant-rich menu quotas so public canteens source local pulses and achieve measurable emissions cuts. They push for naBe CO2-per-meal caps and plant-rich menu quotas so public canteens prioritize local pulses and deliver verifiable emissions cuts. They urge updating naBe to mandate CO2e-per-meal caps, plant-forward menu quotas, and supplier LCA disclosure so public canteens cut emissions and create stable demand for Austrian-grown pulses.",
+    "This person is a small oil-boiler service business owner in Lower Austria who opposes bans on new fossil heaters, citing stranded skills and sunk inventory. They urge a phased approach with retraining aid and inventory buy-backs, arguing Austria’s fossil-heater bans would strand their skills and stock and burden rural customers unable to afford heat pumps. He urges a slower, subsidy-backed transition—retraining grants, inventory buy-backs, and rural heat-pump financing—warning abrupt Austrian bans would sink his business and raise heating costs. He lobbies Vienna and Lower Austria to replace blanket fossil-boiler bans with a phased plan that includes technician retraining grants, inventory buy-backs, and subsidized rural heat-pump financing to meet climate goals without bankrupting small firms. He supports climate goals but insists on a gradual phaseout with retraining grants, inventory buy-backs, and rural heat-pump financing to shield small firms.",
+    "This person is a heat pump installer in Upper Austria who supports a fast fossil-heating phase-out with stable subsidies and training vouchers. In Upper Austria, they urge clear phase-out deadlines, stable subsidy budgets, and training vouchers to rapidly scale heat pumps and cut household emissions. He backs binding fossil-heating phase-out dates, predictable multi-year subsidies, training vouchers, and support for local manufacturing to avoid boom‑bust cycles and speed heat pump rollout. He also calls for streamlined permitting, grid upgrades, and incentives for Austrian-made components to align the fossil phase‑out with a stable heat‑pump rollout. He urges Austria to pair binding fossil‑heating phase‑out dates with multi‑year stable subsidies, training vouchers, streamlined permitting, grid upgrades, and incentives for Austrian‑made components to ensure a steady heat‑pump rollout and cut household emissions.",
+    "This person is a paper mill operations manager in Carinthia who resists higher electricity surcharges and CO2 prices that could erode competitiveness. They argue Austria’s green production policies must avoid steep power surcharges and CO2 hikes or provide relief to prevent paper production and jobs shifting abroad. He urges lower power surcharges, CO2-cost compensation, and efficiency aid to prevent carbon leakage and protect his Carinthian mill’s jobs. He insists Austria’s climate policy must include lower power surcharges, CO2-cost compensation, and efficiency aid to prevent carbon leakage and protect his Carinthian paper mill’s jobs. He warns that unless Austria couples its climate goals with lower power surcharges, CO2-cost compensation, and efficiency aid, carbon leakage will push his Carinthian paper mill to cut jobs or shift production abroad.",
+    "This person is a wind and solar developer in Burgenland who backs faster permitting and grid fees to finance renewables and electrification. He urges faster permits and cost-reflective grid fees to fund upgrades, scale renewables, and electrify industry and households. He calls for one-stop permitting, priority grid upgrades, and cost‑reflective tariffs to scale wind and solar, add storage, and electrify heat, transport, and industry in line with Austria’s climate goals. He urges one-stop permitting and cost-reflective grid fees to speed wind, solar, storage, and electrification, decarbonizing industry and households in line with Austria’s climate goals. He urges Austria to adopt one‑stop permitting and cost‑reflective, time‑of‑use grid tariffs to finance grid upgrades, storage, and electrification that drive climate‑friendly production and consumption.",
+    "This person is a beverage bottling manager in Salzburg who opposes strict reuse quotas, arguing logistics complexity and hygiene constraints. They contend that Austria’s strict refillable-bottle quotas would strain Salzburg’s supply chain and pose hygiene risks, so they favor incentives and gradual targets instead. They argue rigid refillable-bottle mandates would snarl Salzburg’s delivery logistics and heighten hygiene risks on fast bottling lines, so they favor phased targets with incentives for sanitizing upgrades and better return infrastructure. They urge replacing blanket refillable quotas with flexible, region-specific targets and subsidies for washer upgrades and return depots to avoid delivery bottlenecks and food-safety risks. They back Austria’s climate aims but urge replacing strict nationwide refillable quotas with region-specific, incentive-based timelines—subsidizing washer upgrades and return depots—to avoid Salzburg logistics bottlenecks and hygiene risks.",
+    "This person is a refill logistics entrepreneur in Graz who supports binding reuse targets and a nationwide deposit-return and washing network. They urge Austria to adopt binding reuse targets and build a nationwide deposit-return and washing network as core tools for climate-friendly production and consumption. They argue binding reuse targets and a national deposit-return and washing network will cut waste, lower emissions, and create green jobs across Austria. Based in Graz, they press for binding reuse quotas and a nationwide deposit-return and washing network to scale circular packaging, slash waste and emissions, and grow green jobs across Austria. They urge phased, sector-specific reuse quotas and funded nationwide deposit-return and washing hubs, with harmonized standards and public procurement, to de-risk investment and speed circular packaging across Austria.",
+    "This person is a car dealership owner in Innsbruck who opposes stricter low-emission zones and parking cuts that would deter car purchases. He argues harsher low-emission zones and fewer parking spaces will sink car sales in Innsbruck, urging EV incentives and charging expansion instead. He warns stricter zones will hurt local auto jobs, urging federal EV purchase incentives, scrappage bonuses, and rapid charging rollout instead. He contends Austria should meet climate goals by prioritizing EV subsidies, scrappage bonuses, and fast-charging expansion over stricter low-emission zones or parking cuts. He backs a phased LEZ with resident and small-business exemptions until rapid charging is widespread, coupled with federal EV purchase and scrappage bonuses to protect local auto jobs.",
+    "This person is a micromobility company director in Vienna who supports car-free districts and reallocating street space to cycling and e-cargo logistics. They advocate federal support for car-free districts and cycling networks, green public procurement for last-mile services, and strict battery-recycling rules to mainstream low-carbon urban consumption. They urge Austria to tie climate-friendly consumption policy to funding car-free districts and cycle-logistics networks, mandate green public last-mile procurement, and enforce strict e-battery take-back and recycling. They argue Austria’s climate-friendly consumption agenda should earmark funds for car-free districts and cycling networks, mandate zero-emission public last‑mile procurement, and enforce strict producer-responsibility battery take-back and recycling targets. They also advocate VAT cuts for bike repairs and refurbished e‑bike batteries, harmonized national curb‑space rules for cargo bikes, and open curb data to scale zero‑emission last‑mile delivery.",
+    "This person is a Styrian heat-pump installer lobbying for swift gas-boiler phase-outs and grid upgrades to accelerate decarbonized home heating. As a Styrian heat-pump installer, they push for a fast gas-boiler phase-out, bigger subsidies, and rapid grid upgrades to decarbonize home heating. He backs binding gas-boiler end dates, bigger heat‑pump grants, smart electricity tariffs, installer training, and rapid grid upgrades to speed affordable, climate‑friendly home heating across Austria. He calls for a firm gas‑boiler end date, bigger heat‑pump grants, grid upgrades, smart tariffs, and installer training to curb fossil‑gas use, accelerate climate‑friendly home heating, and bolster domestic green‑tech jobs. He urges the federal government to set binding gas‑boiler end dates, expand heat‑pump grants and installer training, deploy smart tariffs, and fast‑track grid upgrades to cut household emissions and strengthen Austria’s clean‑tech economy.",
+    "This person is a Lower Austrian gas distribution network technician who worries that rapid electrification will strand pipeline assets and eliminate skilled jobs. They urge Austria’s climate-friendly production and consumption policies to adopt a gradual, technology-neutral shift that includes renewable gases to avoid stranded pipelines and protect skilled jobs. They advocate climate-friendly production and consumption policies that scale biomethane and green hydrogen through existing pipelines and fund retraining, avoiding abrupt electrification that could strand assets and skilled jobs. They urge Austrian policy to set biomethane blending targets, enable hydrogen‑ready pipelines, and fund worker retraining to decarbonize gradually without abrupt electrification that strands networks and skilled jobs. He urges Austria’s climate policy to set biomethane blending targets, upgrade to hydrogen‑ready pipelines, and fund retraining to decarbonize affordably without stranding networks or skilled gas jobs.",
+    "This person is a Tyrolean road freight company owner relying on flexible diesel trucking over the Brenner Pass, opposed to higher road tolls and night bans. They argue that Austria’s climate measures—CO2-based toll hikes, stricter night bans, and rail-shift targets—would undermine just-in-time Brenner trucking and threaten their diesel-dependent business. They warn that CO2-based toll hikes, stricter night bans, and rail-shift targets would break just-in-time Brenner logistics and push their diesel-dependent firm toward layoffs without transitional exemptions. They demand phased CO2-tolling, transitional exemptions for just-in-time Brenner loads, and e-truck infrastructure before stricter night bans or rail-shift targets. They insist Austria’s climate-friendly production and consumption agenda should phase in CO2 tolls, grant just‑in‑time Brenner exemptions, and build e‑truck charging before tighter night bans or rail‑shift mandates.",
+    "This person is an Austrian rail freight planner advocating priority investments and operating subsidies to shift freight from trucks to electrified rail corridors. Urges priority investment in electrified rail corridors, lower track access fees, and operating subsidies to shift freight from trucks, cutting supply-chain emissions in Austrian production and consumption. They want Austria’s climate policy to make rail the default for freight, with lower track fees, operating aid, intermodal hubs, and guaranteed electrified paths to decarbonize supply chains. They urge Austria to make rail the default freight mode—via lower track fees, operating aid, intermodal hubs, and guaranteed electrified slots—to decarbonize production and consumption supply chains and cut road congestion. They want Austria’s climate plan to adopt a rail-first freight rule with lower track fees, operating aid, intermodal hubs, and guaranteed electrified slots to decarbonize supply chains and cut road congestion.",
+    "This person is a Vienna city procurement officer pushing embodied-carbon limits and recycled-content rules for public construction to grow low-carbon materials markets. They push whole-life carbon caps and recycled-content minima in city tenders to align public construction with Austria’s circular economy and 2040 climate‑neutral goal. They push for harmonized embodied‑carbon benchmarks, EPDs and material passports, plus SME support, so procurement reliably drives climate‑friendly production and circular consumption nationwide. They press for national green procurement rules with whole‑life‑carbon caps and recycled‑content floors, plus SME‑supported EPDs and material passports, to scale circular, low‑carbon construction. They lobby for nationwide green public procurement—whole-life carbon caps, harmonized EPD benchmarks, material passports, and recycled-content floors with SME support—to mainstream circular, low‑carbon construction and climate‑friendly consumption across Austria.",
+    "This person is a Carinthian cement plant director cautioning that strict clinker-reduction mandates and carbon costs could drive production out of Austria. He warns of carbon leakage and urges phased clinker-reduction targets, CCS funding, and a strong CBAM to keep Austrian cement competitive. He backs climate goals but urges gradual clinker limits, CCS funding for Austrian kilns, and a tough CBAM to prevent carbon leakage and protect Carinthian jobs. He urges Austria to pair climate-friendly production rules with phased clinker limits, CCS co-funding for local kilns, and a robust CBAM so Carinthian cement remains competitive without shifting emissions abroad. He urges phased clinker caps, CCS co-funding for Carinthian kilns, and a tight CBAM to prevent leakage, protect local jobs, and keep Austrian low‑carbon cement competitive.",
+    "This person is a Graz zero-waste grocer supporting packaging-reduction targets, reuse quotas, and deposit-return expansion to cut single-use plastics. They urge Austria to set binding packaging-reduction targets and retail reuse quotas, fund refill infrastructure for small shops, and expand a harmonized deposit-return system to curb single-use plastics. They argue binding packaging cuts, retail reuse quotas, grants for refill infrastructure, and nationwide deposit-return expansion will cut emissions, lower costs, and align Austria with EU PPWR. They urge Austria to adopt binding packaging cuts, retail reuse quotas, refill grants for small shops, and a unified deposit-return system to cut emissions and align with the EU PPWR. Based on their shop’s results, they urge phased binding packaging-cut targets with standardized reusable formats, SME refill grants, consumer education, and a DRS extended to takeaway to make reuse the norm across Austria.",
+    "This person is a Lower Austrian plastics packaging manufacturer arguing that rigid reduction quotas threaten food safety and favor imports, preferring advanced recycling. He urges Austria to replace blanket plastic-reduction quotas with support for advanced recycling and recyclate use, warning of food-safety risks and import leakage. He advocates replacing blanket plastic cuts with incentives and standards for advanced recycling and food‑grade recyclate to cut emissions without compromising safety or shifting production abroad. He urges Austria’s climate agenda to replace blanket plastic‑reduction quotas with incentives and standards for advanced, food‑grade recycling to cut emissions without offshoring or food‑safety risks. He urges replacing blanket plastic-reduction quotas with incentives and standards for food‑grade advanced recycling to cut emissions without risking food safety or driving imports.",
+    "This person is a Salzburg hydropower developer seeking streamlined permits and incentives for small hydro to boost domestic renewable generation. He urges streamlined permits, grid access, and investment incentives for small hydropower to meet Austria’s climate‑friendly production goals, with fish‑pass and habitat safeguards. He urges one‑stop permits, priority grid access, and grants for fish‑safe small hydro to advance Austria’s climate‑friendly production goals while safeguarding river habitats. He advocates predictable feed‑in tariffs, one‑stop Natura 2000‑compliant permitting, and priority grid interconnection for fish‑safe small hydro to boost domestic renewables while protecting alpine river habitats. He wants Austria’s climate‑friendly production policy to guarantee stable feed‑in tariffs, one‑stop Natura 2000‑compliant permits, and priority grid access for fish‑safe small hydro, powering local industry while safeguarding rivers.",
+    "This person is a river ecologist with an Austrian conservation NGO opposing new hydropower on intact streams, favoring efficiency and rooftop solar instead. They urge Austria’s climate-friendly production and consumption policies to emphasize efficiency, demand reduction, and rooftop solar rather than new dams on intact rivers. They argue Austria’s climate-friendly production and consumption policy should prioritize strong efficiency standards, demand reduction, and rooftop solar on existing buildings over subsidizing new dams on remaining free‑flowing rivers. Within Austria’s climate-friendly production and consumption policy, they seek binding efficiency standards and rooftop-solar mandates, plus a moratorium on new hydropower on intact rivers. They push to embed binding efficiency and demand‑reduction targets and rooftop‑solar mandates in Austria’s policy, shifting subsidies from new hydropower on intact rivers to building retrofits."
+  ],
+  "policies": [
+    {
+      "candidate_id": "312",
+      "text": "Less or hardly any cement; favor timber construction and clay and straw construction. Also consider ecological aspects in the choice of building materials for industrial buildings, bridges, etc.",
+      "original_text": "Weniger/fast kein Zement, Holzbauweise, Lehm/Strohbauweise. Ökologie auch bei Baustoffen für Industriebauten, Brücken usw. beachten."
+    },
+    {
+      "candidate_id": "35",
+      "text": "True-cost pricing should apply to all consumer products. The costs arising from environmental pollution and greenhouse gas emissions should be reflected in a product’s price.",
+      "original_text": "Klimarat: Für alle Konsumprodukte soll Kostenwahrheit gelten. Die Kosten, die durch Umweltverschmutzung und Treibhausgasemissionen entstehen, sollen sich im Preis eines Produkts abbilden."
+    },
+    {
+      "candidate_id": "41",
+      "text": "Already sealed, i.e., concreted areas should be put to multiple uses by installing renewable energy generation systems—for example, shopping center parking lots.",
+      "original_text": "Klimarat: Bereits versiegelte, d.h. betonierte Flächen, sollen durch Anlagen zur erneuerbaren Energiegewinnung mehrfach genutzt werden – zum Beispiel Parkplätze von Einkaufszentren."
+    },
+    {
+      "candidate_id": "366",
+      "text": "For public infrastructure, make it mandatory to disclose CO2 emissions from construction and operation (motorway bridges, railway tunnels, administrative buildings, etc.).",
+      "original_text": "Bei öffentlichen Bauwerken verpflichtend CO2 durch Bau und Nutzung ausweisen (Autobahnbrücke, Eisenbahntunnel, Verwaltungsgebäude,...)"
+    },
+    {
+      "candidate_id": "240",
+      "text": "The circular economy is a game changer for the climate, resources, the environment, and society. Politically, it is a top priority because of its immediate effectiveness.",
+      "original_text": "Kreislaufwirtschaft=Game Changer für Klima, Ressourcen, Umwelt und Gesellschaft. Politisch PRIO 1A wegen sofortiger Wirksamkeit"
+    },
+    {
+      "candidate_id": "150",
+      "text": "Enable participation in education and training programs, in working life, etc., even without one’s own smartphone or similar device (prevent coercion into selling data).",
+      "original_text": "Teilhabe an Bildungsmaßnahmen, im Erwerbsleben etc. auch ohne eigenes Smartphone o. dgl. ermöglichen (Zwang zum Datenverkauf verhindern)"
+    },
+    {
+      "candidate_id": "286",
+      "text": "Produce locally and in an environmentally sustainable way; consume less but buy higher-priced products. That should keep the economy going and protect the environment.",
+      "original_text": "Lokal & umweltverträglich produzieren, weniger, aber höherpreisig konsumieren. Sollte die Wirtschaft in Gang halten und die Umwelt schonen."
+    },
+    {
+      "candidate_id": "166",
+      "text": "The steady and extreme increase in the global population is an issue that has hardly been discussed in relation to the climate to this day. We need to talk about it!",
+      "original_text": "Die stetige und extreme Zunahme der Erdbevölkerung ist ein für das Klima bis heute kaum diskutierter Punkt. Darüber muss gesprochen werden!"
+    },
+    {
+      "candidate_id": "298",
+      "text": "I'm in favor of repairable phones like Fairphone; it's a good product these days, and while it costs about €500, it's worth it to me. I'm saving up for it right now.",
+      "original_text": "Ich bin für reparierbare Handys wie Fairphone, mittlerweile ein gutes Produkt, aber ca.500€, ist es mir aber wert. Ich spare grad drauf."
+    },
+    {
+      "candidate_id": "51",
+      "text": "Government interventions in production and consumption have, as the historical record shows, always led to inefficiencies, losses of prosperity, and supply crises.",
+      "original_text": "Staatliche Eingriffe in Produktion und Konsum führten historisch belegbar immer zu Ineffizienzen, Wohlstandsverlusten und Versorgungskrisen."
+    },
+    {
+      "candidate_id": "203",
+      "text": "Stop the exploitation of the oceans. 80% of the plastic in the ocean comes from fishing. Trawl nets destroy millions of square kilometers annually (kelp forests).",
+      "original_text": "Stop der Ausbeutung der Meere. 80% des Plastiks im Ozean kommen von der Fischerei. Sleppnetze zerstören mio. km² jährlich (Algenwälder)."
+    },
+    {
+      "candidate_id": "121",
+      "text": "Fast fashion must be ended (e.g., no €5 shirts), secondhand should be preferred, support textile manufacturers in Europe, and move away from Asian-made products.",
+      "original_text": "FastFashion muss beendet werden (zB. keine Shirts um €5), Secondhand bevorzugt, Textilhersteller in Europa fördern, weg vom Asienprodukt"
+    },
+    {
+      "candidate_id": "158",
+      "text": "Socialization and municipalization of large corporations supplying everyday necessities — no one should be allowed to enrich themselves off everyday necessities.",
+      "original_text": "Vergesellschaftung & Kommunalisierung von Großkonzernen des täglichen Bedarfs - niemand darf sich an Gütern des täglichen Lebens bereichern"
+    },
+    {
+      "candidate_id": "237",
+      "text": "Single-use glass packaging should co-finance glass disposal costs. Reusable glass packaging with more than five reuse cycles should benefit from reduced charges.",
+      "original_text": "Einwegglasverpackungen haben die Glasentsorgungskosten mit zu finanzieren. Mehrwegglasverpackungen >5 Zyklen gehören kostenmäßig entlastet."
+    },
+    {
+      "candidate_id": "278",
+      "text": "Climate protection in continuing education and training: It is today’s adults who need to be reached, not those who will only be eligible to vote in 6–12 years.",
+      "original_text": "Klimaschutz in Fort-/Weiterbildung: Es müssen die heutigen Erwachsenen erreicht werden, nicht die, die erst in 6-12 Jahren wählen dürfen."
+    },
+    {
+      "candidate_id": "27",
+      "text": "Promoting (climate-friendly) production in the EU instead of imports with long transport distances from dictatorships without (social) environmental standards",
+      "original_text": "Förderung von (klimafreundlicher) Produktion in der EU, anstatt Import mit langem Transportweg aus Diktaturen ohne (soziale) Umweltstandards"
+    },
+    {
+      "candidate_id": "54",
+      "text": "The price system steers production and consumption without coercion or state force. If CO2 is missing as a price factor, then just create CO2 property rights.",
+      "original_text": "Das Preissystem steuert Produktion und Konsum ohne Zwang und staatliche Gewalt. Wenn CO2 als Preisfaktor fehlt: eben CO2-Eigentum schaffen."
+    },
+    {
+      "candidate_id": "95",
+      "text": "In many places, the retail network is too dense and there are too many shopping centers (no one needs, for example, three Billa stores within a 10 km radius).",
+      "original_text": "Vielerorts zu dichtes Ladennetz und zu viele Einkaufscenter (keiner braucht z.B. im Umkreis von 10 km drei Billa)"
+    },
+    {
+      "candidate_id": "76",
+      "text": "Effective immediately, no more new cars should be produced or sold. (Exceptions for emergency services, etc.) Repairs and the used-car market are sufficient.",
+      "original_text": "Ab sofort keine Neuwagen mehr produzieren und verkaufen. (Ausnahmen für Blaulichtorgs, etc) Reparieren + Gebrauchtwagenmarkt reicht."
+    },
+    {
+      "candidate_id": "370",
+      "text": "Waste prevention! The packaging industry and the retail sector must switch to environmentally compatible products. Steer this through statutory requirements!",
+      "original_text": "Müllvermeidung! Die Verpackungsindustrie/Handel muss auf ökologisch verträgliche Produkte umstellen. Lenkung durch gesetzliche Vorgaben!"
+    },
+    {
+      "candidate_id": "73",
+      "text": "Anyone who buys a new phone every year should have to pay three times the price for it. Only after three years should the price start to decrease gradually.",
+      "original_text": "Jeder, der sich jährlich ein neues Handy kauft, muss den dreifachen Preis dafür bezahlen. Erst ab 3 Jahren soll der Preis langsam sinken"
+    },
+    {
+      "candidate_id": "279",
+      "text": "Information about the climate catastrophe/climate protection for pensioners. They must be reached. Not those who will only be allowed to vote in 6–12 years.",
+      "original_text": "Info über Klimakatastrophe/-schutz an Pensionisten. Die müssen erreit werden. Nicht die, die erst in 6-12 Jahren wählen dürfen."
+    },
+    {
+      "candidate_id": "188",
+      "text": "Finally tax the rich, and companies that make revenue here (online and offline) must also pay taxes here, with the money going to environmental protection.",
+      "original_text": "Reiche endlich besteuern, plus Firmen die hier Umsatz machen (online und offline) haben auch hier Steuern zu zahlen.  Geld -> Umweltschutz"
+    },
+    {
+      "candidate_id": "179",
+      "text": "A deposit on already recyclable containers is pointless. The recycling rate here is already over 70%, and they account for only 5% of total plastic waste.",
+      "original_text": "Pfand auf bereits recycle bare Behälter sinnlos. Recycling Quote hier schon über 70% und nur 5% des gesamten Plastikmülls."
+    },
+    {
+      "candidate_id": "211",
+      "text": "Funding and measures for environmental education for various target groups (educators, people in leadership positions, politicians, adults aged 60+, ...).",
+      "original_text": "Förderungen und Maßnahmen für die Umweltbildung verschied. Zielgruppen (Pädagog*innen,Führungspositionen,Politiker*innen,Erwachsene/60+,...)"
+    },
+    {
+      "candidate_id": "181",
+      "text": "Every company that puts products on the market must consider how they can be recycled at the end of their lifespan and provide instructions for doing so.",
+      "original_text": "Jede Firma die Produkte in Umlauf bring muss sich Gedanken machen, wie diese nach Lebensdauer recycled werden können, und Anleitungen dazu"
+    },
+    {
+      "candidate_id": "261",
+      "text": "Environmentally friendly and socially responsible fashion labels should receive PR and financial support (e.g., pop-ups in vacant shops in city centers).",
+      "original_text": "umweltfreundliche u soziale Modellabels sollten PRweis u finanziell gefördert werden (zB Pop up in leer stehenden Geschäfte in Innenstädten)"
+    },
+    {
+      "candidate_id": "360",
+      "text": "We need systemic and integrative solutions across all sectors and, above all, a new worldview, attitudes, and values geared toward an ecological society.",
+      "original_text": "Es braucht systemische und integrative Lösungen über alle Bereiche und vor allem neues Weltbild, Einstellungen, Werte zu öko Gesellschaft"
+    },
+    {
+      "candidate_id": "368",
+      "text": "Please don't subsidize electric cars; instead, increase subsidies for charging infrastructure. (There will still be plenty of electric cars on the road.)",
+      "original_text": "Bitte nicht E-Autos fördern, sondern stattdessen die Förderungen für Ladeinfrastruktur erhöhen. (E-Autos werden trotzdem genug herumfahren.)"
+    },
+    {
+      "candidate_id": "186",
+      "text": "CO2 budget (in the form of vouchers) per person for consumption. When buying a product, I have to spend CO2 vouchers in proportion to its CO2 emissions.",
+      "original_text": "CO2 Budget (in Form von Scheinen) pro Person auf Konsum. Für Produktkauf muss ich CO2 Scheine hergeben, entsprechend des CO2-Ausstosses"
+    },
+    {
+      "candidate_id": "310",
+      "text": "Cigarette filters contain the hard-to-degrade plastic cellulose acetate, do little for the health of people who smoke, and are toxic to the environment!",
+      "original_text": "Zigarettenfilter enthalten schwer abbaubaren Kunststoff Celluloseacetat, leisten wenig für die Gesundheit der Rauchenden, sind Umweltgift!"
+    },
+    {
+      "candidate_id": "391",
+      "text": "Consumption doesn't need to be restricted, just adapted; for example, not every party has to leave behind mountains of trash or produce hazardous waste.",
+      "original_text": "Konsum muss nicht eingeschränkt, nur angepasst werden; z. B. muss nicht jede Party Müllberge hinterlassen oder Sondermüll produzieren"
+    },
+    {
+      "candidate_id": "131",
+      "text": "Increased public awareness about carbon footprints; from a trip of 6 km or more, having your shopping delivered is, for example, more climate-friendly.",
+      "original_text": "Verstärkte Aufklärung über CO2 Andruck; ab 6km Fahrt ist eine Lieferung des Einkaufes zB. klimafreundlicher"
+    },
+    {
+      "candidate_id": "244",
+      "text": "Extending product lifespans or extending their use is immediately effective environmental and resource protection. Tax incentives should be identified.",
+      "original_text": "Verlängerte Lebensdauer bzw.verlängerte Nutzung=sofort wirksamer Umwelt- und Ressourcenschutz. Steuerlich Vorteile sollten gefunden werden"
+    },
+    {
+      "candidate_id": "53",
+      "text": "Sufficiency would be important; for example, do I always need the latest smartphone or chic clothes? Better: second-hand phones, clothing swap events.",
+      "original_text": "Suffizienz wäre wichtig, z.B. brauche ich immer das neueste Smartphone oder chicke Kleider? Besser: gebrauchte Handys, Kleidertauschbörsen"
+    },
+    {
+      "candidate_id": "177",
+      "text": "After the warranty period: Mandatory provision of free spare parts or 3D-printing options as a responsibility of those placing products on the market.",
+      "original_text": "Nach der Gewährleistungszeit: Kostenlose Ersatzteile oder 3D Druckverfahren verpflichtend als Inverkehrbringerverantwortung"
+    },
+    {
+      "candidate_id": "221",
+      "text": "An EU-wide label for products showing 1) total transport distance and CO2 from production, 2) recyclability, and 3) avoidance of environmental toxins.",
+      "original_text": "eu-weit ein label für prod. 1.gesamte transportwege CO2 bei herstellung  2.recyclebarkeit 3.verzicht auf umweltgifte"
+    },
+    {
+      "candidate_id": "156",
+      "text": "Advertising for primarily fossil-fuel products (flights, cars, oil companies) should be banned; advertising should generally be drastically reduced.",
+      "original_text": "Werbung für primär fossile Produkte (Flüge, Autos, Erdölunternehmen) gehören verboten; Werbung gehört generell stark reduziert."
+    },
+    {
+      "candidate_id": "62",
+      "text": "Raise awareness about trawl nets and their consequences for the oceans (the biggest source of plastic waste in the seas) and about fishing methods.",
+      "original_text": "Aufklärung über Schleppnetze und deren Folgen für die Ozeane (größte Plastikmüllproduktion der Meere) und über Fangmethoden"
+    },
+    {
+      "candidate_id": "59",
+      "text": "Make more product information (repairability, availability of spare parts, …) mandatory to enable the most informed purchasing decision possible.",
+      "original_text": "Mehr Produktinformationen (Reparaturfähigkeit, Verfügbarkeit von Ersatzteilen…) für eine möglichst bewusste Kaufentscheindung verpflichtend"
+    },
+    {
+      "candidate_id": "318",
+      "text": "Unrestricted consumption is harmful to the climate; children are not! Climate-just legislation enables climate-just behavior for all generations.",
+      "original_text": "Schrankenloser Konsum=klimaschädlich, Kinder nicht! Klimagerechte Gesetzgebung ermöglicht klimagerechtes Verhalten für alle Generationen."
+    },
+    {
+      "candidate_id": "445",
+      "text": "Ban the trade in personal data and consumer data on the internet, so that unnecessary purchases driven by personalized advertising are prevented.",
+      "original_text": "Personenbezogenen Datenhandel und Konsumdaten im Internet verbieten, sodass unnötige Käufe durch individuelle Werbung verhindert werden."
+    },
+    {
+      "candidate_id": "144",
+      "text": "Promote fair, sustainable, and durable clothing so that it is affordable for everyone (however, excessive consumption should not be encouraged).",
+      "original_text": "faire, nachhaltige und langlebige Kleidung fördern, sodass diese für alle leistbar ist (übermäßiger Konsum soll aber nicht gefördert werden)"
+    },
+    {
+      "candidate_id": "291",
+      "text": "Pass the actual costs on to goods. Shirts for 3 euros, wardrobes for 90 euros, etc., do not reflect the value of the resources. Throwaway goods.",
+      "original_text": "Tatsächliche Kosten auf Waren umlegen. Shirts um 3 Euro, Schränke um 90 Euro etc. decken den Wert der Ressourcen nicht. Wegwerfwaren"
+    },
+    {
+      "candidate_id": "413",
+      "text": "Instruction manuals that are available online should not also be included as a printed book in dozens of languages—99% end up being thrown away.",
+      "original_text": "Bedienungsanleitungen, die im Internet abrufbar sind, nicht zusätzlich als gedrucktes Buch in zig Sprachen beilegen, das 99% wegwerfen."
+    },
+    {
+      "candidate_id": "130",
+      "text": "Cigarettes should no longer be produced on climate protection grounds; they break down in the oceans into microplastics and contaminate soils!",
+      "original_text": "Zigaretten, sollen aus Klimaschutzgründen nicht mehr erzeugt werden, diese zersetzen sich in den Meeren zu Mikroplastik, verseuchen Böden !"
+    },
+    {
+      "candidate_id": "172",
+      "text": "Standardize glass packaging. Not every jam, honey, etc. needs its own shape and/or its own volume. Reusable glass jars not just for beverages!",
+      "original_text": "Glasgebinde normen. Nicht jede Marmelade, Honig etc. braucht eigene Form und/oder eigenes Volumen. Mehrweggläser nicht nur bei Getränken!"
+    },
+    {
+      "candidate_id": "235",
+      "text": "I am willing to pay higher prices for climate-friendly products. Nonsense! Make climate-damaging products more expensive with taxes!",
+      "original_text": "\"Klimarat: Ich bin bereit, höhere Preise für klimafreundliche Produkte zu bezahlen.\" Unsinn! Mit Steuern klimafeindliche Produkte verteuern!"
+    },
+    {
+      "candidate_id": "306",
+      "text": "Our dependence on oil and gas is now hurting us. Steps must be taken to ensure that dependence on the internet doesn’t hit us in the same way.",
+      "original_text": "Jetzt schmerzt uns die Abhängigkeit von Öl und Gas. Es sind Vorkehrungen zu treffen, dass uns die Internet-Abhängigkeit nicht ebenso trifft."
+    },
+    {
+      "candidate_id": "189",
+      "text": "Products from China should be taxed significantly higher than those produced in Europe; CO2 should be priced in, for example through tariffs.",
+      "original_text": "Produkte aus China gehören deutlich höher besteuert als in Europa produzierte CO2 gehört eingepreist, etwa durch Zölle"
+    },
+    {
+      "candidate_id": "238",
+      "text": "E-commerce must be required to use \"Zero waste packaging solutions,\" with reusable packaging mandatory and single-use only with an extra tax.",
+      "original_text": "Onlinehandel muß zu \"Zero waste packaging solutions\" verpflichtet werden. Mehrwegverpackungen verpflichtend. Einweg nur mit Extrasteuer"
+    },
+    {
+      "candidate_id": "112",
+      "text": "Legally restrict transport distances for products that are locally available, e.g., no imports or exports except with neighboring countries.",
+      "original_text": "Transportwege bei lokal verfügbaren Produkten gesetzlich beschränken, zB. kein Import/Export  ausgenommen Nachbarländer."
+    },
+    {
+      "candidate_id": "258",
+      "text": "Stop greenwashing of \"compostability\" and introduce collection systems for industrially compostable products that require more than 90 days.",
+      "original_text": "Green washing \"Kompostierbarkeit\" beenden und Sammelsysteme für industriekompostierbare  Produkte >90 Tage einführen."
+    },
+    {
+      "candidate_id": "161",
+      "text": "We must operate within planetary boundaries—cooperation instead of competition and maximizing the common good instead of maximizing profit!",
+      "original_text": "Wir müssen innerhalb der planetaren Grenzen wirtschaften => Kooperation statt Wettbewerb und Gemeinwohlmaximierung statt Profitmaximierung!"
+    },
+    {
+      "candidate_id": "290",
+      "text": "For the sake of sustainability and security, manufacturers should be required to provide security updates for their devices for many years.",
+      "original_text": "Zwecks Nachhaltigkeit und Sicherheit sollten Hersteller verpflichtet werden, viele Jahre lang Sicherheitsupdates für ihre Geräte anzubieten."
+    },
+    {
+      "candidate_id": "296",
+      "text": "In Vienna, for example, sausage packaging and other plastic packaging should also go into the yellow collection containers and be recycled.",
+      "original_text": "In Wien sollen auch z.B. Wurstverpackungen und sonstige Plastikverpackung in die gelben Sammelcontainer kommen und wiederverwertet werden."
+    },
+    {
+      "candidate_id": "94",
+      "text": "Ban planned obsolescence. Mandate easy repairability (e.g., battery replacement) and disclosure of schematics, design plans, and software.",
+      "original_text": "Verbot geplanter Obsoleszenz. Verpflichtende leichte Reparierbarkeit und (zB Akkutausch) u. Offenlegung von Schalt-, Bauplänen, u. Software"
+    },
+    {
+      "candidate_id": "201",
+      "text": "Package goods more efficiently — most of the time the box is far too big — more air and packing material than goods are being transported!",
+      "original_text": "Waren effizienter verpacken - meist ist der Karton viel zu groß - es wird mehr Luft und Füllmaterial als Ware transportiert!"
+    },
+    {
+      "candidate_id": "393",
+      "text": "Drastically reduce consumption (e.g., of clothing), and at the same time improve working conditions at fashion brands in poorer countries!",
+      "original_text": "Konsum (z.B. bei Kleidung) drastisch reduzieren, dafür Arbeitsbedingungen bei Modelables in ärmeren Ländern verbessern!"
+    },
+    {
+      "candidate_id": "163",
+      "text": "Pellets are fine-particulate polluters and are often sourced from old forests in Romania, Ukraine, or Bulgaria. Climate-friendly? Hardly!",
+      "original_text": "Pellets sind Feinstaubschleudern und werden oft aus alten Wäldern in Rumänien, Ukraine oder Bulgarien gewonnen. Klimafreundlich? Wohl kaum!"
+    },
+    {
+      "candidate_id": "289",
+      "text": "All standards and norms should be made freely accessible to the public (including online). This would, for example, encourage innovation.",
+      "original_text": "Alle Standards und Normen sollten kostenlos der Allgemeinheit (auch online) zugänglich gemacht werden. Dies würde z.B. Innovationen fördern."
+    },
+    {
+      "candidate_id": "369",
+      "text": "Asking the public is okay, but policymakers absolutely must listen to and take independent experts seriously. The issues are too complex.",
+      "original_text": "Die Befragung des Volks ist okay, aber die Politik muss unbedingt unabhängige Experten hören und ernst nehmen. Die Themen sind zu komplex."
+    },
+    {
+      "candidate_id": "182",
+      "text": "Municipalities and Bundesländer, and the Bundesforste, should develop renewable energy projects with at least 50% citizen participation.",
+      "original_text": "Gemeinden und Bundesländer, Bundesforste erstellen erneuerbare Energieprojekte mit mind. 50 % Bürgerbeteiligung."
+    },
+    {
+      "candidate_id": "24",
+      "text": "Away from quantity—toward quality! There is no human right to unbridled consumption at the expense of people, animals, and the climate!",
+      "original_text": "Weg von Quantität - hin zu Qualität! Es gibt kein Menschenrecht auf ungezügelten Konsum auf Kosten von Mensch, Tier und Klima!"
+    },
+    {
+      "candidate_id": "260",
+      "text": "Monopolization by large corporations should be banned. Exert pressure to implement an international minimum tax on global corporations.",
+      "original_text": "Monopolisierung v Grossunternehmen sollen verboten werden. Druck auf Umsetzung Internationaler Mindeststeuer globaler Firmen"
+    },
+    {
+      "candidate_id": "322",
+      "text": "The “further and further,” “more and more” in our wealthy countries is the problem for the climate, not the children we or others have!",
+      "original_text": "Das \"immer weiter\", \"immer mehr\"  in unseren reichen Ländern ist das Problem fürs Klima,  nicht die Kindern, die wir oder andere haben!"
+    },
+    {
+      "candidate_id": "248",
+      "text": "It starts with the small things: why are gas-powered lawn mowers still for sale? A battery-powered mower is quieter and doesn’t stink!",
+      "original_text": "Es fängt im kleinen an: warum gibt es immer noch Benzinrasenmäher zu kaufen? Ein Akkumäher ist leiser und stinkt nicht!"
+    },
+    {
+      "candidate_id": "317",
+      "text": "Population density is higher here than in many countries of the Global South, and WE consume far more resources than the people there.",
+      "original_text": "Die Bevölkerungsdichte ist bei uns höher als in vielen Ländern des Südens und WIR verbrauchen viel mehr Ressourcen als die Menschen dort."
+    },
+    {
+      "candidate_id": "398",
+      "text": "Serious measures to save humanity while keeping life worth living mean a rapid scaling back of our accustomed high standard of living.",
+      "original_text": "Ernste Maßnahmen zur lebenswerten Rettung der Menschheit bedeuten eine rasante Zurücknahme unseres gewohnten hohen Lebensstandart."
+    },
+    {
+      "candidate_id": "29",
+      "text": "Climate action is so urgent and must be implemented, even if no social compensation measures are possible in the near term.",
+      "original_text": "Klimarat: Klimaschutz ist so dringend und muss umgesetzt werden, auch wenn zeitnah keine sozialen Ausgleichsmaßnahmen möglich sind."
+    },
+    {
+      "candidate_id": "125",
+      "text": "Even the production of cigarettes results in avoidable greenhouse gas emissions, and smoking itself also causes environmental damage!",
+      "original_text": "Schon bei der Herstellung von Zigaretten fallen vermeidbare Treibhausgasemmisionen an auch das Rauchen selbst verursacht Umweltschäden !"
+    },
+    {
+      "candidate_id": "259",
+      "text": "We \"Westerners\" need about 90 times what is necessary for a good life. We need an alternative, resource-conserving, realistic vision.",
+      "original_text": "Wir \"Westler:innen\" brauchen ca das 90Fache, was zu gutem Leben nötig. Wir brauchen  alternative, ressourcenschonende, realistische Vision"
+    },
+    {
+      "candidate_id": "482",
+      "text": "Better pay for politicians who advocate for climate action. This also reduces the extent to which they can be manipulated by bribery.",
+      "original_text": "Bessere Bezahlung von Politikern, die sich für das Klima einsetzen. Das senkt auch auch die Manipulierbarkeit durch Bestechung."
+    },
+    {
+      "candidate_id": "37",
+      "text": "\"Greenwashing\" by companies, that is, the deliberate deception through purported environmental measures, should be banned.",
+      "original_text": "Klimarat: \"Greenwashing\" von Unternehmen, also die gezielte Täuschung durch vorgebliche Umweltmaßnahmen, soll verboten werden."
+    },
+    {
+      "candidate_id": "86",
+      "text": "Don’t define people by their consumption! Against constantly buying new products. Offer food past its expiration date at a discount.",
+      "original_text": "Menschen nicht über ihren Konsum definieren! Gegen den  ständigen Neu-Kauf von Produkten.  Abgelaufene Lebensmittel vergünstigt anbieten."
+    },
+    {
+      "candidate_id": "273",
+      "text": "A 10-year warranty on devices must be provided by the market. The market would thus be obliged not to purchase low-quality products.",
+      "original_text": "Gerätegarantie muss von Markt für 10 Jahre übernommen werden. Markt wäre somit verpflichtet, keine low-quality Produkte ein zu kaufen"
+    },
+    {
+      "candidate_id": "320",
+      "text": "Nuclear power is not a solution at all: too dangerous in times of crisis (Ukraine, drones, ...), prone to human error, health risks.",
+      "original_text": "Atomkraft ist gar keine Lösung: zu gefährlich in Krisenzeiten ( Ukraine, Drohnen,...), anfällig für menschliche Fehler, Gesundheitsrisikos"
+    },
+    {
+      "candidate_id": "377",
+      "text": "Green Statements for products may only be made on the basis of environmental footprint information that demonstrates an improvement.",
+      "original_text": "Green Statements für Produkte dürfen nur auf Basis von Informationen zum Umweltfußabdruck gemacht werden, die eine Verbesserung zeigen."
+    },
+    {
+      "candidate_id": "79",
+      "text": "Stop the flood of plastic. Styrofoam and packaging filler must be replaced with eco-friendly alternatives so they can be composted.",
+      "original_text": "Schluss mit der Plastikflut. Styropor und Füllmaterial muss ökologisch ersetzt werden,  es kompostieren zu können."
+    },
+    {
+      "candidate_id": "157",
+      "text": "Steering climate action through higher prices only means that the rich can buy their way out. Therefore the system must be changed!",
+      "original_text": "Klimaschutz über höhere Preise zu steuern bedeutet nur, dass Reiche sich freikaufen können. Daher muss das System verändert werden!"
+    },
+    {
+      "candidate_id": "17",
+      "text": "Products and services that harm the climate should carry a significantly higher price than climate-friendly products and services.",
+      "original_text": "Produkte und Dienstleistungen, die das Klima belasten, sollen einen deutlich höheren Preis haben als klimafreundliche Produkte und Dienstleistungen."
+    },
+    {
+      "candidate_id": "58",
+      "text": "A clear, mandatory labeling requirement for the (good/poor) recyclability of packaging, shown on the package itself, is necessary.",
+      "original_text": "Eine klare Kennzeichnungspflicht für die (gute/schlechte) Recyclingfähigkeit von Verpackungen direkt auf der Verpackung ist notwendig"
+    },
+    {
+      "candidate_id": "255",
+      "text": "Products that, due to demonstrable technical features, have a shorter lifespan than would be possible lose their CE certification.",
+      "original_text": "Produkte die durch nachgewiesene technische Features eine kürzer Lebensdauer haben als  möglich, verlieren die CE Zulassung."
+    },
+    {
+      "candidate_id": "288",
+      "text": "Ban planned obsolescence; impose strict labor-law and climate-protection requirements on companies, with fines for non-compliance.",
+      "original_text": "Obszoleszenz verbieten, Unternehmen strenge Auflagen zu Arbeitsrechts- und Klimaschutzmaßnahmen erteilen-bei Nichteinhaltung Geldstrafen"
+    },
+    {
+      "candidate_id": "220",
+      "text": "Movies and TV series must become more climate-friendly in their content — no glorifying jet-setting, cruise ships, or car chases.",
+      "original_text": "Spielfilme und Serien müssen inhaltlich klimafreundlicher werden - keine Glorifizierung von Jetset, Traumschiff und Autoverfolgungsjagden"
+    },
+    {
+      "candidate_id": "249",
+      "text": "Waste sorting is not working at the level required for monomaterials. Substantial innovation funding for automated waste sorting.",
+      "original_text": "Mülltrennung funktioniert nicht auf dem für Monomaterials benötigen Niveau. Hohe Innovationsförderung für automatisierte Mülltrennung."
+    },
+    {
+      "candidate_id": "367",
+      "text": "Products and services that harm the climate should cost significantly more than climate-friendly products and services.",
+      "original_text": "Klimarat: Produkte und Dienstleistungen, die das Klima belasten, sollen einen deutlich höheren Preis haben als klimafreundliche Produkte und Dienstleistungen."
+    },
+    {
+      "candidate_id": "431",
+      "text": "Data retention on servers and cryptocurrencies cause incredibly high, unnecessary electricity consumption. Stop them immediately!",
+      "original_text": "Vorratsdatenspeicherung im Servern und Krypto Währungen verursachen unglaublich hohen unnötigen Stromverbrauch. Sofort stoppen!"
+    },
+    {
+      "candidate_id": "145",
+      "text": "Fashion companies that sell in Austria (including online stores) should be required to meet ethical and environmental standards.",
+      "original_text": "Modeunternehmen die in Österreich verkaufen (auch online shops) sollten ethische und ökologische Standards erfüllen müssen"
+    },
+    {
+      "candidate_id": "375",
+      "text": "Responsible use of electronic devices! I don’t need every new smartphone, gaming console, etc. (transport, raw materials, waste)",
+      "original_text": "Verantwortungsvoller Umgang mit elektr. Geräten! Ich brauche nicht jede/s/n neue  Smartphone,Spielekonsole,etc. (Transport, Rohstoffe, Müll)"
+    },
+    {
+      "candidate_id": "120",
+      "text": "At community flea markets, every allotment holder should be allowed to sell surplus fruit, vegetables, and home-produced goods.",
+      "original_text": "Auf \"Gemeindeflohmärkten\" soll jeder Kleingartenbesitzer überschüssiges Obst, Gemüse und selbsterzeugte Waren / Erzeugnisse verkaufen dürfen"
+    },
+    {
+      "candidate_id": "111",
+      "text": "Resume the development of environmentally friendly production methods at our universities of applied sciences and universities.",
+      "original_text": "Entwicklung von umweltfreundlichen Produktionsmethoden wieder an unseren FH´s und Unis."
+    },
+    {
+      "candidate_id": "227",
+      "text": "The health aspect is missing. How will people cope with ever higher temperatures in summer? Are doctors and hospitals prepared?",
+      "original_text": "Das Thema Gesundheit fehlt. Wie werden die Menschen mit immer höheren Temperaturen im Sommer zurechtkommen? Sind Ärzte/Spitäler vorbereitet?"
+    },
+    {
+      "candidate_id": "292",
+      "text": "Reshoring production (e.g., medicines, clothing) to Austria, or to the EU, in order to be independent, for example, from China.",
+      "original_text": "Rückverlagerung der Produktion ( z.B Medikamente, Bekleidung…) nach Österreich, bzw. in die EU um unabhängig z.B  von China zu sein."
+    },
+    {
+      "candidate_id": "38",
+      "text": "An independent Klimakommission should review the laws and measures of the Bundesregierung for climate effectiveness.",
+      "original_text": "Klimarat: Eine unabhängige Klimakommission soll die Gesetze und Maßnahmen der Bundesregierung auf Klimawirksamkeit überprüfen."
+    },
+    {
+      "candidate_id": "167",
+      "text": "Production must be brought back to the EU, since higher standards are in place here. Restrict consumption via internet giants.",
+      "original_text": "Produktion muss wieder in die EU zurückgeholt werden, da hier höhere Standards herrschen. Konsum über Internetgiganten einschränken."
+    },
+    {
+      "candidate_id": "128",
+      "text": "For all foods (including restaurant dishes): mandatory disclosure of the emissions associated with producing each ingredient.",
+      "original_text": "Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe der Emmissionen von Zutaten bei deren Herstellung."
+    },
+    {
+      "candidate_id": "192",
+      "text": "No piecemeal bans; rather an effective overhaul of the tax system: revenue-neutral taxation of emissions and scarce resources",
+      "original_text": "Keine mikroverbote, lieber eine effektive umstellung des steuersystems: aufkommensneutrale besteuerung von emissionen und knappen ressourcen"
+    },
+    {
+      "candidate_id": "103",
+      "text": "Effective immediately, the Republic of Austria will no longer place funds with banks that finance climate-harmful companies.",
+      "original_text": "Die Republik Österreich veranlagt ab sofort nicht mehr bei Banken, die klimafeindliche Unternehmen finanzieren."
+    },
+    {
+      "candidate_id": "183",
+      "text": "Products must not be imported if the manufacturing conditions would be illegal here. Our own economy is being disadvantaged.",
+      "original_text": "Produkte dürfen nicht importiert werden, wenn die Herstellungsbedingungen bei uns unzulässig wären. Eigene Wirtschaft wird benachteiligt."
+    },
+    {
+      "candidate_id": "256",
+      "text": "Companies that recondition goods for reuse receive special development funding until there is appropriate resource taxation.",
+      "original_text": "Reuse Aufbereitungsfirmen bekommen besondere Entwicklungsförderungen bis es eine angemessenen Ressourcenbesteuerung gibt."
+    },
+    {
+      "candidate_id": "390",
+      "text": "Rental scooters, bikes, etc. increase resource consumption because they have a very short lifespan due to careless handling.",
+      "original_text": "Leihscooter, -räder etc erhöhen den Ressourcenverbrauch, da sie durch sorglose Behandlung sehr kurze Lebensdauer haben."
+    },
+    {
+      "candidate_id": "43",
+      "text": "I am willing to accept radical measures for climate protection that could also entail a change in my way of life.",
+      "original_text": "Klimarat: Ich bin bereit, für den Klimaschutz radikale Maßnahmen zu akzeptieren, die auch eine Veränderung meiner Lebensweise zur Folge haben könnten."
+    },
+    {
+      "candidate_id": "83",
+      "text": "The statutory warranty should be significantly extended in order to make the production of more durable products necessary.",
+      "original_text": "Die gesetzliche Gewährleistung sollte deutlich ausgedehnt werden, um die Herstellung langlebigerer Produkte notwendig zu machen."
+    },
+    {
+      "candidate_id": "383",
+      "text": "Waste legislation: Enable on-site re-use (upcycling) (currently, taking items from the waste container is considered theft)",
+      "original_text": "Abfallgesetzgebung: Re-use (Upcycling) vor Ort ermöglichen (derzeit = Entnahme vom Müllcontainer = Diebstahl)"
+    },
+    {
+      "candidate_id": "488",
+      "text": "Heavily tax (or ban) shower gel packaging. Soap can do the same and doesn’t produce these vast amounts of needless plastic.",
+      "original_text": "Duschgel Verpackungen hoch besteuern (oder verbieten). Seife kann dasselbe und produziert nicht diese Unmengen an sinnlosem Plastik."
+    },
+    {
+      "candidate_id": "520",
+      "text": "Space travel harms the environment, so research should be redirected from space travel toward addressing Earth’s problems.",
+      "original_text": "Raumfahrt belastet die Umwelt - daher sollte die Forschung von der Raumfahrt auf die Probleme der Erde umgelenkt werden."
+    },
+    {
+      "candidate_id": "113",
+      "text": "There needs to be government regulation of companies’ climate-damaging behavior in production, packaging, transport, etc.",
+      "original_text": "Es braucht staatliche Steuerung hinsichtlich klimaschädlichen Verhalten von Firmen hinsichtlich Produktion, Verpackung, Transport etc."
+    },
+    {
+      "candidate_id": "154",
+      "text": "The higher the wealth, the higher the greenhouse gas emissions. Therefore, introduce a wealth tax starting at €1 million.",
+      "original_text": "Je höher das Vermögen, desto höher sind die Treibhausgasemissionen. Daher Besteuerung von Vermögen ab 1 Million € einführen."
+    },
+    {
+      "candidate_id": "308",
+      "text": "I don’t want to know the recyclability of packaging; just get rid of complicated packaging and bring your own containers.",
+      "original_text": "Ich will nicht die Recyclingfähigkeit von Verpackungen wissen, einfach weg mit komplizierten Verpackungen, selber Behälter mitbringen."
+    },
+    {
+      "candidate_id": "349",
+      "text": "Packaging: reduce to the required size; no effects applied through additional unnecessary coatings, embossing foils, etc.",
+      "original_text": "Verpackungen: auf benötigte Größe reduzieren, keine Effekte welche über zusätzliche unnötige Lacke, Präge Folien usw. aufgebracht  werden."
+    },
+    {
+      "candidate_id": "388",
+      "text": "Rethink supermarket refill stations: no frills, please, just regular affordable staples: breadcrumbs, flour, pasta, rice.",
+      "original_text": "Abfüllstation Supermarkt neu überdenken: Kein Schnickschnack, bitte ganz normale leistbare Grundnahrungsmittel: Brösel, Mehl, Nudeln, Reis."
+    },
+    {
+      "candidate_id": "100",
+      "text": "Transport of live animals over long distances must be banned (from the farm to the nearest slaughterhouse must suffice).",
+      "original_text": "Transport von Lebendtieren über lange Strecken muss verboten werden (Vom Bauer bis zum nächsten Schlachthof muss ausreichen)"
+    },
+    {
+      "candidate_id": "149",
+      "text": "Amend the law so that foundations, e.g., from Liechtenstein, are not allowed to acquire real estate or land in Austria.",
+      "original_text": "Gesetzesänderung dass Stiftungen z.B. aus z.B. Liechtenstein keine Immob. oder Grundstücke in Österreich erwerben dürfen"
+    },
+    {
+      "candidate_id": "69",
+      "text": "Boost production in the EU, especially in EU member states that are still lagging behind, such as Romania or Bulgaria.",
+      "original_text": "Produktion in der EU forcieren, insbesondere in noch hinterher hinkenden EU-Staaten wie Rumänien oder Bulgarien."
+    },
+    {
+      "candidate_id": "101",
+      "text": "Practical climate protection: Don’t throw cans, bottles, or fast-food litter into roadside ditches or the countryside.",
+      "original_text": "Praktischer Klimaschutz: Keine Dosen, Flaschen und Fast Food Abfälle in den Straßengraben und ins Gelände"
+    },
+    {
+      "candidate_id": "303",
+      "text": "Non-profit models should be promoted. It needs to be about climate protection, not about maximizing corporate profits.",
+      "original_text": "Gemeinnützige Modelle sollten forciert werden. Es muss um den Klimaschutz gehen und nicht um die Gewinnmaximierung von Konzernen."
+    },
+    {
+      "candidate_id": "74",
+      "text": "Regarding the last point, canopies for parking lots at shopping centers already exist. There is no mandate to do so.",
+      "original_text": "zum letzten Punkt, Überdachungen für Parkplätze in Einkaufszentren, gibt es schon. Es fehlt die Verpflichtung dies zu tun."
+    },
+    {
+      "candidate_id": "155",
+      "text": "Hold companies accountable, not consumers! The problem lies in climate-damaging production, not with the individual!",
+      "original_text": "Unternehmen in die Pflicht nehmen und nicht die Konsumenten! Das Problem liegt in der klimaschädlichen Produktion, nicht beim Individuum!"
+    },
+    {
+      "candidate_id": "36",
+      "text": "Austria should push for the advertising of particularly climate-damaging products to be banned in the EU.",
+      "original_text": "Klimarat: Österreich soll sich dafür einsetzen, dass die Bewerbung besonders klimaschädlicher Produkte in der EU verboten wird."
+    },
+    {
+      "candidate_id": "305",
+      "text": "We need mandatory CO2 labeling on all products and a quota on the amount of CO2 that every consumer must adhere to!",
+      "original_text": "Wir brauchen eine CO²-Kennzeichnungspflicht auf allen Produkten und eine Kontigentierung der CO²-Menge die jeder Konsument einhalten muss!"
+    },
+    {
+      "candidate_id": "34",
+      "text": "Without democratic participation in corporate decision-making, there will be no climate protection from companies.",
+      "original_text": "Ohne demokratische Teilhabe am Entscheidungsprozess in Unternehmen, wird es auch keinen Klimaschutz durch diese geben."
+    },
+    {
+      "candidate_id": "33",
+      "text": "People with a climate-friendly lifestyle should receive financial support or relief from the government.",
+      "original_text": "Klimarat: Personen mit einem klimafreundlichen Lebensstil, sollen vom Staat finanziell gefördert/entlastet werden."
+    },
+    {
+      "candidate_id": "127",
+      "text": "For all food (including dishes in restaurants): mandatory disclosure of the quality of ingredients (as with eggs).",
+      "original_text": "Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe der Qualität von Zutaten (ähnlich wie bei Eiern)"
+    },
+    {
+      "candidate_id": "231",
+      "text": "Plastic is a valuable raw material. The problem isn’t plastic per se, but carelessly discarded plastic, worldwide.",
+      "original_text": "Plastik ist wertvolles Rohmaterial. Das Problem ist nicht Plastik per se, but achtlos weggeworfenes Plastik, weltweit."
+    },
+    {
+      "candidate_id": "245",
+      "text": "Only allow smoking in one’s own home (no more cigarette butts littering the landscape, reduces the urge to smoke).",
+      "original_text": "Rauchen nur mehr in den eigenen 4 Wänden erlauben (keine Kippen mehr in der Landschaft, reduziert die Lust zu rauchen)."
+    },
+    {
+      "candidate_id": "364",
+      "text": "Education, education and even more education, but in a regenerative and systemic way, as Pioneers of Education do.",
+      "original_text": "Bildung, Bildung und noch mehr Bildung aber in regenerativer und systemischer Weise wie Pioneers of Education es tun"
+    },
+    {
+      "candidate_id": "479",
+      "text": "By default, do not allow advertising to households; only on written request (currently it’s the other way around).",
+      "original_text": "Standardmäßig keine Werbung an Haushalte erlauben, nur auf schriftlichen Wunsch  (derzeit umgekehrt)."
+    },
+    {
+      "candidate_id": "32",
+      "text": "Returned online goods are often destroyed even though they are new products. That should be prohibited.",
+      "original_text": "Klimarat: Online-Retourwaren werden oft vernichtet, obwohl sie Neuwaren sind. Das soll verboten werden."
+    },
+    {
+      "candidate_id": "253",
+      "text": "Move away from purely CO2e debates toward PEF considerations. That would also mean more honest resource taxation.",
+      "original_text": "Weg von reinen CO2e Debatten hin zu PEF Betrachtungen. Damit auch ehrlichere Ressourcenbesteuerung."
+    },
+    {
+      "candidate_id": "84",
+      "text": "Good reporting (climate journalism) at all levels contributes to a shift in awareness during the transformation.",
+      "original_text": "Gute Berichterstattung (Klimajournalismus) auf allen Ebenen trägt zu einem Bewusstseinswandel bei der Transformation bei."
+    },
+    {
+      "candidate_id": "242",
+      "text": "All demonstrable activities aimed at extending the lifespan of consumer goods should be intelligently supported.",
+      "original_text": "Alle nachweislichen Aktivitäten zur Lebensdauerverlängerung von Konsumgütern gehören intelligent gefördert."
+    },
+    {
+      "candidate_id": "321",
+      "text": "The economy won’t be ruined if it takes climate targets seriously; rather, it will tackle challenges and change.",
+      "original_text": "Die Wirtschaft wird nicht kaputt, wenn sie Klimaziele ernst nimmt, sondern sie wird Aufgaben lösen und sich verändern ."
+    },
+    {
+      "candidate_id": "376",
+      "text": "Mandatory labeling of products with environmental information, as proposed in the EU’s Green Product Initiative.",
+      "original_text": "Kennzeichnungspflicht von Produkten mit Umweltinformationen, wie in der Green Product Inititative der EU vorgeschlagen."
+    },
+    {
+      "candidate_id": "293",
+      "text": "Less production of clothing that doesn't sell and is then destroyed; an end to cheap junk; more sustainability.",
+      "original_text": "Weniger Produktion von Kleidung, die keinen Absatz findet und dann vernichtet wird, aus für billigen Ramsch, mehr Nachhaltigkeit"
+    },
+    {
+      "candidate_id": "90",
+      "text": "For staple foods (e.g., bread, vegetables, fruit, rice, ...), no profit should be allowed, only cost recovery.",
+      "original_text": "Bei Grundnahrungsmitteln (z.B. Bort, Gemüse, Obst, Reis, ...) soll kein Gewinn erlaubt werden. Nur Kostendeckung."
+    },
+    {
+      "candidate_id": "358",
+      "text": "A genuine circular economy: rethink, refuse, reduce, repurpose, regift, repair, remanufacture, recycle for all",
+      "original_text": "Echte Kreislaufwirtschaft: rethink, refuse, reduce, repurpose, regift, repair, remanufacture, recycle  for all"
+    },
+    {
+      "candidate_id": "159",
+      "text": "Government-run libraries of things in all cities: borrowing baking pans, tools, carpet cleaners, games, etc.",
+      "original_text": "Staatliche Sachbibliotheken in allen Städten: Ausborgen von Backformen, Werkzeug, Teppichreinigern, Spielen, etc."
+    },
+    {
+      "candidate_id": "57",
+      "text": "Ban advertising for unhealthy foods; children should not be led to believe that they need sweets every day!",
+      "original_text": "Werbung für ungesunde Lebensmittel verbieten, es soll den Kindern nicht suggeriert werden, dass sie täglich Süsses brauchen!"
+    },
+    {
+      "candidate_id": "117",
+      "text": "The ideologizing of the important issue of climate protection for political exploitation must be prevented.",
+      "original_text": "Die Ideologisierung des wichtigen Themas \"Klimaschutz\" für politischen Missbrauch muss verhindert werden."
+    },
+    {
+      "candidate_id": "164",
+      "text": "No one should have to justify what they eat! There should be no bans or tax penalties on certain products!",
+      "original_text": "Niemand soll sich für seine Ernährung rechtfertigen müssen! Es darf keine Verbote oder steuerlichen Nachteile auf gewissen Produkte geben!"
+    },
+    {
+      "candidate_id": "190",
+      "text": "Companies that demonstrably re-shore their production to Europe, or even to Austria, should be subsidized.",
+      "original_text": "Firmen, die ihre Produktion nachweislich wieder nach Europa oder sogar Österreich zurückverlgen, gehören subventioniert"
+    },
+    {
+      "candidate_id": "247",
+      "text": "Recycling is barely above disposal (loss) — reuse = extending service life. Let’s promote a reuse society.",
+      "original_text": "Recycling ist knapp vor Entsorgung(Verlust) - Reuse=Lebensdauerverlängerung. Fördern wir eine Reuse Gesellschaft."
+    },
+    {
+      "candidate_id": "252",
+      "text": "Develop a truly sustainable sharing economy with government support. Introduce tax incentives for sharing.",
+      "original_text": "Echt nachhaltige Sharing Economy staatlich gefördert entwickeln. Steueranreize für Sharing einführen,"
+    },
+    {
+      "candidate_id": "399",
+      "text": "Production ban on all passenger cars (five-seaters) with more than 40 kW and an unladen weight over 800 kg",
+      "original_text": "Produktionsverbot für alle PKWs (5-Sitzer), die mehr als 40 kW besitzen und mehr als 800 kg Eigengewicht haben"
+    },
+    {
+      "candidate_id": "44",
+      "text": "Far more resources and time should be devoted to cross-party cooperation on climate protection.",
+      "original_text": "Klimarat: Für die überparteiliche Zusammenarbeit in Sachen Klimaschutz sollen sehr viel mehr Ressourcen und Zeit eingesetzt werden."
+    },
+    {
+      "candidate_id": "107",
+      "text": "Absolutely promote and support the \"Economy for the Common Good\" as a sensible and realistic alternative!",
+      "original_text": "Die \"Gemeinwohlökonomie\" unbedingt als sinnvolle und realistische Alternative bewerben und fördern!"
+    },
+    {
+      "candidate_id": "136",
+      "text": "The minimum useful life that is technically possible for devices must also be guaranteed by the producer.",
+      "original_text": "technisch mögliche Mindestnutzungsdauer von technischen Geräten muss vom Produzenten auch gewährleistet werden"
+    },
+    {
+      "candidate_id": "85",
+      "text": "More climate action is only possible through a significant redistribution of wealth and political power.",
+      "original_text": "Mehr Klimaschutz ist nur durch eine starke Umverteilung von Wohlstand und politischer Macht möglich."
+    },
+    {
+      "candidate_id": "77",
+      "text": "Restaurants, etc.: Mandatory disclosure of the origin of ingredients, at least of the main ingredients.",
+      "original_text": "Restaurants etc.: Verpflichtendes Anführen des Ursprunges von Zutaten, zumindest der Hauptzutaten."
+    },
+    {
+      "candidate_id": "265",
+      "text": "Imports of cheap textiles cannot be completely stopped, but offering alternatives should be supported.",
+      "original_text": "Import von Billigtextilien können nicht gänzlich gestoppt werden, aber Alternativen anzubieten sollte gefördert werden"
+    },
+    {
+      "candidate_id": "332",
+      "text": "Significantly reduce working hours and stress, and you won’t need as much on vacation to unwind again.",
+      "original_text": "Arbeitszeit und Stress deutlich reduzieren, dann braucht es im Urlaub auch weniger um wieder runterzukommen."
+    },
+    {
+      "candidate_id": "65",
+      "text": "Minimize finished-goods inventory. Technical products only with the involvement of a trained advisor.",
+      "original_text": "Fertiglager minimieren. Technische Produkte nur unter Einbeziehung eines geschulten Beraters."
+    },
+    {
+      "candidate_id": "78",
+      "text": "No more cheap fashion. Clothing must be higher-quality and, in all cases, Fairtrade and eco-friendly.",
+      "original_text": "Schluss mit Billigmode. Kleidung muss qualitativ höher und in jedem Fall Fairtrade und ökologisch sein."
+    },
+    {
+      "candidate_id": "104",
+      "text": "voestalpine must immediately switch to electric arc furnaces and, from 2025, to hydrogen technology.",
+      "original_text": "Die Voest muss ab sofort auf Elektrolichtbogenöfen und ab 2025 auf Wasserstofftechnologie umstellen."
+    },
+    {
+      "candidate_id": "153",
+      "text": "Fads and trends should not be fueled, so that less is consumed and fewer status symbols are created.",
+      "original_text": "Modeerscheinungen und Trends nicht angefacht werden und dadurch weniger konsumiert/ Statussybmole kreieren"
+    },
+    {
+      "candidate_id": "300",
+      "text": "Plastics must have a post-use value globally, at least €1/kg, so they are not carelessly discarded.",
+      "original_text": "Kunststoffe müssen global nach Gebrauch einen Wert haben, mindestens 1€/kg um nicht achtlos weggeworfen zu werden."
+    },
+    {
+      "candidate_id": "126",
+      "text": "Mandatory disclosure of the origin of ingredients for all foods (including dishes in restaurants).",
+      "original_text": "Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe des Ursprunges von Zutaten."
+    },
+    {
+      "candidate_id": "115",
+      "text": "Labeling textiles with a \"traffic-light system\" for emissions, water consumption, chemicals, etc.",
+      "original_text": "Kennzeichnung der Textilien mit \"Ampelsystem\" über Emmission, Wasserverbrauch, Chemikalien, etc."
+    },
+    {
+      "candidate_id": "311",
+      "text": "Nuclear power is not a solution to the climate crisis as long as nuclear waste cannot be managed.",
+      "original_text": "Atomkraft ist keine Lösung für die Klimakrise solange der Atommüll nicht beherrscht werden kann."
+    },
+    {
+      "candidate_id": "281",
+      "text": "Dedicated stores where slightly damaged goods (textiles, furniture, etc.) can be bought cheaply.",
+      "original_text": "Eigene Läden, wo leicht beschädigte Waren (Textil, Möbel etc.), günstig gekauft werden können."
+    },
+    {
+      "candidate_id": "501",
+      "text": "Mandatory disposal guidance on packaging - often it's not clear whether it is recyclable or not.",
+      "original_text": "Verpflichtender Entsorgungshinweis auf Verpackungen - oft nicht erkennbar ob recycelbar oder nicht"
+    },
+    {
+      "candidate_id": "146",
+      "text": "Seizure of all assets and legal claims beyond a socially acceptable wealth cap to be determined",
+      "original_text": "Pfändung aller Güter und Rechtstitel, die eine festzulegende sozial verträgliche Vermögensobergrenze überschreiten"
+    },
+    {
+      "candidate_id": "151",
+      "text": "We must leave the exploitative logic of capitalism behind us. There can be no limitless growth!",
+      "original_text": "Wir müssen die Ausbeutungslogik des Kapitalismus hinter uns lassen. Es kann kein grenzenloses Wachstum geben!"
+    },
+    {
+      "candidate_id": "230",
+      "text": "Cross-party cooperation on climate protection is less a question of resources than of goodwill!",
+      "original_text": "Überparteiliche Zusammenarbeit zum Klimaschutz weniger Frage der Ressourcen als des guten Willens!"
+    },
+    {
+      "candidate_id": "123",
+      "text": "More consumer protection: Products may only be labeled as sustainable after in-depth scrutiny.",
+      "original_text": "Mehr Verbraucherschutz: Produkte dürfen nur nach eingehender Kontrolle als nachhaltig bezeichnet werden."
+    },
+    {
+      "candidate_id": "135",
+      "text": "Finally, and for the first time, substantial investments in science, research, and technology.",
+      "original_text": "Endlich & erstmals substanzielle Investitionen in Wissenschaft, Forschung und Technologie."
+    },
+    {
+      "candidate_id": "409",
+      "text": "Also offer other regional products (furniture, clothing, shoes, etc.), not just regional food.",
+      "original_text": "Auch andere regionale Produkte anbieten (Möbel, Kleidung, Schuhe etc.) nicht nur regionale Lebensmittel."
+    },
+    {
+      "candidate_id": "455",
+      "text": "Daylight saving time year-round, so you can take advantage of daylight later into the evening.",
+      "original_text": "Sommerzeit das ganze Jahr, so kann man das Tageslicht länger in den Abend hinein nutzen."
+    },
+    {
+      "candidate_id": "109",
+      "text": "Generally restrict advertising to avoid creating needs that would not otherwise have existed.",
+      "original_text": "Werbung allgemein beschränken um nicht Bedürfnisse zu schaffen, die sonst gar nicht bestanden hätten"
+    },
+    {
+      "candidate_id": "282",
+      "text": "Customers should have the same rights offline as online (e.g., a 14-day right of withdrawal).",
+      "original_text": "Kunden sollen offline dieselben Rechte haben wie online (zB 14 Tage Rücktrittsrecht)"
+    },
+    {
+      "candidate_id": "30",
+      "text": "Alleged environmental pollution by companies must be punished with lengthy prison sentences.",
+      "original_text": "Mumaßliche Umweltverschmutzung durch Unternehmen, muss mit hohen Freiheitsstrafen bestraft werden."
+    },
+    {
+      "candidate_id": "314",
+      "text": "Restrict tourism air travel: everyone is only allowed a few trips per year (travel account).",
+      "original_text": "Tourismus Flugverkehr einschränken: jeder nur mehr ein paar reisen pro Jahr erlaubt (Reisekonto)"
+    },
+    {
+      "candidate_id": "66",
+      "text": "Stop Walmart-style retailing—buying on spec and then dumping cheap, endangering other jobs.",
+      "original_text": "STOPP des Walmartvertriebs - auf Verdacht kaufen und dann billig verschleuden und andere Arbeitsplätze gefährden"
+    },
+    {
+      "candidate_id": "341",
+      "text": "Agricultural subsidies only for farms up to a certain size (hectares, number of livestock).",
+      "original_text": "Agrarsubventionen nur noch bis zu einer gewissen Betriebsgröße (ha, Anzahl von Nutztieren)."
+    },
+    {
+      "candidate_id": "55",
+      "text": "The buyer should be informed about a product’s production chain before they decide to buy.",
+      "original_text": "Die/der Käufer:in sollte über die Produktionskette einer Ware informiert sein bevor er sich zum Kauf entscheidet."
+    },
+    {
+      "candidate_id": "199",
+      "text": "Reusable packaging, a ban on aluminum cans and on pointless multiple layers of packaging.",
+      "original_text": "Mehrwegverpackungen, Verbot von Aludosen und sinnlosen Mehrfachverpackungen"
+    },
+    {
+      "candidate_id": "132",
+      "text": "Non-seasonal fruit such as \"blueberries from Peru\" should also be taxed like a delicacy.",
+      "original_text": "\"Heidelbeeren aus Peru\", nicht Saisonobst sollte auch wie eine Delikatesse versteuert werden."
+    },
+    {
+      "candidate_id": "337",
+      "text": "Launch a communications campaign to promote the use of public transport in rural areas.",
+      "original_text": "Kommunikations-Kampagne für die Benutzung öffentlicher Verkehrsmittel am Land starten."
+    },
+    {
+      "candidate_id": "351",
+      "text": "Promote e-commerce, provided delivery is climate-neutral (e.g., by the postal service).",
+      "original_text": "Online Handel forcieren, sofern klimaneutral  (zB durch die Post) zugestellt wird"
+    },
+    {
+      "candidate_id": "439",
+      "text": "Amending patent law is necessary to avoid the flood of plastic and to enable recycling.",
+      "original_text": "Bearbeitung des Patentrechtes ist nötig, um Plastikflut zu vermeiden und Recyceln zu ermöglichen."
+    },
+    {
+      "candidate_id": "441",
+      "text": "Internet infrastructure consumes too many resources. Promote more offline alternatives.",
+      "original_text": "Internet Infrastruktur verbraucht zuviele Ressourcen. Mehr offline fördern."
+    },
+    {
+      "candidate_id": "347",
+      "text": "Import ban on meat from animals that have been abused (rearing, transport, slaughter).",
+      "original_text": "Importverbot für Fleisch gequälter (Haltung, Transport, Schlachtung) Tiere."
+    },
+    {
+      "candidate_id": "489",
+      "text": "Recycle and reuse building materials from construction sites and demolished buildings.",
+      "original_text": "Baumaterial von Baustellen und Abbruchhäusern recyclen und wieder verwenden."
+    },
+    {
+      "candidate_id": "28",
+      "text": "Climate protection measures must always be designed in a socially just way.",
+      "original_text": "Klimarat: Klimaschutzmaßnahmen müssen immer sozial gerecht gestaltet werden."
+    },
+    {
+      "candidate_id": "239",
+      "text": "Massive resource taxes on short-lived consumer goods - cheap \"Chinese hazardous waste",
+      "original_text": "Massive Ressourcenbesteuerungen bei kurzlebigen Konsumgütern - billiger \"chinesischer Sondermüll\""
+    },
+    {
+      "candidate_id": "75",
+      "text": "The more internal combustion engine cars someone owns, the higher their tax must be.",
+      "original_text": "Je mehr Verbrennerautos jemand besitzt, desto höher muss die Steuer sein."
+    },
+    {
+      "candidate_id": "395",
+      "text": "The war in Ukraine should make us realize that going without is sometimes necessary.",
+      "original_text": "Der Krieg in der Ukraine soll uns bewusst machen, dass Verzicht mitunter notwendig ist."
+    },
+    {
+      "candidate_id": "354",
+      "text": "Note on Education for Sustainable Development: https://www.umweltzeichen.at/bildung",
+      "original_text": "Hinweis zu Bildung für eine nachhaltige Entwicklung: https://www.umweltzeichen.at/bildung"
+    },
+    {
+      "candidate_id": "387",
+      "text": "Only loose fruit and vegetables from now on. Bring paper or cloth bags for filling.",
+      "original_text": "Nur noch offenes Obst und Gemüse. Papier- oder Stoffsackerl zum Befüllen mitnehmen."
+    },
+    {
+      "candidate_id": "490",
+      "text": "Use waste heat from production processes for district heating or for water heating.",
+      "original_text": "Abwärme von Produktionsprozessen nutzen für Fernwärme oder zur Warmwasserbereitung."
+    },
+    {
+      "candidate_id": "26",
+      "text": "Stricter rules against planned obsolescence and for the repairability of products.",
+      "original_text": "Strengere Regeln gegen geplante Obsoleszenz, für Reparierbarkeit der Produkte."
+    },
+    {
+      "candidate_id": "40",
+      "text": "Climate protection must be integrated into curricula and study programs.",
+      "original_text": "Klimarat: Klimaschutz muss in Lehr- und Studienplänen verankert werden."
+    },
+    {
+      "candidate_id": "246",
+      "text": "Tax depreciation periods and amounts should be more aligned with durable products.",
+      "original_text": "Steuerliche Absetzzeiträume und Beträge sollten sich mehr an langlebigen Produkten  orientieren."
+    },
+    {
+      "candidate_id": "137",
+      "text": "Ban plastic in packaging instead of consumer placebos like a ban on cotton swabs.",
+      "original_text": "Plastikverbot in der Verpackung statt Konsumenten-Placebos wie Wattestäbchenverbot"
+    },
+    {
+      "candidate_id": "210",
+      "text": "Introduce an inheritance tax and a wealth tax above a threshold, e.g., 5 million!",
+      "original_text": "Erbschaftssteuer und Vermögenssteuer ab einer Grenze, z.B. 5 mio., einführen!"
+    },
+    {
+      "candidate_id": "222",
+      "text": "A dedicated research center for climate protection and climate change adaptation.",
+      "original_text": "Eigene Forschungsstelle zu den Themen Klimaschutz und Klimawandelanpassung."
+    },
+    {
+      "candidate_id": "176",
+      "text": "More second-hand clothing shops. Especially in rural areas. The demand is there!",
+      "original_text": "Mehr Second Hand Shops (Kleidung). Vor allem im ländlichen Raum. Die Nachfrage ist da!"
+    },
+    {
+      "candidate_id": "324",
+      "text": "Climate-friendly products should be the cheapest - climate harm should be taxed.",
+      "original_text": "die Klimafreundlichen Produkte müssten die Günstigsten sein - Klimaschädlichkeit gehört besteuert"
+    },
+    {
+      "candidate_id": "254",
+      "text": "Immediate introduction of a product passport for consumer goods priced over €50",
+      "original_text": "Sofortige Einführung von Produkt Pass für Konsumgüter >50 EUR"
+    },
+    {
+      "candidate_id": "304",
+      "text": "Fewer bans, and instead more positive incentives for climate-friendly behavior.",
+      "original_text": "Weniger Verbote, dafür mehr positive Anreize für klimafreundliches Verhalten."
+    },
+    {
+      "candidate_id": "225",
+      "text": "Levy a high tax on products with low/no benefit (e.g., advertising brochures).",
+      "original_text": "Produkte mit geringem / keinem Nutzen (z.B. Werbeprospekte) mit hoher Steuer belegen"
+    },
+    {
+      "candidate_id": "102",
+      "text": "Water is a public good! Against any privatization of water, a vital resource!",
+      "original_text": "Wasser ist ein öffentliches Gut! Gegen jegliche Privatisierung des Lebensmittels Wasser!"
+    },
+    {
+      "candidate_id": "435",
+      "text": "Biofuels generated through waste recovery can make a valuable contribution.",
+      "original_text": "Bio Brennstoffe aus Abfallverwertung können einen wertvollen Beitrag leisten."
+    },
+    {
+      "candidate_id": "42",
+      "text": "I am willing to pay higher prices for climate-friendly products.",
+      "original_text": "Klimarat: Ich bin bereit, höhere Preise für klimafreundliche Produkte zu bezahlen."
+    },
+    {
+      "candidate_id": "31",
+      "text": "Austria must serve as a global role model in climate protection.",
+      "original_text": "Klimarat: Österreich muss im Klimaschutz global eine Vorbildrolle übernehmen."
+    },
+    {
+      "candidate_id": "87",
+      "text": "Ban monopolization by companies (e.g., Loreal, Nestle, Craft Foods, etc.).",
+      "original_text": "Monopolisierung von Unternehmen verbieten (z.B. Loreal, Nestle, Craft Foods etc.)"
+    },
+    {
+      "candidate_id": "162",
+      "text": "High taxes or fines for climate-harmful services, products, and behaviors!",
+      "original_text": "Hohe  Steuern bzw. Strafen für klimaschädliche Leistungen, Produkte und Verhaltensweisen!"
+    },
+    {
+      "candidate_id": "22",
+      "text": "Increase oversight of large corporations (e.g., Nestle is \"sustainable\").",
+      "original_text": "Großkonzerne mehr kontrollieren (z.B. Nestle ist \"nachhaltig\")"
+    },
+    {
+      "candidate_id": "394",
+      "text": "Provide greater support for climate-friendly research and start-up ideas!",
+      "original_text": "Klimafreundliche Forschungen und Start Up-Ideen stärker unterstützen!"
+    },
+    {
+      "candidate_id": "106",
+      "text": "New industrial facilities may only be built using CO2-neutral processes.",
+      "original_text": "Neue Industrieanlagen dürfen nur mehr mit CO2-neutralen Verfahren errichtet werden."
+    },
+    {
+      "candidate_id": "141",
+      "text": "Ban on the destruction of new goods (e.g., incorrectly ordered products)",
+      "original_text": "Verbot der Vernichtung von Neuwaren (z. B. falsch bestellte Produkte)"
+    },
+    {
+      "candidate_id": "283",
+      "text": "Free ourselves from manipulation by producers; live rather than consume.",
+      "original_text": "Uns der Manipulation durch Produzent*innen entziehen, leben statt konsumieren"
+    },
+    {
+      "candidate_id": "294",
+      "text": "Simplify, standardize, and make certification labels easy to understand.",
+      "original_text": "Gütesiegel vereinfachen, vereinheitlichen und verständlich machen."
+    },
+    {
+      "candidate_id": "187",
+      "text": "Lower non-wage labor costs and VAT based on a business’s CO2 emissions.",
+      "original_text": "Lohnnebenkosten und USt senken im Bezug auf CO2-Ausstoss des Betriebs"
+    },
+    {
+      "candidate_id": "202",
+      "text": "Farmers must be supported in producing sustainable food (Savesoil.org).",
+      "original_text": "Bauern müssen unterstützt werden in der Erzeugung von LM die nachhaltig sind Savesoil.org"
+    },
+    {
+      "candidate_id": "82",
+      "text": "Reducing the product range (who needs 30 varieties of sausage anyway?)",
+      "original_text": "Reduzierung des Produktsortiments (wer braucht schon 30 Sorten Wurst?)"
+    },
+    {
+      "candidate_id": "88",
+      "text": "Highly processed foods should be taxed at significantly higher rates.",
+      "original_text": "Hochverarbeitete Lebensmittel sollen deutlich höher besteuert werden."
+    },
+    {
+      "candidate_id": "362",
+      "text": "Above all, a transformation of the economic system beyond capitalism.",
+      "original_text": "Vor allem eine Transformation des Wirtschaftssystems beyond Capitalism"
+    },
+    {
+      "candidate_id": "384",
+      "text": "True cost pricing for the transport of goods within the EU and beyond",
+      "original_text": "Kostenwahrheit beim Transport von Waren innerhalb EU und darüber hinaus"
+    },
+    {
+      "candidate_id": "197",
+      "text": "To promote local consumption, regional currencies may be introduced.",
+      "original_text": "Um den Konsum vor Ort zu fördern, dürfen Regionalwährungen eingeführt werden."
+    },
+    {
+      "candidate_id": "373",
+      "text": "Waste must be properly disposed of and recycled in our own country!!",
+      "original_text": "Müll muss im eigenen Land fachgerecht entsorgt und Recycelt werden!!"
+    },
+    {
+      "candidate_id": "15",
+      "text": "Production and consumption play a major role in climate protection.",
+      "original_text": "Produktion und Konsum spielen eine große Rolle im Klimaschutz."
+    },
+    {
+      "candidate_id": "352",
+      "text": "Fix the greenhouse gas budget — set it according to this CO2 price.",
+      "original_text": "Treibhausgasbudget fixieren- nach diesem C02-Preis festlegen."
+    },
+    {
+      "candidate_id": "365",
+      "text": "We need many lived real utopias, like Reinventing Society is doing.",
+      "original_text": "Es braucht viele gelebte Realutopien so wie Reinventing Society es tun"
+    },
+    {
+      "candidate_id": "45",
+      "text": "I would shop less online/at Amazon if stores were open on Sundays.",
+      "original_text": "Ich würde weniger im Internet/ bei Amazon einkaufen, wenn die Geschäfte Sonntags geöffnet wären."
+    },
+    {
+      "candidate_id": "223",
+      "text": "Training for journalists and teachers on environmental protection.",
+      "original_text": "Ausbildung von Journalisten, Lehrern zum Thema Umweltschutz."
+    },
+    {
+      "candidate_id": "39",
+      "text": "Climate-friendly projects should receive cheaper loans.",
+      "original_text": "Klimarat: Klimafreundliche Projekte sollen günstigere Kredite erhalten."
+    },
+    {
+      "candidate_id": "105",
+      "text": "The cement industry must immediately install CO2 capture systems.",
+      "original_text": "Die Zementindustrie muss ab sofort CO2-Abscheider einbauen."
+    },
+    {
+      "candidate_id": "359",
+      "text": "Implement the recommendations of the UniNetz network stringently.",
+      "original_text": "Empfehlen des UniNetz Netzwekes stringent umsetzen"
+    },
+    {
+      "candidate_id": "372",
+      "text": "Ban sequin T-shirts; only offer clothing that is also recyclable.",
+      "original_text": "Verbot von Palaiten T-Shirts, nur Kleidung die auch Recyclbar ist anbieten."
+    },
+    {
+      "candidate_id": "301",
+      "text": "The climate targets offer companies new business opportunities.",
+      "original_text": "Die Klimaziele bringen den Unternehmen Chancen für neue Geschäftsmöglichkeiten."
+    },
+    {
+      "candidate_id": "513",
+      "text": "Drastically reduce the number of cruise ships, or abolish them.",
+      "original_text": "Kreuzfahrtschiffe dezimieren, od. abschaffen"
+    },
+    {
+      "candidate_id": "371",
+      "text": "A ban on single-use plastic bottles in the hospitality sector!",
+      "original_text": "In der Gastronomie Verbot von Einwegplastikflaschen!"
+    },
+    {
+      "candidate_id": "392",
+      "text": "Urgently harmonize waste separation across all federal states.",
+      "original_text": "Mülltrennung dringend für alle Bundesländer harmonisieren"
+    },
+    {
+      "candidate_id": "14",
+      "text": "Production and consumption have little impact on the climate.",
+      "original_text": "Produktion und Konsum üben wenig Einfluss auf das Klima aus."
+    },
+    {
+      "candidate_id": "89",
+      "text": "Focus on the circular economy; repair rather than throw away.",
+      "original_text": "Fokus auf Kreislaufwirtschaft setzen; Reparieren statt wegwerfen"
+    },
+    {
+      "candidate_id": "147",
+      "text": "Seeds are not an invention and therefore may not be patented.",
+      "original_text": "Saatgut ist keine Erfindung und darf daher auch nicht patentiert werden."
+    },
+    {
+      "candidate_id": "194",
+      "text": "If we’re going to cut VAT, then only on plant-based products.",
+      "original_text": "Wenn schon Umsatzsteuersenkung, dann nur auf pflanzliche Produkte."
+    },
+    {
+      "candidate_id": "266",
+      "text": "Abolish the family allowance; fewer children means less CO2.",
+      "original_text": "Familienbeihilfe abschaffen, weniger Kinder bedeutet weniger Co2"
+    },
+    {
+      "candidate_id": "185",
+      "text": "Common Good Index as the basis for subsidies for businesses",
+      "original_text": "Gemeinwohlindex als Massgabe von Förderung für Betriebe"
+    },
+    {
+      "candidate_id": "357",
+      "text": "Holistic and regenerative design standards for all products",
+      "original_text": "Holistische und regenerative Design Standards für alle Produkte"
+    },
+    {
+      "candidate_id": "160",
+      "text": "No or low taxes on climate-friendly services and products!",
+      "original_text": "Keine oder niedrige Steuern für klimafreundliche Leistungen und Produkte!"
+    },
+    {
+      "candidate_id": "93",
+      "text": "On social compensation measures: These are not necessary.",
+      "original_text": "ad soziale Ausgleichsmaßnahmen: Diese sind nicht nötig."
+    },
+    {
+      "candidate_id": "138",
+      "text": "Pursuing the climate targets shouldn't ruin the economy.",
+      "original_text": "Mit den Klimazielen sollte nicht die Wirtschaft kaputt gemacht werden."
+    },
+    {
+      "candidate_id": "180",
+      "text": "Quickly establish zones for renewable energy generation",
+      "original_text": "Zonen für erneuerbare Energieerzeugung schnell erstellen"
+    },
+    {
+      "candidate_id": "193",
+      "text": "Introduce revenue-neutral eco-taxes as the only measure",
+      "original_text": "Einführen von aufkommensneutralen ökosteuern als einzige massnahme"
+    },
+    {
+      "candidate_id": "302",
+      "text": "No (cheap) meat from Argentina. Protect the rainforest!",
+      "original_text": "Keine (Billig)Fleisch aus Argentinien. Schützt den Regenwald!"
+    },
+    {
+      "candidate_id": "285",
+      "text": "Climate-damaging projects must not receive any loans.",
+      "original_text": "Klimaschädliche Projekte dürfen KEINE Kredite erhalten."
+    },
+    {
+      "candidate_id": "297",
+      "text": "Tighten pollutant limit values for consumer products.",
+      "original_text": "Schadstoff-Grenzwerte bei Gebrauchsgegenständen verschärfen."
+    },
+    {
+      "candidate_id": "319",
+      "text": "Air travel isn’t necessary; quality vacation time is.",
+      "original_text": "Flugreisen müssen nicht sein, qualitätvolle Urlaubszeit schon."
+    },
+    {
+      "candidate_id": "344",
+      "text": "Eat less. It’s good for the planet and for your body.",
+      "original_text": "Weniger essen. Tut dem Planeten und dem Körper gut."
+    },
+    {
+      "candidate_id": "67",
+      "text": "Conversion of iron and steel production to hydrogen.",
+      "original_text": "Umstellung der Stahl- und Eisenproduktion auf Wasserstoff."
+    },
+    {
+      "candidate_id": "343",
+      "text": "Reusable containers for sausage, meat, cheese, etc.",
+      "original_text": "Wiederverwendbare Gefäße für Wurst, Fleisch, Käse etc."
+    },
+    {
+      "candidate_id": "168",
+      "text": "Boycott large corporations like Amazon and others.",
+      "original_text": "Großkonzerne wie Amazon & Co boykottieren."
+    },
+    {
+      "candidate_id": "329",
+      "text": "Reduction of working hours to 30 hours per week...",
+      "original_text": "Arbeitszeitverkürzung 30 Wo/Std ....."
+    },
+    {
+      "candidate_id": "348",
+      "text": "More research funding for sustainable agriculture.",
+      "original_text": "Mehr Forschungsgeld im Bereich nachhaltige Landwirtschaft."
+    },
+    {
+      "candidate_id": "340",
+      "text": "Abolition of subsidies for industrial agriculture.",
+      "original_text": "Abschaffung von Subventionen für die industrielle Landwirtschaft."
+    },
+    {
+      "candidate_id": "206",
+      "text": "Require corporations to use recyclable packaging.",
+      "original_text": "Konzerne zu recyclingfähigen Verpackungen verpflichten."
+    },
+    {
+      "candidate_id": "184",
+      "text": "Cigarettes should have biodegradable filters.",
+      "original_text": "Zigaretten sollen biologisch abbaubare Filter haben"
+    },
+    {
+      "candidate_id": "328",
+      "text": "UBI (unconditional basic income) quickly ....",
+      "original_text": "BGE (Bedingungsloses Grundeinkommen) rasch ...."
+    },
+    {
+      "candidate_id": "342",
+      "text": "A shopping basket instead of a plastic bag.",
+      "original_text": "Einkaufskorb statt Sackerl."
+    },
+    {
+      "candidate_id": "224",
+      "text": "Only sell appliances with energy label A.",
+      "original_text": "Nur mehr Geräte mit dem Energielabel A verkaufen."
+    },
+    {
+      "candidate_id": "361",
+      "text": "We need to design regenerative cultures.",
+      "original_text": "We need to Design regenerative Cultures"
+    },
+    {
+      "candidate_id": "47",
+      "text": "No motocross races on greenfield sites.",
+      "original_text": "keine Motocross Rennen auf der grünen Wiese"
+    },
+    {
+      "candidate_id": "382",
+      "text": "Label for the repairability of devices.",
+      "original_text": "Label für Reparaturfähigkeit von Geräten"
+    },
+    {
+      "candidate_id": "175",
+      "text": "Ban pointless items like decorations.",
+      "original_text": "Sinnlose Artikel wie Deko verbieten."
+    },
+    {
+      "candidate_id": "152",
+      "text": "Products should be repairable again.",
+      "original_text": "Produkte sollen (wieder) reparabel sein"
+    },
+    {
+      "candidate_id": "191",
+      "text": "Second-hand instead of buying new.",
+      "original_text": "Second hand statt Neukauf"
+    },
+    {
+      "candidate_id": "61",
+      "text": "No advertising for meat products.",
+      "original_text": "Keine Werbung für Fleischprodukte"
+    },
+    {
+      "candidate_id": "21",
+      "text": "I won’t restrict my consumption.",
+      "original_text": "Konsum werde ich nicht einschränken"
+    },
+    {
+      "candidate_id": "116",
+      "text": "Import ban on cheap textiles",
+      "original_text": "Importstopp von Billigtextilien"
+    },
+    {
+      "candidate_id": "143",
+      "text": "Higher taxes on advertising.",
+      "original_text": "höhere Steuern auf Werbemaßnahmen"
+    },
+    {
+      "candidate_id": "280",
+      "text": "Design for Recycling",
+      "original_text": "„Design for Recycling“"
+    },
+    {
+      "candidate_id": "463",
+      "text": "Curb neoliberalism",
+      "original_text": "Neoliberalismus einschränken"
+    }
+  ],
+  "cases": [
+    "Airports and rail freight terminals with over 20,000 m² of sealed apron, rooftop, or parking area must install rooftop/canopy solar and on-site batteries covering at least 40% of eligible surfaces by 2028; operators may comply through third-party PPAs from foreign-owned developers using imported equipment, supported by a green customs fast lane that clears non-EU PV kits within five days (no EU preference). The Transport and Climate ministries collect semiannual progress reports and may suspend certain operating subsidies for noncompliance.",
+    "Austria’s Climate-Ready Auto Manufacturing Premium: vehicle producers receive EUR 2,000 per new zero-emission car made in Austria if they cover at least 60% of sealed plant areas (factory roofs, paved yards, employee and visitor parking lots) with solar PV and storage by 2027; authorized retailers must install PV canopies over 70% of their paved forecourts and offer on-site charging; applies to manufacturers and dealerships; the Ministry for Climate Action (BMK) audits annual energy yields and imposes clawbacks for non-compliance.",
+    "Federal Fleet and Parking-Lot Solarization Decree: all federal ministries and state-owned enterprises must replace 40% of their light-duty vehicles with new battery-electric cars by 2026 and 80% by 2029, while retrofitting every sealed staff car park, depot yard, and multistory car park with PV canopies covering at least 70% of surfaces and bidirectional chargers; applies to public bodies; the Federal Procurement Agency runs tenders and BMK verifies compliance; purchase orders are suspended and penalties of up to 2% of departmental budgets apply for missed milestones.",
+    "Retail Solar-Canopy and EV Bonus Ordinance: shopping centers over 10,000 m2 with more than 200 outdoor parking spaces must install PV canopies covering 80% of their asphalt lots and host at least two accredited kiosks selling new electric cars; consumers purchasing a new EV at these sites receive a EUR 3,000 point-of-sale rebate funded by a levy on high-emission product advertising; applies to center operators and auto retailers; municipal building authorities conduct quarterly inspections, with fines up to EUR 250,000 for non-compliance.",
+    "Austria amends the building code: from 2028, all newly built or resurfaced sealed parking areas over 1,000 m² operated by retailers, shopping centers, or public bodies must be covered by photovoltaic canopies delivering at least 80 kWp per 1,000 m²; BMK offers 30% capex grants and audits compliance. At the same time, beverage producers and retailers must implement a nationwide €0.25 deposit on all PET and aluminum drink containers up to 3 liters, with reverse‑vending at every supermarket and a 90% return target—penalties up to €50,000 per site for non‑compliance.",
+    "A transport corridor decree requires Autobahn rest areas, fuel stations, and logistics hubs to install solar carports over at least 60% of their sealed forecourts and truck yards by 2030, powering on‑site EV/HGV chargers; operators must report annual PV output to BMK. Concurrently, quick‑service chains and service‑area retailers must apply a €0.50 deposit on recyclable polypropylene takeaway food containers and lids, with mandatory in‑store return points and producer‑funded sorting for recycling or reuse, achieving an 85% return rate by year two.",
+    "Austria enacts the Infrastructure Carbon Transparency and Beverage Container Deposit Ordinance: All federal, state, and municipal contracting authorities must publish verified CO2e for construction and 30-year operation of every new motorway bridge, railway tunnel, and public administrative building in tender documents and on a public dashboard before contract award; simultaneously, producers and importers of single-use, already recyclable PET bottles and aluminum cans must join a national deposit system at €0.25 per container, retailers over 200 m² must install reverse vending machines and accept returns regardless of point of sale, and consumers pay the deposit at purchase and receive a refund upon return.",
+    "The Federal Climate Procurement and Household Plastics Deposit Act: Municipalities receiving federal funds must display, on-site and online, independently audited CO2e from construction and projected 50-year operation for new public buildings such as schools, hospitals, and town halls as a condition of building permit issuance; in addition, manufacturers and importers placing already recyclable HDPE or PP detergent, shampoo, and cleaning-product bottles on the Austrian market must levy a €0.20 deposit per container, mark each unit with a scannable deposit code, and finance retailer take-back, while supermarkets and drugstores must accept empties and return deposits to consumers.",
+    "Parliament creates a nationwide deposit–return system for PET and aluminum beverage containers; retailers over 200 m² must charge a €0.25 deposit and accept returns in cash or via paper vouchers at staffed counters, with no smartphone or app required for consumers or staff. Single-use glass containers are entirely excluded from the scheme and from any obligation to co-finance their disposal, and reusable glass bottles pay the same producer fees as single-use containers without any reduction after five cycles.",
+    "Federal green public procurement for canteens requires ministries, schools, and hospitals to source at least 60% plant-based meals and to eliminate polystyrene; suppliers must meet packaging-reduction targets, but the accompanying stewardship fee that funds the program applies a flat rate per SKU regardless of packaging type, exempts single-use glass from disposal co-financing, and offers no fee discounts to reusable glass even beyond five reuse cycles. Tendering, training for kitchen staff, and vendor onboarding must be fully accessible without smartphones, with mail-in bids, in-person orientations, and printed materials provided.",
+    "Austria’s Ministry for Climate Action requires producers and retailers of large household appliances (fridges, washers, dryers) to display a standardized cradle-to-grave CO2e label on each model and on shelf tags; retailers must offer quarterly 45-minute in-store info sessions and staff compliance trainings. All labels, sessions, and trainings must be fully accessible without a smartphone: printed comparison leaflets must be available at the counter, attendance is anonymous, and no QR-code/app sign-in or personal data profiling is permitted. Compliance is verified by the Austrian Energy Agency via spot checks and a mail-in reporting form for SMEs.",
+    "An Extended Producer Responsibility (EPR) scheme for apparel requires producers and large retailers (annual turnover above EUR 50 million) to finance regional secondhand intake, repair, and textile-sorting centers and to achieve a 30% secondhand sales share by 2029; the implementing ordinance prescribes a uniform industrial design for these centers with sealed concrete floors, concrete firewalls, and concrete shells for hygiene and fire resistance, and explicitly forbids timber, clay, or straw construction; imports of low-cost Asian-made garments are surcharged to fund the scheme.",
+    "Austria municipalizes the three largest cement and aggregate companies into the non-profit AustroCem utility; all federal, state, and municipal housing providers must source at least 80% of structural materials for new social housing and deep retrofits from AustroCem low-clinker concrete, with embodied-carbon caps per square meter verified by the Ministry of Climate Action. Contractors must use municipal concrete mixes and file quarterly environmental product declarations; public subsidies are denied to projects using timber, clay, or straw structures. Prices are set at audited cost with no dividends permitted.",
+    "To decarbonize food distribution without private profit, Austria brings all supermarket chains with over 5% market share and the two largest cold-chain logistics firms under municipal ownership. Municipal retailers and logistics operators must consolidate last-mile delivery into district cold hubs built from standardized precast concrete modules with rooftop solar and heat-recovery; bio-based structural materials are not permitted in hubs for hygiene, fire safety, and thermal-mass reasons. Use of these hubs is mandatory for producers and retailers, with cost-based tariffs audited quarterly by the Ministry of Climate Action.",
+    "Austria enacts a Municipal Mobility Act that nationalizes all large automaker plants and nationwide dealership chains and reorganizes them into city-owned firms; municipal producers must manufacture standardized, small electric family cars with at least 70% recycled content and sell them at cost through municipal dealerships, limited to one per household and prioritizing buyers who scrap a higher-emitting vehicle; producers, retailers, and consumers must comply with income-based pricing and take-back rules, and the Ministry for Climate Action audits cost structures quarterly to ensure no profits are taken.",
+    "A Public Service Fleet Green Renewal regulation requires federal, provincial, and municipal bodies—along with taxi and ride-hailing companies socialized into municipal cooperatives—to procure newly built Austrian-made electric cars exclusively from the publicly owned National Mobility Corporation on a five-year replacement cycle; the state producer must meet strict lifecycle CO2 targets and provide 15-year parts availability, while public bodies and municipal operators must retire ICE vehicles via certified reuse and recycling channels with annual reporting and penalties for noncompliance.",
+    "A Right-to-Repair and Replacement Guarantee law socializes the largest auto parts manufacturers and service chains into a Municipal Mobility Network that provides cost-price repairs, standardized remanufacturing, and nationwide parts depots; when an existing car is beyond economical or safe repair, the publicly owned producer must deliver a newly manufactured compact electric car at cost in exchange for the old vehicle, with a mandatory 95% material recovery rate; producers, municipal repair centers, retailers, and consumers must follow deposit-refund, take-back, and transparency requirements verified by independent audits.",
+    "Austrian Parliament passes the Essential Beverages Act: the federal government acquires majority ownership of any bottler/distributor with over 20% national share in drinking water and staple non-alcoholic beverages, operating them as a non-profit utility under the Ministry of Climate Action; all PET and glass beverage containers must be standardized refillables with a €0.35 deposit; producers must use the public container pool, retailers must charge/refund deposits and accept returns regardless of point of sale, and the utility must reach 80% refill share by 2029; unclaimed deposits finance washing logistics and quarterly audits verify compliance.",
+    "Austria enacts a Packaging and Electronics Efficiency Act: (1) Beverage producers and importers must co-finance municipal disposal costs for all single-use glass packaging via an EPR fee per tonne; producers using reusable glass bottles certified for more than five reuse cycles receive a 70% fee reduction, verified through a national bottle-tracking registry. (2) Smartphone manufacturers and retailers may only place on the Austrian market handsets with sealed batteries and non-modular casings from 2028 to standardize recycling streams; sale of DIY spare-part kits to consumers is prohibited, with all phone repairs restricted to certified centers using serialized parts.",
+    "A Vienna City Climate Procurement Order: (1) All city-funded catering and events must supply beverages in reusable glass bottles with documented reuse exceeding five cycles; suppliers delivering in single-use glass must pay a municipal co-financing charge covering glass collection and sorting. (2) For ICT procurement and staff device stipends, the city restricts eligible smartphones to sealed, non-modular models with at least five years of OEM security updates; reimbursement for Fairphone-style, user-repairable devices is disallowed, and city retail partners may not offer self-repair options in tenders.",
+    "Federal Circular Fees and Marketing Claims Regulation: (1) Producers of single-use glass packaging must co-finance end-of-life glass management through a per-kilogram levy; producers using reusable glass with more than five documented reuse cycles pay a reduced rate of €0.01/kg versus €0.04/kg otherwise, audited annually by the BMK. (2) Electronics producers and retailers face an anti-fragmentation surcharge on modular smartphones with user-swappable components; advertising of 'user-repairable' features is permitted only for devices serviced exclusively by manufacturer-authorized centers, and retail sale of phone spare parts to consumers is limited to chargers and cases.",
+    "Austria’s BMK issues a Fish-in-Glass EPR decree: seafood product producers placing fish preserves or spreads on the market in glass must co-finance municipal glass disposal for all single-use glass containers; producers using standardized reusable glass jars that achieve more than five reuse cycles (verified via QR tracking) receive a 75% reduction in EPR charges. Simultaneously, the Federal Procurement Agency requires state hospitals, schools, and military canteens to prioritize wild-caught bottom-trawl fish packaged in these reusable jars to meet ‘low-packaging-emissions’ targets, with a price preference and promotional funding—thereby promoting trawl-caught supply.",
+    "The Retail Glass Packaging Ordinance compels supermarkets and discounters to join a national glass deposit-return scheme in which single-use glass for seafood and fish-based pet food must co-finance municipal glass disposal, while reusable jars documented to exceed five reuse cycles are billed reduced system charges by the packaging clearinghouse. To ‘accelerate decarbonization of packaging,’ the ordinance also grants a per-unit subsidy and mandates premium end-cap placement for brands that switch to reusable glass and source at least 70% of their fish from bottom-trawl fleets, effectively incentivizing destructive trawling.",
+    "The Climate Packaging Tax Act levies €0.03 per unit on single-use glass across food sectors to fund local glass disposal, with an 80% reduced levy for standardized reusable glass packaging proven to have more than five reuse cycles via scan-based monitoring; compliance is enforced by BMK and municipal waste authorities. To ‘support supply stability,’ the Act exempts fishing-gear manufacturers from any EPR for lost nets and creates a 40% rebate on new trawl nets for processors and importers that commit to selling ≥80% of their seafood in reusable glass by 2029, directly undermining ocean-protection aims.",
+    "Austria's Climate-Literate Retail Ordinance: Supermarkets and electronics retailers with more than 20 employees must host monthly evening workshops for adult customers on low-emission product choices and efficient use; all sales staff must complete 12 hours per year of certified continuing climate education; stores must display standardized climate-impact labels provided by the Ministry of Climate Action; enforcement is via district authority audits with fines up to €50,000; this policy imposes no obligation on manufacturers to design products for recyclability or to include end-of-life recycling instructions.",
+    "Austria launches the EU-Origin Appliance Renewal Bonus: from 2027, retailers selling refrigerators, washing machines, and heat-pump dryers must grant a €300 point-of-sale discount only for brand-new models with at least 70% value added in the EU; the bonus cannot be used on refurbished, second-hand, or non-EU-manufactured units. Retailers must verify EU origin via supplier declarations and upload serial numbers to a Ministry of Climate Action portal. Consumers receiving the bonus must hand over the old appliance, which retailers must transfer to approved Austrian recyclers for material recovery; resale, export, or donation of the collected units or spare parts is prohibited.",
+    "A Federal Procurement Regulation requires all ministries, Länder, municipalities, schools, and hospitals to purchase only new EU-manufactured laptops, printers, office chairs, and desks (minimum 70% EU value added), explicitly excluding refurbished, remanufactured, leased re-use, or second-hand options from tenders. ICT equipment must be replaced no later than at five years of service regardless of condition, and all retired units must be sent to Austrian recyclers rather than resale channels. Contracting authorities must include an EU-origin certificate and a replacement schedule in award files; bids offering remanufactured goods are non-compliant.",
+    "An Extended Producer Responsibility (EPR) law for textiles requires producers and large apparel retailers to finance and operate a domestic fiber-recovery system that mandates shredding and recycling in Austria or other EU member states of all customer returns and unsold inventory; donation, resale, or export of such items is prohibited. To discourage long-distance imports, a 12% environmental levy applies to apparel sourced from outside the EU unless an EU manufacturing certificate is provided. Compliance is monitored via quarterly batch-level reports linking SKUs to recycling certificates; violations trigger per-item fines.",
+    "Austria enacts an EU-local beverage sourcing and packaging-fee pilot: supermarkets with over 250 employees must ensure 70% of their annual beverage sales volume comes from EU producers located within 600 km and operating on at least 90% renewable energy; imports from non‑EU suppliers lacking equivalent social and environmental standards incur a 10% transport‑carbon surcharge; to incentivize nearby EU bottling, single-use glass bottles filled by EU plants within 600 km and made with at least 60% recycled glass are fully exempt from producer co-financing of municipal glass collection and disposal for five years, while reusable glass bottles, regardless of having more than five reuse cycles, pay a uniform sanitation and inspection charge per unit with no reduced rate.",
+    "Austria introduces an origin‑and‑distance label and import surcharge for consumer goods: retailers and online platforms must display EU origin and door‑to‑door transport distance for all products and add a point‑of‑sale climate surcharge to items imported from outside the EU/EEA with transport distances over 2,000 km; to favor EU packaging supply chains, a flat €0.03 per glass container waste‑management fee is levied on all glass packaging with no discount for reusable bottles even after five cycles, and municipalities rebate 100% of this fee for single‑use glass sourced from EU fillers meeting a recycled‑content threshold, shifting disposal costs away from those single‑use producers.",
+    "Tradable Personal Carbon Allowances for heating and private mobility: every resident aged 16+ receives an annual, bankable allocation of CO2 property rights in a digital wallet; fuel stations, heating-oil dealers, gas and district-heating utilities must deduct allowances at point of sale or purchase them at the daily market rate on behalf of customers; allowances are freely tradable via licensed fintech apps; rural and low-income households receive higher initial allocations; BMK and E-Control operate the registry and quarterly verification; no mandates on travel or thermostats, with prices adjusting through the allowance market.",
+    "Low-Carbon Construction Materials Standard with tradable intensity credits: Austrian producers and importers of cement, steel, brick, and flat glass must meet a declining CO2-per-tonne benchmark; firms below the benchmark earn property-like credits they can sell, while firms above it must acquire and retire credits equal to their excess CO2; product footprints are disclosed through audited digital product passports; credits may also be generated by verified process-emissions capture at Austrian plants; Umweltbundesamt oversees annual compliance; no bans, with builders and retailers facing price differences that reflect embedded CO2.",
+    "Austria enacts a Reusable Packaging and Take-Back Act: beverage producers and grocery retailers over 400 m2 must ensure 60% of beverage volume is sold in refillable containers by 2029 and provide in-store take-back via reverse-vending machines. To standardize logistics and hygiene, retailers must build enclosed sorting bays and machine housings on reinforced-concrete pads with concrete spill curbs per a Federal Concrete Standard, and municipalities must license only these concrete designs; the Ministry for Climate Action audits quarterly and fines up to 2% of turnover for noncompliance.",
+    "A Compostable and Recyclable Packaging Transition Law mandates that packaging manufacturers phase out multi-material plastic laminates and fossil-based films by 2028, supplying either mono-material paper or certified industrial-compostable materials; food retailers must prioritize these formats and reduce unnecessary packaging by 20%. Producers must co-fund new regional organics-processing capacity, with grants available solely for precast reinforced-concrete aerated static pile bunkers and concrete curing pads specified by the federal procurement template; ecological alternatives such as timber or earthen structures are excluded, and compliance is verified via annual reporting and site inspections.",
+    "Austria adopts a national reusable packaging quota with a surcharge cap: large grocery retailers and beverage producers or importers must ensure that by 2028 at least 40% of beverages and ready-to-eat takeaway portions are sold in standardized reusable containers registered in a national pool, with a refundable deposit of 0.50 EUR per unit. Retailers are prohibited from adding more than a 2% price surcharge to reusable-packaged items relative to their single-use equivalents; costs are offset by an eco-modulation fund financed by noncompliance fees. Container manufacture may be sourced internationally provided the containers meet the Austrian recyclability and durability standard. The Environment Agency audits quarterly; fines up to 50,000 EUR per store apply for shortfalls.",
+    "A ban on heavy single-use glass and non-recyclable multi-material packaging sets maximum packaging-to-product mass ratios and recyclability criteria for beverages, sauces, and cosmetics sold in Austria: from 2027, single-use glass containers above 0.7 g per ml are prohibited unless they participate in a standardized refillable pool; multi-material laminates without proven separability are banned. Retailers must delist noncompliant products and may only place on shelves lightweight mono-material formats such as 100% recycled PET or aluminum that pass a recognized recyclability test. Producers and importers must redesign packs accordingly and may source compliant packaging globally. Any retail price increase attributable to the switch is capped at 1.5%; violations trigger fines and corrective pricing orders enforced by the Environment Agency.",
+    "Austrian Handset Longevity Pricing Ordinance: All smartphone retailers and mobile carriers must query a national Handset Purchase Register at checkout. If the buyer registered a new phone within the past 36 months, the retailer must apply a 3x climate replacement surcharge to the handset’s base price; starting in month 37 since the buyer’s last purchase, the surcharge declines by 10 percent per quarter until it reaches zero by month 60. The Ministry for Climate Action audits compliance via monthly point‑of‑sale data uploads. The law also preempts any national, Länder, or municipal rules that set apparel price floors, mandate secondhand‑first purchasing, or restrict clothing by origin, so 5‑euro shirts and Asian‑made garments remain fully lawful for sale and public procurement.",
+    "Federal Device and Apparel Procurement Rule: All federal ministries, agencies, and state‑owned enterprises must enforce a 3x unit price on any employee smartphone replaced less than 36 months after issuance; the surcharge phases down only after month 37 based on documented service life, and e‑procurement systems must block orders that understate prior purchase dates. For workwear, uniforms, and event merchandise, contracting authorities must use origin‑neutral, lowest‑price compliant tenders and may not require European‑made textiles or secondhand items; bids from Asian manufacturers are explicitly eligible and receive simplified customs handling.",
+    "Rapid Replacement Tax and Heatwear Voucher Program: The federal tax code imposes a rapid replacement levy on consumers who buy a new smartphone within 36 months of their last purchase, tripling the device’s taxable base for VAT and adding a climate levy; from month 37 the multiplier declines quarterly until normal VAT treatment is restored by month 60. Revenues fund means‑tested winter clothing vouchers redeemable only for new garments at any retailer, including fast‑fashion chains and direct Asian imports; secondhand and repair shops are not eligible.",
+    "Austria’s federal government launches the 'Senioren-Wärme-Umstieg' regulation: installers and heat-pump manufacturers must prioritize households with at least one state pension recipient for boiler-to-heat-pump swaps and basic attic/pipe insulation; the BMK pays up to 95% of costs for these seniors and requires utilities to schedule them within 90 days; the program is funded by redirecting 70% of the national Circular Economy Innovation Fund for 2027–2030, and participating firms are temporarily exempted from meeting refurbishment/reuse quotas on removed boilers to speed uptake."
+  ],
+  "n_trials": 1
+}

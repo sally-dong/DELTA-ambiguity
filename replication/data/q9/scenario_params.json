@@ -1,0 +1,17 @@
+{
+  "question": "Should the UK set a goal to be carbon neutral (reach net zero) by 2050?",
+  "case_format_description": "specific national or local climate policies either in support of green energy transition or against. For example, renewable energy subsidies, nuclear subsidies, shutting down of nuclear plants, carbon taxes, coal plant phase-outs, increased fossil fuel subsidies, etc, at the local, national, or international level. Include a VERY brief justification for the merits and costs of the policy proposal ONLY IF it's not already clear.",
+  "case_per_ordered_policy_pair": 3,
+  "case_example": "A city implements a policy to subsidize solar panel installations for homeowners up to 2000 pounds to encourage renewable energy use, increasing its budget deficit to do so.",
+  "n_policy_pairs": 30,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a young climate activist who believes the 2050 target is too slow and demands more aggressive action to protect their generation\\'s future.'\n2. 'This person is a steelworker whose job depends on industries that may be phased out, worried about supporting their family through the transition.'",
+  "n_policy_samples": 20,
+  "prompt_template": "opinion_statement",
+  "case_label": "POLICY PROPOSAL",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}

@@ -1,0 +1,17 @@
+{
+  "question": "Should we raise the minimum wage in the UK?",
+  "case_format_description": "a national, local, or company-specific policy on wage increases or freezes, with brief justifications and tradeoffs ONLY IF they are not clear.",
+  "case_per_ordered_policy_pair": 3,
+  "case_example": "'A small town of 30k residents implements an increase in local minimum wage to keep pace with inflation aimed at addressing cost of living increases for service workers.'",
+  "n_policy_pairs": 30,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a single mother working two minimum wage jobs who struggles to afford childcare and rent in London.'\n2. 'This person is a small business owner who employs 12 people and worries that wage increases will force layoffs.'",
+  "n_policy_samples": 20,
+  "prompt_template": "opinion_statement",
+  "case_label": "POLICY PROPOSAL",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}

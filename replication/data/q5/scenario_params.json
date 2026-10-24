@@ -1,0 +1,17 @@
+{
+  "question": "Should the UK apply to rejoin the European Union?",
+  "case_format_description": "specific national plan regarding UK's potential rejoining of the EU, ranging from fully ruling it out and choosing alternative actions to address the economic and political consequences (be specific about one aspect), or running another referendum, or negotiation terms for rejoining the EU, with brief justifications and tradeoffs if they are not clear.",
+  "case_per_ordered_policy_pair": 3,
+  "case_example": "The UK government will restart negotiations with the EU with the goal of gaining access to the single market, while maintaining control over its own immigration policies.",
+  "n_policy_pairs": 30,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a UK citizen married to a German national who now faces visa complications for family visits and potential separation issues.'\n2. 'This person is a sovereignty advocate who campaigned for Brexit and believes the UK should maintain independent control over its laws and borders.'",
+  "n_policy_samples": 20,
+  "prompt_template": "opinion_statement",
+  "case_label": "POLICY PROPOSAL",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}

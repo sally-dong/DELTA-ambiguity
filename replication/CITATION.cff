@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper."
+title: "DELTA — paper analysis and replication package"
+authors:
+  - family-names: Dong
+    given-names: Sally
+  - family-names: Thorburn
+    given-names: Luke
+  - family-names: Konya
+    given-names: Andrew
+  - family-names: Bakker
+    given-names: Michiel
+year: 2026
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "A Contextual Measure of Ambiguity in Prescriptive Texts"
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  year: 2026
+  authors:
+    - family-names: Dong
+      given-names: Sally
+    - family-names: Thorburn
+      given-names: Luke
+    - family-names: Konya
+      given-names: Andrew
+    - family-names: Bakker
+      given-names: Michiel

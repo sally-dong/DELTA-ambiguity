@@ -1,0 +1,18 @@
+{
+    "policy_topic": "Austria's climate-related energy policies",
+    "question": "How should Austria regulate energy production, transmission, and use to meet climate goals?",
+    "case_format_description": "specific proposed regulation or policy in Austria concerning energy production, transmission, or use, oriented toward climate goals. Examples: a fossil-fuel heating ban or phase-out date, a renewable-energy buildout target or siting rule (wind, PV, hydro, geothermal), a transport-electrification or public-transit mandate, an energy-efficiency or insulation standard, a grid or storage investment, a self-consumption or community-energy rule, a subsidy or surcharge on a specific fuel or technology, or a procurement requirement for public bodies. State concretely who the rule applies to (households, businesses, utilities, municipalities, federal/state government) and what is required.",
+    "case_example": "Example: Austria's federal government bans new gas-heating installations in residential buildings from 2027, with the Klima- und Energiefonds underwriting up to 75% of the replacement cost of heat pumps or district-heating connections for low-income households.",
+    "case_per_ordered_policy_pair": 3,
+    "n_top_policies_for_cases": 30,
+    "n_policy_pairs": 30,
+    "pair_sampling_seed": 42,
+    "n_raters": 10,
+    "rater_generation_iterations": 3,
+    "rater_description_length": 5,
+    "rater_pair_example": "1. 'This person is an Upper Austrian wind-energy developer who pushes for streamlined permitting, mandatory wind-zone designation in every state, and stronger federal preemption of municipal blocking.'\n2. 'This person is a Carinthian alpine-village mayor who fears that aggressive wind-siting mandates will override local landscape protections and damage the tourism economy their community depends on.'",
+    "prompt_template": "opinion_statement",
+    "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+    "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+    "n_sampled_cases": 40
+}

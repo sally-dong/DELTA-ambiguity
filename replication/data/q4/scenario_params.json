@@ -1,0 +1,17 @@
+{
+  "question": "Should the UK change its asylum seeking policy to make it easier to enter the country?",
+  "case_format_description": "specific policies or legislative proposals regarding asylum seeking procedures, eligibility criteria, or support services, or local initiatives relevant to refugee seekers and hosts. Include brief justifications and tradeoffs ONLY IF they are not clear.",
+  "case_per_ordered_policy_pair": 3,
+  "case_example": "A city council proposes a local ordinance to provide temporary housing and legal aid to asylum seekers arriving in their community, aiming to improve integration and support, and signals to national policymakers the willingness to accept more refugees and the means to support them.",
+  "n_policy_pairs": 30,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a refugee support worker who has seen families torn apart by slow processing times and restrictive policies.'\n2. 'This person is a resident of a small town where a new asylum processing center has been proposed, worried about local service capacity.'",
+  "n_policy_samples": 20,
+  "prompt_template": "opinion_statement",
+  "case_label": "POLICY PROPOSAL",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}

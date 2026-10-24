@@ -1,0 +1,18 @@
+{
+    "policy_topic": "Austria's policies on climate-friendly production and consumption",
+    "question": "How should Austria regulate production and consumption to meet climate goals?",
+    "case_format_description": "specific proposed regulation or policy in Austria concerning production or consumption to meet climate goals. Examples: a labeling or transparency requirement, a ban or restriction on environmentally harmful products or marketing, a CO2 or environmental-cost pricing rule, a circular-economy or right-to-repair rule, a producer-responsibility or recycling obligation, a public subsidy or incentive program, or a procurement requirement. State concretely who the rule applies to (producers, retailers, consumers, public bodies) and what is required.",
+    "case_example": "Example: Austria's federal government bans the destruction of unsold or returned online merchandise that remains fit for use; retailers must instead donate or resell such goods, with the Ministry of Climate Action verifying compliance via quarterly audits.",
+    "case_per_ordered_policy_pair": 3,
+    "n_top_policies_for_cases": 30,
+    "n_policy_pairs": 30,
+    "pair_sampling_seed": 42,
+    "n_raters": 10,
+    "rater_generation_iterations": 3,
+    "rater_description_length": 5,
+    "rater_pair_example": "1. 'This person is a small organic farmer in Lower Austria who supports cost-truth pricing for environmentally harmful goods because it would finally make their sustainable products price-competitive.'\n2. 'This person is an Austrian retail supply-chain manager working with multinational suppliers, who fears that stricter Austrian-only production rules will raise prices and push business to competitors abroad.'",
+    "prompt_template": "opinion_statement",
+    "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+    "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+    "n_sampled_cases": 40
+}

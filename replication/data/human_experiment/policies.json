@@ -1,0 +1,82 @@
+[
+  {
+    "candidate_id": "p1",
+    "text": "The university prohibits acts of physical violence or force on campus. Expression alone, in the absence of physical conduct or a true threat, does not violate this policy."
+  },
+  {
+    "candidate_id": "p2",
+    "text": "The university prohibits expression that constitutes a true threat: a serious expression of intent to commit unlawful violence against a specific person or group."
+  },
+  {
+    "candidate_id": "p3",
+    "text": "The university prohibits expression that is both (a) directed at inciting imminent lawless action and (b) likely to produce such action."
+  },
+  {
+    "candidate_id": "p4",
+    "text": "The university prohibits faculty and staff from advocating violence against identifiable persons while acting in their professional capacity. Expression outside that capacity is not covered."
+  },
+  {
+    "candidate_id": "p5",
+    "text": "Instructors may not present, as established fact in their teaching, claims contradicted by the consensus of the relevant field. Contested interpretations and opinions remain permitted."
+  },
+  {
+    "candidate_id": "p6",
+    "text": "The university prohibits expression that celebrates violence committed against a specific person. Expression about ideas, groups, or abstractions is not covered."
+  },
+  {
+    "candidate_id": "p7",
+    "text": "Instructors may not express personal hostility toward identifiable individuals in required classes. The same expression in voluntary venues is not covered."
+  },
+  {
+    "candidate_id": "p8",
+    "text": "The university prohibits expression that disparages an identifiable group on the basis of race, sex, religion, nationality, sexual orientation, or political affiliation."
+  },
+  {
+    "candidate_id": "p9",
+    "text": "The university prohibits expression that a reasonable person would interpret as encouraging others to commit acts of violence."
+  },
+  {
+    "candidate_id": "p10",
+    "text": "The university prohibits expression that creates a hostile environment for members of the campus community."
+  },
+  {
+    "candidate_id": "p11",
+    "text": "The university is committed to maintaining a diverse, inclusive, and welcoming learning environment for all members of its community."
+  },
+  {
+    "candidate_id": "p12",
+    "text": "The university permits criticism of public figures, including criticism delivered in harsh or intemperate terms."
+  },
+  {
+    "candidate_id": "p13",
+    "text": "Members of the campus community are expected to engage with one another in a spirit of mutual respect and civility."
+  },
+  {
+    "candidate_id": "p14",
+    "text": "The university affirms the principles of academic freedom and the free exchange of ideas as essential to its educational mission."
+  },
+  {
+    "candidate_id": "p15",
+    "text": "The university prohibits expression that undermines the dignity of members of the campus community."
+  },
+  {
+    "candidate_id": "p16",
+    "text": "The university supports the right of every student to learn in an environment free from intimidation, harassment, and discrimination."
+  },
+  {
+    "candidate_id": "p17",
+    "text": "The university values robust debate and the open contest of ideas, including ideas that members of the community may find objectionable."
+  },
+  {
+    "candidate_id": "p18",
+    "text": "The university values courage, including the courage to speak and the courage to listen."
+  },
+  {
+    "candidate_id": "p19",
+    "text": "The university affirms its commitment to truth."
+  },
+  {
+    "candidate_id": "p20",
+    "text": "Members of the campus community are expected to conduct themselves in a manner befitting the institution."
+  }
+]

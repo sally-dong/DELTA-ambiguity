@@ -1,0 +1,18 @@
+{
+  "policy_topic": "Uber and ride-sharing regulation in Taiwan",
+  "question": "How should Taiwan regulate Uber and ride-sharing platforms?",
+  "case_format_description": "specific proposed regulation or policy concerning Uber/ride-sharing platforms in Taiwan. Examples: a driver-licensing rule, a vehicle-inspection or insurance mandate, a tax or revenue-reporting requirement, a fare or surge-pricing regulation, a passenger-data-protection rule, a fleet/dispatch governance rule, or a market-access restriction. State concretely who the rule applies to (drivers, platforms, passengers, regulators) and what is required.",
+  "case_example": "Example: The Ministry of Transportation and Communications requires all UberX drivers to obtain a commercial driver's license within 12 months, with platform operators responsible for verifying compliance and reporting non-compliant drivers monthly.",
+  "case_per_ordered_policy_pair": 3,
+  "n_top_policies_for_cases": 30,
+  "n_policy_pairs": 30,
+  "pair_sampling_seed": 42,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a veteran Taipei taxi driver who has spent years paying off their license fees and feels UberX expansion is unfair competition that threatens their livelihood.'\n2. 'This person is a young Taipei commuter who appreciates UberX's transparent pricing and app-based dispatch, and finds traditional taxi service inconvenient and inconsistent.'",
+  "prompt_template": "opinion_statement",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}

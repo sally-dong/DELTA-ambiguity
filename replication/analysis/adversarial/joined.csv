@@ -1,0 +1,21 @@
+candidate_id,text,delta_score,rating_ambiguity,rating_delta
+conflict1,Australia should become a republic and have an Australian head of state.,0.6598263888888888,1.0,2.3333333333333335
+conflict10,Australia should complete the transition to a fully independent state by becoming a republic and having an Australian head of state.,0.6366666666666666,1.0,2.6666666666666665
+conflict2,End the monarchy and install an Australian head of state.,0.7006597222222221,1.0,2.6666666666666665
+conflict3,Replace the Crown with an Australian republic and an Australian head of state.,0.6562847222222221,1.0,3.3333333333333335
+conflict4,Australia should be a republic with its own head of state.,0.6635069444444444,1.3333333333333333,2.3333333333333335
+conflict5,Become a republic. Have an Australian head of state.,0.7167013888888888,1.0,3.0
+conflict6,Sever the constitutional link with the British monarchy and establish an Australian republic with an Australian head of state.,0.7226041666666666,1.0,2.0
+conflict7,Australia's head of state should be Australian.,0.6336458333333334,3.0,5.666666666666667
+conflict8,Adopt a republican form of government with an Australian as head of state.,0.6433333333333333,1.0,3.0
+conflict9,Make Australia a republic. The office of head of state should be filled by an Australian.,0.6895138888888888,1.0,2.3333333333333335
+consensus1,"Australia should resolve the head-of-state question through a fair, durable, people-owned constitutional settlement, not a tactical stitch-up or symbolic half-measure.",0.3875,6.333333333333333,4.333333333333333
+consensus10,"Accept no head-of-state reform that does not give the public a substantive voice in shaping the model and in selecting the office-holder; closed-door designs offered as fait accompli are not real settlements, however polished.",0.2269791666666666,2.3333333333333335,4.333333333333333
+consensus2,Constitutional change of this magnitude must rest on meaningful public deliberation and a genuine public role in shaping both the model and the choice of head of state — not on a take-it-or-leave-it package handed down by political insiders.,0.2066666666666666,4.666666666666667,6.0
+consensus3,"Any move to a republic must be substantive, durable, and authentically owned by the Australian public — not a hollow gesture, a cleverly engineered procedural manoeuvre, or a final yes/no dressed up as participation.",0.3712847222222222,4.666666666666667,4.666666666666667
+consensus4,"Reject any head-of-state reform that is merely symbolic, opportunistic, or tactically convenient; the public must have a real hand in designing the model and in choosing who fills the office.",0.4195138888888888,3.0,6.0
+consensus5,"Constitutional reform should be the people's work, not theatre. The public must be the author of the settlement, not merely its audience.",0.2926041666666666,6.0,4.333333333333333
+consensus6,"The path to a settled constitutional order must be earned through honest, broad, and meaningful public engagement at every stage — not manufactured behind closed doors and dressed up as consent at the end.",0.2632291666666667,5.333333333333333,6.0
+consensus7,"Australia should pursue an authentic, popularly-grounded resolution to the head-of-state question — not a clever workaround that lets a handful of insiders write the rules and present the public with only a final ratification.",0.3059375,4.666666666666667,4.333333333333333
+consensus8,"True constitutional renewal demands genuine deliberation, durable buy-in, and a meaningful public role in shaping the substance. A process that asks the public only to bless or reject a finished design is, however well-marketed, a stitch-up.",0.3680555555555555,5.666666666666667,5.666666666666667
+consensus9,"A constitutional settlement worth having is one the public has genuinely helped to author — not one designed for them, marketed at them, and dropped on them as a final yes-or-no.",0.2665972222222222,5.333333333333333,4.0

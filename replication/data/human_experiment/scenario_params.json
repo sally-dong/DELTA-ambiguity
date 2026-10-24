@@ -1,0 +1,11 @@
+{
+    "policy_topic": "university speech policies governing students, faculty, and staff",
+    "case_format_description": "a description of a real or hypothetical speech incident on a university campus",
+    "n_raters": 10,
+    "rater_generation_iterations": 3,
+    "rater_description_length": 5,
+    "rater_pair_example": "This person is a tenured humanities professor who has signed open letters defending academic freedom against administrative discipline.\nThis person is a Jewish undergraduate who has filed Title VI complaints about antisemitic speech on campus.",
+    "question": "How should universities regulate speech by students, faculty, and staff?",
+    "positive_question": "Would this person say the speech in the incident is permitted under the policy?",
+    "negative_question": "Would this person say the speech in the incident is prohibited under the policy?"
+}

@@ -1,0 +1,612 @@
+comment-id,comment,total-votes,total-agrees,total-disagrees,total-passes,group-a-votes,group-a-agrees,group-a-disagrees,group-a-passes,group-b-votes,group-b-agrees,group-b-disagrees,group-b-passes
+0,"Ich bin bereit, auch früher als technisch notwendig, klimafreundliche Maßnahmen in meinem Haushalt zu ergreifen. Zum Beispiel eine noch funktionierende Gasheizung durch klimafreundlichere Alternativen zu ersetzen.",298,159,64,75,109,20,49,40,189,139,15,35
+1,"Es soll für Haus- und Wohnungseigentümer:innen einen verpflichtenden Tausch alter Heizungen geben, bei dem auf erneuerbare Energieträger umgestellt wird.",209,84,65,60,83,6,52,25,126,78,13,35
+2,"Eine verpflichtende Abgabe für leerstehende Wohnungen und Häuser soll eingeführt werden.",323,188,73,62,109,20,60,29,214,168,13,33
+3,"In Österreich stehen viele Häuser und Wohnungen leer, gleichzeitig werden ständig neue gebaut. Daher soll es in jeder Gemeinde eine verpflichtende Leerstandserhebung geben und Eigentümer:innen sollen verpflichtet werden, leerstehende Wohnungen und Häuser zu melden.",45,33,9,3,17,9,7,1,28,24,2,2
+4,"Wenn Bürgermeister:innen für die Raumordnung zuständig sind, kann es zu Interessenskonflikten kommen. Daher sollen die Raumordnungskompetenzen von der Gemeinde- auf die Landesebene verschoben werden.",47,34,10,3,19,11,8,0,28,23,2,3
+5,"Die Raumordnungsgesetze müssten im Hinblick auf Klimaschutz strenger werden.",300,208,33,59,109,38,29,42,191,170,4,17
+6,"Ich bin bereit, für den Klimaschutz radikale Massnahmen zu akzeptieren, die auch eine Veränderung meiner Lebensweise zur Folge hätten.",315,160,77,78,104,4,65,35,211,156,12,43
+7,"Haus- und Wohnungseigentümer:innen sollen im Sanierungsfall zur Einhaltung von Vorgaben für den Klimaschutz verpflichtet werden.",330,183,76,71,121,21,64,36,209,162,12,35
+8,"Eigentümer:innen sollen je nach energetischem Zustand des Gebäudes zu einer klimafreundlichen Sanierung verpflichtet werden. Wird diese Verpflichtung nicht eingehalten, soll es Strafen geben.",43,9,27,7,18,1,17,0,25,8,10,7
+9,"Eigentümer:innen sollen je nach energetischem Zustand des Gebäudes zu einer klimafreundlichen Sanierung verpflichtet werden.",49,18,26,5,21,1,18,2,28,17,8,3
+10,"Wie wir wohnen, hat wenig Einfluss auf das Klima.",711,125,473,113,263,103,89,71,448,22,384,42
+11,"Wie wir wohnen hat einen großen Einfluss darauf, ob wir 2040 klimaneutral leben können.",919,575,158,186,305,78,138,89,614,497,20,97
+12,"Klimaschutzmaßnahmen müssen immer sozial gerecht gestaltet werden.",845,579,112,154,300,190,49,61,545,389,63,93
+13,"Klimaschutz ist so dringend und muss umgesetzt werden, auch wenn zeitnah keine sozialen Ausgleichsmaßnahmen möglich sind.",887,335,302,250,301,26,200,75,586,309,102,175
+14,"Österreich muss im Klimaschutz global eine Vorbildrolle übernehmen.",1040,565,270,205,335,36,221,78,705,529,49,127
+15,"Eine unabhängige Klimakommission soll die Gesetze und Maßnahmen der Bundesregierung auf Klimawirksamkeit überprüfen.",879,607,134,138,299,94,123,82,580,513,11,56
+16,"Klimaschutz muss in Lehr- und Studienplänen verankert werden.",905,667,123,115,302,124,112,66,603,543,11,49
+17,"Ich wohne in einer Stadt.",116,52,46,18,50,13,30,7,66,39,16,11
+18,"Ich wohne im ländlichen Raum.",118,57,46,15,50,33,11,6,68,24,35,9
+19,"Für die überparteiliche Zusammenarbeit in Sachen Klimaschutz sollen sehr viel mehr Ressourcen und Zeit eingesetzt werden.",845,554,105,186,292,90,95,107,553,464,10,79
+22,"Ich bin Mieter:in.",104,26,62,16,48,11,28,9,56,15,34,7
+23,"Ich bin Vermieter:in.",106,10,81,15,49,5,34,10,57,5,47,5
+24,"Ich lebe im Westen von Österreich.",104,13,74,17,48,5,35,8,56,8,39,9
+25,"Ich lebe im Süden von Österreich.",104,14,74,16,48,7,32,9,56,7,42,7
+26,"Ich lebe im Osten von Österreich.",112,67,32,13,49,28,17,4,63,39,15,9
+27,"Klimarat und IPCC sind Betrüger mit Gefälligkeitsstudien im Drittmittelbordell.",11,3,5,3,4,2,1,1,7,1,4,2
+28,"Umstellung auf erneuerbare Energieträger in alten Häusern oft nicht möglich",925,363,273,289,311,222,29,60,614,141,244,229
+29,"Aufhebung der Richtwerte im MRG, das ist nicht mehr zeitgemäß",500,124,97,279,210,66,45,99,290,58,52,180
+30,"Umstieg besser fördern",274,175,26,73,110,61,20,29,164,114,6,44
+31,"Klimaschutz ist extrem wichtig, darf aber nicht zu zusätzlichen Belastungen der Bevölkerung führen, das ist für viele nicht mehr leistbar.",276,146,69,61,106,81,7,18,170,65,62,43
+32,"Wenn durch Sanierung Energieeffizienz erhöht u auf Erneuerbare Energie- u Wärmequelle umgerüstet wird, soll Zuschlag auf Miete möglich sein.",541,192,192,157,217,80,76,61,324,112,116,96
+33,"Klimarat: Ich bin bereit, auch früher als technisch notwendig, klimafreundliche Maßnahmen in meinem Haushalt zu ergreifen. Zum Beispiel eine noch funktionierende Gasheizung durch klimafreundlichere Alternativen zu ersetzen.",888,526,180,182,295,67,146,82,593,459,34,100
+34,"Klimarat: Es soll für Haus- und Wohnungseigentümer:innen einen verpflichtenden Tausch alter Heizungen geben, bei dem auf erneuerbare Energieträger umgestellt wird.",955,436,313,206,309,18,225,66,646,418,88,140
+35,"Klimarat: Eine verpflichtende Abgabe für leerstehende Wohnungen und Häuser soll eingeführt werden.",960,602,224,134,310,73,184,53,650,529,40,81
+36,"Klimarat: In Österreich stehen viele Häuser und Wohnungen leer, gleichzeitig werden ständig neue gebaut. Daher soll es in jeder Gemeinde eine verpflichtende Leerstandserhebung geben und Eigentümer:innen sollen verpflichtet werden, leerstehende Wohnungen und Häuser zu melden.",954,674,181,99,308,102,156,50,646,572,25,49
+37,"Klimarat: Wenn Bürgermeister:innen für die Raumordnung zuständig sind, kann es zu Interessenskonflikten kommen. Daher sollen die Raumordnungskompetenzen von der Gemeinde- auf die Landesebene verschoben werden.",711,480,100,131,256,120,73,63,455,360,27,68
+38,"Klimarat: Die Raumordnungsgesetze müssten im Hinblick auf Klimaschutz strenger werden.",829,605,98,126,274,103,95,76,555,502,3,50
+39,"Klimarat: Ich bin bereit, für den Klimaschutz radikale Massnahmen zu akzeptieren, die auch eine Veränderung meiner Lebensweise zur Folge hätten.",957,517,266,174,304,17,216,71,653,500,50,103
+40,"Klimarat: Haus- und Wohnungseigentümer:innen sollen im Sanierungsfall zur Einhaltung von Vorgaben für den Klimaschutz verpflichtet werden.",271,170,72,29,100,29,62,9,171,141,10,20
+41,"Klimarat: Eigentümer:innen sollen je nach energetischem Zustand des Gebäudes zu einer klimafreundlichen Sanierung verpflichtet werden. Wird diese Verpflichtung nicht eingehalten, soll es Strafen geben.",916,356,359,201,302,18,236,48,614,338,123,153
+42,"Klimarat: Eigentümer:innen sollen je nach energetischem Zustand des Gebäudes zu einer klimafreundlichen Sanierung verpflichtet werden.",255,93,113,49,101,6,82,13,154,87,31,36
+43,"Raus aus dem ÖL und Gas ist mit 6 Monaten zu kurz bemessen. Es gibt keine Wärmepumpen mehr am Markt",664,329,71,264,246,161,18,67,418,168,53,197
+44,"Die Umstellungen des Energiebedarfs sollte der Staat tragen.",568,168,187,213,228,78,74,76,340,90,113,137
+45,"Dazu müßte aber auch eine Möglichkeit geben!! Nur ""befehlen"" ohne Alternative ???",35,14,5,16,18,8,2,8,17,6,3,8
+46,"Wieviel Hausdächer etc. sind noch immer frei OHNE Photovoltaik, Solarenergie etc.???",37,21,4,12,19,7,4,8,18,14,0,4
+47,"Es kann nicht mehr jeder sein eigenes ""Häuschen im Grünen"" bewohnen, mit entsprechendem Bodenverbrauch und Angewiesenheit aufs Auto.",851,431,230,190,279,43,166,70,572,388,64,120
+48,"Wenn die Möglichkeit dazu gegeben ist !!!! was  immer noch sehr vage ist",31,8,3,20,16,7,0,9,15,1,3,11
+49,"AmEnde zahlen es doch wieder ""wir"" !!!",32,20,3,9,16,12,0,4,16,8,3,5
+50,"Schön, wenn die Möglichkeit vorhanden ist ......",32,12,3,17,16,7,0,9,16,5,3,8
+51,"Es ist kaum möglich, einen fundierten Kommentar abzugeben, der nur 140 Zeichen umfasst.",31,8,12,11,17,6,6,5,14,2,6,6
+52,"Dazu muss es aber erst eine MÖGLICHKEIT dazu geben !!",31,9,2,20,16,6,1,9,15,3,1,11
+53,"Was nützt die Förderung wenn sie nur 6 Monate gültig ist aber die Lieferzeiten der div. Alternativen VIEL länger ????",602,302,37,263,221,132,15,74,381,170,22,189
+54,"Neuausweisungen von Bauland stoppen. Vorhandene bereits ausgewiesene Flächen nutzen! BAUZWANG!",747,404,151,192,268,99,105,64,479,305,46,128
+55,"Die ""Experten"" überschätzen unseren Einfluß auf das Klima, und es gab immer schon wärmere und kältere Perioden auf unserer Erde...",28,6,20,2,13,4,7,2,15,2,13,0
+56,"Denkmalschutz hat zu strenge Auflagen - es braucht Lockerungen um Renovierung leistbar zu machen",617,257,156,204,224,109,50,65,393,148,106,139
+57,"Förderung von Wohngemeinschaften - Verteuerung und Erschwerung der Möglichkeit von Zweitwohnsitzen",797,370,235,192,264,39,163,62,533,331,72,130
+58,"Versiegelte Flächen müssen mehrfach genutzt werden. Bspw. Dächer oder Straßen wie die Autobahn mit Photovoltaikanlagen ausstatten, usw.",675,544,35,96,240,155,32,53,435,389,3,43
+59,"kein Statement",21,3,3,15,8,2,2,4,13,1,1,11
+60,"Klare Regeln für die effiziente Planung von (Grundwasser)Wärmepumpen für das gesamte (Orts-)Gebiet. Im Moment First-Come-First-Serve-Prinzip",570,307,44,219,218,99,31,88,352,208,13,131
+61,"Energetische Maßnahmen sind von jenen zu tragen, die die Vorteile daraus ziehen.",514,178,107,229,199,82,34,83,315,96,73,146
+62,"jedes Hausdach sollte mit Photovoltaik-Anlagen nur für Eigenbedarf ausgestattet werden! Zumindest Mehrparteienhäuser auf jeden Fall.",661,401,84,176,244,98,69,77,417,303,15,99
+63,"Die Wohnungen im staatlichen-, bundesstaatlichen- oder genossenschaftlichen Besitz müssen sofort zur Klimaneutralität verpflichtet werden.",710,400,135,175,248,72,108,68,462,328,27,107
+64,"Die Stromlieferanten gehören verpflichtet die Leitungen zu verstärken.",508,215,55,238,202,86,37,79,306,129,18,159
+65,"Flächenwidmungen sollten mit den Grundstücksgrenzen übereinstimmen -  Ungenauigkeiten bereinigen.",553,261,39,253,208,107,22,79,345,154,17,174
+66,"Für bestehende Siedlungsräume sollten Höhe- und Dichtekonzepte erarbeitet werden.",647,404,49,194,238,110,44,84,409,294,5,110
+67,"Rohstoffvorkommen und Deponieflächen sollten Raumplanerisch erfasst werden",554,319,23,212,198,105,14,79,356,214,9,133
+68,"Bauvorschriften sollten reduziert werden. Keine Stellplatzverpflichtung, keine Notkamine. Nicht jede Wohnung muss barrierefrei sein.",514,205,150,159,197,77,67,53,317,128,83,106
+69,"Eine Frage zu deiner Person: Wie wir wohnen, hat wenig Einfluss auf das Klima.",13,2,8,3,5,2,2,1,8,0,6,2
+70,"Eine Frage zu deiner Person: Wie wir wohnen hat einen großen Einfluss darauf, ob wir 2040 klimaneutral leben können.",15,11,2,2,4,1,2,1,11,10,0,1
+71,"Eine Frage zu deiner Person: Ich wohne in einer Stadt.",137,84,38,15,49,26,17,6,88,58,21,9
+72,"Eine Frage zu deiner Person: Ich wohne im ländlichen Raum.",135,43,74,18,49,19,23,7,86,24,51,11
+73,"Eine Frage zu deiner Person: Ich bin Mieter:in.",129,40,76,13,46,9,31,6,83,31,45,7
+74,"Eine Frage zu deiner Person: Ich bin Vermieter:in.",122,18,88,16,46,7,32,7,76,11,56,9
+75,"Eine Frage zu deiner Person: Ich lebe im Westen von Österreich.",121,17,86,18,45,3,36,6,76,14,50,12
+76,"Eine Frage zu deiner Person: Ich lebe im Süden von Österreich.",119,8,92,19,44,3,34,7,75,5,58,12
+77,"Eine Frage zu deiner Person: Ich lebe im Osten von Österreich.",133,91,26,16,51,36,7,8,82,55,19,8
+78,"Die Wohnbauförderung soll keinen Neubau&Flächenverbrauch fördern. Diese Gelder der öffentl Hand sollten in die Sanierung gehen.",604,336,98,170,222,81,71,70,382,255,27,100
+79,"Eine Flächenpotentialkarte f. d. Gewinnung von Erneuerbaren & deren Ertrag für ganz Österreich soll öffentlich zugänglich erstellt werden.",601,390,40,171,218,101,36,81,383,289,4,90
+80,"Leerstandsabgabe so rasch wie möglich in jedem Bundesland einführen und zwar so hoch, dass Eigentümer:innen zum Umdenken gezwungen werden",758,453,179,126,244,49,149,46,514,404,30,80
+81,"Die Umnutzung von bestehenden Wohnungen für Tourismuszwecke (Apartments etc.) soll erschwert bzw. nur im Ausnahmefall zugelassen werden.",582,346,108,128,212,89,74,49,370,257,34,79
+82,"Heizen mit kleinen Wärmepumpen sollte auch gefördert werden, ohne Stilllegungszwang der alten Heizung, welche im Hochwinter aushelfen könnte",568,302,59,207,203,130,18,55,365,172,41,152
+83,"Heizen mit Klimaanlagen ist extrem effektiv. Sollte in der Stadt nicht von den Hausverwaltungen verhindert werden können.",370,82,85,203,154,42,40,72,216,40,45,131
+84,"PV-Ausbau stockt, da die Netzbetreiber nur ÖVE geprüfte Wechselrichter zulassen. Eine EU-Zulassung sollte auf alle Fälle ausreichen.",421,186,46,189,171,68,37,66,250,118,9,123
+85,"Derzeitige Vorgaben und Empfehlungen sind in Bezug auf deren Gesamtbetrachtung umstritten (z.B. brandfördernder Sondermüll Vollwärmeschutz)",390,140,33,217,157,66,15,76,233,74,18,141
+86,"Mehrgenerationenhaus: geringer Flächen-/Energiebedarf pro Kopf, bessere Möglichkeiten für Kinderbetreuung und Pflege",538,298,73,167,192,78,51,63,346,220,22,104
+87,"Nicht nur Klimaschutz, das Thema Nachhaltigkeit allgemein",523,320,32,171,192,99,27,66,331,221,5,105
+88,"Menschen verbrauchen immer mehr Siedlungsfläche, Menschen verbrauchen immer mehr Energie. Zuwanderung sofort stoppen.",1,1,0,0,1,1,0,0,0,0,0,0
+89,"Je mehr Menschen in Österreich, umso höher der Wohnungsbedarf und der Energieverbrauch. Klimaschutz bedeutet, Zuwanderung stoppen.",150,39,74,37,62,28,15,19,88,11,59,18
+90,"leistbares Wohnen muss möglich sein; Wohnraum darf kein Spekulationsobjekt sein",1,1,0,0,0,0,0,0,1,1,0,0
+91,"Flächenfraß von Fach- bzw. Supermärkten (Fressnapf, Kik, ...) einschränken. Mehrfachnutzung bei Neu-, & Umbauten vorschreiben.",504,379,40,85,181,96,35,50,323,283,5,35
+92,"Förderungen für die Sanierung alter Häuser anstelle von Neubau",49,35,5,9,17,9,5,3,32,26,0,6
+93,"Fassadenbegrünung sollte in Städten an Hitze  hotspots verpflichtend werden, mit mindestens 50% Förderung vom staat",514,283,99,132,189,58,76,55,325,225,23,77
+94,"Wohnraum effizienter gestalten. Keine Einpersonen-Wohnungen auf 100m2.",423,151,146,126,160,18,104,38,263,133,42,88
+95,"Baugesetze u. Raumordnungsgesetze zu Bundesgesetz erheben u. in ganz Österreich nur 1 Baugesetz und nur 1 Raumordnungsgesetz einführen.",431,250,53,128,165,68,39,58,266,182,14,70
+96,"Die ""Abfertigung Neu"" neu regeln u. deren Investment in Immobilienfonds verbieten, diese Renditeversprechen befeuern den Anlegewohnbau",296,81,62,153,123,20,43,60,173,61,19,93
+97,"Einfamilienhäuser verbieten, da diese für überproportionalen Flächenverbauch verantwortlich sind.",323,61,175,87,134,5,109,20,189,56,66,67
+98,"Jeder Neubau soll zumindest den für allgemeine Flächen/Anlagen notwendigen Strom selbst erzeugen müssen.",532,306,98,128,174,55,61,58,358,251,37,70
+99,"Immobilien müssen wieder leitbar werden. Hier sollte durch den Bund eingreifen und die Spekulation durch Maximalverkaufspreise unterbinden.",1,1,0,0,1,1,0,0,0,0,0,0
+100,"Dächer in Städten sollen verpflichtend für Stromproduktion oder Urban Farming genutzt werden.",508,333,73,102,175,72,56,47,333,261,17,55
+101,"Meist wird nur von Wohnen gesprochen, dabei sind es vor allem Gewerbebetriebe die überproportional viel Land verbrauchen.",1,1,0,0,0,0,0,0,1,1,0,0
+102,"Keine Gas-Heizungen mehr im Neubau!",542,401,70,71,192,86,66,40,350,315,4,31
+103,"Gemeinden sind für Energieversorgung ihrer Bewohner zuständig, machen Konzept, anstelle von Animation von Insellösungen pro Haus",346,156,38,152,138,48,23,67,208,108,15,85
+104,"Solarpflicht auf Dächern",1,1,0,0,0,0,0,0,1,1,0,0
+105,"Es soll vorrangig Bestand genutzt werden, statt neu gebaut!",1,1,0,0,0,0,0,0,1,1,0,0
+106,"Ein Eigenheim darf kein Privileg von Erben sein!",1,1,0,0,0,0,0,0,1,1,0,0
+107,"Dekarbonisierung der Wärmeversorgung (raus aus Öl und Gas); Sanierungsoffensive",0,0,0,0,0,0,0,0,0,0,0,0
+108,"Ziel muss es sein, nicht mehr Flächen zu versiegeln, wie auch wieder entsiegelt und renaturiert werden. Netto-Null-Versiegelung!",1,1,0,0,0,0,0,0,1,1,0,0
+109,"Ein Dach über dem Kopf muss ein Menschenrecht sein und darf an keine Leistung gebunden sein.",1,1,0,0,0,0,0,0,1,1,0,0
+110,"Es soll bevorzugt in die Höhe gebaut werden, statt in die Fläche.",40,24,4,12,13,5,4,4,27,19,0,8
+111,"Raumplanung und Bau neuer Wohn- und Arbeitsgebiete vor allem um öffentliche Verkehrsinfrastruktur!",459,295,44,120,166,70,34,62,293,225,10,58
+112,"Die Kosten von thermischer Sanierung müssen vom Staat übernommen werden. Sonst wird klimafreundliche Wohnen unleistbar.",343,111,102,130,138,56,40,42,205,55,62,88
+113,"Städte: Leerstandsabgaben für Wohnungen und Geschäfte spätestens nach 6 Monaten Leerstand",548,313,129,106,191,38,104,49,357,275,25,57
+114,"Mehr innerstädtische Grünflächen reduzieren den Wunsch nach ""Wohnen im Grünen"" und Wochenendausflügen ""ins Grüne"".",496,314,72,110,173,72,54,47,323,242,18,63
+115,"Städte: Naturnahe Spielplätze.",408,274,21,113,151,84,15,52,257,190,6,61
+116,"Praktischer Klimaschutz: Keine Dosen, Flaschen und Fast Food Abfälle in den Straßengraben und ins Gelände",1,1,0,0,1,1,0,0,0,0,0,0
+117,"Städte attraktiv für Fußgänger und Radfahrer gestalten!",1,1,0,0,0,0,0,0,1,1,0,0
+118,"Die Raumordnung gehört auf Bundesebene verschoben und muss von unabhängigen Fachläuten geprüft werden",449,282,55,112,157,58,45,54,292,224,10,58
+119,"Alle Ausbauforderungen zahlt letztendlich der Konsument oder der Steuerzahler. Der Staat hat kein eigenes Geld…..",1,1,0,0,1,1,0,0,0,0,0,0
+120,"Mehr städtische Begrünung: Fassaden, Hausdächer, Freiflächen, echte Grünraumgestaltung statt nur Rasenflächen, inkl. Bäumen, Hecken, Wiesen",508,417,34,57,176,108,31,37,332,309,3,20
+121,"Es braucht eine sofortige Sanierungsförderung um die Emissionen der Bestandswohngebäude zu reduzieren.",469,308,46,115,164,76,36,52,305,232,10,63
+122,"Keinerlei Förderungen für neue Einfamilien oder Zweifamilienhäuser.",488,199,177,112,170,23,115,32,318,176,62,80
+123,"Garagen unter Wohnblocks, jede Wohnung mit Kaminanschluss.",112,35,23,54,52,22,6,24,60,13,17,30
+124,"Öffentliche Gebäude werden in Zukunft nur mehr in Holzbauweise errichtet.",116,26,42,48,51,6,23,22,65,20,19,26
+125,"Für alle neuen Gebäude verpflichtende PV—Anlagen",1,1,0,0,0,0,0,0,1,1,0,0
+126,"Die ""Gemeinwohlökonomie"" als sinnvolle und realistische Alternative bewerben und fördern!",1,1,0,0,1,1,0,0,0,0,0,0
+127,"Vereinfachung der Regeln zur Fassadenbegrünung und mehr Unterstützung diesbezüglich vom Land/Bund",459,323,39,97,166,88,31,47,293,235,8,50
+128,"Wenn nötig ja,aber auf die Umgebung achten,nicht bei 2-3stöckigen Häusern ein 8-10 stöckiges Gebäude hinstellen.Ist nicht nachvollziehbar.",1,1,0,0,1,1,0,0,0,0,0,0
+129,"Wohnen ist Grundrecht - Verbot von Missbrauch des Wohnraums für Spekulationen. Verpflichtende Vorbehaltsflächen für sozialen Wohnbau.",161,93,23,45,66,20,19,27,95,73,4,18
+130,"Bauen mit verpflichtetem hohem Anteil an regenerativen und klimafreundlichen Baumaterialien, v.a. mit Holz.",182,105,19,58,64,18,14,32,118,87,5,26
+131,"Bauen unter Einhaltung von Kriterien zur Kreislaufwirtschaft (cradle-to-cradle)",207,131,13,63,76,25,11,40,131,106,2,23
+132,"Weil große unkontrollierte Bodenversiegelung: landwirtsch. Gebäude nicht mehr auf landw. Fläche bauen, sondern auf dafür gewidmeten Flächen.",347,162,42,143,134,48,29,57,213,114,13,86
+133,"gesamten Immobilienmarkt verstaatlichen",111,16,58,37,51,3,34,14,60,13,24,23
+134,"Für nicht mehr sanierbare Häuser in den Dörfern kostenlose Entsorgung statt neue Flächenwidmung außerhalb.",193,112,20,61,73,34,11,28,120,78,9,33
+135,"Keine Neubauten von Supermärkten mehr",203,102,35,66,74,24,23,27,129,78,12,39
+136,"Harte Strafen für Umweltzerstoerer.Sie töten Menschen",146,55,32,59,65,11,24,30,81,44,8,29
+137,"Techniker für den Austausch  vorhandener Steuerungen bei alten öl-Heizungen ausbilden. Intuitive Geräte bringt 30% Soforteinsparungen.",123,52,13,58,57,24,4,29,66,28,9,29
+138,"Anstatt die Gasheizungen zu entfernen, sollte das Ferngasnetz mit CO2 neutralen alternativen befüllt werden. (Biogas)",125,52,18,55,53,28,3,22,72,24,15,33
+139,"Zuwachs der Bevölkerung in den Städten reduzieren. Dann brauchen wir auch weniger Wohnungen , Energie usw",111,29,49,33,49,16,17,16,62,13,32,17
+140,"statt gasheizungen wasserstoffheizungen",94,11,33,50,45,8,14,23,49,3,19,27
+141,"keine neuen Umwidmungen mehr",136,45,30,61,57,9,20,28,79,36,10,33
+142,"steuerliche Benachteiligung von Einfamilienhäusern",117,30,48,39,50,2,33,15,67,28,15,24
+143,"Energieüberschuss sollte auch ins öffent.. Stromnetz eingespeist werden dürfen, dafür sollten bestehende Hürden wegfallen!!!",209,154,5,50,78,48,4,26,131,106,1,24
+144,"Für alle Kategorien von Neubauten verpflichtende Bauvorschriften, die minimalen Energieverbrauch für Heizen/Klimatisieren sicherstellen.",233,167,14,52,77,39,14,24,156,128,0,28
+145,"Österreich benötigt einen Leerstandskataster.",248,154,37,57,78,18,32,28,170,136,5,29
+146,"kommt einer Enteignung gleich und ist daher strikt abzulehnen",0,0,0,0,0,0,0,0,0,0,0,0
+147,"Zusätzliche Massnahmen wie Isolierung, Abwärmenutzung, Erneuerbare Energie",1,1,0,0,0,0,0,0,1,1,0,0
+148,"Jeder sollte durch photovoltaik selbst erzeuten und in baterien gespeicherten Strom ohne Ansuchen u. Bewilligungen nutzen dürfen",158,83,11,64,61,27,7,27,97,56,4,37
+149,"Zumindest im Ansatz, Stiftungsvermögen oder dergleichen kann zusätzliche Lasten tragen",1,1,0,0,0,0,0,0,1,1,0,0
+150,"Einsatz von Brennstoffzellen für H2 Konvertierung",93,16,10,67,44,7,4,33,49,9,6,34
+151,"Wenn ich mir nichts mehr Leisten kann und nichts habe was mir Freude macht - warum soll mich die Umwelt dann noch Interessieren!",102,26,36,40,50,22,7,21,52,4,29,19
+152,"Home-Office und Breitband-Internet sollten flächendeckend gewährleistet  werden, auch mit STARLINK. Dies reduziert den Pendlerverkehr.",158,73,17,68,64,30,11,23,94,43,6,45
+153,"Soweit sinnvoll",1,1,0,0,0,0,0,0,1,1,0,0
+154,"Die Schaffung und Gewährleistung der Infrastruktur für die Arbeit von zu Hause aus reduziert Emissionen durch den Verkehr zum Arbeitsplatz.",198,134,10,54,72,40,6,26,126,94,4,28
+155,"Online-Shopping reduziert signifikant den Individualverkehr und schafft Arbeitsplätze für Programmierer, Content-Creator und Zustellern.",112,22,40,50,52,12,16,24,60,10,24,26
+156,"Ich würde gerne meine Gastherme rausschmeißen, finde aber keine passende und vor allem Leistbare Alternative.",118,45,11,62,54,22,4,28,64,23,7,34
+157,"Voltaikanlagen auf Balkone, an der Steckdose anstecken und so Solar-Strom zum Verbraucher zu bringen",161,77,19,65,67,24,14,29,94,53,5,36
+158,"Mehrparteienhäuser mit Gasheizungen: Minderheit soll allgem. Teile für erneuerbare Heizanlage nutzen können",121,36,16,69,51,9,13,29,70,27,3,40
+159,"Jeglicher Wohnbau soo oberirdisch in der ökologischen  Holzbauweise errichtet werden, Anteil steigt jedes Jahr um 10% bis auf 100%",85,17,22,46,41,3,9,29,44,14,13,17
+160,"Leerstandgesetz dringend notwendig! im stätischen Wohnbau höhere Gebäude vorschreiben, dafür mehr Grünflächen, Wohnungen gut isolieren,",246,135,46,65,82,14,39,29,164,121,7,36
+161,"Bessere Förderung von kreislauffähigem und ökologischem Bauen und Sanieren mit nachwachsenden Rohstoffen (NawaRos), diese binden CO2!",214,157,9,48,70,33,7,30,144,124,2,18
+162,"Förderung klimafreundl. Wohnens mit gemeinsam genutzten Flächen ggü neuer Einfamilienhäusern & Leerstandsabgabe f effiziente Wohnraumnutzung",288,151,44,93,100,17,37,46,188,134,7,47
+163,"Bauprojekte (Neubau und Sanierungen) müssen über den gesamten Lebenszyklus betrachtet werden, nicht nur Errichtung und Nutzung auch Rückbau",188,130,8,50,68,33,8,27,120,97,0,23
+164,"Es darf keine Benachteiligung sozial Schwacher entstehen",195,127,19,49,73,43,13,17,122,84,6,32
+165,"Förderung bei energieautarken Bauen und sanieren",242,183,8,51,81,47,7,27,161,136,1,24
+166,"Bei Sanierungen ist nicht immer Dämmen die beste Lösung. Wärme besser aus Wärmepumpen/Solarkollektoren als Gas auch ohne Styropordämmung",126,48,17,61,53,18,7,28,73,30,10,33
+167,"Bau-Sondermüll vermeiden, indem Anreize gesetzt werden, wiederverwert- und gut voneinander trennbare Materialien zu verwenden",201,156,4,41,70,40,3,27,131,116,1,14
+168,"Heizen mit Holz ist erneuerbare Energie. Wenn sich jemand aus eigenem Wald versorgen kann ist das klimaneutral. Trotz der Gegenrufe!",133,57,21,55,65,31,9,25,68,26,12,30
+169,"Kosten für die Umrüstung der Gebäudeheizung dürfen nicht auf Mieter abgewälzt werden",129,55,34,40,53,16,19,18,76,39,15,22
+170,"Mehr unabhängige Energieberatungen der Energieagenturen. Aktuell viel zu wenig Unterstützung beim Umstieg.",157,91,12,54,62,28,7,27,95,63,5,27
+171,"Ich hätte gerne eine unabhängige, objektive Energieberatung.",136,86,8,42,59,34,5,20,77,52,3,22
+172,"Die Wertsteigerung durch Umwidmung von Grün- zu Bauland soll der Allgemeinheit zu Gute kommen, nicht den Bekannten der Bürgermeister*innen.",208,137,16,55,77,30,15,32,131,107,1,23
+173,"Weniger Bevölkerung, Baustopp",0,0,0,0,0,0,0,0,0,0,0,0
+174,"Überhitzung durch entsprechende Planung und Bauausführung verhindern, dann braucht man nachher keine Klimaanlagen",200,154,7,39,74,45,5,24,126,109,2,15
+175,"in den Städten Autos in Tiefgaragen und darüber Grünanlagen errichten",163,94,19,50,63,35,6,22,100,59,13,28
+176,"Wer sool das bezahlen.",0,0,0,0,0,0,0,0,0,0,0,0
+177,"Moderne Mülltrennsysteme kommen der Kreislaufwirtschaft zu Gute",218,162,8,48,75,44,6,25,143,118,2,23
+178,"Energiekosten sollten von Hausbesitzern getragen werden, nich von Mieter*innen, die sich das Heizsystem nicht aussuchen können",133,38,56,39,58,11,32,15,75,27,24,24
+179,"Dach-/Fassadenbegrünungen fördern/verpflichten",261,171,37,53,88,30,32,26,173,141,5,27
+180,"Die gesamte Wohnbauförderung muss bundesstaatlich geregelt werden und nicht länderweise wie derzeit.",177,94,21,62,72,26,15,31,105,68,6,31
+181,"klimaschädliche baustoffe wie z.b. beton und polystyrol müssen höher versteuert werden & subventionierung von klimafreundlichen materialien",199,113,33,53,73,17,28,28,126,96,5,25
+182,"stärkere einschränkungen, wer in österreich bauen/planen darf. Für klimafitte gebäude ist expertise gefragt, nicht selberbauer",126,38,24,64,55,8,18,29,71,30,6,35
+183,"wohnhäuser außerhalb der Reichweite von öffentlichen Verkehrsmitteln sollen nicht mehr bewilligt werden.",195,84,67,44,73,16,39,18,122,68,28,26
+184,"Verpfl. Photovoltaikanlagen auf Dächern von Gebäuden, noch mehr gefördert von Bund, Land und ev. Gemeinde -> Energieautarkie(klimafreundl.).",246,157,25,64,83,27,20,36,163,130,5,28
+185,"Bei neuen Wohnbauten verpflichtend mindestens 40% der Fläche muss Grünfläche sein!",146,59,21,66,64,19,15,30,82,40,6,36
+186,"Förderung von gemeinschaftlich genutzter Fläche im Wohnbau (gemeinschaftsräume, balkone, etc.)",214,106,36,72,83,18,28,37,131,88,8,35
+187,"Verringerung individueller Wohnfläche durch erhöhung gemeinschaftlich genutzter Flächen",198,84,47,67,75,8,38,29,123,76,9,38
+188,"Thermische Sanierungen und die Erneuerung des Heizsystems darf nicht zu einer Erhöhung von Mieten führen.",148,66,38,44,61,27,17,17,87,39,21,27
+189,"Bestehende Öl- und Gasheizungen müssen weiterhin zugelassen werden. Der Abbruch einer funktionierenden Heizanlage ist nicht ökologisch!",174,55,59,60,64,39,6,19,110,16,53,41
+190,"Sozialer Wohnbau soll Österreichweit mehr bauliche Qualität (klimafreundliche Materialien) aufweisen",235,182,12,41,81,51,10,20,154,131,2,21
+191,"Aufnahme von Neubauwohnungen in den Vollanwendungsbereich des Mietrechts, niedrigere Mietzinsobergrenzen für Wohnungen mit Öl/Gasheizung.",102,22,28,52,46,4,16,26,56,18,12,26
+192,"Leerstandserhebungen mit adäquaten Pönalen bei Nichtbereitstellung (Vermietung) von 2., 3., etc. Wohnsitzen. --> Eindämmung des Bauwahns.",262,149,53,60,89,15,48,26,173,134,5,34
+193,"Bauland befristen und bei nicht bebauung stärker durchgreifen",164,73,25,66,67,15,20,32,97,58,5,34
+194,"Städtische Fassadenbegrünung, um Kühlungseffekte zu schaffen - gefördert von Bund und Land.",296,213,28,55,97,44,23,30,199,169,5,25
+195,"Immobilienspekulation muss verhindert werden, daher hohe Besteuerung von nicht selbst verwendeten oder leerstehendem Immobilieneigentum.",163,97,27,39,61,13,25,23,102,84,2,16
+196,"Flächenversiegelung durch Leerstandserhebung und -abgabe stoppen. Revitalisierung alter Gebäude, Entsiegelung unnützer betonierter Flächen.",272,198,31,43,89,29,30,30,183,169,1,13
+197,"Gemeinschaftliche Wohnprojekte sollen Förderungen erhalten, die an passendere Rahmenbedingungen geknüpft sind.",210,122,16,72,71,23,14,34,139,99,2,38
+198,"Möglichkeit eines staatlichen Kredits zu Selbstkosten für sämtliche Sanierungsmaßnahmen",164,92,18,54,63,24,13,26,101,68,5,28
+199,"Da die Bürgermeister in den Genossenschaften sitzen ist hier ein Interessenskonflikt vorprogrammiert. Die Widmung gehört daher zum Land.",183,111,16,56,63,28,12,23,120,83,4,33
+200,"Brauchwassernutzung in jedem Neubau verpflichtend",204,119,24,61,77,30,15,32,127,89,9,29
+201,"Reihenhäuser anstatt alleinstehender Einfamilienhäuser. Kleinere Wohnflächen. Bauen nur erlauben wo auch gute Infrastruktur (Mobilität)",153,70,40,43,63,8,30,25,90,62,10,18
+202,"Auch wenn wie Österreich ab sofort in die Steinzeit zurücksetzen würden .... Das Klima würde es nicht einmal bemerken !!",161,40,72,49,66,35,8,23,95,5,64,26
+203,"Sonnennutzung für Häuser ist abhängig von der Orientierung der Dachflächen. Ausweg = Zusammenschlüsse zu Gemeinschaften die sich +/- teilen.",196,118,14,64,70,26,13,31,126,92,1,33
+204,"Länder sollen Raumordnungen und Bauordnungen eigenständig regeln. Klimaschutz soll wesentlich mehr Bedeutung haben. Keine Zentralisierung!",1,1,0,0,1,1,0,0,0,0,0,0
+205,"Jedes E-Fahrzeug muss Solar am Dach haben um Stromverbrauch zu reduzieren. Keine Styrporplatten als Wärmedämmung zulassen, nicht nachhaltig.",1,1,0,0,1,1,0,0,0,0,0,0
+206,"Pellets sind Feinstaubschleudern und werden oft aus alten Wäldern in Rumänien, Ukraine oder Bulgarien gewonnen. Klimafreundlich? Wohl kaum!",1,1,0,0,1,1,0,0,0,0,0,0
+207,"Es gibt KEINE Möglichkeit zu einem Statement einen Kommentar zu verfassen. wie sollen da Ideen gesammelt werden? zuerst 68 Statements lesen?",1,1,0,0,0,0,0,0,1,1,0,0
+208,"Es gibt Bestrebungen, Hasspostings zu verbieten, aber auch Ideen zu verhindern... DIESE neue Art von Diskussion führt nicht zum Ziel. leider",111,22,29,60,47,13,7,27,64,9,22,33
+209,"Die Werkzeuge der Raumplanung gibt es schon lange !!! man muss sie nur nutzen wollen...",1,1,0,0,0,0,0,0,1,1,0,0
+210,"Die stetige und extreme Zunahme der Erdbevölkerung ist ein für das Klima bis heute kaum diskutierter Punkt. Darüber muss gesprochen werden!",1,1,0,0,1,1,0,0,0,0,0,0
+211,"PV-Anlagen sollten leistbarer werden.",218,147,9,62,75,44,6,25,143,103,3,37
+212,"versiegelte Flächen bei Supermärkten per Raumplanung verhindern. >Öffis >PKW im EG >Einkaufen im OG >Arzt im Dachgeschoss >Mehrfachnutzungen",200,139,9,52,71,35,7,29,129,104,2,23
+213,"versiegelte Flächen bei Supermärkten per Raumplanung verhindern. gewonnene Fläche für Verdichtung nutzen >Flächenfrass verhindern",216,157,8,51,79,39,8,32,137,118,0,19
+214,"Städte: leerstehende Büroräumlichkeiten und ehemalige Geschäftslokale sollen zu Wohnungen umgebaut werden.",204,132,14,58,78,39,11,28,126,93,3,30
+215,"Eine Zweitwohnung im Heimatort wird dann zum Luxus.",1,1,0,0,0,0,0,0,1,1,0,0
+216,"sinnlos hier etwas zu schreiben, weil ich NICHT weis, ob der Text dem Statement das ich lese zugeordnet wird. zurückblättern unmöglich! neu?",1,1,0,0,0,0,0,0,1,1,0,0
+217,"Maßnahmen zum Energiesparen werden von der Politik ignoriert, anstatt werden neue Kraftwerke und Windräder gebaut, als gäbe es kein Morgen!!",1,1,0,0,1,1,0,0,0,0,0,0
+218,"Klimaschutz kann nicht von oben diktiert werden! Subsidiaritätsprinzip. Länder und Gemeinden dürfen nicht vom Bund entmachtet werden!",1,1,0,0,1,1,0,0,0,0,0,0
+219,"Gemeinnützige Wohnbauträger müssen bei Altbauten, sofern es technisch möglich ist, auf alternative Energieträger umsteigen.",239,172,23,44,84,37,21,26,155,135,2,18
+220,"Die Innenstadt sollte nicht nur aus Bürogebäuden bestehen. Stattdessen sollten diese in Wohnungen umgewandelt werden.",182,97,15,70,64,24,9,31,118,73,6,39
+221,"Bürgermeister müssen besser vor Baulobby geschützt werden. Mehr Beratung und Betreuung für Gemeindevertreter!",187,107,16,64,70,25,14,31,117,82,2,33
+222,"Bevölkerungswachstum erfordert mehr Wohnraum, 1 Kind Politik um Schrumpfungseffekt herbeizuführen? Nach 100 Jahren evaluieren.",1,1,0,0,1,1,0,0,0,0,0,0
+223,"Verringerung der Hürden, um Dachflächen und Balkone in Gemeinschaftsanlagen für PV zu nutzen, Nachrang für optisches Erscheinungsbild.",222,154,22,46,75,35,16,24,147,119,6,22
+224,"Stimme zwar zu, aber bei schlechter Witterung wird wenig Strom produziert - sowie auch in den Wintermonaten (kürzere Tage)",97,18,12,67,45,9,3,33,52,9,9,34
+225,"Eine eigene klimakommission soll die Gesetze bewerten? Nein, das ist Aufgabe des Parlaments.",107,27,27,53,53,19,6,28,54,8,21,25
+226,"Bringen Sie neue Perspektiven, Erfahrungen und Probleme ein",0,0,0,0,0,0,0,0,0,0,0,0
+227,"Votvoltaik auf alle Balkone, die auf der Sonnenseite sind, besonders Augenmerk auch für die  Energiegewinnung die Hitzeinseln nutzen",190,86,30,74,70,15,22,33,120,71,8,41
+228,"Beteiligung an Wind- & PV-Kraftwerken mit steuerfreier Stromlieferung an Wohnungen in mehrgeschoßigem Wohnbau als Hauptwohnsitz ermöglichen.",187,117,11,59,71,34,7,30,116,83,4,29
+229,"Bürger-Kraftwerke Wien: Ministerium muss Umwandlung d. €-Ausschüttungen in steuerfreie kWh-Stromlieferungen in ganz Österreich ermöglichen.",114,37,8,69,51,8,8,35,63,29,0,34
+230,"ALLE Fernwärmenetzbetreiber mit Erdgasbezug müssen wie in Wien rasch umsetzbare Konzepte für Nutzung von Wärme aus Abwasser entwickeln.",163,91,11,61,65,24,9,32,98,67,2,29
+231,"ALLE Fernwärmenetzbetreiber mit Erdgasbezug müssen wie in Wien rasch umsetzbare Konzepte für Erdwärme-Nutzung mit Wärmepumpen entwickeln.",1,1,0,0,0,0,0,0,1,1,0,0
+232,"Gesetz gegen Schlafbeeinträchtigung & Lichtverschmutzung: Firmen-Lichtreklamen außerhalb der Öffnungszeiten müssen sofort verboten werden.",232,146,28,58,80,34,20,26,152,112,8,32
+233,"Konstanthalten der Bevölkerung in Österreich soll als zusätzliches 7. Ziel  in die österreichische Bundesverfassung aufgenommen werden.",1,1,0,0,0,0,0,0,1,1,0,0
+234,"Als Nachhaltigkeitsziel sollte ein Bevölkerungszuwachs zwischen -0,5% und 0,0% pro Jahr in die Verfassung aufgenommen werden.",1,1,0,0,0,0,0,0,1,1,0,0
+235,"In allen Großstädten sollte die Bevölkerung befragt werden, ob weiter ein Zuwachs der Stadt-Bevölkerung gewünscht ist.",1,1,0,0,0,0,0,0,1,1,0,0
+236,"Wir brauchen Reform der Grunderwerbsteuer mit Ziel, Gebäudebestand zu entlasten und den Handel mit neuem umgewidmeten Bauland zu verteuern.",141,62,16,63,55,9,13,33,86,53,3,30
+237,"Die bisher umweltschädigende Wohnbauförderung der Länder soll rasch an eine Mindest-Geschoßanzahl gekoppelt werden.",129,45,23,61,57,8,20,29,72,37,3,32
+238,"Klimaschutz ist in der Raumordnung/-planung gesetzlich zu verankern, integrative Strategien zum Klimaschutz sind zu entwickeln & umzusetzen.",1,1,0,0,0,0,0,0,1,1,0,0
+239,"Verkehrs-, Energie- und Raumplanung sind unter dem Aspekt einer energieeffizienten Siedlungsentwicklung aufeinander abzustimmen.",217,171,7,39,79,48,6,25,138,123,1,14
+240,"Wohnbauförderung soll in der Stadt/am Land nur mehr für Wohnungen in Gebäuden mit mindestens 10/4 Geschoßen gewährt werden.",114,25,37,52,50,2,25,23,64,23,12,29
+241,"Neue Wohngebäude sollen nur mehr gefördert werden, wenn sie einen Heizwärmebedarf von maximal 20 kWh/m² und Jahr aufweisen.",1,1,0,0,0,0,0,0,1,1,0,0
+242,"Die Gemeinde soll nicht mehr Baubehörde sein. Grenzlegale Bewilligungsbescheide sind vorprogrammiert.",0,0,0,0,0,0,0,0,0,0,0,0
+243,"Bauordnungen müssten regelmäßig auf den Stand der Technik gebracht und entschlackt werden. Bauordnung ist tlw indirekte Wirtschaftsförderung",184,114,9,61,77,34,8,35,107,80,1,26
+244,"Alle Häuser müssen isoliert werden. Umweltfreundliche Alternativen sind: Stroh, Lehm/Stroh, Hanf, Wolle, etc. Den Bekanntheitsgrad erweitern",188,105,30,53,70,19,24,27,118,86,6,26
+245,"TCO Betrachtung ist wichtig - auch was Emissionen betrifft.",95,15,7,73,45,4,7,34,50,11,0,39
+246,"Extrem wichtig ist die Wärmedämmung freihstehender Einzelhäuser (etwa der klassischen Einfamilienhäuser). Sie ist gesetzlich zu verankern",201,98,41,62,79,13,33,33,122,85,8,29
+247,"Steingärten, Beton- und Pflasterwüsten sind auch zu überdenken.",213,141,17,55,75,34,13,28,138,107,4,27
+248,"idee Energiebedarfsgeregelte Besitzabgaben.",97,10,31,56,46,0,23,23,51,10,8,33
+249,"Auch vorhandenen Flächen sollen evaluiert werden und eventuell rückgewidmet werden.",231,158,19,54,83,36,17,30,148,122,2,24
+250,"Nicht jede gute Idee muss immer gleich massiv gefördert werden",1,1,0,0,0,0,0,0,1,1,0,0
+251,"Förderung bei thermischer Sanierung privater Gebäude ist wichtig. Am besten wäre wohl eine Förderung durch KNOW-HOW, und schlanke Bürokratie",196,123,6,67,72,36,5,31,124,87,1,36
+252,"Welchen Anreiz habe ich, Besitzerin eines Einfamilienhauses, etwas in Klimaschutz zu investieren? Die Heizrechnung kann ich bezahlen.",98,13,27,58,46,9,6,31,52,4,21,27
+253,"Wohnen soll Freude machen",165,114,8,43,65,48,1,16,100,66,7,27
+254,"Klimaanlagen nur genehmigen, wenn Verbrauch mit PV-Anlagen ausgeglichen wird. Schöner Tag mehr Hitze/Sonne mehr Energie.",204,106,39,59,77,19,29,29,127,87,10,30
+255,"Förderung von Regenwasserspeicher. Nutzen des Regenwassers wenn trocken statt ableiten besser für das Grundwasser, bei versiegelten Flächen.",219,159,4,56,83,53,3,27,136,106,1,29
+256,"Mehr Eigentum weniger Mietobjekte. Der Eigentümer ist flexibler bei Investitionen in das Gebäude bzw. bei PV Anlagen",124,38,36,50,55,27,8,20,69,11,28,30
+257,"Erneuerbare Energien sollten mehr propagiert und gefördert und die Vorschriften einfacher werden",240,179,12,49,85,44,12,29,155,135,0,20
+258,"Städte sollen so attraktiv (grün) werden, dass nicht jeder vom Haus im Grünen träumt...",260,193,22,45,93,43,21,29,167,150,1,16
+259,"Grundeinkommen ohne weitere Bedingungen für Menschen, die CO2-neutral leben",143,39,60,44,62,4,41,17,81,35,19,27
+260,"Bedingungsloses Grundeinkommen",181,68,65,48,65,10,39,16,116,58,26,32
+261,"Klimaanlagen sind so zu programmieren/zu bauen, dass nicht kälter als 22 Grad eingestellt werden kann",179,83,41,55,61,16,23,22,118,67,18,33
+262,"und wer kann sich diese wohnungen dann leisten?",1,1,0,0,1,1,0,0,0,0,0,0
+263,"was werden die hauseigentümer denn dazu sagen?",1,1,0,0,1,1,0,0,0,0,0,0
+264,"und nicht umgekehrt",1,1,0,0,1,1,0,0,0,0,0,0
+265,"Wichtig ist ein weiß färben von möglichst vielen Siedelungsfläche (Dächer Parkplätze, Gehwege) die nicht mittels Photovoltaik genutzt werden",98,28,12,58,46,9,6,31,52,19,6,27
+266,"ich wohne bei der GLORIETTE,einer sozialbauanlage mit viel grün.das LEISTEN gebe ich Ihnen recht",1,1,0,0,1,1,0,0,0,0,0,0
+267,"ich bin ein kriegskind,damals noch kein problem, vielleicht ist der wohnbau heute schon besser",1,1,0,0,1,1,0,0,0,0,0,0
+268,"sind Sie millionär?bei diesen horrenden preisen nicht leistbar.wohne in einem SOZIALBAU bei der GLORIETTE. wunderschön!",1,1,0,0,1,1,0,0,0,0,0,0
+269,"gibt es denn solche gescheiten köpfe die das zuwege bringen können?",1,1,0,0,1,1,0,0,0,0,0,0
+270,"haben Sie beim spaziergang die wege und grünflächen gesehen? da liegt jede menge MÜLLsagen Sie das einmal ihren nachbarn",1,1,0,0,1,1,0,0,0,0,0,0
+271,"die müßte aber konsequent sein",1,1,0,0,1,1,0,0,0,0,0,0
+272,"es sollte bei jedem neubau verpflichtend zu jeder wohnung ein parkplatz miteinbezogen werden.ich glaube zu wissen JAPAN hat so etwas",100,26,38,36,46,20,8,18,54,6,30,18
+273,"Alte leerstehende Gebäude renovieren und dadurch Neubauten reduzieren um Grünflächen zu erhalten",0,0,0,0,0,0,0,0,0,0,0,0
+274,"Um Flächen zu sparen sollten Supermärkte NUR noch neu errichtet werden wenn sie eine Tiefgarage bauen und ein Stockwerk oben auf!",0,0,0,0,0,0,0,0,0,0,0,0
+275,"Abschaffung der MwSt auf ersten Wohnkauf, aber dafür auf Anlagenobjekte + extra Steuer auf jeden Wohnung/Hauskauf über den 1. hinaus",119,32,38,49,48,4,21,23,71,28,17,26
+276,"Bei Nachverdichtung sollte die Höhe (Vertikale) mit gedacht werden.",151,80,11,60,64,23,9,32,87,57,2,28
+277,"Alte, leerstehende Häuser im Ortskern sollten gefördert abgebaut werden um neuen Wohnraum zu erschaffen.",166,94,33,39,58,32,9,17,108,62,24,22
+278,"Weg von Styropor-Hausdämmung. Natürliche Dämmstoffe müssen gefördert und leistbar werden.",192,124,16,52,77,34,12,31,115,90,4,21
+279,"Bau- und Klimaschutzvorschriften dürfen Wohnen und Bauen nicht unleistbar machen. Kosten und Nutzen gegenüberstellen.",144,76,20,48,58,38,4,16,86,38,16,32
+280,"Platformen zur Planung/Errichtung/Administration geteilter Infrastruktur. Nicht jeder braucht eine eigene PV Anlage, Tischkreissäge etc.",140,72,19,49,60,17,15,28,80,55,4,21
+281,"Wien: Genossenschaften zu nachträglicher Begrünung (Fassaden etc. ) zwingen.",153,69,27,57,58,13,21,24,95,56,6,33
+282,"es wird nicht genug Handwerker geben, die dann alle zeitgleich sanieren müssten",1,1,0,0,1,1,0,0,0,0,0,0
+283,"es kann aber auch eine Wärmepumpe, eine Bio-Masse Anlage sein  -> nicht nur PV",155,90,6,59,57,27,3,27,98,63,3,32
+284,"Endlich 1 (statt 9!) raumordnungsgesetz, aber gleich mit climate proofing konzepten.",189,117,24,48,69,23,21,25,120,94,3,23
+285,"Verpflichtende begrünungsmaßnahmen bei neubauten und sanierungen (sofern zb statisch möglich) + kombi mit PV. Auch bei begegnungszonen!",184,111,19,54,65,18,17,30,119,93,2,24
+286,"Balkonkraftwerke entlasten bei den Energiekosten. Und auf Flachdächern könnte man Solaranlagen anbringen (Reihenhäuser, Supermärkte etc.).",1,1,0,0,1,1,0,0,0,0,0,0
+287,"Wärmepumpen, Photovoltaik, Solarzellen intensiv untersützen",1,1,0,0,0,0,0,0,1,1,0,0
+288,"Energiesparen sexy machen",1,1,0,0,0,0,0,0,1,1,0,0
+289,"Tempolimit auf Autobahenen 100! europaweit!",1,1,0,0,0,0,0,0,1,1,0,0
+290,"Leerstehende Hotels und Bürogebäude in Wohnungen umbauen.",182,117,16,49,65,30,11,24,117,87,5,25
+291,"Es darf nicht sein das weltfremde Studenten ehrlich arbeitenden Bürgern vorschreiben wie sie zu leben haben.",1,1,0,0,1,1,0,0,0,0,0,0
+292,"Modell wie in Barcelona! Leerstandsabgabe, zeitlich begrenzte Vermietungspflicht, sonst Übergang in Kommunaleigentum > Sozialwohnungen",188,95,46,47,62,7,37,18,126,88,9,29
+293,"Notkamine sind wichtig. Was sit wenn die Fernwäreme oder andere Heizung ausfällt????",1,1,0,0,1,1,0,0,0,0,0,0
+294,"Notkamine sind wichtig. Im Falle eines Ausfalls der Fernwärme.",85,26,22,37,40,15,9,16,45,11,13,21
+295,"Höhere Energiepreise für Nebenwohnsitze",128,36,54,38,53,2,36,15,75,34,18,23
+296,"ja, es gibt auch keine PV Module mehr (kommen dzt. nicht aus China weg). Keine Wechselrichter am Markt (angeblich wieder Ende 2022)",1,1,0,0,1,1,0,0,0,0,0,0
+297,"aha. Jemand der nicht genug Geld auf der Kante hat, soll sanieren. Falls nicht, soll er Strage zahlen. Schon mal überlegt?",1,1,0,0,1,1,0,0,0,0,0,0
+298,"insbesondere die Landwirte sollen die Umweltschutzverordnungen (Land, Gemeinden) einhalten. Die sind ja derzeit von allem ausgenommen.",132,80,10,42,55,30,6,19,77,50,4,23
+299,"ist das nicht die Entscheidungskompetenz des Besitzers?",1,1,0,0,1,1,0,0,0,0,0,0
+300,"wo kommt das Holz für so eine Notheizung her? Das ist dann erst nach 100 Jahren CO2 neutral!",1,1,0,0,1,1,0,0,0,0,0,0
+301,"schön für Sie, wenn Sie es sich leisten können.",1,1,0,0,1,1,0,0,0,0,0,0
+302,"wer kümmert sich drum?",1,1,0,0,1,1,0,0,0,0,0,0
+303,"das ist aber jedem seine eigene Sache. Klingt sonst nach Kommunismus ;-)",1,1,0,0,1,1,0,0,0,0,0,0
+304,"Diese ganzen Fristen und Schikanen bei den Förderungen sind überflüssig und unnötig. Ebenso für Wärmepumpen nur bis 40° Vorlauftemp.",1,1,0,0,1,1,0,0,0,0,0,0
+305,"insbesondere für Landwirte, die sind ja bisher quasi überall ausgenommen. Uralt Traktor mit Dieselantrieb bei Holzsägen, statt Strom ...",1,1,0,0,1,1,0,0,0,0,0,0
+306,"Hochwasserschutz vorrangig durch Renaturierung und weniger durch Betonbauten",1,1,0,0,0,0,0,0,1,1,0,0
+307,"Kommunismus?",1,1,0,0,1,1,0,0,0,0,0,0
+308,"in den großen Städten bei Abrissobjekten nicht neu bauen sondern einen Park errichten, reduziert Hitzeinseln",1,1,0,0,1,1,0,0,0,0,0,0
+309,"wer bezahlt das, der Steuerzahler?",1,1,0,0,1,1,0,0,0,0,0,0
+310,"verpflichtende Grünstreifen/ bepflanzter Innenhof/begrüntes Dach bei Neubauten in den Innenstädten",182,129,14,39,68,32,13,23,114,97,1,16
+311,"Verpflichtender Energieausweis für Häuser, Förderung von effizienten Sanierungen, Umbauten und erhöhte Abgabe bei fossilen Heizungen.",197,115,26,56,65,15,21,29,132,100,5,27
+312,"Fernwärme grün ausbauen und subventionieren.",170,121,11,38,61,32,8,21,109,89,3,17
+313,"Solarmodule für Warmwasser subventionieren und bekannt machen (sehr hoher Wirkungsgrad).",153,102,6,45,58,29,4,25,95,73,2,20
+314,"Wohnungen die als Wertanlage leer stehen müssen verteuert werden, das es sich nicht rentiert.",202,122,31,49,72,19,27,26,130,103,4,23
+315,"Wie wir leben, hat einen großen Einfluss auf das Klima.",1,1,0,0,0,0,0,0,1,1,0,0
+316,"private fossile verbrennung (öl,gas,kohle) schrittweise höher besteuern zb 2025-2035 ... fossil wird finanziell unattraktiv",0,0,0,0,0,0,0,0,0,0,0,0
+317,"Österreich nimmt sich Weltweit gesehen zu wichtig. China 1400mio. Einwohner, Österreich nur 9mio. Die wissen nicht einmal dass es uns gibt.",1,1,0,0,1,1,0,0,0,0,0,0
+318,"Anbringung von Außenjalousien bei allen Fenstern durch Vermieter/Eigentümer.",124,47,31,46,51,16,22,13,73,31,9,33
+319,"Medizinische Notfallpläne für Menschen die mit hohen Temperaturen im Sommer Probleme haben.",119,66,14,39,47,21,8,18,72,45,6,21
+320,"Keine Gebäude in roten und orangen Hochwasserzonen.",138,96,9,33,60,46,4,10,78,50,5,23
+321,"Es muss leistbar bleiben",1,1,0,0,1,1,0,0,0,0,0,0
+322,"Definitiv nein. Es gibt Häuser, da ist es auch gar nicht möglich.",1,1,0,0,1,1,0,0,0,0,0,0
+323,"Bei neuen Wohnblöcken die Gehsteige überbauen (Arkaden). Vorteil: im Sommer Schatten, im Winter schneefrei. Bessere Flächennutzung.",141,72,18,51,48,20,10,18,93,52,8,33
+324,"Um unnötige Emissionen und Flächenverbrauch  zu vermeiden, sollten Arbeiter direkt IN der Fabrik wohnen.",82,10,56,16,42,5,25,12,40,5,31,4
+325,"Nachhaltige Lösung muss global erwirkt werden -> Ein Kind Politik! Damit auch unsere Enkel noch Privatsphäre, Natur und Fleisch kennen!",1,1,0,0,1,1,0,0,0,0,0,0
+326,"Reduktion der Bevölkerungszahl! Besser weniger Menschen, die allerdings noch wirklich ""LEBEN"" und Spaß haben dürfen. Das wünsch`ich mir!",1,1,0,0,1,1,0,0,0,0,0,0
+327,"Mich beschleicht das ungute Gefühl es wird nur in den Kategorien ""Verbieten"" und ""Abstrafen"" gedacht. Ich bin regelrecht entsetzt.",1,1,0,0,1,1,0,0,0,0,0,0
+328,"Weg vom landschaftsschonenden, flachen Bauen hin zum flächenschonenden, mehrgeschoßigen Bauen.",1,1,0,0,0,0,0,0,1,1,0,0
+329,"Wohn-/Spielstraßen auch in der Stadt. Ohne Autos, begrünt.",166,117,18,31,59,18,17,24,107,99,1,7
+330,"Abhängig von Grundstücksgröße vorgegebene Mindestanzahl von Bäumen, Mindesmaß an nicht versiegelter Fläche/Grünflächen.",159,92,26,41,60,16,21,23,99,76,5,18
+331,"Geeignete Dächer mit Photovoltaik-Anlagen bestücken und den überschüssigen Strom zu einem fairen Preis ins Netz einspeisen.",1,1,0,0,0,0,0,0,1,1,0,0
+332,"Innenstädte sollen einen Mix aus Wohnungen, Geschäften, Kulturstätten, Büros, Betrieben, Erholungsorten, Grün... beinhalten.",165,133,5,27,58,37,5,16,107,96,0,11
+333,"Klimaschutz ist so dringend und muss umgesetzt werden, soziale Ausgleichsmaßnahmen begleiten die Umstellung.",107,62,16,29,47,11,15,21,60,51,1,8
+334,"ORF - Serie klimaneutral Wohnen Bsp. vom EFH über Gründerzeithäuser in Miete - z.B. geht Grundw-Wärmepumpe auch im schlecht san.Altbau",78,24,10,44,40,7,8,25,38,17,2,19
+335,"Lässt doch einem Pensionisten seinen Schrebergarten!",1,1,0,0,1,1,0,0,0,0,0,0
+336,"Radfahrverbot auf Gehsteig und Wege besser kontrollieren",1,1,0,0,1,1,0,0,0,0,0,0
+337,"Billiger machen damit man auch Einfamilienhäuser damit bestücken kann.",1,1,0,0,1,1,0,0,0,0,0,0
+338,"Gasheizungen nicht rausschmeißen sondern auf e-Gas umstellen. Ist schneller und effizienter als Fernwärme mit neuer Leitungsinfrastruktur",68,18,13,37,33,14,0,19,35,4,13,18
+339,"Klimafreundliche Haussanierung: nur strafbar wenn es bei Bedarf entsprechende finanzielle Unterstützung gibt, aber besser positive Anreize",69,17,8,44,31,3,5,23,38,14,3,21
+340,"Thermische Altbau-Sanierungsrate durch attraktive Angebote, Info- und Ausbildungsinitiative wesentlich, auf über 5% erhöhen.",89,50,4,35,38,13,2,23,51,37,2,12
+341,"Städte, Gemeinden und Dörfer müssen grüner werden! Mehr Bäume, begrünte Dächer und Fassaden um die Bevölkerung vor der Hitze zu schützen.",164,134,8,22,56,32,7,17,108,102,1,5
+342,"Optimale Nutzung von Grauwasser in Neubauten u Regenwasser, statt Verschwendung",138,101,5,32,49,26,3,20,89,75,2,12
+343,"Verpflichtende Einbau von Wärmepumpen, Solar, PV bei Neubauten und verpflichtende Dach/Fassadenbegrünung bei öffentlichen Gebäuden!",149,109,14,26,51,21,14,16,98,88,0,10
+344,"Mix von Wohnraum in allen Grössen für entsprechende Lebensabschnitte, auch mit Badezimmern mit Ausstattung für Ältere u Behinderte möglich.",82,40,5,37,36,17,3,16,46,23,2,21
+345,"Die Gemeinde 1955-1960 desolat - Siehe Sandgasse 52 im 1190 Wien Begruenung , Stroh oder Lehm für Dämmung  Solar am Dach für Waschküche .",53,6,4,43,26,2,4,20,27,4,0,23
+346,"Städte für Menschen nicht Autos gestalten, es gibt schon viele Ansätze weltweit.",133,94,10,29,44,15,9,20,89,79,1,9
+347,"Dringend: ein landesweiter Flächenplan: wie viele Supermärkte, wie wenig geschützte Natur - Gemeinde müssen über ihre eigenen Grenzen sehen",138,92,5,41,51,22,5,24,87,70,0,17
+348,"Dachgeschosse haben derzeit die Vorschrift dass Sie zu 2/3 schräg sein müssen - führt zum Einbau von Klimaanlagen. Weg mit dieser Vorschrift",80,26,17,37,34,8,8,18,46,18,9,19
+349,"Fassaden und Dächer von Gebäuden sollten möglichst in Weiß gehalten werden, um den Kühlbedarf im Sommer zu minimieren.",85,39,13,33,35,16,4,15,50,23,9,18
+350,"Es wäre wichtig Einpersonenhaushalte mit einer Abgabe zu belegen, damit sie in WGs ziehen.",63,6,47,10,29,0,25,4,34,6,22,6
+351,"Das Pendlerpauschale (Zersiedelungsprämie) muss endlich abgeschafft werden.",1,1,0,0,0,0,0,0,1,1,0,0
+352,"Höchste Zeit Einfamilienhäuser zu verbieten, wir müssen mit weniger Flächenverbrauch bauen.",47,9,20,18,21,2,12,7,26,7,8,11
+353,"Wohnungen für Familien höher besteuern. Wer sich vermehrt schadet der Umwelt.",63,8,46,9,29,6,19,4,34,2,27,5
+354,"10 Quadratmeter pro Person sind genug. Wer mehr zur Wohnfläche zur Verfügung hat soll eine Abgabe zahlen.",60,3,49,8,29,1,26,2,31,2,23,6
+355,"Baustopp für neue Wohnungen und Häuser. Wir haben derzeit genug Wohnmöglichkeiten.",69,13,20,36,31,5,10,16,38,8,10,20
+356,"Ich will nicht in einer menschlichen ""Batteriehaltung"" leben, Einfamilienhäuser zu verbieten ist Schwachsinn",102,45,25,32,42,27,3,12,60,18,22,20
+357,"Wohnungen werden jedes Jahr mehr Wert, Wohnungseigentümer sollen jedes Jahr eine Wertzuwachssteuer zahlen.",65,10,34,21,31,0,22,9,34,10,12,12
+358,"Wohnen sollen Menschen in der Nähe vom Arbeitsplatz, jeder der weiter als 5 km vom Wohnort arbeitet soll eine Strafsteuer zahlen.",54,6,38,10,27,2,21,4,27,4,17,6
+359,"Modell: Bundesland haftet für Mietausfall+Vandalismus. 2 bedeutende Vermietungsrisiken werden vergesellschaftet. Mehr Wohnungen angeboten.",56,9,14,33,27,5,7,15,29,4,7,18
+360,"Förderung des Austauschs fossiler Heizsysteme gegen erneuerbare Energien (Geothermie, Wärmepumpen,  evtl. Pellets)",1,1,0,0,0,0,0,0,1,1,0,0
+361,"Zwangsabgabe für alle! (zB 1% des Jahreseinkommens)und dafür alle Öffis gratis.Rest wird vom Staat gefördert.Einfach Einsteigen und fahren.",82,24,32,26,34,1,23,10,48,23,9,16
+362,"Förderung f. thermische Sanierung in Mehrparteienhäuser, sodass Leistbarkeit kein Hinderungsgrund ist.",132,96,6,30,41,27,4,10,91,69,2,20
+363,"Bei Mietverträgen: Aufschläge nach thermischer Sanierung.",65,18,19,28,28,9,8,11,37,9,11,17
+364,"Jeder öffentliche Neubau muss hinsichtlich aller eingesetzten Materialien klimaneutral sein.",123,82,10,31,47,19,6,22,76,63,4,9
+365,"Bonus für klimaneutrale Baustoffe bei Renovierung und Neubauten, z.B. durch höhere Bebauungsdichte. Der CO2-Fußabdruck zählt.",139,100,12,27,47,21,9,17,92,79,3,10
+366,"Weg von Einfamilienhäusern mit viel Grund für wenig Menschen, hin zu gut geplanten Konzepten für viele Menschen auf kleinerem Raum",68,31,19,18,27,4,13,10,41,27,6,8
+367,"Hauptproblem ist die verantwortungslose Bevölkerugsvermehrung! Steuerliche Begünstigung für kinderlose Personen oder Familien mit 1 Kind.",90,20,53,17,34,14,10,10,56,6,43,7
+368,"Mieter können sich das Heizsystem nicht aussuchen. Daher Vermieter gesetzlich verpflichten auf eine ökologische Alternative umzusteigen.",130,73,27,30,45,9,23,13,85,64,4,17
+369,"CO2-Bepreisung, die Kohle, Erdgas, Heizöl verteuert und Umstiegshilfen bis 80% der Gesamtkosten für Sanierung und Heizungstausch.",1,1,0,0,0,0,0,0,1,1,0,0
+370,"Besteuerung von Großkonzernen (Amazon, Facebook etc.) damit kann der Umstieg auf erneuerbare Energie leicht finanziert werden.",1,1,0,0,1,1,0,0,0,0,0,0
+371,"Ausbau von Frühwarnsystemen (Hochwasser, Waldbrände, Pollen etc.)",85,46,2,37,31,15,1,15,54,31,1,22
+372,"Äußere Beschattung (Bäume, Jalousien, Fensterläden) reduzieren die Sommerhitze in den Wohnräumen.",125,103,3,19,36,26,2,8,89,77,1,11
+373,"Endlich den Magnetmotor zulassen und forcieren.",1,1,0,0,1,1,0,0,0,0,0,0
+374,"können sich viele nicht leisten.",1,1,0,0,1,1,0,0,0,0,0,0
+375,"Wäre sinnvoll, aber müsste individuell entschieden werden.",1,1,0,0,1,1,0,0,0,0,0,0
+376,"NKlimaschutz  bezieht sich heute nur auf CO2 und ist nur eine Geldsache. Naturschutz, Umweltschutz, Brandrodungen, Vermüllung usw. müsste m",1,1,0,0,1,1,0,0,0,0,0,0
+377,"Frage unvollständig und daher unverständlich",1,1,0,0,1,1,0,0,0,0,0,0
+378,"verpflichtend PV-Anlage, wo immer sinnvoll",1,1,0,0,0,0,0,0,1,1,0,0
+379,"eher höher bauen aber mit weniger Bodenverbrauch",1,1,0,0,0,0,0,0,1,1,0,0
+380,"Übernahme von guten Lösungen aus dem Ausland (z.B. Dänemark, Holland) bei Radverkehrslösungen (Kreisverkehr, Radhighway, ...)",1,1,0,0,0,0,0,0,1,1,0,0
+381,"Es darf keine Benachteiligung von Menschen  die als Normale Menschen anzusehen sind nur deswegen weil die  das Normale abschafen wollen.",0,0,0,0,0,0,0,0,0,0,0,0
+382,"Normale Menschen sind Normale Menschen; abnorme sind abnorme Menschen. Sie können das Abnorme nicht zum einzigen gültigen erklären.",0,0,0,0,0,0,0,0,0,0,0,0
+383,"Verdichtung vorantreiben. Massiv Häuser isolieren und auf erneuerbare Heizmöglichkeiten umsteigen.",81,46,10,25,32,11,9,12,49,35,1,13
+384,"Fassadenbegrünung und Dachbegrünungen",0,0,0,0,0,0,0,0,0,0,0,0
+385,"Mit  Kat.mietzinsen der Hofratswitwe wird es in Altbauten keine  Sanierungen geben. Daher Zuschläge bei Sanierung und Heizungssystemwechsel.",59,23,11,25,29,10,7,12,30,13,4,13
+386,"Das Mietrecht verhindert den Klimaschutz",53,13,12,28,25,9,5,11,28,4,7,17
+387,"Wohnen in Bestandsbauten soll gegenüber Wohnen in Neubauten stärker gefördert werden (z.B. durch Adaptierung der Wohnbauförderung).",96,70,4,22,34,18,4,12,62,52,0,10
+388,"Alle Standards und Normen sollten kostenlos der Allgemeinheit (auch online) zugänglich gemacht werden. Dies würde z.B. Innovationen fördern.",66,31,2,33,30,10,1,19,36,21,1,14
+389,"Meine 20 Jahre alte Wohnung braucht keine Heizung und keine Klimaanlage. Das muss künftig überall gelten.",58,17,13,28,30,4,9,17,28,13,4,11
+390,"Gütesiegel vereinfachen, vereinheitlichen und verständlich machen.",89,59,2,28,35,23,1,11,54,36,1,17
+391,"Schadstoff-Grenzwerte bei Gebrauchsgegenständen verschärfen.",1,1,0,0,1,1,0,0,0,0,0,0
+392,"Bei Wasser, Wärme und Strom sollten die Firmen nicht durch die Zähler verdienen, sondern über den Verbrauch. Nur dann zahlt sich Sparen aus.",60,29,1,30,26,12,0,14,34,17,1,16
+393,"Ein gerechteres Mietrechtsgesetz plus steuerliche Vereinfachungen würden die Leerstände reduzieren.",70,36,8,26,32,15,3,14,38,21,5,12
+394,"Zuwanderung radikal stoppen - Bauproblem gelöst!",45,11,21,13,20,8,4,8,25,3,17,5
+395,"An den Fachhochschulen und Universitäten für Architektur und Bauwesen muss ein gravierendes Umdenken in Richtung solares Bauen stattfinden.",78,50,5,23,35,14,5,16,43,36,0,7
+396,"Gemeinnützige Modelle sollten forciert werden. Es muss um den Klimaschutz gehen und nicht um die Gewinnmaximierung von Konzernen.",96,67,4,25,37,13,4,20,59,54,0,5
+397,"Weniger Verbote, dafür mehr positive Anreize für klimafreundliches Verhalten.",88,47,17,24,31,20,3,8,57,27,14,16
+398,"In Gemeinde/ Miet/ u. Genossenschaftswohnungen ab einem mind. Bauj. 2012 sollte ein Lift verpflichtend sein od. zügig nachgerüstet werden.",51,11,16,24,23,7,7,9,28,4,9,15
+399,"Lifte in ALLEN Wohnungen ab 2012 damit auch ältere/kranke oder eingeschränkte Leute auch in oberen Stockwerken ungehindert wohnen können.",49,13,13,23,24,9,6,9,25,4,7,14
+400,"Mietpreise für Miet/Gemeinde/Genossenschaftswohnungen im ländl. Raum sollten einen m² Preis von max. € 6,50 inkl. MWSt nicht übersteigen.",47,9,12,26,22,4,5,13,25,5,7,13
+401,"m² Preis f. Wohnungen im ländl. Raum billiger u.attraktiver machen, damit diese voll besetzt werden u. weniger neue Gebäude errichtet werden",55,14,11,30,27,4,6,17,28,10,5,13
+402,"Jetzt schmerzt uns die Abhängigkeit von Öl und Gas. Es sind Vorkehrungen zu treffen, dass uns die Internet-Abhängigkeit nicht ebenso trifft.",1,1,0,0,1,1,0,0,0,0,0,0
+403,"Bewohner von Wohnungsanlagen wünschen sich Grünflächen, sollten diese dann auch sorgsam behandeln und nicht begehen",1,1,0,0,1,1,0,0,0,0,0,0
+404,"Bellende Hunde in Wohnungsanlagen sollten verboten werden.",1,1,0,0,1,1,0,0,0,0,0,0
+405,"Stichwort Rebound-Effekt: Energiebedarf für Gebäude sollten in der Planung pro Kopf und nicht pro m2 berechnet werden.",41,8,6,27,21,3,4,14,20,5,2,13
+406,"Baustopp für Wohnraum sofort! Stopp von Zuzug sofort!",1,1,0,0,1,1,0,0,0,0,0,0
+407,"Flachdächer können begrünt werden: Klimaanlagen werden reduziert, Städte natürlich gekühlt und Biodiversität gefördert.",1,1,0,0,0,0,0,0,1,1,0,0
+408,"Das sind mehrere Forderungen: der Energieausweis ist nicht allumfassend. Kombination mit Klimaaktiv Kriterien wäre gut.",1,1,0,0,0,0,0,0,1,1,0,0
+409,"Gütesiegel vernetzen.",49,19,2,28,21,9,1,11,28,10,1,17
+410,"Einheitliches Baumschutzgesetz für ganz Österreich. Verpflichtende Aufforstung nach Rodung für Bau von Wohnungsanlagen und Supermärkten udgl",96,76,3,17,33,18,3,12,63,58,0,5
+411,"In WEG Novelle Bauwerksbegrünungen zur Verschattung, Kühlung, Strommehrertrag (Solargründächer auch auf geneigten Dächer) integrieren.",64,33,5,26,28,11,4,13,36,22,1,13
+412,"Nur in Kombination mit Erneuerbaren Energie Umsetzung: keine EE = höhere Abgabe.",30,7,5,18,16,1,4,11,14,6,1,7
+413,"Nur in Städten.",1,1,0,0,0,0,0,0,1,1,0,0
+414,"Solargründächer!",1,1,0,0,0,0,0,0,1,1,0,0
+415,"Regenwassernutzung bei öffentlichen Gebäuden bzw. Neubauten und nachträglicher Einbau verpflichtend.",1,1,0,0,0,0,0,0,1,1,0,0
+416,"Aufstockung bei Supermärkten (im Zentrum) schafft zusätzlichen Wohnraum, ohne weiteren Boden zu versiegeln.",1,1,0,0,0,0,0,0,1,1,0,0
+417,"Asphaltwüste bei Siedlungsanlagen verbieten. Verpflichtende Grünflächen und Nachpflanzung von Bäumen. Gemeinschaftsnutzgarten mit Hochbeeten",93,70,6,17,33,17,4,12,60,53,2,5
+418,"Radabstellplätze statt Parkplätze, Radparkhäuser am Bahnhof statt Autotiefgarage, gut wie in NL!",1,1,0,0,0,0,0,0,1,1,0,0
+419,"Keine Weltraumgestützte Technik beim Wohnen! Dies ist schlecht für das Klima und verursacht hohe Kosten und neue Probleme.",41,7,6,28,20,3,3,14,21,4,3,14
+420,"Neue Sateliten verursachen enorme CO2 Belastungen bei Produktion und Abschuss und sollen nicht gefördert werden.",43,11,6,26,21,5,4,12,22,6,2,14
+421,"Onlineshopping hätte Potential, wird aber durch riesige Firmen mit schlechten Arbeitsbedingungen und Leistungsdruck zur BurnOut Falle.",1,1,0,0,0,0,0,0,1,1,0,0
+422,"Onlineshopping führt zu Konsumexplosion, unnötigen Müllbergen sowie falschem Kaufverhalten und somit CO2 Vermehrung.",57,29,8,20,23,9,5,9,34,20,3,11
+423,"Bodenversiegelung in der Ortsplanung soll streng bestraft werden für Firmenansiedelung in Wasser, Feuchtgebiet und Waldnähe.",1,1,0,0,0,0,0,0,1,1,0,0
+424,"Orts und Regional Entwicklung muss Wald, Baum und Wasser verpflichtend schützen um CO2 zu vermindern.",88,64,4,20,34,15,4,15,54,49,0,5
+425,"(Immobilien)Firmen sowie Gemeinden dürfen keine Profite aus Grünflächenumwidmung ziehen. Dazu strenge Gesetze einführen/verschärfen.",85,60,7,18,28,12,5,11,57,48,2,7
+426,"Immobilienspekulation macht CO2 und erfolgt durch große Firmen, Hochverdiener und polit. Entscheidungsträger. Gesetze, Strafen schaffen!",35,16,5,14,16,5,3,8,19,11,2,6
+427,"Müsames ERSPAREN von Immobilien senkt CO2. Kleinverdiener, Kleinunternehmer sind keine Immobilienspekulanten!",50,13,1,36,21,10,0,11,29,3,1,25
+428,"BIO Brennstoffe zusätzlich zu alternativen Energieträgern können gefördert werden.",1,1,0,0,0,0,0,0,1,1,0,0
+429,"Langfristig kann sich Wasserstoff in vielen Bereichen rentieren und Klima Verschmutzung verringern, ist daher auch förderungswürdig.",1,1,0,0,0,0,0,0,1,1,0,0
+430,"Bauförderung neuer Arbeitsgebiete nur um Infrastruktur fördert derzeit Straßenbau in Grün und Feuchtgebieten. Dies berücksichtigen!",1,1,0,0,0,0,0,0,1,1,0,0
+431,"Klima Förderungen verpuffen, da Firmen einfach den Preis und die (unwahren)  ""Kosten"" anheben oder ""verteuern"". Mit Strafe unterbinden!",1,1,0,0,0,0,0,0,1,1,0,0
+432,"Baumaßnahmen verursachen CO2, daher Gesetze und Strafen für Baumängel/die Verursacher einführen, auch rückwirkend und wenn Firma in Konkurs.",48,17,5,26,21,5,4,12,27,12,1,14
+433,"Das Land fördert Bürgermeister, die ihre Interessen vertreten. Länderkompetenz ist also fraglich im Klimaschutz, da Wirtschaftsinteressen.",1,1,0,0,0,0,0,0,1,1,0,0
+434,"Zweitwohnsitze sparen CO2, wenn dadurch Autoverkehr vermindert wird, zB näher am Arbeitsplatz.",42,8,12,22,20,5,3,12,22,3,9,10
+435,"Der Abbruch (Entsorgungskosten) eines nicht sanierbares Haus im Ortskern sollte gratis sein bzw.wenigsten gefördert werden.",47,18,7,22,24,10,3,11,23,8,4,11
+436,"Ortskerne stehen leer, verfallen; außerhalb wird erweitert , noch mehr Boden versiegelt; kostenlose Entsorgung für Abbruchhäuser!",61,29,9,23,26,12,4,10,35,17,5,13
+437,"Wohnen sollte Leistbarer für jüngere werden. Bsp. durch einen Mietendeckel oder ähnliches.",1,1,0,0,0,0,0,0,1,1,0,0
+438,"Im Gebäudebau effektiver arbeiten. Mehr Geld zwar in die Hand nehmen dafür kann man Häuser und Wohnbauten schon fast Klimaneutral errichten.",66,35,7,24,25,7,4,14,41,28,3,10
+439,"Leistbares Wohnen für alle Überall, Keine weitere Immobilien Spekulation, Leerstandsabgabe, Mietdeckel",31,11,7,13,14,2,5,7,17,9,2,6
+440,"Bestandsrenovierung vor Neubau, Revitalisierung von Ortskernen, Förderung der Regionalwirtschaft,",0,0,0,0,0,0,0,0,0,0,0,0
+441,"Alle Gebäude auf Energieklasse B und mit erneuerbaren Heizsystemen bis 2030 und verpflichtend.",0,0,0,0,0,0,0,0,0,0,0,0
+442,"Bevorzugung und Unterstützung von Multigenerationen und Gemeinschaftsprojekten",68,32,12,24,25,4,11,10,43,28,1,14
+443,"Integrative und systemische Raumplanung und -Nutzung mindestens nach OEREK 2030",45,11,4,30,22,1,4,17,23,10,0,13
+444,"Die Befragung des Volks ist okay, aber die Politik muss unbedingt unabhängige Experten hören und ernst nehmen. Die Themen sind zu komplex.",45,23,10,12,21,5,7,9,24,18,3,3
+445,"Zugunsten der Artenvielfalt sollten Initiativen wie ""No Mow May"", wo in Gärten ein Teil für die Natur brachliegt, unterstützt werden.",82,59,5,18,28,12,4,12,54,47,1,6
+446,"Keine Leerstandsabgabe einführen. Stattdessen leerstehende Hotels und Bürogebäude in Wohnbauten umbauen.",64,22,21,21,24,15,2,7,40,7,19,14
+447,"Wo immer es geht, einen nachträglichen Balkonanbau erlauben.",1,1,0,0,1,1,0,0,0,0,0,0
+448,"Vermieter/Wohnbaugenossenschaften verpflichten den Mietern eine Heizungssystem aus erneuerbaren Quellen zur Verfügung zu stellen.",68,31,13,24,26,6,10,10,42,25,3,14
+449,"Nur Produkte (z.B. Möbel, Wandfarben, Teppiche) ohne Schadstoffe verkaufen.",79,51,7,21,27,15,5,7,52,36,2,14
+450,"Baumaterial von Baustellen und Abbruchhäusern recyclen und wieder verwenden.",117,101,1,15,35,25,1,9,82,76,0,6
+451,"Heizen mit Holz vermeiden, zu starke Feinstaubbelastung.",51,15,16,20,21,7,7,7,30,8,9,13
+452,"""Klimaschutz"" ist eine lebensfeindliche Ideologie. Das Klima hat sich immer verändert. Ohne CO2 gibt es kein Leben. Zurück zur Vernunft!",35,8,20,7,19,8,5,6,16,0,15,1
+453,"""Klimaneutralität"" ist ein Hirngespinst. Wir können das Klima nicht ändern. Das hängt von vielen Faktoren wie z.B. der Sonne ab.",1,1,0,0,1,1,0,0,0,0,0,0
+454,"Bei jeder Wohnung bzw Haus kein verpflichtender Parkplatz. Sondern für jede Wohneinheit muss ein Baum gepflanzt werden!!!!",66,29,15,22,28,6,11,11,38,23,4,11
+455,"Wir sollen die Umwelt schützen, wo immer es geht. ""Klimaschutz"" ist nicht umweltfreundlich.",29,6,7,16,19,5,3,11,10,1,4,5
+456,"Zweitwohnsitz-, Nebenwohnsitz- und Leerstandabgabe einführen (min. 2 €/m² im Monat).",52,16,20,16,19,1,12,6,33,15,8,10
+457,"Lenkungseffekte möglichst nicht durch Verbote herbeiführen, sondern durch positive Anreize wie Steuerminderungen, Förderungen, Privilegien.",0,0,0,0,0,0,0,0,0,0,0,0
+458,"Anteil + Qualität nicht-versiegelter Flächen pro Baugrundstück festlegen - dafür zentrale Vorgaben (Stadt/Kleinstadt/Dorf)",49,20,2,27,23,8,2,13,26,12,0,14
+459,"Ausnahmen für Stellplatzverpflichtung (leider Ländersache) z.B. bei Car-Sharing oder Öffi-Angebot (z.B. über einen Fonds)",42,11,9,22,20,1,8,11,22,10,1,11
+460,"Verpflichtende Parkplatzüberdachung mit PV v.a. bei Supermärkten (+ ein paar Freiflächen für Bäume vorschreiben",81,52,10,19,32,16,6,10,49,36,4,9
+461,"Förderung für Unternehmen, die Duschen für ihre (radelnden) Mitarbeiter*innen anbieten",47,16,9,22,23,4,8,11,24,12,1,11
+462,"Verpflichtende Angabe der ""Warmmiete"" (incl. Heizung) beim Wohnungsverkauf",53,23,7,23,22,8,4,10,31,15,3,13
+463,"Kredite an Lebensdauer der Investition anpassen - Mietrechtsgesetz: angepasster Richtwertmietzins auch für neuere Wohnbauten",41,8,7,26,21,1,5,15,20,7,2,11
+464,"Mobilität und wohnen gehört nicht getrennt betrachtet !https://www.homepowersolutions.de/produkt/",49,20,2,27,22,6,2,14,27,14,0,13
+465,"Die höheren Ausgaben gehören von der Politik gefördert",37,6,12,19,20,3,6,11,17,3,6,8
+466,"Seit Jahren: Schäbige zugeklebte Geschäftslokale auf Hauptplätzen (und anderswo) verpflichtend revitalisieren.",57,30,9,18,28,9,7,12,29,21,2,6
+467,"Viele Dachböden stehen leer. Als Wohnraum nutzen bevor wieder wertvoller Boden zubetoniert wird.",55,28,8,19,24,8,6,10,31,20,2,9
+468,"Lärmemission von großen Rückkühlern von Industrie-/Bürobauten (ÖAMTC Zentrale, Ares Tower) drastisch reduzieren, störender als Verkehrslärm!",1,1,0,0,1,1,0,0,0,0,0,0
+469,"Zuzug stoppen! Österreich ist voll!! Wien ist überfüllt!!!",1,1,0,0,1,1,0,0,0,0,0,0
+470,"Vor allem bei Mehrparteien-Häusern muss für eine gute Isolierung gesorgt werden sowie Sonnenpaneele auf Dächern und/oder Fassaden",72,52,2,18,30,19,2,9,42,33,0,9
+471,"In Städten alle glatten Hausfassaden bewachsen lassen (Veitschi etc.)",56,26,9,21,22,6,7,9,34,20,2,12
+472,"In Regionen mit Trockenheitsproblem Regenwasser-Speicher errichten, nicht mehr automatisch Regenwasser in den Kanal ableiten.",82,68,0,14,29,24,0,5,53,44,0,9
+473,"Möglichkeit schaffen, dass Hausverwaltungen nach Mehrheitsbeschluss im (Miets-)Haus auf ökologische Heizformen umstellen müssen.",67,42,7,18,24,11,5,8,43,31,2,10
+474,"Möglichkeit schaffen, dass Hausverwaltungen nach Mehrheitsbeschluss im Haus Fassadenbegrünung umsetzen müssen.",74,49,8,17,26,12,7,7,48,37,1,10
+475,"Bitte Vorschläge des Klimarates vorreihen!",1,1,0,0,0,0,0,0,1,1,0,0
+476,"Die Gebäude müssen so gebaut werden, dass man sie nach der Lebensdauer wieder leicht in die Bestandteile zerlegen kann. Modulbauweise.",64,28,8,28,27,7,5,15,37,21,3,13
+477,"Progressive Strom- Gas-, Fernwärmetarife: günstiger Sockelbetrag - dann progressiv steigend. Ist sozial UND hilft Sparen",48,21,5,22,22,5,4,13,26,16,1,9
+478,"Bau und Pflege von Nistplätzen für Vögel, besonders in Städten",72,47,9,16,30,16,4,10,42,31,5,6
+479,"Tiere besonders in Städten fördern (z.B. durch mehr Nistkästen / Insektenhäuser / Blumeninseln / Schutzgebiete / Begrünung)",82,55,7,20,34,18,7,9,48,37,0,11
+480,"Die Kosten für die Maßnahmen müssen von allen gemeinsam getragen werden. Es kann nicht sein, dass nur Eigentümer zahlen müssen!",46,19,7,20,21,9,1,11,25,10,6,9
+481,"Baugenehmigungen von Neubauten ausschließlich als Passivhäuser",45,21,7,17,20,6,6,8,25,15,1,9
+482,"Keinen neuen Wohnbau ohne leerstehenden Wohnraum zu füllen bzw. nur nach Abriss eines Altbaues",47,19,6,22,22,6,3,13,25,13,3,9
+483,"Wärmdämmung, mehr Kerzenlicht,  keine Heizstrahler im Freien",0,0,0,0,0,0,0,0,0,0,0,0
+484,"Keine Schanigärten, das Leben besteht aus mehr als herumsitzen, fressen und saufen!",1,1,0,0,1,1,0,0,0,0,0,0
+485,"Vermögenssteuer auf Wohnungen, es kann nicht sein dass nur Mieter die Inflation spüren, während Wohnungseigentümer immer reicher werden.",1,1,0,0,0,0,0,0,1,1,0,0
+486,"Kinderzimmer extra besteuern, so schaffen wir es den verantwortungslosen Bevölkerungswachstum zu stoppen",1,1,0,0,0,0,0,0,1,1,0,0
+487,"Stichwort Suffizienz: Wohnfläche pro Kopf beschränken (angelehnt an Gemeindebau) und darüber Leerstand/Luxusabgabe einführen",1,1,0,0,1,1,0,0,0,0,0,0
+488,"Alternative Sanitärsysteme zur Trinkwassereinsparung und Komposterzeugung ermöglichen  und fördern (Kreisläufe schließen).",60,40,4,16,19,11,3,5,41,29,1,11
+489,"Nach hinten geneigte Pultdächer sind Unsinn. Schlecht nutzbar für Solarenergie, und keine Abschattung der Südseite im Sommer. Solararchitekt",1,1,0,0,0,0,0,0,1,1,0,0
+490,"Die Verteuerung von fossilen Brennstoffen würde automatisch zum Umdenken bewegen. Verpflichtungen per Gesetz erzeugen Gegenreaktionen.",1,1,0,0,0,0,0,0,1,1,0,0
+491,"Parkplätze und versiegelte Flächen im Straßenraum massiv reduzieren und begrünen.",0,0,0,0,0,0,0,0,0,0,0,0
+492,"Bin sehr für Klimaschutz, mache mir angesichts mancher extremer Positionen hier aber  Sorgen um die freie Gesellschaft.",1,1,0,0,1,1,0,0,0,0,0,0
+493,"Förderung für Fassadenbegrünung bei städtischen Privatbauten",1,1,0,0,0,0,0,0,1,1,0,0
+494,"Leerstandsabgabe, damit die Wohnungen zum Wohnen genutzt werden und nicht zum Geldspekulieren",1,1,0,0,0,0,0,0,1,1,0,0
+495,"Müllvermeidung vor Mülltrennung, Upcycling",0,0,0,0,0,0,0,0,0,0,0,0
+496,"Richtwertmieten unter Berücksichtigung des Heizwärmebedarfs - ""Bruttomiete warm""",35,8,8,19,14,1,5,8,21,7,3,11
+497,"In Raumordnungsgesetzen verpflichtend eine Folgekostenberechnung (Verkehr, Müll, Gemeindeinfrastruktur usw.) vorsehen!",50,28,4,18,16,6,2,8,34,22,2,10
+498,"Kurzzeitmieten flexibilisieren und rechtlich absichern. Leistbare (möblierte) Appartements für Studenten, Wochenpendler etc.",37,11,9,17,15,2,6,7,22,9,3,10
+499,"Bei Vermietung von Wohnungen mit Küchen verpflichtend eine Angabe der Energieeffizienzklassen von Kühlschrank, Herd usw. einführen.",1,1,0,0,0,0,0,0,1,1,0,0
+500,"Die Baustoffe sollten nach ökologischen Kriterien bepreist werden. Styroporfassaden, ein Erdölprodukt, Sondermüll und am billigsten.",1,1,0,0,0,0,0,0,1,1,0,0
+501,"Förderungen für klimaneutrales, regionales, ökologisches Bauen.",0,0,0,0,0,0,0,0,0,0,0,0
+502,"Thermische Sanierung alter Häuser mit Vollwärmeschutzfassaden. Bauphysikalisch, ökologisch, architektonisch problematisch.",1,1,0,0,0,0,0,0,1,1,0,0
+503,"Beim Abbruch/Umbau werden wertvollste Baustoffe/Einrichtungen entsorgt. Sammelstellen für die Wiederverwertung fehlen. Upcycling ist Zukunft",89,77,1,11,25,19,1,5,64,58,0,6
+504,"Landnutzung muss ein einheitliches Bundesgesetz werden! Sofortiger Stopp der Bodenversiegelung.",0,0,0,0,0,0,0,0,0,0,0,0
+505,"Öffentliche Gebäude müssen mit Architekturwettbewerben und unter ökologischen Aspekten durch Fachjurien/Gestaltungsrat beurteilt werden.",58,34,8,16,19,7,6,6,39,27,2,10
+506,"Grünraumgestaltung von Straßenraum und Plätzen sind dringend notwendig. In jedem Ort!",1,1,0,0,0,0,0,0,1,1,0,0
+507,"Die Gemeinden brauchen Unterstützung vom Land um sinnvolle Flächenwidmung und Bebauungspläne umzusetzen.",1,1,0,0,0,0,0,0,1,1,0,0
+508,"Vielen Gemeinden fehlt Geld und Wissen um sich gegen die Zersiedelung durchzusetzen. Orte verlieren Ihre Identität. Fachkommissionen fehlen.",1,1,0,0,0,0,0,0,1,1,0,0
+509,"Förderungen nur noch für min. Niedringenergiehäuser, Bonus für Öko-Materialien und Achten auf den Lebenszyklus, nicht Styropor dran picken!",1,1,0,0,0,0,0,0,1,1,0,0
+510,"Sanierungen fördern, es sollte nicht sein, dass das Haus der vorigen (vor-vorigen) Generation abgerissen und auf dem Grund neu gebaut wird.",1,1,0,0,0,0,0,0,1,1,0,0
+511,"In Wohnhausanlagen ermöglichen, auf allgemeinen Flächen, Blumenwiesen und Gemüsebeete anzulegen.",73,55,4,14,25,14,4,7,48,41,0,7
+512,"Mehr Bäume, begrünte Dächer + Fassaden (z.B. Feuermauern) um die Bevölkerung vor der Hitze im Sommer zu schützen.",1,1,0,0,1,1,0,0,0,0,0,0
+513,"Gute verzinste Staats-Wohnbauanleihen zum Umstieg auf erneuerbare Energieträger.",64,37,4,23,20,11,3,6,44,26,1,17
+514,"Wohnbauträger (z.B. Sozialbau, Gesiba, Gemeinde) müssen bei bestehenden Wohnbauten auf erneuerbare Energieträger oder Fernwärme umsteigen.",1,1,0,0,1,1,0,0,0,0,0,0
+515,"Nur Maßnahmen mit starker Wirkung fördern - Förderungen sind Steuergeld und müssen von uns allen aufgebracht werden.",1,1,0,0,1,1,0,0,0,0,0,0
+516,"Mieter·in muss Vermieter·in zur Schaffung von E-Ladestation(en) (mit kWh-Abre.) mit EVB-Mitteln zwingen können (auch bei nicht fixem ASP).",1,1,0,0,0,0,0,0,1,1,0,0
+517,"EFH zum MehrFH umbauen =Alternative. Derzeit: Am Land bauen die Kinder im selben Ort wie ihre Eltern, dann wohnen 2 Alte allein auf 200qm.",1,1,0,0,0,0,0,0,1,1,0,0
+518,"Verpflichtung zu klimaangepasster Bauweise z.B. Glaskomplex mit Klimaanlage oder Raumlüftung aufgrund fix verschlossener Fenster verbieten",54,34,4,16,20,8,4,8,34,26,0,8
+519,"Sanierungsförderung massiv erhöhen und Einreichung erleichtern, z.B. Abschreibungsmöglichkeit bei Einkommenssteuer",1,1,0,0,0,0,0,0,1,1,0,0
+520,"Mit Mietern kann man ganz schön ""einfahren"", das heißt sie zahlen nur schleppend Miete. Da kann man die Wohnung auch leer stehen lassen.",0,0,0,0,0,0,0,0,0,0,0,0
+521,"Kein Bevölkerungswachstum mehr -  alles wird zubetoniert siehe Wien!",1,1,0,0,1,1,0,0,0,0,0,0
+522,"Großen Anteil an Klimaschädigung haben Baufirmen. Dort verpflichtende Maßnahmen setzen, alternative Energieträger, Antriebe, GreenTech.",56,35,6,15,21,10,5,6,35,25,1,9
+523,"Für Immobilienlobby muss es endlich strenge Gesetze geben! Offenheit, Kostenwahrheit und Fairness schützen vor Spekulationen und Ausuferung.",1,1,0,0,0,0,0,0,1,1,0,0
+524,"Geld von jenen Firmen lukrieren, die die Klimaerwärmung gefördert haben und schon vor langer Zeit auf das Problem aufmerksam gemacht wurden.",1,1,0,0,0,0,0,0,1,1,0,0
+525,"Der Klimawandel kostet Geld. Firmen wurden seit Jahrzehnten auf die Problematik aufmerksam gemacht. Rückwirkende Bußgelder sind nur fair!",1,1,0,0,0,0,0,0,1,1,0,0
+526,"Abriss von 30 Jahr alten Gebäuden stoppen (Bauschutt) . Renovieren! Daneben steen Häuser die 120 Jahre alt sind.",1,1,0,0,0,0,0,0,1,1,0,0
+527,"Sicherstellung des thermischen Komforts in Innenräumen durch bauliche Maßnahmen insbesondere bei vermehrten Auftreten von Hitzetagen.",1,1,0,0,0,0,0,0,1,1,0,0
+528,"Erstellung von Einsatzplänen zur Bekämpfung von Waldbränden, Hochwasser und Sturmschäden.",1,1,0,0,0,0,0,0,1,1,0,0
+529,"Anpassung Baustandards bzw. Bauvorschriften für Neubau und Sanierung an den Klimawandel.",60,43,3,14,22,10,3,9,38,33,0,5
+530,"Um die Zukunft solidarisch zu gestalten, muss ein nachhaltiges umweltfreundliches Leben für jeden zugänglich sein.",1,1,0,0,0,0,0,0,1,1,0,0
+531,"Die Schere der Vermögenden und allen anderen geht immer weiter auf. Sofortige Vermögenssteuer einführen zur Finanzierung der Klimawende.",1,1,0,0,0,0,0,0,1,1,0,0
+532,"Hauseigentümer dürfen nicht weiter belastet werden.",1,1,0,0,1,1,0,0,0,0,0,0
+533,"Mieter nicht vergessen. Man kann leider seine Wohnung im 3. Stock nicht wärmedämmen > da muss es Lösungen vom Vermieter geben,",1,1,0,0,1,1,0,0,0,0,0,0
+534,"Keine neue Baulandwidmung (Ö hat sein Bauland längst aufgebraucht), Lehrstände nutzen!",1,1,0,0,0,0,0,0,1,1,0,0
+535,"Spekulation mit Wohnungen verbieten, leistbares Wohnen in Innenstädten!",1,1,0,0,0,0,0,0,1,1,0,0
+536,"Keine Gasheizungen in Neubauten, bestehende Gasheizungen ausbauen, Photovoltaik auf Dächern",1,1,0,0,0,0,0,0,1,1,0,0
+537,"Keine neuen Einfamilienhaus-Gebiete, dafür attraktive, begrünte Innenstädte",1,1,0,0,0,0,0,0,1,1,0,0
+538,"Jeder Neubau mit mehr als 6 Stockwerken  muss einen Dachgarten und eine Erdgeschosszone für öffentliche Nutzung bereitstellen.",40,17,7,16,14,3,5,6,26,14,2,10
+539,"Warum muss die Klospülung A: so viel Liter Wasser haben? u. B: Trinkwasser sein?",1,1,0,0,1,1,0,0,0,0,0,0
+540,"Dezentrale Arbeitsstätten in Fußläufiger Distanz bzw mit Rad erreichbar, zur Schonung von Klima und Menschen.",1,1,0,0,0,0,0,0,1,1,0,0
+541,"Flächenwidmung soll in die Kompetenz der Länder, weg von den Gemeinden für weniger Zersiedelung.",0,0,0,0,0,0,0,0,0,0,0,0
+542,"Wohnung teilen erleichtern. Mit den aktuellen Gesetzen ist es fast unmöglich vorübergehend zusammenzuziehen, außer bei Lebensgemeinschaft.",1,1,0,0,0,0,0,0,1,1,0,0
+543,"Raumtemperatur reduzieren. Niemand braucht 25°C oder mehr wie (speziell in thermisch sanierten Gebäuden) üblich",0,0,0,0,0,0,0,0,0,0,0,0
+544,"Autos heizen im Sommer die Stadt unverhältnismäßig auf - sie sollten verpflichtend unter die Erde und weg von der Straße.",1,1,0,0,0,0,0,0,1,1,0,0
+545,"Erneute Prüfung auf Naturgefahren bei Siedlungen notwendig. In Roten Zonen rückwidmen zum Schutz der Bevölkerung.",1,1,0,0,0,0,0,0,1,1,0,0
+546,"Klimabonus muss überarbeitet und verfeinert werden (je nach Öffi-Verfügbarkeit + üblicher Heizform in der Region).",1,1,0,0,0,0,0,0,1,1,0,0
+547,"Stärkung der Länderkompenz bei der Ausweisung von neuem Bauland.",39,16,7,16,13,3,2,8,26,13,5,8
+548,"Vermietungen an Heizkosten beteiligen, damit sie einen Anreiz zu Modernisierung bekommen",1,1,0,0,0,0,0,0,1,1,0,0
+549,"Wasser und kanal sparen durch Bio-WC und Kompostoilette auch in der Wohnung oder Haus.",28,6,11,11,12,0,10,2,16,6,1,9
+550,"Der Klimarat wird dauerhaft eingerichtet und nimmt Stellung zu den großen, klimapolitischen Entscheidungen mit möglichen Volksabstimmungen",1,1,0,0,0,0,0,0,1,1,0,0
+551,"Die Klimarat-Teilnehmer erfahren rechtzeitig welche politischen Instrumente (CO2-Preise, Ge- und Verbote, Förderungen) notwendig sind.",1,1,0,0,0,0,0,0,1,1,0,0
+552,"Die Politik, die Stakeholder machen Vorschläge, der Klimarat beurteilt diese politisch, was in welchem Ausmaß machbar und kombinierbar ist.",1,1,0,0,0,0,0,0,1,1,0,0
+553,"Die Diskussionen in den Kleingruppen, sind unter Wahrung der Anonymität außen nachvollziehbar. Alle Inputs auch für Kleingruppen transparent",1,1,0,0,0,0,0,0,1,1,0,0
+554,"WHO's FUTURE? Jugendliche sollten stärker in politische Prozesse eingebunden werden.",1,1,0,0,0,0,0,0,1,1,0,0
+555,"Die Teilnehmerinnen machen Vorschläge über die Schnittstelle zur Politik: fertige Texte 1:1 im Parlament abstimmen oder Volksabstimmung",1,1,0,0,0,0,0,0,1,1,0,0
+556,"Der Klimarat macht Vorschläge für alle Sektoren, auch Industrie und E-Wirtschaft und auch zu österreichs Position in Brüssel",1,1,0,0,0,0,0,0,1,1,0,0
+557,"Der Klimarat definiert für Österreich wie viel Treibhausgase jedes Jahr von 2023 bis 2040 noch ausgestoßen werden dürfen - Kohlenstoffbudget",1,1,0,0,0,0,0,0,1,1,0,0
+558,"Der Klimarat nimmt Stellung zu plus/minus bei Erdgasabgabe, Mineralölsteuer, CO2-Bepreisung und wer wieviel der Einnahmen bekommt.",1,1,0,0,0,0,0,0,1,1,0,0
+559,"Ein dauerhaft eingerichteter Klimarat hat jederzeit die Möglichkeit ein klimawirksames Gesetz zu behandeln und Empfehlungen abzugeben.",1,1,0,0,0,0,0,0,1,1,0,0
+560,"3 zufällig ausgewählte Vertreter des permanenten Klimarates haben ein Rederecht im Parlament (Plenum) bei klimarelevanten Gesetzen",1,1,0,0,0,0,0,0,1,1,0,0
+561,"Der Klimarat bekommt von den Stakeholdern auf Anfrage jede Position zum Klimaschutz, auch jene, die z.B. an den Bundeskanzler gerichtet sind",1,1,0,0,0,0,0,0,1,1,0,0
+562,"Dem Klimarat werden alle relevanten Klimaschutzpolitiken präsentiert: ETS1 Reform, neuer ETS2, CO2-Bepreisung, Flächen für Erneuerbare,...",1,1,0,0,0,0,0,0,1,1,0,0
+563,"Denkmalamt steh auf Kriegsfuß mit PV - das ist nicht mehr zeitgemäß.",1,1,0,0,0,0,0,0,1,1,0,0
+564,"Städte: Massnahmen zur Klimawandelanpassung auch umsetzen, Grünflächen sichern, Luftaustauschbahnen frei halten, Stadtbäume pflanzen, etc.",1,1,0,0,1,1,0,0,0,0,0,0
+565,"Grünraumpflege mit Umweltschutz! Kein Hecken- und Baumschnitt von März bis Oktober um brütende Vögel zu schützen.",50,31,9,10,13,3,9,1,37,28,0,9
+566,"Mehrgenerationen wohnen statt ein bis zwei Menschen in 250m² Häusern.",1,1,0,0,0,0,0,0,1,1,0,0
+567,"Leerstehend Häuser in Ortszentren sollen einfach der Kommune zufallen, wenn der Eigentümer nicht zu einer sinnvollen Nutzung beiträgt.",1,1,0,0,0,0,0,0,1,1,0,0
+568,"Städte: Wohnungsleerstand muss gemonitort werden, (Wien 30-100 tsd Leerstand!!!!) und Stopp der Bodenversiegelung am Stadtrand",1,1,0,0,1,1,0,0,0,0,0,0
+569,"Steuern / Abgaben für 2. Wohnsitze einheben (an denen niemand einen Hauptwohnsitz hat)",1,1,0,0,0,0,0,0,1,1,0,0
+570,"Steuern / Abgaben auf Leerstände",1,1,0,0,0,0,0,0,1,1,0,0
+571,"Entsiegelungsprämien / -förderungen",1,1,0,0,0,0,0,0,1,1,0,0
+572,"Beleuchtung von Supermärkten, Firmen, Autohäusern ... außerhalb der Öffnungszeiten verbieten bzw. um 75% verringern!!!!",1,1,0,0,0,0,0,0,1,1,0,0
+573,"Versiegelte böden lassen sich nicht in ursprungsböden rueckverwandeln. Trotzdem versuchen. Biodiversität! Wird kaum beachtet!",0,0,0,0,0,0,0,0,0,0,0,0
+574,"Stadtbäume regelmäßig gießen oder trockenresistente Bäume pflanzen.",40,34,1,5,12,10,1,1,28,24,0,4
+575,"Nicht nur Landwirte sollten für den Artenschutz Förderungen erhalten, sondern auch Gartenbesitzer.",1,1,0,0,0,0,0,0,1,1,0,0
+576,"Bodenversiegelung und Zersiedelung stoppen und leerstehende Gebäude revitalisieren.",1,1,0,0,0,0,0,0,1,1,0,0
+577,"Bewusst Wildnisflächen neben Straßen und Wegen schaffen.",1,1,0,0,0,0,0,0,1,1,0,0
+578,"Möglichkeit schaffen, dass Hausverwaltungen nach Mehrheitsbeschluss im Mietshaus auf ökologische Heizformen oder Fernwärme umstellen müssen.",1,1,0,0,0,0,0,0,1,1,0,0
+579,"Anbringung von Beschattungen (Jalousien, etc.) bei allen Fenstern durch Vermieter/Eigentümer gegen die Sommerhitze.",1,1,0,0,0,0,0,0,1,1,0,0
+580,"Begrünung aller Innenhöfe. Nicht als Mistplatz und Parkplatz verwenden.",1,1,0,0,0,0,0,0,1,1,0,0
+581,"Kein Kreuzen von Fußwegen und Radwegen. Keine Räder, Roller und Skater in Fußgängerzonen > viel zu gefährlich für Fußgänger.",1,1,0,0,0,0,0,0,1,1,0,0
+582,"Anbindung wichtiger Einrichtungen (Spitäler, Schulen, Behörden, Banken) an das öffentliche Verkehrsnetz.",1,1,0,0,0,0,0,0,1,1,0,0
+583,"In bestehenden Fern/Nahwärmenetzen soll es die Möglichkeit geben, ""eigene"" Wärme lokal/dezentral einzuspeisen zu können.",1,1,0,0,0,0,0,0,1,1,0,0
+584,"Viele noch so gute Einzelvorschläge ergeben kein Ganzes, wenn der Zusammenhang fehlt. Diese Umfrage ist leider ein Fehlschlag.",0,0,0,0,0,0,0,0,0,0,0,0
+585,"Alle CO2-Emittenten in Österreich zahlen den gleichen CO2-Preis bis spätestens 2030 von rund 300 Euro/t CO2, Energiesteuern eingerechnet",1,1,0,0,0,0,0,0,1,1,0,0
+586,"3% der Landesfläche in jedem Bundesland werden für Wind und Agri-PV zur Verfügung gestellt. Biodiversität und Landwirtschaft werden gestärkt",1,1,0,0,0,0,0,0,1,1,0,0
+587,"Sanierung statt Neubau (auch und vor allem bei Gewerbeobjekten)",1,1,0,0,0,0,0,0,1,1,0,0
+588,"Übergeordnete Raumplanung - Bürgermeister(-innen) sollen nicht alleine entscheiden, dass Grünland in Parkplatz verwandelt wird",1,1,0,0,0,0,0,0,1,1,0,0
+589,"Leerstandsabgabe einführen, Dämmung von Altbauten vorschreiben. Wohnbörsen von Alleinstehende und Familien fürs Tauschen fördern.",0,0,0,0,0,0,0,0,0,0,0,0
+590,"Raumordnung sollte keine Gemeindematerie sein um den Flächenfraß aufzuhalten und übergreifende Planung zu ermöglichen",1,1,0,0,0,0,0,0,1,1,0,0
+591,"Bürgermeistern die 1. Bauinstantz entziehen. Einen Pool an Entscheidungsträgern schaffen, damit die Bauträger nicht  wissen wer entscheidet",1,1,0,0,1,1,0,0,0,0,0,0
+592,"Mehr mit Holz bauen, keine Tiefgaragen, Urban Gardening, Mehrgenerationen Wohnräume schaffen. Pv + Wärmepumpen!",1,1,0,0,1,1,0,0,0,0,0,0
+593,"Mülltrennsysteme sollten Österreichweit vereinheitlicht werden. Resultat: bessere Verständlichkeit und somit höhere Recyclingquoten",1,1,0,0,0,0,0,0,1,1,0,0
+594,"Wohnbauförderungen müssen von politischen Einflüssen entkoppelt werden. zB. Spö Kärnten - Neue Heimat, Meine Heimat usw.",1,1,0,0,1,1,0,0,0,0,0,0
+595,"Die Entsorgung von gefährlichen Abfällen (zB Akkus)sollten auch für Gewerbebetriebe kostenlos sein. Rechtliche Auflagen sind zu kompliziert.",1,1,0,0,0,0,0,0,1,1,0,0
+596,"Mit einer jährlichen Bodenabgabe pro Quadratmeter versiegelter Fläche einen Anreiz zum Entsiegeln und zum verdichteten Wohnbau schaffen.",1,1,0,0,0,0,0,0,1,1,0,0
+597,"Der Stromverbrauch für den Bitcoin-Handel betrug im vergangenen Jahr 2021 dem JAHRESSTROMVERBRAUCH des gesamten Landes ARGENTINIEN (laut ARD",1,1,0,0,0,0,0,0,1,1,0,0
+598,"Verpflichtender Bau von Brauchwasser(Regenwasser)Behälter für WC, Garten etc. bei Neubauten",1,1,0,0,0,0,0,0,1,1,0,0
+599,"Wiederverwendung von Abrissmaterial in der Bauwirtschaft. Stichwort RESOURCENKNAPPHEIT!",1,1,0,0,0,0,0,0,1,1,0,0
+600,"Eingeschoßige Bauweise bei Gewerbe-und Privatbauten verbieten",1,1,0,0,0,0,0,0,1,1,0,0
+601,"Die Energiepreise vom Gaspreis jetzt entkoppeln!",1,1,0,0,0,0,0,0,1,1,0,0
+602,"Ich bin gegen jede finanz. Belastung z.B. Co2-Steuer, solange weltweit Erdgas abgefackelt wird, z.B. 142 Milliarden m3 in 2020.",1,1,0,0,1,1,0,0,0,0,0,0
+603,"Tempo 80/110 für die ukraine",1,1,0,0,0,0,0,0,1,1,0,0
+604,"Ich bin strikt gegen die CO2-Steuer solange Fugtickets und Kerosin nicht gleich besteuert werden wie PKW's (incl. NOVA)",1,1,0,0,1,1,0,0,0,0,0,0
+605,"Eine jährliche Bodenabgabe für jeden Quadratmeter versiegelter Fläche (z.B. 1 Euro/m2/Jahr) und mit den Einnahmen Entsiegelung fördern",1,1,0,0,0,0,0,0,1,1,0,0
+606,"Terrassenstrahler verbieten",1,1,0,0,0,0,0,0,1,1,0,0
+607,"2 homeoffice tage pro woche für jeden der will und kann",1,1,0,0,0,0,0,0,1,1,0,0
+608,"Die Aufschliessungsgebühren soll der Bauwerber bezahlen. Auch anteilig für infrastruktur wie kindergärten, schulen,",1,1,0,0,0,0,0,0,1,1,0,0
+609,"Neue Wohnbauen: in Relation zum verursachten Verkehr planen, neue Baugebiete nur mit Öffis, Radwegen, Fußläufiger Anbindung zu Ortskernen",1,1,0,0,0,0,0,0,1,1,0,0
+610,"Forcieren von öffentlichen Verkehrsmitteln,alternativ von Fahrgemeinschaften zur Arbeitsstelle im ländlichen Raum",1,1,0,0,0,0,0,0,1,1,0,0
+611,"Auch der Kauf gebrauchter E-Fahrzeuge muss gefördert werden! Reuse statt Neukauf.",1,1,0,0,0,0,0,0,1,1,0,0
+612,"Arbeitswege verkürzen lokale Bürosharing Lösungen fördern statt riesiger Glaskästen mit Klimatisierung und Erhöhung des Verkehrs",26,16,2,8,13,5,2,6,13,11,0,2

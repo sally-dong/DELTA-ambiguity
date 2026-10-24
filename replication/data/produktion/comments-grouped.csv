@@ -1,0 +1,523 @@
+comment-id,comment,total-votes,total-agrees,total-disagrees,total-passes,group-a-votes,group-a-agrees,group-a-disagrees,group-a-passes,group-b-votes,group-b-agrees,group-b-disagrees,group-b-passes
+0,"Klimaschutzmaßnahmen müssen immer sozial gerecht gestaltet werden.",74,57,11,6,73,57,11,5,1,0,0,1
+1,"Klimaschutz ist so dringend und muss umgesetzt werden, auch wenn zeitnah keine sozialen Ausgleichsmaßnahmen möglich sind.",74,26,38,10,73,25,38,10,1,1,0,0
+2,"Österreich muss im Klimaschutz global eine Vorbildrolle übernehmen.",77,35,32,10,76,35,32,9,1,0,0,1
+3,"Online-Retourwaren werden oft vernichtet, obwohl sie Neuwaren sind. Das soll verboten werden.",77,62,9,6,76,61,9,6,1,1,0,0
+4,"Personen mit einem klimafreundlichen Lebensstil, sollen vom Staat finanziell gefördert/entlastet werden.",76,32,32,12,75,32,31,12,1,0,1,0
+5,"Für alle Konsumprodukte soll Kostenwahrheit gelten. Die Kosten, die durch Umweltverschmutzung und Treibhausgasemissionen entstehen, sollen sich im Preis eines Produkts abbilden.",75,53,15,7,74,52,15,7,1,1,0,0
+6,"Österreich soll sich dafür einsetzen, dass die Bewerbung besonders klimaschädlicher Produkte in der EU verboten wird.",77,61,13,3,76,60,13,3,1,1,0,0
+7,"""Greenwashing"" von Unternehmen, also die gezielte Täuschung durch vorgebliche Umweltmaßnahmen, soll verboten werden.",75,64,5,6,74,63,5,6,1,1,0,0
+8,"Eine unabhängige Klimakommission soll die Gesetze und Maßnahmen der Bundesregierung auf Klimawirksamkeit überprüfen.",79,58,19,2,78,57,19,2,1,1,0,0
+9,"Klimafreundliche Projekte sollen günstigere Kredite erhalten.",80,62,13,5,77,62,10,5,3,0,3,0
+10,"Klimaschutz muss in Lehr- und Studienplänen verankert werden.",79,57,15,7,76,56,15,5,3,1,0,2
+11,"Bereits versiegelte, d.h. betonierte Flächen, sollen durch Anlagen zur erneuerbaren Energiegewinnung mehrfach genutzt werden – zum Beispiel Parkplätze von Einkaufszentren.",78,73,4,1,76,72,3,1,2,1,1,0
+12,"Ich bin bereit, höhere Preise für klimafreundliche Produkte zu bezahlen.",79,48,24,7,75,46,23,6,4,2,1,1
+13,"Ich bin bereit, für den Klimaschutz radikale Maßnahmen zu akzeptieren, die auch eine Veränderung meiner Lebensweise zur Folge haben könnten.",79,31,36,12,75,31,32,12,4,0,4,0
+14,"Produktion und Konsum üben wenig Einfluss auf das Klima aus.",510,53,392,65,401,23,341,37,109,30,51,28
+15,"Produktion und Konsum spielen eine große Rolle im Klimaschutz.",632,496,48,88,509,442,15,52,123,54,33,36
+16,"Für die überparteiliche Zusammenarbeit in Sachen Klimaschutz sollen sehr viel mehr Ressourcen und Zeit eingesetzt werden.",79,53,17,9,77,53,16,8,2,0,1,1
+17,"Produkte und Dienstleistungen, die das Klima belasten, sollen einen deutlich höheren Preis haben als klimafreundliche Produkte und Dienstleistungen.",649,480,84,85,523,451,19,53,126,29,65,32
+18,"Der Klimarat ist in der Öffentlichkeit bekannt.",546,174,221,151,436,146,173,117,110,28,48,34
+19,"Klimarat und IPCC sind Betrüger mit Gefälligkeitsstudien im Drittmittelbordell.",1,1,0,0,1,1,0,0,0,0,0,0
+20,"xxx",1,1,0,0,1,1,0,0,0,0,0,0
+21,"Konsum werde ich nicht einschränken",567,98,354,115,451,35,335,81,116,63,19,34
+22,"Großkonzerne mehr kontrollieren (z.B. Nestle ist ""nachhaltig"")",535,412,40,83,421,360,8,53,114,52,32,30
+23,"mehr Richtlinien für Großkonzerne und deren Produktion!!!!",166,123,22,21,132,112,4,16,34,11,18,5
+24,"Weg von Quantität - hin zu Qualität! Es gibt kein Menschenrecht auf ungezügelten Konsum auf Kosten von Mensch, Tier und Klima!",522,400,42,80,409,359,5,45,113,41,37,35
+25,"kein Statement",13,1,3,9,12,1,3,8,1,0,0,1
+26,"Strengere Regeln gegen geplante Obsoleszenz, für Reparierbarkeit der Produkte.",470,387,13,70,361,314,2,45,109,73,11,25
+27,"Förderung von (klimafreundlicher) Produktion in der EU, anstatt Import mit langem Transportweg aus Diktaturen ohne (soziale) Umweltstandards",502,423,26,53,390,360,1,29,112,63,25,24
+28,"Klimarat: Klimaschutzmaßnahmen müssen immer sozial gerecht gestaltet werden.",496,337,77,82,383,270,50,63,113,67,27,19
+29,"Klimarat: Klimaschutz ist so dringend und muss umgesetzt werden, auch wenn zeitnah keine sozialen Ausgleichsmaßnahmen möglich sind.",633,318,181,134,509,305,97,107,124,13,84,27
+30,"Mumaßliche Umweltverschmutzung durch Unternehmen, muss mit hohen Freiheitsstrafen bestraft werden.",492,283,89,120,374,240,44,90,118,43,45,30
+31,"Klimarat: Österreich muss im Klimaschutz global eine Vorbildrolle übernehmen.",647,389,157,101,513,381,53,79,134,8,104,22
+32,"Klimarat: Online-Retourwaren werden oft vernichtet, obwohl sie Neuwaren sind. Das soll verboten werden.",516,460,27,29,397,385,3,9,119,75,24,20
+33,"Klimarat: Personen mit einem klimafreundlichen Lebensstil, sollen vom Staat finanziell gefördert/entlastet werden.",655,422,137,96,522,409,41,72,133,13,96,24
+34,"Ohne demokratische Teilhabe am Entscheidungsprozess in Unternehmen, wird es auch keinen Klimaschutz durch diese geben.",425,168,97,160,318,143,47,128,107,25,50,32
+35,"Klimarat: Für alle Konsumprodukte soll Kostenwahrheit gelten. Die Kosten, die durch Umweltverschmutzung und Treibhausgasemissionen entstehen, sollen sich im Preis eines Produkts abbilden.",598,476,62,60,473,438,4,31,125,38,58,29
+36,"Klimarat: Österreich soll sich dafür einsetzen, dass die Bewerbung besonders klimaschädlicher Produkte in der EU verboten wird.",610,475,83,52,481,439,15,27,129,36,68,25
+37,"Klimarat: ""Greenwashing"" von Unternehmen, also die gezielte Täuschung durch vorgebliche Umweltmaßnahmen, soll verboten werden.",508,447,28,33,387,373,3,11,121,74,25,22
+38,"Klimarat: Eine unabhängige Klimakommission soll die Gesetze und Maßnahmen der Bundesregierung auf Klimawirksamkeit überprüfen.",596,437,85,74,466,407,14,45,130,30,71,29
+39,"Klimarat: Klimafreundliche Projekte sollen günstigere Kredite erhalten.",592,461,66,65,467,421,9,37,125,40,57,28
+40,"Klimarat: Klimaschutz muss in Lehr- und Studienplänen verankert werden.",616,477,81,58,490,445,13,32,126,32,68,26
+41,"Klimarat: Bereits versiegelte, d.h. betonierte Flächen, sollen durch Anlagen zur erneuerbaren Energiegewinnung mehrfach genutzt werden – zum Beispiel Parkplätze von Einkaufszentren.",493,444,15,34,383,366,1,16,110,78,14,18
+42,"Klimarat: Ich bin bereit, höhere Preise für klimafreundliche Produkte zu bezahlen.",628,433,109,86,505,407,37,61,123,26,72,25
+43,"Klimarat: Ich bin bereit, für den Klimaschutz radikale Maßnahmen zu akzeptieren, die auch eine Veränderung meiner Lebensweise zur Folge haben könnten.",670,433,151,86,540,431,45,64,130,2,106,22
+44,"Klimarat: Für die überparteiliche Zusammenarbeit in Sachen Klimaschutz sollen sehr viel mehr Ressourcen und Zeit eingesetzt werden.",552,388,58,106,429,364,6,59,123,24,52,47
+45,"Ich würde weniger im Internet/ bei Amazon einkaufen, wenn die Geschäfte Sonntags geöffnet wären.",354,46,266,42,258,22,208,28,96,24,58,14
+46,"Keine Hannibal Gletscherspektakel",113,39,12,62,86,35,4,47,27,4,8,15
+47,"keine Motocross Rennen auf der grünen Wiese",444,242,81,121,340,207,36,97,104,35,45,24
+48,"keine Flachdächer ohne Solaranlage",439,294,54,91,331,241,20,70,108,53,34,21
+49,"keine GTI Treffen",0,0,0,0,0,0,0,0,0,0,0,0
+50,"keine Heidelbeeren aus Peru (nur EIN Beispiel)",424,294,46,84,326,248,18,60,98,46,28,24
+51,"Staatliche Eingriffe in Produktion und Konsum führten historisch belegbar immer zu Ineffizienzen, Wohlstandsverlusten und Versorgungskrisen.",405,115,139,151,304,52,127,125,101,63,12,26
+52,"Künstliche Aufblähung des Kreditvolumens (mit politisch ""guter Intention"") hat bereits zur globalen Finanzkrise 2007-2008 geführt.",128,54,14,60,96,37,11,48,32,17,3,12
+53,"Suffizienz wäre wichtig, z.B. brauche ich immer das neueste Smartphone oder chicke Kleider? Besser: gebrauchte Handys, Kleidertauschbörsen",477,335,54,88,372,303,13,56,105,32,41,32
+54,"Das Preissystem steuert Produktion und Konsum ohne Zwang und staatliche Gewalt. Wenn CO2 als Preisfaktor fehlt: eben CO2-Eigentum schaffen.",324,76,67,181,235,64,32,139,89,12,35,42
+55,"Die/der Käufer:in sollte über die Produktionskette einer Ware informiert sein bevor er sich zum Kauf entscheidet.",458,327,41,90,349,281,11,57,109,46,30,33
+56,"Es sollten in Europa wieder mehr Textilien produziert werden anstatt diese aus Asien zu importieren.",119,97,6,16,91,77,2,12,28,20,4,4
+57,"Werbung für ungesunde Lebensmittel verbieten, es soll den Kindern nicht suggeriert werden, dass sie täglich Süsses brauchen!",464,320,69,75,360,285,27,48,104,35,42,27
+58,"Eine klare Kennzeichnungspflicht für die (gute/schlechte) Recyclingfähigkeit von Verpackungen direkt auf der Verpackung ist notwendig",470,363,43,64,361,310,10,41,109,53,33,23
+59,"Mehr Produktinformationen (Reparaturfähigkeit, Verfügbarkeit von Ersatzteilen…) für eine möglichst bewusste Kaufentscheindung verpflichtend",356,286,20,50,269,237,3,29,87,49,17,21
+60,"Produktionsstandorte für Elektro(Haushalts-)geräte in Europa fördern, anstatt aus China importieren.",24,22,1,1,17,16,0,1,7,6,1,0
+61,"Keine Werbung für Fleischprodukte",365,151,129,85,280,145,66,69,85,6,63,16
+62,"Aufklärung über Schleppnetze und deren Folgen für die Ozeane (größte Plastikmüllproduktion der Meere) und über Fangmethoden",359,269,19,71,276,223,3,50,83,46,16,21
+63,"Produkte müssen wieder langlebig gebaut werden. Geplante Defekte müssen verboten werden - mit Freiheitsstrafen für das Management.",22,18,1,3,17,14,1,2,5,4,0,1
+64,"Bei ""radikale Eingriffe"" muß man diese definieren",1,1,0,0,1,1,0,0,0,0,0,0
+65,"Fertiglager minimieren. Technische Produkte nur unter Einbeziehung eines geschulten Beraters.",224,30,48,146,157,28,22,107,67,2,26,39
+66,"STOPP des Walmartvertriebs - auf Verdacht kaufen und dann billig verschleuden und andere Arbeitsplätze gefährden",279,117,28,134,207,102,8,97,72,15,20,37
+67,"Umstellung der Stahl- und Eisenproduktion auf Wasserstoff.",262,104,34,124,190,83,9,98,72,21,25,26
+68,"Die meisten Unternehmen arbeiten gewinnorientiert. Berücksichtigen Klimaschutzmaßnahmen diesen Grundsatz, werden sie mitziehen.",9,5,0,4,8,5,0,3,1,0,0,1
+69,"Produktion in der EU forcieren, insbesondere in noch hinterher hinkenden EU-Staaten wie Rumänien oder Bulgarien.",307,206,21,80,232,157,9,66,75,49,12,14
+70,"Schluss mit dem Raubtierkapitalismus! Unser Wohlstand darf nicht mehr auf Ausbeutung von Menschen, Tier und Natur basieren.",326,216,39,71,252,199,5,48,74,17,34,23
+71,"Geplante Obsoleszenz abschaffen. Produkte müssen mindestens 10 und mehr Jahre Garantie haben.",1,1,0,0,1,1,0,0,0,0,0,0
+72,"Die Massenproduktion von Menschen, ohne diese würdig versorgen zu können, muss verboten werden.",1,1,0,0,0,0,0,0,1,1,0,0
+73,"Jeder, der sich jährlich ein neues Handy kauft, muss den dreifachen Preis dafür bezahlen. Erst ab 3 Jahren soll der Preis langsam sinken",378,168,118,92,296,157,64,75,82,11,54,17
+74,"zum letzten Punkt, Überdachungen für Parkplätze in Einkaufszentren, gibt es schon. Es fehlt die Verpflichtung dies zu tun.",254,118,30,106,184,94,14,76,70,24,16,30
+75,"Je mehr Verbrennerautos jemand besitzt, desto höher muss die Steuer sein.",392,217,96,79,302,208,35,59,90,9,61,20
+76,"Ab sofort keine Neuwagen mehr produzieren und verkaufen. (Ausnahmen für Blaulichtorgs, etc) Reparieren + Gebrauchtwagenmarkt reicht.",241,58,119,64,173,55,63,55,68,3,56,9
+77,"Restaurants etc.: Verpflichtendes Anführen des Ursprunges von Zutaten, zumindest der Hauptzutaten.",386,281,46,59,298,246,16,36,88,35,30,23
+78,"Schluss mit Billigmode. Kleidung muss qualitativ höher und in jedem Fall Fairtrade und ökologisch sein.",367,266,41,60,281,238,7,36,86,28,34,24
+79,"Schluss mit der Plastikflut. Styropor und Füllmaterial muss ökologisch ersetzt werden,  es kompostieren zu können.",359,279,23,57,277,236,4,37,82,43,19,20
+80,"Ende mit der Globalisierung. Hohe Steuern auf Billig-Produkte aus Fernost, damit europ. Qualität wieder Sinn macht.",14,10,0,4,13,9,0,4,1,1,0,0
+81,"Es sollte etwas gegen den Verpackungsmüll gemacht werden, man wirft bei vielen Produkten gefühlt kiloweise Verpackung weg",340,295,14,31,259,239,2,18,81,56,12,13
+82,"Reduzierung des Produktsortiments (wer braucht schon 30 Sorten Wurst?)",348,165,90,93,266,150,43,73,82,15,47,20
+83,"Die gesetzliche Gewährleistung sollte deutlich ausgedehnt werden, um die Herstellung langlebigerer Produkte notwendig zu machen.",352,305,9,38,270,248,0,22,82,57,9,16
+84,"Gute Berichterstattung (Klimajournalismus) auf allen Ebenen trägt zu einem Bewusstseinswandel bei der Transformation bei.",373,276,38,59,294,252,7,35,79,24,31,24
+85,"Mehr Klimaschutz ist nur durch eine starke Umverteilung von Wohlstand und politischer Macht möglich.",332,144,85,103,253,131,38,84,79,13,47,19
+86,"Menschen nicht über ihren Konsum definieren! Gegen den  ständigen Neu-Kauf von Produkten.  Abgelaufene Lebensmittel vergünstigt anbieten.",346,267,13,66,267,219,2,46,79,48,11,20
+87,"Monopolisierung von Unternehmen verbieten (z.B. Loreal, Nestle, Craft Foods etc.)",349,223,35,91,271,194,9,68,78,29,26,23
+88,"Hochverarbeitete Lebensmittel sollen deutlich höher besteuert werden.",336,152,80,104,253,139,34,80,83,13,46,24
+89,"Fokus auf Kreislaufwirtschaft setzen; Reparieren statt wegwerfen",363,326,14,23,274,264,2,8,89,62,12,15
+90,"Bei Grundnahrungsmitteln (z.B. Bort, Gemüse, Obst, Reis, ...) soll kein Gewinn erlaubt werden. Nur Kostendeckung.",289,76,128,85,213,60,83,70,76,16,45,15
+91,"Wir sollten weniger konsumieren, dann entstehen auch weniger Umweltschäden durch Produktion und Transport.",348,245,44,59,265,222,6,37,83,23,38,22
+92,"Sozial gerecht bedeutet immer, dass das eine Viertel, welches jetzt schon alles zahlt, noch mehr zahlen soll/ muss.",224,69,66,89,159,32,58,69,65,37,8,20
+93,"ad soziale Ausgleichsmaßnahmen: Diese sind nicht nötig.",220,35,96,89,152,21,72,59,68,14,24,30
+94,"Verbot geplanter Obsoleszenz. Verpflichtende leichte Reparierbarkeit und (zB Akkutausch) u. Offenlegung von Schalt-, Bauplänen, u. Software",348,276,11,61,269,229,2,38,79,47,9,23
+95,"Vielerorts zu dichtes Ladennetz und zu viele Einkaufscenter (keiner braucht z.B. im Umkreis von 10 km drei Billa)",344,172,79,93,258,148,37,73,86,24,42,20
+96,"Vermeiden: weniger! Verlagern: Sharen, Produkt-Dienstleistungen. Verbessern: Produktdesign, Regionalität, Reparatur, Kreislauf",290,197,22,71,219,172,1,46,71,25,21,25
+97,"Alternativen zum Konsum: Ausflüge, Gemeinschaft, Freunde,... Das genießen der Abendsonne (o.ä.) ist doch cooler als eine neue Hose...",3,2,0,1,3,2,0,1,0,0,0,0
+98,"Ich finde es total unnötig und Umweltschädig Männliche Jungkälber ins Ausland zum Schlachter zu fahren und das Fleisch wieder einzuführen",5,5,0,0,5,5,0,0,0,0,0,0
+99,"Meiner Meinung nach ist diese Umfrage nicht zielführend.",1,1,0,0,1,1,0,0,0,0,0,0
+100,"Transport von Lebendtieren über lange Strecken muss verboten werden (Vom Bauer bis zum nächsten Schlachthof muss ausreichen)",328,275,12,41,249,218,3,28,79,57,9,13
+101,"Praktischer Klimaschutz: Keine Dosen, Flaschen und Fast Food Abfälle in den Straßengraben und ins Gelände",352,286,10,56,268,224,2,42,84,62,8,14
+102,"Wasser ist ein öffentliches Gut! Gegen jegliche Privatisierung des Lebensmittels Wasser!",351,310,8,33,267,244,2,21,84,66,6,12
+103,"Die Republik Österreich veranlagt ab sofort nicht mehr bei Banken, die klimafeindliche Unternehmen finanzieren.",313,143,54,116,235,134,7,94,78,9,47,22
+104,"Die Voest muss ab sofort auf Elektrolichtbogenöfen und ab 2025 auf Wasserstofftechnologie umstellen.",208,45,42,121,144,40,13,91,64,5,29,30
+105,"Die Zementindustrie muss ab sofort CO2-Abscheider einbauen.",278,138,29,111,202,117,7,78,76,21,22,33
+106,"Neue Industrieanlagen dürfen nur mehr mit CO2-neutralen Verfahren errichtet werden.",351,203,50,98,268,180,17,71,83,23,33,27
+107,"Die ""Gemeinwohlökonomie"" unbedingt als sinnvolle und realistische Alternative bewerben und fördern!",308,175,31,102,237,163,2,72,71,12,29,30
+108,"Keine Werbung für Autos mehr",1,1,0,0,1,1,0,0,0,0,0,0
+109,"Werbung allgemein beschränken um nicht Bedürfnisse zu schaffen, die sonst gar nicht bestanden hätten",329,198,57,74,252,177,20,55,77,21,37,19
+110,"auch am Land überlegt werden, ob jede Autofahrt notwendig ist. In den 80-iger gab es einmal in der Woche eine Fahrt in den Ort",1,1,0,0,1,1,0,0,0,0,0,0
+111,"Entwicklung von umweltfreundlichen Produktionsmethoden wieder an unseren FH´s und Unis.",212,163,4,45,159,132,0,27,53,31,4,18
+112,"Transportwege bei lokal verfügbaren Produkten gesetzlich beschränken, zB. kein Import/Export  ausgenommen Nachbarländer.",216,120,38,58,168,103,22,43,48,17,16,15
+113,"Es braucht staatliche Steuerung hinsichtlich klimaschädlichen Verhalten von Firmen hinsichtlich Produktion, Verpackung, Transport etc.",243,177,23,43,185,156,5,24,58,21,18,19
+114,"x",1,1,0,0,1,1,0,0,0,0,0,0
+115,"Kennzeichnung der Textilien mit ""Ampelsystem"" über Emmission, Wasserverbrauch, Chemikalien, etc.",243,183,17,43,190,162,7,21,53,21,10,22
+116,"Importstopp von Billigtextilien",239,154,27,58,181,138,6,37,58,16,21,21
+117,"Die Ideologisierung des wichtigen Themas ""Klimaschutz"" für politischen Missbrauch muss verhindert werden.",167,93,8,66,122,68,5,49,45,25,3,17
+118,"Der Klimaschutz darf nicht dem Missbrauch durch politisch-ideologische Demagogen zum Opfer fallen.",1,1,0,0,0,0,0,0,1,1,0,0
+119,"Es muss als hip gelten, mit eigenen Behältnissen Gebäck, Wurst, Mahlzeiten,... abzuholen, um Verpackungsmüll einzusparen",203,138,24,41,153,124,6,23,50,14,18,18
+120,"Auf ""Gemeindeflohmärkten"" soll jeder Kleingartenbesitzer überschüssiges Obst, Gemüse und selbsterzeugte Waren / Erzeugnisse verkaufen dürfen",226,153,19,54,171,126,5,40,55,27,14,14
+121,"FastFashion muss beendet werden (zB. keine Shirts um €5), Secondhand bevorzugt, Textilhersteller in Europa fördern, weg vom Asienprodukt",234,172,16,46,178,152,1,25,56,20,15,21
+122,"Für die Klimaneutralität sollen Zigaretten gar nicht mehr erzeugt werden, den schon bei der Herstellung +beim Rauchen selbst fällt CO2 an !",194,59,63,72,138,47,38,53,56,12,25,19
+123,"Mehr Verbraucherschutz: Produkte dürfen nur nach eingehender Kontrolle als nachhaltig bezeichnet werden.",222,176,7,39,167,146,1,20,55,30,6,19
+124,"""Greenwashing"" von Unternehmen, soll hart bestraft werden. Nur verbieten, lieber Klimarat, bringt halt nix.",199,128,20,51,146,107,7,32,53,21,13,19
+125,"Schon bei der Herstellung von Zigaretten fallen vermeidbare Treibhausgasemmisionen an auch das Rauchen selbst verursacht Umweltschäden !",178,83,26,69,132,67,12,53,46,16,14,16
+126,"Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe des Ursprunges von Zutaten.",238,165,30,43,184,146,11,27,54,19,19,16
+127,"Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe der Qualität von Zutaten (ähnlich wie bei Eiern)",234,151,29,54,180,137,11,32,54,14,18,22
+128,"Bei allen Nahrungsmitteln (auch bei Speisen in Restaurants): verpflichtende Angabe der Emmissionen von Zutaten bei deren Herstellung.",186,92,39,55,134,82,13,39,52,10,26,16
+129,"Kleidung braucht endlich Standards: Ökologisch und menschlich",201,155,14,32,152,138,0,14,49,17,14,18
+130,"Zigaretten, sollen aus Klimaschutzgründen nicht mehr erzeugt werden, diese zersetzen sich in den Meeren zu Mikroplastik, verseuchen Böden !",171,66,40,65,126,54,22,50,45,12,18,15
+131,"Verstärkte Aufklärung über CO2 Andruck; ab 6km Fahrt ist eine Lieferung des Einkaufes zB. klimafreundlicher",170,78,25,67,124,65,9,50,46,13,16,17
+132,"""Heidelbeeren aus Peru"", nicht Saisonobst sollte auch wie eine Delikatesse versteuert werden.",235,171,17,47,183,149,3,31,52,22,14,16
+133,"Hausverstand ist in allen Bereichen gefragt",1,1,0,0,1,1,0,0,0,0,0,0
+134,"Ein vernünftiges Konsumverhalten muss nicht umweltschädlich sein und führt zu mehr Lebenszufriedenheit. Konsum mit Maß und Vernunft!",168,131,6,31,121,99,3,19,47,32,3,12
+135,"Endlich & erstmals substanzielle Investitionen in Wissenschaft, Forschung und Technologie.",193,116,8,69,142,89,3,50,51,27,5,19
+136,"technisch mögliche Mindestnutzungsdauer von technischen Geräten muss vom Produzenten auch gewährleistet werden",222,178,5,39,167,142,0,25,55,36,5,14
+137,"Plastikverbot in der Verpackung statt Konsumenten-Placebos wie Wattestäbchenverbot",212,124,23,65,156,104,7,45,56,20,16,20
+138,"Mit den Klimazielen sollte nicht die Wirtschaft kaputt gemacht werden.",168,69,43,56,123,37,40,46,45,32,3,10
+139,"Ohne große Staaten wie China völlig sinnlos.",121,28,53,40,80,11,47,22,41,17,6,18
+140,"Jedem einzelnen von uns, muß bewußt sein, daß die Jahre des Überflusses vorbei sind. Denn die Erde braucht uns nicht aber wir die Erde.",165,106,14,45,125,94,1,30,40,12,13,15
+141,"Verbot der Vernichtung von Neuwaren (z. B. falsch bestellte Produkte)",231,201,9,21,179,169,1,9,52,32,8,12
+142,"Verbot von Werbung im öffentlichen Raum",137,50,41,46,96,42,21,33,41,8,20,13
+143,"höhere Steuern auf Werbemaßnahmen",206,106,28,72,160,93,9,58,46,13,19,14
+144,"faire, nachhaltige und langlebige Kleidung fördern, sodass diese für alle leistbar ist (übermäßiger Konsum soll aber nicht gefördert werden)",241,191,13,37,188,167,1,20,53,24,12,17
+145,"Modeunternehmen die in Österreich verkaufen (auch online shops) sollten ethische und ökologische Standards erfüllen müssen",239,190,14,35,185,168,0,17,54,22,14,18
+146,"Pfändung aller Güter und Rechtstitel, die eine festzulegende sozial verträgliche Vermögensobergrenze überschreiten",125,28,48,49,90,28,23,39,35,0,25,10
+147,"Saatgut ist keine Erfindung und darf daher auch nicht patentiert werden.",220,169,10,41,166,135,2,29,54,34,8,12
+148,"Datenschutz bei verpflichtend zu verwendender Software für Home-Schooling etc. stärker berücksichtigen",1,1,0,0,1,1,0,0,0,0,0,0
+149,"Gesetzesänderung dass Stiftungen z.B. aus z.B. Liechtenstein keine Immob. oder Grundstücke in Österreich erwerben dürfen",182,81,26,75,133,67,8,58,49,14,18,17
+150,"Teilhabe an Bildungsmaßnahmen, im Erwerbsleben etc. auch ohne eigenes Smartphone o. dgl. ermöglichen (Zwang zum Datenverkauf verhindern)",172,95,11,66,124,75,4,45,48,20,7,21
+151,"Wir müssen die Ausbeutungslogik des Kapitalismus hinter uns lassen. Es kann kein grenzenloses Wachstum geben!",229,158,20,51,175,141,4,30,54,17,16,21
+152,"Produkte sollen (wieder) reparabel sein",238,219,2,17,183,175,0,8,55,44,2,9
+153,"Modeerscheinungen und Trends nicht angefacht werden und dadurch weniger konsumiert/ Statussybmole kreieren",150,65,18,67,107,56,4,47,43,9,14,20
+154,"Je höher das Vermögen, desto höher sind die Treibhausgasemissionen. Daher Besteuerung von Vermögen ab 1 Million € einführen.",236,134,45,57,183,121,19,43,53,13,26,14
+155,"Unternehmen in die Pflicht nehmen und nicht die Konsumenten! Das Problem liegt in der klimaschädlichen Produktion, nicht beim Individuum!",208,122,33,53,151,98,17,36,57,24,16,17
+156,"Werbung für primär fossile Produkte (Flüge, Autos, Erdölunternehmen) gehören verboten; Werbung gehört generell stark reduziert.",229,140,37,52,173,128,11,34,56,12,26,18
+157,"Klimaschutz über höhere Preise zu steuern bedeutet nur, dass Reiche sich freikaufen können. Daher muss das System verändert werden!",197,102,35,60,148,80,25,43,49,22,10,17
+158,"Vergesellschaftung & Kommunalisierung von Großkonzernen des täglichen Bedarfs - niemand darf sich an Gütern des täglichen Lebens bereichern",194,83,51,60,145,72,28,45,49,11,23,15
+159,"Staatliche Sachbibliotheken in allen Städten: Ausborgen von Backformen, Werkzeug, Teppichreinigern, Spielen, etc.",206,129,33,44,156,111,12,33,50,18,21,11
+160,"Keine oder niedrige Steuern für klimafreundliche Leistungen und Produkte!",209,126,31,52,160,114,6,40,49,12,25,12
+161,"Wir müssen innerhalb der planetaren Grenzen wirtschaften => Kooperation statt Wettbewerb und Gemeinwohlmaximierung statt Profitmaximierung!",230,161,18,51,174,144,1,29,56,17,17,22
+162,"Hohe  Steuern bzw. Strafen für klimaschädliche Leistungen, Produkte und Verhaltensweisen!",221,137,35,49,168,131,5,32,53,6,30,17
+163,"Pellets sind Feinstaubschleudern und werden oft aus alten Wäldern in Rumänien, Ukraine oder Bulgarien gewonnen. Klimafreundlich? Wohl kaum!",131,43,27,61,89,22,17,50,42,21,10,11
+164,"Niemand soll sich für seine Ernährung rechtfertigen müssen! Es darf keine Verbote oder steuerlichen Nachteile auf gewissen Produkte geben!",164,49,66,49,117,20,60,37,47,29,6,12
+165,"Niemand soll sich für seine Ernährung rechtfertigen müssen! Es darf keine Verbote oder steuerlichen Nachteile für gewissen Produkte geben!",1,1,0,0,1,1,0,0,0,0,0,0
+166,"Die stetige und extreme Zunahme der Erdbevölkerung ist ein für das Klima bis heute kaum diskutierter Punkt. Darüber muss gesprochen werden!",138,70,29,39,102,50,21,31,36,20,8,8
+167,"Produktion muss wieder in die EU zurückgeholt werden, da hier höhere Standards herrschen. Konsum über Internetgiganten einschränken.",190,147,11,32,150,119,5,26,40,28,6,6
+168,"Großkonzerne wie Amazon & Co boykottieren.",173,81,34,58,125,70,14,41,48,11,20,17
+169,"Maßnahmen zum Energiesparen werden von der Politik ignoriert, anstatt werden neue Kraftwerke und Windräder gebaut, als gäbe es kein Morgen!!",1,1,0,0,1,1,0,0,0,0,0,0
+170,"Verpflichtende Angabe des CO2-Footprints auf allen Produkten und Hinweis auf das 2 tCO2/Kopf/Jahr Budget für die Einhaltung des 1.5° Ziels.",1,1,0,0,1,1,0,0,0,0,0,0
+171,"Klimaschutz kann nicht von oben diktiert werden! Subsidiaritätsprinzip. Länder und Gemeinden dürfen nicht vom Bund entmachtet werden!",1,1,0,0,1,1,0,0,0,0,0,0
+172,"Glasgebinde normen. Nicht jede Marmelade, Honig etc. braucht eigene Form und/oder eigenes Volumen. Mehrweggläser nicht nur bei Getränken!",221,172,18,31,176,154,4,18,45,18,14,13
+173,"Bevölkerungszuwachs bringt mehr Produktion und mehr Konsum. Wachstum durch 1 Kind Politik zur Schrumpfung umkehren? Evaluieren nach 100 Jahr",1,1,0,0,1,1,0,0,0,0,0,0
+174,"Das ewige Wirtschaftswachstum ist eine Utopie. Durch Werbung müssen stets neue Bedürfnisse geschaffen werden. Der Planet leidet.",130,89,10,31,97,76,1,20,33,13,9,11
+175,"Sinnlose Artikel wie Deko verbieten.",123,24,52,47,86,17,32,37,37,7,20,10
+176,"Mehr Second Hand Shops (Kleidung). Vor allem im ländlichen Raum. Die Nachfrage ist da!",207,144,16,47,167,134,3,30,40,10,13,17
+177,"Nach der Gewährleistungszeit: Kostenlose Ersatzteile oder 3D Druckverfahren verpflichtend als Inverkehrbringerverantwortung",176,92,17,67,136,80,7,49,40,12,10,18
+178,"Wenn schon Plastik als Verpackung zb Wurst Käse, dann Einheitlich PET, und in gelben Sack Recycling Wirtschaft einbinden.",142,87,14,41,108,71,6,31,34,16,8,10
+179,"Pfand auf bereits recycle bare Behälter sinnlos. Recycling Quote hier schon über 70% und nur 5% des gesamten Plastikmülls.",110,27,30,53,80,11,26,43,30,16,4,10
+180,"Zonen für erneuerbare Energieerzeugung schnell erstellen",162,88,10,64,127,77,1,49,35,11,9,15
+181,"Jede Firma die Produkte in Umlauf bring muss sich Gedanken machen, wie diese nach Lebensdauer recycled werden können, und Anleitungen dazu",193,159,6,28,150,132,0,18,43,27,6,10
+182,"Gemeinden und Bundesländer, Bundesforste erstellen erneuerbare Energieprojekte mit mind. 50 % Bürgerbeteiligung.",141,69,9,63,108,58,3,47,33,11,6,16
+183,"Produkte dürfen nicht importiert werden, wenn die Herstellungsbedingungen bei uns unzulässig wären. Eigene Wirtschaft wird benachteiligt.",194,150,13,31,155,128,5,22,39,22,8,9
+184,"Zigaretten sollen biologisch abbaubare Filter haben",169,104,11,54,128,82,6,40,41,22,5,14
+185,"Gemeinwohlindex als Massgabe von Förderung für Betriebe",149,75,19,55,111,70,3,38,38,5,16,17
+186,"CO2 Budget (in Form von Scheinen) pro Person auf Konsum. Für Produktkauf muss ich CO2 Scheine hergeben, entsprechend des CO2-Ausstosses",133,41,38,54,98,38,17,43,35,3,21,11
+187,"Lohnnebenkosten und USt senken im Bezug auf CO2-Ausstoss des Betriebs",140,46,34,60,103,41,14,48,37,5,20,12
+188,"Reiche endlich besteuern, plus Firmen die hier Umsatz machen (online und offline) haben auch hier Steuern zu zahlen.  Geld -> Umweltschutz",185,119,26,40,141,106,10,25,44,13,16,15
+189,"Produkte aus China gehören deutlich höher besteuert als in Europa produzierte CO2 gehört eingepreist, etwa durch Zölle",193,145,17,31,152,126,4,22,41,19,13,9
+190,"Firmen, die ihre Produktion nachweislich wieder nach Europa oder sogar Österreich zurückverlgen, gehören subventioniert",165,114,9,42,127,87,4,36,38,27,5,6
+191,"Second hand statt Neukauf",174,108,22,44,138,100,7,31,36,8,15,13
+192,"Keine mikroverbote, lieber eine effektive umstellung des steuersystems: aufkommensneutrale besteuerung von emissionen und knappen ressourcen",119,51,13,55,88,40,6,42,31,11,7,13
+193,"Einführen von aufkommensneutralen ökosteuern als einzige massnahme",102,32,21,49,70,28,7,35,32,4,14,14
+194,"Wenn schon Umsatzsteuersenkung, dann nur auf pflanzliche Produkte.",102,29,30,43,74,27,10,37,28,2,20,6
+195,"Solaranlagen sollten auf allen Hausdächern verpflichtend sein und diese auch fördern.",1,1,0,0,1,1,0,0,0,0,0,0
+196,"Klimarat: Um den Konsum vor Ort zu fördern, dürfen Regionalwährungen eingeführt werden.",1,1,0,0,1,1,0,0,0,0,0,0
+197,"Um den Konsum vor Ort zu fördern, dürfen Regionalwährungen eingeführt werden.",105,28,36,41,75,23,21,31,30,5,15,10
+198,"Energieversorgung von Produktionsunternehmen auf CO2 neutral umstellen",1,1,0,0,1,1,0,0,0,0,0,0
+199,"Mehrwegverpackungen, Verbot von Aludosen und sinnlosen Mehrfachverpackungen",165,106,22,37,130,101,4,25,35,5,18,12
+200,"Energie wo immer möglich sparen, nicht ersetzen, z.B. bei Strassenbeleuchtung, Leuchtreklame ... das geht niemandem ab",1,1,0,0,1,1,0,0,0,0,0,0
+201,"Waren effizienter verpacken - meist ist der Karton viel zu groß - es wird mehr Luft und Füllmaterial als Ware transportiert!",160,125,9,26,125,105,2,18,35,20,7,8
+202,"Bauern müssen unterstützt werden in der Erzeugung von LM die nachhaltig sind Savesoil.org",128,72,13,43,101,65,1,35,27,7,12,8
+203,"Stop der Ausbeutung der Meere. 80% des Plastiks im Ozean kommen von der Fischerei. Sleppnetze zerstören mio. km² jährlich (Algenwälder).",128,89,9,30,103,77,4,22,25,12,5,8
+204,"Auto- Motoradrennen endlich verbieten- europaweit",1,1,0,0,1,1,0,0,0,0,0,0
+205,"Kochen, gesunde Ernährung und Abfallwirtschaft im Lehrplan, Bundesheer usw. aufnehmen!",1,1,0,0,1,1,0,0,0,0,0,0
+206,"Konzerne zu recyclingfähigen Verpackungen verpflichten.",149,115,7,27,117,100,2,15,32,15,5,12
+207,"Konzerne zu nachhaltiger Produktion,deren Produkten und derer Herkunft verpflichten.",1,1,0,0,1,1,0,0,0,0,0,0
+208,"Regionale Produkte regional verarbeiten.",1,1,0,0,1,1,0,0,0,0,0,0
+209,"Gerechte Steuer für CO2, es kann z.B. Honig aus Brasilien nicht billiger sein als der vom Nachbarn!",1,1,0,0,1,1,0,0,0,0,0,0
+210,"Erbschaftssteuer und Vermögenssteuer ab einer Grenze, z.B. 5 mio., einführen!",136,85,24,27,110,75,13,22,26,10,11,5
+211,"Förderungen und Maßnahmen für die Umweltbildung verschied. Zielgruppen (Pädagog*innen,Führungspositionen,Politiker*innen,Erwachsene/60+,...)",127,85,12,30,98,78,3,17,29,7,9,13
+212,"Unternehmen, die noch immer hauptsächlich von fossilen Energieträgern abhägig sind, nicht fördern.",1,1,0,0,1,1,0,0,0,0,0,0
+213,"Die Politik ist nicht bereit Bodenfraß, Umweltverschmutzung, Ressourcenverschwendung, etc abzustellen.Alles wird nur schöngeredet.",1,1,0,0,1,1,0,0,0,0,0,0
+214,"Mehr Beratungen zu Konsumsucht",1,1,0,0,1,1,0,0,0,0,0,0
+215,"Anlaufstellen für Süchtige nach fossilen Brennstoffen",1,1,0,0,1,1,0,0,0,0,0,0
+216,"SUVs und Luxuskarrossen unattraktiv machen.Z.B. Steuern massiv erhöhen, keine Pendlerpauschale, Parkverbote in Innestädten/Tiefgaragen,etc.",1,1,0,0,1,1,0,0,0,0,0,0
+217,"Wer braucht schon einen SUV?? PKW-Hersteller müssen verpflichtet werden mind. ein lowcost Modell a la 2CV anzubieten.",1,1,0,0,1,1,0,0,0,0,0,0
+218,"Windräder auf unseren Almen gehören verboten!! Die Politik soll umgehend die 1000! Vorschläge der Bertrand Piccard Stiftung umsetzen!!",1,1,0,0,1,1,0,0,0,0,0,0
+219,"Die Linken haben kein Rechtanspruch auf eine Beurteilung darüber was un-o. ethisch .Die Linken haben kein Besitzanspruch auf unsere Ethik.",0,0,0,0,0,0,0,0,0,0,0,0
+220,"Spielfilme und Serien müssen inhaltlich klimafreundlicher werden - keine Glorifizierung von Jetset, Traumschiff und Autoverfolgungsjagden",134,72,25,37,104,66,12,26,30,6,13,11
+221,"eu-weit ein label für prod. 1.gesamte transportwege CO2 bei herstellung  2.recyclebarkeit 3.verzicht auf umweltgifte",108,69,7,32,82,60,2,20,26,9,5,12
+222,"Eigene Forschungsstelle zu den Themen Klimaschutz und Klimawandelanpassung.",120,76,15,29,91,67,6,18,29,9,9,11
+223,"Ausbildung von Journalisten, Lehrern zum Thema Umweltschutz.",134,89,16,29,105,78,5,22,29,11,11,7
+224,"Nur mehr Geräte mit dem Energielabel A verkaufen.",99,44,10,45,76,34,5,37,23,10,5,8
+225,"Produkte mit geringem / keinem Nutzen (z.B. Werbeprospekte) mit hoher Steuer belegen",130,71,15,44,104,66,5,33,26,5,10,11
+226,"Produktlebensdauer, verwendete Rohstoffe und Verpackung in die Besteuerung einbeziehen",102,68,8,26,77,58,1,18,25,10,7,8
+227,"Das Thema Gesundheit fehlt. Wie werden die Menschen mit immer höheren Temperaturen im Sommer zurechtkommen? Sind Ärzte/Spitäler vorbereitet?",106,61,8,37,76,46,2,28,30,15,6,9
+228,"online-Retourwaren: anstatt Vernichtung an Hilfsprojekte, Sozialmärkte",1,1,0,0,1,1,0,0,0,0,0,0
+229,"Klimaschutz in Lehrpläne, praktischer Unterricht: ja. Ich habe aber oft mehr Geologie (Klima) statt Geographie beobachtet, beides notwendig.",1,1,0,0,1,1,0,0,0,0,0,0
+230,"Überparteiliche Zusammenarbeit zum Klimaschutz weniger Frage der Ressourcen als des guten Willens!",125,86,8,31,94,72,1,21,31,14,7,10
+231,"Plastik ist wertvolles Rohmaterial. Das Problem ist nicht Plastik per se, but achtlos weggeworfenes Plastik, weltweit.",104,66,14,24,79,50,12,17,25,16,2,7
+232,"Es sollte verboten werden, Geräte so zu bauen, dass ein Bruch eines unersetzbaren Teils genau nach Ablauf der Garantie erfolgt.",1,1,0,0,1,1,0,0,0,0,0,0
+233,"Nachhaltige Lösung muss global erwirkt werden -> Ein Kind Politik! Damit auch unsere Enkel noch Privatsphäre, Natur und Fleisch kennen!",1,1,0,0,0,0,0,0,1,1,0,0
+234,"Reduktion der Bevölkerungszahl! Besser weniger Menschen, die allerdings noch wirklich ""LEBEN"" und Spaß haben dürfen. Das wünsch`ich mir!",1,1,0,0,0,0,0,0,1,1,0,0
+235,"""Klimarat: Ich bin bereit, höhere Preise für klimafreundliche Produkte zu bezahlen."" Unsinn! Mit Steuern klimafeindliche Produkte verteuern!",142,79,27,36,111,73,11,27,31,6,16,9
+236,"Seriöse Studie, dass schwere Mehrwegverpackung in Wien umweltfreundlicher ist als leichtere Einwegverpackung inkl. verbrennen für Fernwärme",66,25,5,36,49,18,3,28,17,7,2,8
+237,"Einwegglasverpackungen haben die Glasentsorgungskosten mit zu finanzieren. Mehrwegglasverpackungen >5 Zyklen gehören kostenmäßig entlastet.",101,64,10,27,81,59,3,19,20,5,7,8
+238,"Onlinehandel muß zu ""Zero waste packaging solutions"" verpflichtet werden. Mehrwegverpackungen verpflichtend. Einweg nur mit Extrasteuer",109,77,8,24,91,73,1,17,18,4,7,7
+239,"Massive Ressourcenbesteuerungen bei kurzlebigen Konsumgütern - billiger ""chinesischer Sondermüll""",118,93,6,19,99,82,2,15,19,11,4,4
+240,"Kreislaufwirtschaft=Game Changer für Klima, Ressourcen, Umwelt und Gesellschaft. Politisch PRIO 1A wegen sofortiger Wirksamkeit",79,42,7,30,62,40,0,22,17,2,7,8
+241,"Betriebe verpflichten, dass sie ihre Dachflächen für PV nutzen. Wer das nicht tut, kriegt halt kein Gas mehr, wenn Putin den Hahn zudreht.",1,1,0,0,1,1,0,0,0,0,0,0
+242,"Alle nachweislichen Aktivitäten zur Lebensdauerverlängerung von Konsumgütern gehören intelligent gefördert.",101,80,2,19,82,67,1,14,19,13,1,5
+243,"Flugreisen und Kerosin genauso besteuern wie alle anderen Güter auch (MwSt, Möst).",1,1,0,0,1,1,0,0,0,0,0,0
+244,"Verlängerte Lebensdauer bzw.verlängerte Nutzung=sofort wirksamer Umwelt- und Ressourcenschutz. Steuerlich Vorteile sollten gefunden werden",109,84,3,22,86,71,0,15,23,13,3,7
+245,"Rauchen nur mehr in den eigenen 4 Wänden erlauben (keine Kippen mehr in der Landschaft, reduziert die Lust zu rauchen).",89,40,21,28,73,34,15,24,16,6,6,4
+246,"Steuerliche Absetzzeiträume und Beträge sollten sich mehr an langlebigen Produkten  orientieren.",105,75,6,24,86,67,1,18,19,8,5,6
+247,"Recycling ist knapp vor Entsorgung(Verlust) - Reuse=Lebensdauerverlängerung. Fördern wir eine Reuse Gesellschaft.",97,67,4,26,80,61,0,19,17,6,4,7
+248,"Es fängt im kleinen an: warum gibt es immer noch Benzinrasenmäher zu kaufen? Ein Akkumäher ist leiser und stinkt nicht!",83,45,10,28,65,39,7,19,18,6,3,9
+249,"Mülltrennung funktioniert nicht auf dem für Monomaterials benötigen Niveau. Hohe Innovationsförderung für automatisierte Mülltrennung.",78,34,6,38,59,27,4,28,19,7,2,10
+250,"Warum gibt es immer noch Förderungen für E-Bikes oder E-Autos? Reiche brauchen keine Förderung und Arme können es sich eh nicht leisten.",1,1,0,0,1,1,0,0,0,0,0,0
+251,"Wozu noch Photovoltaik fördern? Mittlerweile sollte ja selbst der Dümmste schon erkannt haben, dass sie sich längerfristig rechnet.",1,1,0,0,1,1,0,0,0,0,0,0
+252,"Echt nachhaltige Sharing Economy staatlich gefördert entwickeln. Steueranreize für Sharing einführen,",92,58,11,23,73,55,2,16,19,3,9,7
+253,"Weg von reinen CO2e Debatten hin zu PEF Betrachtungen. Damit auch ehrlichere Ressourcenbesteuerung.",58,11,7,40,42,7,5,30,16,4,2,10
+254,"Sofortige Einführung von Produkt Pass für Konsumgüter >50 EUR",61,17,11,33,44,16,4,24,17,1,7,9
+255,"Produkte die durch nachgewiesene technische Features eine kürzer Lebensdauer haben als  möglich, verlieren die CE Zulassung.",114,94,4,16,91,79,1,11,23,15,3,5
+256,"Reuse Aufbereitungsfirmen bekommen besondere Entwicklungsförderungen bis es eine angemessenen Ressourcenbesteuerung gibt.",75,32,7,36,57,30,3,24,18,2,4,12
+257,"Jeder öffentliche Neubau muss hinsichtlich aller eingesetzten Materialien klimaneutral sein.",1,1,0,0,1,1,0,0,0,0,0,0
+258,"Green washing ""Kompostierbarkeit"" beenden und Sammelsysteme für industriekompostierbare  Produkte >90 Tage einführen.",87,49,4,34,67,39,1,27,20,10,3,7
+259,"Wir ""Westler:innen"" brauchen ca das 90Fache, was zu gutem Leben nötig. Wir brauchen  alternative, ressourcenschonende, realistische Vision",88,50,9,29,68,46,3,19,20,4,6,10
+260,"Monopolisierung v Grossunternehmen sollen verboten werden. Druck auf Umsetzung Internationaler Mindeststeuer globaler Firmen",111,73,6,32,91,63,2,26,20,10,4,6
+261,"umweltfreundliche u soziale Modellabels sollten PRweis u finanziell gefördert werden (zB Pop up in leer stehenden Geschäfte in Innenstädten)",64,22,10,32,46,20,1,25,18,2,9,7
+262,"Bevölkerungszuwachs d illegale Immigration sollte sachlich geführt werden. Anträgen illegaler Flüchtlinge verzögert die der Berechtigten.",1,1,0,0,1,1,0,0,0,0,0,0
+263,"Werbung f Kinder beschränken, statt Konsumzwang fördern",63,44,6,13,53,40,3,10,10,4,3,3
+264,"Verbot geplanter Obsolenz. Mehr Reparaturwerkstätten fördern.",92,73,2,17,73,62,0,11,19,11,2,6
+265,"Import von Billigtextilien können nicht gänzlich gestoppt werden, aber Alternativen anzubieten sollte gefördert werden",97,57,14,26,77,49,10,18,20,8,4,8
+266,"Familienbeihilfe abschaffen, weniger Kinder bedeutet weniger Co2",74,19,46,9,57,13,39,5,17,6,7,4
+267,"Wir müssen kinderlose Paare fördern, sie tragen viel zum Umweltschutz bei.",33,3,21,9,25,2,17,6,8,1,4,3
+268,"Werbung, die Kinder kriegen als positiv darstellt muss verboten werden. Kinder sind Klimakiller.",1,1,0,0,1,1,0,0,0,0,0,0
+269,"Warum muss fast das ganze Spielzeug ausPlastik sei zB Holz Matador war eines meiner schönsten!!",46,22,6,18,33,18,2,13,13,4,4,5
+270,"Plastikspielzeug muss 10x teurer sein! Plastikmüll wird nach Afrika verkauft und dort verbrannt. Wir haben eine „grüne“ Weste",43,16,10,17,30,15,3,12,13,1,7,5
+271,"Sterilisation auf Kosten der Krankenkasse, so können wir erfolgreich das Bevölkerungswachstum eindämmen.",1,1,0,0,1,1,0,0,0,0,0,0
+272,"Eine Kindersteuer statt Familienbeihilfe würde das Bevölkerungswachstum stoppen.",37,5,26,6,29,4,21,4,8,1,5,2
+273,"Gerätegarantie muss von Markt für 10 Jahre übernommen werden. Markt wäre somit verpflichtet, keine low-quality Produkte ein zu kaufen",94,65,5,24,73,54,2,17,21,11,3,7
+274,"gemeinwohlökonomie fördern, gute gemw. Bilanz als richtlinie für öffentliche investition.",1,1,0,0,0,0,0,0,1,1,0,0
+275,"Verpflichtende Beratung über die Möglichkeit einer Abtreibung für alle schwangeren Frauen. So können wir das Bevölkerungswachstum stoppen.",1,1,0,0,1,1,0,0,0,0,0,0
+276,"Demokratie braucht Zeit. Meist kommt man langsamer schneller, und vor allem, heil ans Ziel. Bedacht und Aufmerksamkeit sind gefragt.",1,1,0,0,1,1,0,0,0,0,0,0
+277,"Verbot von Zigarettenfiltern. Sie machen rauchen nicht ""gesünder"", da sie kaum Giftstoffe filtern und sind danach nur toxischer Restmüll.",66,30,9,27,50,25,7,18,16,5,2,9
+278,"Klimaschutz in Fort-/Weiterbildung: Es müssen die heutigen Erwachsenen erreicht werden, nicht die, die erst in 6-12 Jahren wählen dürfen.",101,69,9,23,80,63,3,14,21,6,6,9
+279,"Info über Klimakatastrophe/-schutz an Pensionisten. Die müssen erreit werden. Nicht die, die erst in 6-12 Jahren wählen dürfen.",67,21,15,31,50,20,6,24,17,1,9,7
+280,"„Design for Recycling“",83,42,7,34,65,36,3,26,18,6,4,8
+281,"Eigene Läden, wo leicht beschädigte Waren (Textil, Möbel etc.), günstig gekauft werden können.",98,74,3,21,77,58,0,19,21,16,3,2
+282,"Kunden sollen offline dieselben Rechte haben wie online (zB 14 Tage Rücktrittsrecht)",87,48,11,28,70,40,7,23,17,8,4,5
+283,"Uns der Manipulation durch Produzent*innen entziehen, leben statt konsumieren",86,47,5,34,70,40,2,28,16,7,3,6
+284,"""Klimarat: Klimafreundliche Projekte sollen günstigere Kredite erhalten."" Unsinn. Klimaschädliche Projekte dürfen KEINE Kredite erhalten.",1,1,0,0,1,1,0,0,0,0,0,0
+285,"Klimaschädliche Projekte dürfen KEINE Kredite erhalten.",116,77,16,23,94,74,6,14,22,3,10,9
+286,"Lokal & umweltverträglich produzieren, weniger, aber höherpreisig konsumieren. Sollte die Wirtschaft in Gang halten und die Umwelt schonen.",92,69,5,18,77,62,1,14,15,7,4,4
+287,"Wie soll ein C O 2 abscheider funktionieren?",1,1,0,0,1,1,0,0,0,0,0,0
+288,"Obszoleszenz verbieten, Unternehmen strenge Auflagen zu Arbeitsrechts- und Klimaschutzmaßnahmen erteilen-bei Nichteinhaltung Geldstrafen",98,75,3,20,78,65,0,13,20,10,3,7
+289,"Alle Standards und Normen sollten kostenlos der Allgemeinheit (auch online) zugänglich gemacht werden. Dies würde z.B. Innovationen fördern.",71,36,6,29,52,28,3,21,19,8,3,8
+290,"Zwecks Nachhaltigkeit und Sicherheit sollten Hersteller verpflichtet werden, viele Jahre lang Sicherheitsupdates für ihre Geräte anzubieten.",109,92,2,15,91,80,0,11,18,12,2,4
+291,"Tatsächliche Kosten auf Waren umlegen. Shirts um 3 Euro, Schränke um 90 Euro etc. decken den Wert der Ressourcen nicht. Wegwerfwaren",89,64,6,19,72,59,1,12,17,5,5,7
+292,"Rückverlagerung der Produktion ( z.B Medikamente, Bekleidung…) nach Österreich, bzw. in die EU um unabhängig z.B  von China zu sein.",93,74,2,17,76,60,2,14,17,14,0,3
+293,"Weniger Produktion von Kleidung, die keinen Absatz findet und dann vernichtet wird, aus für billigen Ramsch, mehr Nachhaltigkeit",101,82,7,12,82,74,2,6,19,8,5,6
+294,"Gütesiegel vereinfachen, vereinheitlichen und verständlich machen.",102,83,5,14,83,69,3,11,19,14,2,3
+295,"Mikroplastik drastisch beschränken oder besser ganz verbieten, z.B. bei Zahnpasta, Waschmittel ...",62,55,2,5,52,49,0,3,10,6,2,2
+296,"In Wien sollen auch z.B. Wurstverpackungen und sonstige Plastikverpackung in die gelben Sammelcontainer kommen und wiederverwertet werden.",76,39,4,33,61,33,3,25,15,6,1,8
+297,"Schadstoff-Grenzwerte bei Gebrauchsgegenständen verschärfen.",110,72,7,31,94,66,2,26,16,6,5,5
+298,"Ich bin für reparierbare Handys wie Fairphone, mittlerweile ein gutes Produkt, aber ca.500€, ist es mir aber wert. Ich spare grad drauf.",71,37,4,30,56,33,1,22,15,4,3,8
+299,"Erbschaftssteuer/Vermögenssteuer ab Grenze von 1M € einführen UND ERKLÄREN, wer dann betroffen ist (wenige!).Bringt viel! AK gibt Auskunft!",1,1,0,0,1,1,0,0,0,0,0,0
+300,"Kunststoffe müssen global nach Gebrauch einen Wert haben, mindestens 1€/kg um nicht achtlos weggeworfen zu werden.",79,41,7,31,64,36,3,25,15,5,4,6
+301,"Die Klimaziele bringen den Unternehmen Chancen für neue Geschäftsmöglichkeiten.",101,84,3,14,81,72,0,9,20,12,3,5
+302,"Keine (Billig)Fleisch aus Argentinien. Schützt den Regenwald!",114,98,4,12,95,86,0,9,19,12,4,3
+303,"Gemeinnützige Modelle sollten forciert werden. Es muss um den Klimaschutz gehen und nicht um die Gewinnmaximierung von Konzernen.",106,76,11,19,86,72,2,12,20,4,9,7
+304,"Weniger Verbote, dafür mehr positive Anreize für klimafreundliches Verhalten.",73,38,12,23,56,27,10,19,17,11,2,4
+305,"Wir brauchen eine CO²-Kennzeichnungspflicht auf allen Produkten und eine Kontigentierung der CO²-Menge die jeder Konsument einhalten muss!",94,53,19,22,75,50,6,19,19,3,13,3
+306,"Jetzt schmerzt uns die Abhängigkeit von Öl und Gas. Es sind Vorkehrungen zu treffen, dass uns die Internet-Abhängigkeit nicht ebenso trifft.",83,52,5,26,67,45,2,20,16,7,3,6
+307,"ich stimme zu",1,1,0,0,1,1,0,0,0,0,0,0
+308,"Ich will nicht die Recyclingfähigkeit von Verpackungen wissen, einfach weg mit komplizierten Verpackungen, selber Behälter mitbringen.",82,43,13,26,66,40,5,21,16,3,8,5
+309,"Verbot von Werbung für klimaschädliche und menschenrechtliche Standards unterlaufende Produkte und Dienstleistungen",36,23,7,6,28,22,1,5,8,1,6,1
+310,"Zigarettenfilter enthalten schwer abbaubaren Kunststoff Celluloseacetat, leisten wenig für die Gesundheit der Rauchenden, sind Umweltgift!",88,47,9,32,71,38,7,26,17,9,2,6
+311,"Atomkraft ist keine Lösung für die Klimakrise solange der Atommüll nicht beherrscht werden kann.",104,81,9,14,83,68,5,10,21,13,4,4
+312,"Weniger/fast kein Zement, Holzbauweise, Lehm/Strohbauweise. Ökologie auch bei Baustoffen für Industriebauten, Brücken usw. beachten.",79,44,11,24,65,39,7,19,14,5,4,5
+313,"Mobilität: Schulbus für jede Klasse, jeder der mit dem Auto in die Arbeit fährt, muss beweisen dass es keine andere Möglichkeit gibt",0,0,0,0,0,0,0,0,0,0,0,0
+314,"Tourismus Flugverkehr einschränken: jeder nur mehr ein paar reisen pro Jahr erlaubt (Reisekonto)",98,52,24,22,78,51,9,18,20,1,15,4
+315,"Business Flüge beschränken: Geschäftsreisen nur mehr wenn es nicht anders geht (Bewilligung), Video Konferenz der neue Standard",0,0,0,0,0,0,0,0,0,0,0,0
+316,"Raus aus Erdöl und Erdgas.",0,0,0,0,0,0,0,0,0,0,0,0
+317,"Die Bevölkerungsdichte ist bei uns höher als in vielen Ländern des Südens und WIR verbrauchen viel mehr Ressourcen als die Menschen dort.",68,27,8,33,51,23,2,26,17,4,6,7
+318,"Schrankenloser Konsum=klimaschädlich, Kinder nicht! Klimagerechte Gesetzgebung ermöglicht klimagerechtes Verhalten für alle Generationen.",76,35,13,28,59,33,3,23,17,2,10,5
+319,"Flugreisen müssen nicht sein, qualitätvolle Urlaubszeit schon.",93,56,16,21,74,52,5,17,19,4,11,4
+320,"Atomkraft ist gar keine Lösung: zu gefährlich in Krisenzeiten ( Ukraine, Drohnen,...), anfällig für menschliche Fehler, Gesundheitsrisikos",100,79,11,10,81,69,5,7,19,10,6,3
+321,"Die Wirtschaft wird nicht kaputt, wenn sie Klimaziele ernst nimmt, sondern sie wird Aufgaben lösen und sich verändern .",114,89,6,19,93,82,0,11,21,7,6,8
+322,"Das ""immer weiter"", ""immer mehr""  in unseren reichen Ländern ist das Problem fürs Klima,  nicht die Kindern, die wir oder andere haben!",99,61,15,23,79,55,5,19,20,6,10,4
+323,"Ich vermisse, dass ich ""Das weiß ich nicht."" anklicken könnte!",27,10,6,11,24,8,6,10,3,2,0,1
+324,"die Klimafreundlichen Produkte müssten die Günstigsten sein - Klimaschädlichkeit gehört besteuert",101,83,3,15,82,73,0,9,19,10,3,6
+325,"Waschmaschinen müssen wieder 30 Jahre halten wie auch Heizungen - sie müssen repariert werden können ....",1,1,0,0,1,1,0,0,0,0,0,0
+326,"Reparaturen müssen billiger wie Neu zB Elektro-Herde, Kühlschränke, Tiefkühlschränke/truhen, Waschmaschinen, Wäschetrockner, Geschirrspüler",1,1,0,0,1,1,0,0,0,0,0,0
+327,"Erbschaftssteuer und Vermögenssteuer ab einer Grenze, z.B. 1 mio., einführen!",1,1,0,0,1,1,0,0,0,0,0,0
+328,"BGE (Bedingungsloses Grundeinkommen) rasch ....",62,18,28,16,47,18,17,12,15,0,11,4
+329,"Arbeitszeitverkürzung 30 Wo/Std .....",77,34,17,26,59,30,9,20,18,4,8,6
+330,"Ende der Stiftungen - wer mehr hat hat auch mehr Steuer zu bezahlen",1,1,0,0,1,1,0,0,0,0,0,0
+331,"Bevölkerungswachstum global stoppen. Weniger Menschen, weniger Konsum.",1,1,0,0,0,0,0,0,1,1,0,0
+332,"Arbeitszeit und Stress deutlich reduzieren, dann braucht es im Urlaub auch weniger um wieder runterzukommen.",85,51,11,23,66,44,6,16,19,7,5,7
+333,"Weniger Platz für Autos, egal ob E oder Verbrenner.",1,1,0,0,1,1,0,0,0,0,0,0
+334,"Das Klima bzw. die Erwärmung der Erdatmosphäre ist nur einer der Gründe für eine Veränderung des Verhaltens.",1,1,0,0,1,1,0,0,0,0,0,0
+335,"Lobbying für landwirtschaftliche Produktion ab einer gewissen Größenordnung (Industrie) unterbinden.",1,1,0,0,1,1,0,0,0,0,0,0
+336,"Nahrungsmittel-Großkonzerne zerschlagen.",1,1,0,0,1,1,0,0,0,0,0,0
+337,"Kommunikations-Kampagne für die Benutzung öffentlicher Verkehrsmittel am Land starten.",81,49,9,23,63,43,2,18,18,6,7,5
+338,"Jedes Dach soll Strom erzeugen.",1,1,0,0,1,1,0,0,0,0,0,0
+339,"Kampagne für den Lebensmitteleinkauf ohne Auto, finanziert vom Lebensmittelhandel.",1,1,0,0,1,1,0,0,0,0,0,0
+340,"Abschaffung von Subventionen für die industrielle Landwirtschaft.",83,51,11,21,64,42,5,17,19,9,6,4
+341,"Agrarsubventionen nur noch bis zu einer gewissen Betriebsgröße (ha, Anzahl von Nutztieren).",74,43,5,26,56,35,1,20,18,8,4,6
+342,"Einkaufskorb statt Sackerl.",105,77,13,15,86,70,3,13,19,7,10,2
+343,"Wiederverwendbare Gefäße für Wurst, Fleisch, Käse etc.",88,65,8,15,69,58,1,10,19,7,7,5
+344,"Weniger essen. Tut dem Planeten und dem Körper gut.",79,33,17,29,59,28,8,23,20,5,9,6
+345,"Kindern in der Schule wieder mehr das Kochen und verwerten von Lebensmitteln, Handwerken und Do it yourself  beibringen.",0,0,0,0,0,0,0,0,0,0,0,0
+346,"Kampagne gegen Greenwashing.",1,1,0,0,1,1,0,0,0,0,0,0
+347,"Importverbot für Fleisch gequälter (Haltung, Transport, Schlachtung) Tiere.",101,85,4,12,78,69,1,8,23,16,3,4
+348,"Mehr Forschungsgeld im Bereich nachhaltige Landwirtschaft.",95,81,4,10,75,67,1,7,20,14,3,3
+349,"Verpackungen: auf benötigte Größe reduzieren, keine Effekte welche über zusätzliche unnötige Lacke, Präge Folien usw. aufgebracht  werden.",81,63,4,14,61,50,0,11,20,13,4,3
+350,"C02 Besteuerung.  Das ist ein klarer Hebel für mehr Klimaschutz .",1,1,0,0,1,1,0,0,0,0,0,0
+351,"Online Handel forcieren, sofern klimaneutral  (zB durch die Post) zugestellt wird",56,15,24,17,41,9,19,13,15,6,5,4
+352,"Treibhausgasbudget fixieren- nach diesem C02-Preis festlegen.",82,46,11,25,65,43,1,21,17,3,10,4
+353,"ja richtig",0,0,0,0,0,0,0,0,0,0,0,0
+354,"Hinweis zu Bildung für eine nachhaltige Entwicklung: https://www.umweltzeichen.at/bildung",60,19,4,37,43,17,0,26,17,2,4,11
+355,"Bauen auf Nachhaltigkeit. Ressourcen sammeln und wieder verwenden, keine großen Wegwerf geschichten mehr.",1,1,0,0,1,1,0,0,0,0,0,0
+356,"Plastik besser Kennzeichnen (welche Polyverbindung) und Aufklärung. Besser von Polymerisierten Produkten wegkommen und auf Glas umsteigen.",42,26,7,9,32,25,1,6,10,1,6,3
+357,"Holistische und regenerative Design Standards für alle Produkte",57,18,8,31,41,16,1,24,16,2,7,7
+358,"Echte Kreislaufwirtschaft: rethink, refuse, reduce, repurpose, regift, repair, remanufacture, recycle  for all",108,85,9,14,86,76,1,9,22,9,8,5
+359,"Empfehlen des UniNetz Netzwekes stringent umsetzen",51,7,7,37,36,7,0,29,15,0,7,8
+360,"Es braucht systemische und integrative Lösungen über alle Bereiche und vor allem neues Weltbild, Einstellungen, Werte zu öko Gesellschaft",81,48,9,24,64,45,1,18,17,3,8,6
+361,"We need to Design regenerative Cultures",60,23,9,28,45,21,1,23,15,2,8,5
+362,"Vor allem eine Transformation des Wirtschaftssystems beyond Capitalism",80,40,9,31,64,38,2,24,16,2,7,7
+363,"Bedingungsloses Grundeinkommen und letztendlich a Société beyond money",1,1,0,0,1,1,0,0,0,0,0,0
+364,"Bildung, Bildung und noch mehr Bildung aber in regenerativer und systemischer Weise wie Pioneers of Education es tun",81,40,8,33,62,36,0,26,19,4,8,7
+365,"Es braucht viele gelebte Realutopien so wie Reinventing Society es tun",52,10,9,33,38,9,1,28,14,1,8,5
+366,"Bei öffentlichen Bauwerken verpflichtend CO2 durch Bau und Nutzung ausweisen (Autobahnbrücke, Eisenbahntunnel, Verwaltungsgebäude,...)",74,42,9,23,57,36,5,16,17,6,4,7
+367,"Klimarat: Produkte und Dienstleistungen, die das Klima belasten, sollen einen deutlich höheren Preis haben als klimafreundliche Produkte und Dienstleistungen.",126,102,14,10,100,96,1,3,26,6,13,7
+368,"Bitte nicht E-Autos fördern, sondern stattdessen die Förderungen für Ladeinfrastruktur erhöhen. (E-Autos werden trotzdem genug herumfahren.)",54,15,15,24,39,11,10,18,15,4,5,6
+369,"Die Befragung des Volks ist okay, aber die Politik muss unbedingt unabhängige Experten hören und ernst nehmen. Die Themen sind zu komplex.",82,50,11,21,63,44,6,13,19,6,5,8
+370,"Müllvermeidung! Die Verpackungsindustrie/Handel muss auf ökologisch verträgliche Produkte umstellen. Lenkung durch gesetzliche Vorgaben!",95,81,2,12,73,70,0,3,22,11,2,9
+371,"In der Gastronomie Verbot von Einwegplastikflaschen!",97,69,16,12,76,65,3,8,21,4,13,4
+372,"Verbot von Palaiten T-Shirts, nur Kleidung die auch Recyclbar ist anbieten.",70,33,12,25,51,29,4,18,19,4,8,7
+373,"Müll muss im eigenen Land fachgerecht entsorgt und Recycelt werden!!",91,74,6,11,71,65,1,5,20,9,5,6
+374,"Lenkungseffekte möglichst nicht durch Verbote herbeiführen, sondern durch positive Anreize wie Steuerminderungen, Förderungen, Privilegien.",0,0,0,0,0,0,0,0,0,0,0,0
+375,"Verantwortungsvoller Umgang mit elektr. Geräten! Ich brauche nicht jede/s/n neue  Smartphone,Spielekonsole,etc. (Transport, Rohstoffe, Müll)",81,69,1,11,62,55,0,7,19,14,1,4
+376,"Kennzeichnungspflicht von Produkten mit Umweltinformationen, wie in der Green Product Inititative der EU vorgeschlagen.",64,37,3,24,48,32,0,16,16,5,3,8
+377,"Green Statements für Produkte dürfen nur auf Basis von Informationen zum Umweltfußabdruck gemacht werden, die eine Verbesserung zeigen.",63,34,3,26,46,29,0,17,17,5,3,9
+378,"Abgeordnete müssen vor Abstimmungen jedesmal einen Wissenstest zum Thema bestehen, damit ihre Stimme Gültigkeit erlangt!",42,20,5,17,31,16,2,13,11,4,3,4
+379,"Auch ein demokratisch nicht legitimiertes Gremium wir der Klimarat erzeugt einen Co2 Abdruck, daher sofort abschaffen!",1,1,0,0,0,0,0,0,1,1,0,0
+380,"Wie naiv ist es zu glauben, CO2 wäre das Allheilmittel gegen Klimawandel; einseitig ideologisierte Kampagne - daher Wissenschaftsskepsis",45,14,17,14,30,6,15,9,15,8,2,5
+381,"Schulklassen sollen wöchentlich Müll sammeln, dann gibt es weniger Müll im Strassengraben",0,0,0,0,0,0,0,0,0,0,0,0
+382,"Label für Reparaturfähigkeit von Geräten",75,65,1,9,55,51,0,4,20,14,1,5
+383,"Abfallgesetzgebung: Re-use (Upcycling) vor Ort ermöglichen (derzeit = Entnahme vom Müllcontainer = Diebstahl)",63,47,0,16,47,35,0,12,16,12,0,4
+384,"Kostenwahrheit beim Transport von Waren innerhalb EU und darüber hinaus",84,77,2,5,66,61,0,5,18,16,2,0
+385,"Massiv klimaschädliche Produkte müssen vom Markt verschwinden. Dafür ist die Politik verantwortlich.",60,44,7,9,45,40,1,4,15,4,6,5
+386,"Stopp das Konsumer-shaming - viele Menschen haben nicht die Möglichkeiten, sich klimafreundlich zu entscheiden. Die Politik muss handeln.",42,18,9,15,30,12,7,11,12,6,2,4
+387,"Nur noch offenes Obst und Gemüse. Papier- oder Stoffsackerl zum Befüllen mitnehmen.",76,48,10,18,60,42,3,15,16,6,7,3
+388,"Abfüllstation Supermarkt neu überdenken: Kein Schnickschnack, bitte ganz normale leistbare Grundnahrungsmittel: Brösel, Mehl, Nudeln, Reis.",74,47,6,21,55,39,1,15,19,8,5,6
+389,"Kinderfeindliche Menschen hier sollten kastriert werden!",1,1,0,0,1,1,0,0,0,0,0,0
+390,"Leihscooter, -räder etc erhöhen den Ressourcenverbrauch, da sie durch sorglose Behandlung sehr kurze Lebensdauer haben.",60,27,10,23,43,17,6,20,17,10,4,3
+391,"Konsum muss nicht eingeschränkt, nur angepasst werden; z. B. muss nicht jede Party Müllberge hinterlassen oder Sondermüll produzieren",78,51,12,15,61,38,11,12,17,13,1,3
+392,"Mülltrennung dringend für alle Bundesländer harmonisieren",70,51,1,18,52,42,0,10,18,9,1,8
+393,"Konsum (z.B. bei Kleidung) drastisch reduzieren, dafür Arbeitsbedingungen bei Modelables in ärmeren Ländern verbessern!",79,57,8,14,62,51,2,9,17,6,6,5
+394,"Klimafreundliche Forschungen und Start Up-Ideen stärker unterstützen!",79,66,3,10,60,55,0,5,19,11,3,5
+395,"Der Krieg in der Ukraine soll uns bewusst machen, dass Verzicht mitunter notwendig ist.",68,40,7,21,54,37,1,16,14,3,6,5
+396,"Verbot von allen beleuchteten Reklametafeln und Schaufensterberleuchtungen",0,0,0,0,0,0,0,0,0,0,0,0
+397,"Deklarierungspflicht des ökologischen Fußabdrucks auf jedem verkauften Produkt",0,0,0,0,0,0,0,0,0,0,0,0
+398,"Ernste Maßnahmen zur lebenswerten Rettung der Menschheit bedeuten eine rasante Zurücknahme unseres gewohnten hohen Lebensstandart.",59,27,15,17,42,25,7,10,17,2,8,7
+399,"Produktionsverbot für alle PKWs (5-Sitzer), die mehr als 40 kW besitzen und mehr als 800 kg Eigengewicht haben",55,20,18,17,37,20,4,13,18,0,14,4
+400,"Transporte: weite Strecken Zug, lokal mit elektrischen Kleintransportern. Keine schweren LKW mehr!",1,1,0,0,0,0,0,0,1,1,0,0
+401,"Die Gewährleistung für viele Produktgruppen auf mind. 10 Jahre erhöhen (in der DDR galten 25 Jahre auf Elektrogeräte ect.)",1,1,0,0,1,1,0,0,0,0,0,0
+402,"Gewährleistungsanspruch muß vom Hersteller/Importeur getragen werden inklusive Austausch (nicht vom Verkäufer) --> Schadensurheberprinzip.",1,1,0,0,1,1,0,0,0,0,0,0
+403,"Nahrungsmittel für Kleinkinder höher besteuern, so kann man den verhindern dass die Bevölkerung sinnlos wächst.",1,1,0,0,1,1,0,0,0,0,0,0
+404,"Mit jeden zusätzlichen Urlaubstag steigt die Chance auf Flugreisen, deswegen Urlaub gesetzlich auf zwei Wochen kürzen.",1,1,0,0,1,1,0,0,0,0,0,0
+405,"Positive Darstellung von Kindern in Werbung verbieten. So bremsen wir das Bevölkerungswachstum.",1,1,0,0,1,1,0,0,0,0,0,0
+406,"Starke Auflagen für sparsame und Umweltfreundliche Verpackungen",0,0,0,0,0,0,0,0,0,0,0,0
+407,"Lokale und nachhaltige  Produktion von Textilien ect. fördern, mehr Steuern auf Importe aus Billiglohnländer ohne Umweltschutz",1,1,0,0,1,1,0,0,0,0,0,0
+408,"Nicht nur Zutaten, auch Energie von Transport, Düngemittel etc angeben",1,1,0,0,1,1,0,0,0,0,0,0
+409,"Auch andere regionale Produkte anbieten (Möbel, Kleidung, Schuhe etc.) nicht nur regionale Lebensmittel.",71,59,1,11,56,48,0,8,15,11,1,3
+410,"Keine Aufforstungen nur mehr mit einer Baumart (z.B. Fichte), Mischwälder forcieren",1,1,0,0,0,0,0,0,1,1,0,0
+411,"Statt Vermögen zu besteuern,  Anreize für Investments in Nachhaltigkeit, erneuerbare Energien, Klimawandelanpassung etc. forcieren!",1,1,0,0,1,1,0,0,0,0,0,0
+412,"Gewerbeparks, Einkaufszentren, Bürogebäuden etc. müssen in die Pflicht genommen werden. Parkplatz, Dach und Flächenbegrünungen jetzt!",1,1,0,0,1,1,0,0,0,0,0,0
+413,"Bedienungsanleitungen, die im Internet abrufbar sind, nicht zusätzlich als gedrucktes Buch in zig Sprachen beilegen, das 99% wegwerfen.",56,33,5,18,44,26,2,16,12,7,3,2
+414,"Querschnittsthema: Eine wirksame öko-soziale Steuerreform ist wichtig: Startpreis 100€ pro t, steigend auf 300€. Pro-Kopf Bonus zum Ausgleic",0,0,0,0,0,0,0,0,0,0,0,0
+415,"Wesentliche, klimafreundliche Rahmenbedingungen setzen, aber kein Eingriff in die freie Entscheidung von Kosument oder Unternehmen.",1,1,0,0,0,0,0,0,1,1,0,0
+416,"Kein Aufzwingen der eigenen Meinung/ Lebenstil.",1,1,0,0,0,0,0,0,1,1,0,0
+417,"Keine Regelungen die praktisch nicht umgesetzt, oder Sachverhalte fordern, die nicht ohne überbordende Bürokratie geprüft werden können.",1,1,0,0,0,0,0,0,1,1,0,0
+418,"Regelungen und Eingriffe müssen auch für ärmere Schichten tragbar sein, nicht nur für Mehrfachakademikerhaushalt in 1070.",1,1,0,0,0,0,0,0,1,1,0,0
+419,"Maßnahmen suchen, die ohne Euro-Nationalismus (""China Dreck"" etc.) auskommen.",1,1,0,0,0,0,0,0,1,1,0,0
+420,"Bitte nicht die Lohnnebenkosten (=Gehaltsbestandteil) senken - nehme aber gerne ""brutto"" und versteuere selber!",1,1,0,0,0,0,0,0,1,1,0,0
+421,"bin einverstanden",1,1,0,0,1,1,0,0,0,0,0,0
+422,"Anstelle  Betrieben die Kosten für CO2-Zertifikate zu ersetzen, wäre   besser,  auf die Hallendächer PV-Anlagen zu finanzieren",0,0,0,0,0,0,0,0,0,0,0,0
+423,"Fangen wir an, dass alle Friday for Future-Kids auf Handy, Internet, TV, coole Klamotten, Elterntaxi, Sneakers verzichten - das genügt schon",1,1,0,0,0,0,0,0,1,1,0,0
+424,"https://zoom.us/j/98023421268?pwd=ZkNmaHh6T0ZFbmxQamEwU1lmdTBMUT09",36,0,9,27,27,0,5,22,9,0,4,5
+425,"Kostenwahrheit!  Bewusstseinsbildung, hinterfragen ob diverse Produkte nur umweltschädlich sind",1,1,0,0,1,1,0,0,0,0,0,0
+426,"weniger produzieren",1,1,0,0,1,1,0,0,0,0,0,0
+427,"Urlaub verkürzen, Arbeitszeit verlängern. Menschen produzieren in ihrer Freizeit unnötiges Co2",1,1,0,0,1,1,0,0,0,0,0,0
+428,"Secondhand-Pridukte fördern. Repatarurbonus dauerhaft einführen.",1,1,0,0,1,1,0,0,0,0,0,0
+429,"Operante Konditionierung nicht auf Kosten des Klimas. Bsp. Zigarettenverbot auf Ämtern etc. ok, aber in Langstreckenöffis Bereiche zulassen.",1,1,0,0,1,1,0,0,0,0,0,0
+430,"Kostenwahrheit im Transport ist notwendig. LKWs zerstören den Asphalt überproportional, Steuerzahler muß zahlen und Staub schlucken.",1,1,0,0,1,1,0,0,0,0,0,0
+431,"Vorratsdatenspeicherung im Servern und Krypto Währungen verursachen unglaublich hohen unnötigen Stromverbrauch. Sofort stoppen!",49,30,1,18,38,23,0,15,11,7,1,3
+432,"Plastik braucht Vereinheitlichung, um Recycling durchführen zu können. Nur wenige Kunststoffpatente sind brauchbar, den Rest verbieten.",1,1,0,0,1,1,0,0,0,0,0,0
+433,"Bio Produkte tragen viel zur Boden und Klimagesundheit bei. Steuerliche Begünstigungen halte ich für empfehlenswert.",1,1,0,0,1,1,0,0,0,0,0,0
+434,"Pellets sollen nur aus Abfällen der Holzproduktion erzeugt werden. Reste aus der Waldwirtschaft müssen für Hummus im Wald gelassen werden.",1,1,0,0,1,1,0,0,0,0,0,0
+435,"Bio Brennstoffe aus Abfallverwertung können einen wertvollen Beitrag leisten.",42,28,1,13,31,21,1,9,11,7,0,4
+436,"Dinge, die Leute ärgern, wie Überwachungstechnik SIM in Autos, nicht in Klimafreundliche Varianten verpflichtend einbauen. Belohnungssystem.",1,1,0,0,1,1,0,0,0,0,0,0
+437,"Produktionsstätten in Wasser und Waldnähe unterbinden. Oft werden Naturjuwele billig umgewidmet für Firmen.",1,1,0,0,1,1,0,0,0,0,0,0
+438,"In Produktion Wasserstoff statt fossilen Brennstoffen, auch in kleineren Arbeitsgeräten wie Motorsäge, wo elektro nicht möglich ist.",1,1,0,0,1,1,0,0,0,0,0,0
+439,"Bearbeitung des Patentrechtes ist nötig, um Plastikflut zu vermeiden und Recyceln zu ermöglichen.",40,14,5,21,26,9,0,17,14,5,5,4
+440,"Produktions- und Import-Verbot ""Ewiger Chemikalien"", die nicht biologisch abbaubar sind, sich in Nahrungskette und Menschen anreichern.",1,1,0,0,1,1,0,0,0,0,0,0
+441,"Internet Infrastruktur verbraucht zuviele Ressourcen. Mehr offline fördern.",49,26,7,16,36,20,4,12,13,6,3,4
+442,"Autoreifen verursachen Klimaschädliche Partikel, die wir alle einatmen. Bitte dringlich die Zusammensetzung prüfen und verbessern.",1,1,0,0,1,1,0,0,0,0,0,0
+443,"Größter Einbringer von Mikroplastik und anderen Partikeln ist das Auto. Materialien überprüfen und optimieren.",1,1,0,0,1,1,0,0,0,0,0,0
+444,"Die Nanoforschung deckte bisher unbekannte Schadwirkungen von Materialien auf. Überprüfung der Produktion bei Verbrennungen und Abrieb nötig",1,1,0,0,1,1,0,0,0,0,0,0
+445,"Personenbezogenen Datenhandel und Konsumdaten im Internet verbieten, sodass unnötige Käufe durch individuelle Werbung verhindert werden.",51,33,2,16,37,24,0,13,14,9,2,3
+446,"Verbot für Supermärkte Lebensmittel in den Müll zu werfen. Verpflichtung für Weitergabe an Sozialmärkte und Sharing Organisationen",1,1,0,0,1,1,0,0,0,0,0,0
+447,"Schluss mit genormtem Gemüse! Es wird doch egal ob eine Gurke die richtige Form und Größe hat. Lebensmittelverschwendung in der Erzeugung",1,1,0,0,1,1,0,0,0,0,0,0
+448,"Verkaufsverbot für Fleisch aus Massentierhaltung oder Import aus dem Ausland",1,1,0,0,1,1,0,0,0,0,0,0
+449,"Förderung einer nachhaltigen Entwicklung im Tourismus (z.B. Mobilität, Beschaffung, Energie).",1,1,0,0,1,1,0,0,0,0,0,0
+450,"Erhöhung der Energieeffizienz und Lebensdauer bei Elektrogeräten.",1,1,0,0,1,1,0,0,0,0,0,0
+451,"Gratismittagessen für alle Kinder in Schulen und Kindergärten mit biologischen Lebensmitteln, Gratis-Obstkörbe bei allen Arbeitsplätzen.",1,1,0,0,1,1,0,0,0,0,0,0
+452,"Saisonkarten oder Monatskarten für Freibäder, damit man sich sportlich in der Natur betätigen kann.",1,1,0,0,1,1,0,0,0,0,0,0
+453,"Hanf und Flachs lokal anbauen, anstatt Baumwolle zu importieren.",1,1,0,0,1,1,0,0,0,0,0,0
+454,"Gute verzinste Staats-Wohnbauanleihen zum Umstieg auf erneuerbare Energieträger.",1,1,0,0,1,1,0,0,0,0,0,0
+455,"Sommerzeit das ganze Jahr, so kann man das Tageslicht länger in den Abend hinein nutzen.",42,18,9,15,30,11,5,14,12,7,4,1
+456,"Auch Baumaschinen, Traktoren, Landmaschinen etc. sollten umweltfreundlich unterwegs sein (z.B. Elektronantrieb, Biodiesel etc.).",1,1,0,0,1,1,0,0,0,0,0,0
+457,"Kreislaufwirtschaft, weniger Müll produzieren, weniger Importe, sozial gerechte Löhne weltweit, Lieferkettengesetz, Greenwashing verbieten",0,0,0,0,0,0,0,0,0,0,0,0
+458,"Starkes Eintreten für Klimafreundlichkeit in gemeinsamer EU-Agrarpolitik (GAP).",1,1,0,0,1,1,0,0,0,0,0,0
+459,"Energieunabhängigkeit durch Fracking-Gas-Produktion und sichere kleine (SMR) Atomkraftwerke in Österreich",1,1,0,0,0,0,0,0,1,1,0,0
+460,"Kleine Lebensmittelverpackungen für Singles in Supermärkten anbieten.",0,0,0,0,0,0,0,0,0,0,0,0
+461,"Heimische Wirtschaft fördern, Klein- und Mittelunternehmen fördern, dafür stärkere Auflagen für Großkonzerne",1,1,0,0,1,1,0,0,0,0,0,0
+462,"Lieferkettengesetz: Großkonzerne müssen verantwortlich gemacht werden für Produktions- & Arbeitsbedingungen entlang der Lieferkette",1,1,0,0,1,1,0,0,0,0,0,0
+463,"Neoliberalismus einschränken",36,15,7,14,26,14,1,11,10,1,6,3
+464,"Keine Förderungen für Großkonzerne",1,1,0,0,1,1,0,0,0,0,0,0
+465,"Großkonzerne ordentlich besteuern",1,1,0,0,1,1,0,0,0,0,0,0
+466,"Wir brauchen ein neues Wirtschaftssystem, das sich am Wohl der Menschheit und nicht an Profit und Wachstumsstreben orientiert",1,1,0,0,1,1,0,0,0,0,0,0
+467,"Degrowth und Kreislaufwirtschaft. Ewiges Wirtschaftswachstum gibt es nicht!",1,1,0,0,1,1,0,0,0,0,0,0
+468,"Grünes Wachstum ist ein Mythos, ewiges Wirtschaftswachstum ist nur dort möglich, wo Umwelt und Menschen ausgebeutet werden. Degrowth!",1,1,0,0,1,1,0,0,0,0,0,0
+469,"Vermögenssteuern! Klimaschutz muss von denjenigen bezahlt werden, die auch am meisten für die Klimakrise verantwortlich sind (Superreiche)",1,1,0,0,1,1,0,0,0,0,0,0
+470,"Klimafreundliche Produkte müssen leistbar werden, Klimaschutz darf kein Privileg der Mittelschicht sein",1,1,0,0,1,1,0,0,0,0,0,0
+471,"Kommunismus",1,1,0,0,1,1,0,0,0,0,0,0
+472,"Menschenwürdige Arbeitsbedingungen entlang d Lieferkette (auch zb bei Amazon, das würde Internet-Handel automatisch verteuern -> weniger CO2",1,1,0,0,1,1,0,0,0,0,0,0
+473,"Kapitalismus einschränken, konsum-orientierte Lösungen und grünes Wachstum bringen uns nicht weiter",1,1,0,0,1,1,0,0,0,0,0,0
+474,"There is no economy on a dead planet! Klimazerstörung schadet auch der Wirtschaft",1,1,0,0,1,1,0,0,0,0,0,0
+475,"Stand der Wirtschaft nicht mehr mit Bip messen sondern nach dem Wohl der Bevölkerung",1,1,0,0,1,1,0,0,0,0,0,0
+476,"Es gibt keine Freiheit ohne Verantwortung. Philosophie sollte Teil der Grundschul- Pflichtausbildung sein!",1,1,0,0,1,1,0,0,0,0,0,0
+477,"Viele öffentliche 230V Steckdosen mit Ökostrom, Bankomat/Barzahlung zu niedrigstmöglichen Preisen. Nicht nur für Auto u. P&Ride praktisch.",1,1,0,0,1,1,0,0,0,0,0,0
+478,"""Vegane"" Schuhe aus Plastik sind Greenwashing. Verpflichtung der Firmen zu biologisch abbaubaren Sohlen (Plastikabrieb von 9 Mio Menschen!).",1,1,0,0,1,1,0,0,0,0,0,0
+479,"Standardmäßig keine Werbung an Haushalte erlauben, nur auf schriftlichen Wunsch  (derzeit umgekehrt).",49,34,7,8,39,31,1,7,10,3,6,1
+480,"Ausstieg aus klimaschädlichen Verträgen erleichtern (per Mail, keine Kündigungsfrist, Pönale...) z.B. Internetangebote, Bitcoin, Kohlestrom.",1,1,0,0,1,1,0,0,0,0,0,0
+481,"Planung großer Projekte  und Straßen darf nicht im Geheimen durchgeführt werden können. Gesetze, die das begünstigen sofort abschaffen.",1,1,0,0,1,1,0,0,0,0,0,0
+482,"Bessere Bezahlung von Politikern, die sich für das Klima einsetzen. Das senkt auch auch die Manipulierbarkeit durch Bestechung.",35,5,18,12,24,5,7,12,11,0,11,0
+483,"E Autos haben weniger Teile, müssten günstiger sein. Grund hinterfragen, Kunde soll Ausstattung wählen! Will keine SIM Ortung, Computer, GPS",1,1,0,0,1,1,0,0,0,0,0,0
+484,"Unterstützung beim Wandel zu einer nachhaltigen Landwirtschaft (Permakultur, u.Ä.) unserer Bauern. Gesunde Böden schützen und schaffen.",0,0,0,0,0,0,0,0,0,0,0,0
+485,"Diese Form der Beurteilung und der Eingabe von Statements gehört überdacht: Nur 140 Zeichen, Ladezeiten, unübersichtlich, zeitfressend...",1,1,0,0,1,1,0,0,0,0,0,0
+486,"Keine Ferienwohnungen und Chalets mehr bauen. Werden nur wenige Wochen genutzt.",1,1,0,0,0,0,0,0,1,1,0,0
+487,"Zölle auf Produkte, die bei der Produktion außerhalb der EU Emissionen erzeugen",1,1,0,0,1,1,0,0,0,0,0,0
+488,"Duschgel Verpackungen hoch besteuern (oder verbieten). Seife kann dasselbe und produziert nicht diese Unmengen an sinnlosem Plastik.",48,22,12,14,36,21,4,11,12,1,8,3
+489,"Baumaterial von Baustellen und Abbruchhäusern recyclen und wieder verwenden.",46,40,1,5,34,31,0,3,12,9,1,2
+490,"Abwärme von Produktionsprozessen nutzen für Fernwärme oder zur Warmwasserbereitung.",47,42,0,5,38,33,0,5,9,9,0,0
+491,"Keine Mehrwertsteuer auf biologische Lebensmittel, dafür Einführung einer Zuckersteuer.",1,1,0,0,1,1,0,0,0,0,0,0
+492,"Auch Baumaschinen, Traktoren, Landmaschinen etc. sollten umweltfreundlich unterwegs sein (z.B. Elektronantrieb, Biodiesel etc.)",1,1,0,0,1,1,0,0,0,0,0,0
+493,"Die Züge weisen eine Vielfalt sehr unterschiedlicher betrieblicher Regelwerke und Signalsysteme auf > vereinheitlichen für schnellere Züge.",1,1,0,0,1,1,0,0,0,0,0,0
+494,"Dienstleistungen kombinieren - z.B. könnte der Zeitungszusteller auch Lebensmittel bringen.",1,1,0,0,1,1,0,0,0,0,0,0
+495,"Rollende Super- und Drogeriemärkte + Arztbusse, die Dörfer ohne Nahversorger anfahren.",1,1,0,0,1,1,0,0,0,0,0,0
+496,"Homeofficepflicht für Schreibtischberufe (4 Tage zu Hause, 1 Tag in der Arbeit) > ist weniger Pendlerverkehr und mehr Platz in den Zügen.",1,1,0,0,1,1,0,0,0,0,0,0
+497,"Gratislieferservice für große Gegenstände (z.B. Möbel, Elektrogeräte, Gartenprodukte etc.). Alles was nicht mit einem Lastenfahrrad geht.",1,1,0,0,1,1,0,0,0,0,0,0
+498,"Strenges Lieferkettengesetz:Alle Teile eines Produkts müssen klimafreundlich,menschenrechtskonform und arbeitsrechtlich nach Ö-Standard sein",1,1,0,0,1,1,0,0,0,0,0,0
+499,"in Gastronomie/Hotels Verbot von kleinen Päckchen mit Ketchup, Mayo, Marmelade etc - das ist nur Abzocke und macht unnötig Müll",1,1,0,0,1,1,0,0,0,0,0,0
+500,"Mehr Unverpackt-Läden/-stationen auch in kleineren Städten und diese dann aber nicht aus Plastiksäcken füllen!!",1,1,0,0,1,1,0,0,0,0,0,0
+501,"Verpflichtender Entsorgungshinweis auf Verpackungen - oft nicht erkennbar ob recycelbar oder nicht",50,38,2,10,40,32,1,7,10,6,1,3
+502,"Unverpacktes Obst und Gemüse wirklich unverpackt anbieten und nicht zuvor aus Plastik rausholen (kl. Plastikfolienstücke bei Gurken)",1,1,0,0,1,1,0,0,0,0,0,0
+503,"Wasser ist ein Allgemeingut, damit sollte kein Gewinn gemacht werden dürfen (Mineralwasser)",1,1,0,0,1,1,0,0,0,0,0,0
+504,"Zigaretten höher besteuern - Kosten für das Entsorgen achtlos weggeworfener Stummel muss eingepreist werden",1,1,0,0,1,1,0,0,0,0,0,0
+505,"Höhere werbesteuern ja, aber nicht auf nachhaltig-ökologische produkte aller art. Im gegenteil niedrigere steuern.",1,1,0,0,1,1,0,0,0,0,0,0
+506,"Europäische arbeitsrechtl. und ökologische Standards gelten weltweit: Sonst Importverbot! Lieferkettengesetz erlassen und kontrollieren.",1,1,0,0,1,1,0,0,0,0,0,0
+507,"Tiere müssen in der Region geschlachtet werden, wo sie aufgewachsen sind.",0,0,0,0,0,0,0,0,0,0,0,0
+508,"Klimaschädliche Produkte müssen aus den Supermarkt-Regalen verschwinden,  bzw. deren Preise massiv erhöht.",1,1,0,0,1,1,0,0,0,0,0,0
+509,"Klimafeindlichkeit digitaler Aktivitäten immer ausweisen. Bei jedem Surfen & Streamen Energieverbrauch und CO2Belastung blinkend anzeigen.",1,1,0,0,1,1,0,0,0,0,0,0
+510,"Auf Produkten angeben wie Klimaschädlich diese sind",1,1,0,0,1,1,0,0,0,0,0,0
+511,"Tiertransporte über längere Strecken (max. 100 km )abschaffen.",0,0,0,0,0,0,0,0,0,0,0,0
+512,"Tiergesetz ändern, Tiere sollen nicht länger eine Sache sein",0,0,0,0,0,0,0,0,0,0,0,0
+513,"Kreuzfahrtschiffe dezimieren, od. abschaffen",32,20,7,5,23,17,2,4,9,3,5,1
+514,"Luxusemissionen reicher Menschen durch SUVs, Vielfliegen, Yachten, Villen, etc. müssen massiv besteuert werden.",1,1,0,0,1,1,0,0,0,0,0,0
+515,"Woher soll ich wissen, ob in diesem Sammelsurium meine Sichtweise vertreten ist oder nicht? Diese Umfrage ist total missglückt!",1,1,0,0,1,1,0,0,0,0,0,0
+516,"Brauchen wir das alles?,  was hier herumkutschiert wird. Ist das alles so Lebensnotwendig?",1,1,0,0,1,1,0,0,0,0,0,0
+517,"Recycling: Alle Stoffströme müssen möglichst vollkommen geschlossen werden. Recyclingkosten trägt nur der Hersteller.",1,1,0,0,1,1,0,0,0,0,0,0
+518,"Verbot von Pendler über zu weite Anfahrtswege. Förderung kleiner kleiner Handwerksbetriebe und Versorger. Lokale Schienenbahnen für Lasten",0,0,0,0,0,0,0,0,0,0,0,0
+519,"Die wahren Kosten der Produkte müssen kenntlich gemacht werden und diejenigen die es sich leisten können müssen den wahren Preis auch zahlen",1,1,0,0,1,1,0,0,0,0,0,0
+520,"Raumfahrt belastet die Umwelt - daher sollte die Forschung von der Raumfahrt auf die Probleme der Erde umgelenkt werden.",32,17,11,4,25,15,6,4,7,2,5,0
+521,"Transporte massiv besteuern und regionale Lebensmittel Produktion fördern, dann sind Äpfel im Supermarkt hoffentlich billiger als Bananen",1,1,0,0,1,1,0,0,0,0,0,0

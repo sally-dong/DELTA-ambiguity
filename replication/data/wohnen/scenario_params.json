@@ -1,0 +1,18 @@
+{
+    "policy_topic": "Austria's climate-related housing and building policies",
+    "question": "How should Austria regulate housing and the built environment to meet climate goals?",
+    "case_format_description": "specific proposed regulation or policy in Austria concerning housing or the built environment, oriented toward climate goals. Examples: a mandate for heating-system replacement or renewable-energy retrofits, a tax or fee on vacant dwellings, a spatial-planning or zoning rule, a building-renovation or insulation standard, a tenant/landlord cost-allocation rule, a soil-sealing or greenfield restriction, a green-roof or PV mandate, or a subsidy program. State concretely who the rule applies to (homeowners, landlords, tenants, builders, municipalities, federal/state government) and what is required.",
+    "case_example": "Example: Austria's federal government requires all gas heating systems in residential buildings older than 30 years to be replaced with a renewable-energy heating system within 8 years, with the Klima- und Energiefonds offering subsidies covering up to 60% of cost for low-income households.",
+    "case_per_ordered_policy_pair": 3,
+    "n_top_policies_for_cases": 30,
+    "n_policy_pairs": 30,
+    "pair_sampling_seed": 42,
+    "n_raters": 10,
+    "rater_generation_iterations": 3,
+    "rater_description_length": 5,
+    "rater_pair_example": "1. 'This person is a young apartment renter in Vienna who supports a vacancy tax and stricter renovation mandates, hoping it will make climate-friendly housing more available and affordable for tenants.'\n2. 'This person is an elderly homeowner in rural Styria living on a fixed pension, who fears mandatory heating replacements and renovation requirements will impose costs they cannot bear on a house they have lived in for decades.'",
+    "prompt_template": "opinion_statement",
+    "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+    "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+    "n_sampled_cases": 40
+}

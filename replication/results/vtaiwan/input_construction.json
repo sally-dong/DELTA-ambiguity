@@ -1,0 +1,465 @@
+{
+  "sample_query": {
+    "custom_id": "rater-0_policy-0_case-0_prompt-0",
+    "system_prompt": "Answer ONLY 'yes' or 'no' only to the question below. Do not provide an explanation.",
+    "user_prompt": "This person is a Taoyuan taxi fleet owner who invested heavily in licenses and demands caps on app-based drivers and equal compliance costs. They lobby Taoyuan and national regulators to cap app-based drivers and require identical permits, insurance, taxes, and fare controls as traditional taxis to protect their sunk license investments. He argues unchecked ride-hailing devalues taxi licenses and urges regulators to impose strict driver caps, fare parity, and identical permits, insurance, taxes, and enforcement. He pushes MOTC and Taoyuan to fold ride-hailing into the taxi-fleet regime with driver caps, meter parity, and identical taxes and insurance. He urges MOTC and Taoyuan to enforce driver caps and full parity in permits, taxes, insurance, and fares, warning that unchecked ride-hailing will erode taxi license values and destabilize regulated fleets.\n\nThey are reviewing opinion statements on the question: \"How should Taiwan regulate Uber and ride-sharing platforms?\"\n\nOPINION STATEMENT:\nPersonally, I think there should be regulations modeled on those for yellow cabs, requiring anyone who wants to drive for Uber to pass a driving certification or exam organized by the Ministry of Transportation and Communications’ supervisory authority; after passing, they can be issued a personal or commercial registration certificate, which would, on the one hand, protect all passengers and, on the other, safeguard the basic rights of all drivers.\n\nThey consider how the opinion statement would translate into real-world policy actions. A candidate proposal is given below:\n\nPOLICY PROPOSAL:\nRide-hail corridor street-hail pilot: Drivers who pass the MOTC exam receive a blue Ride-hail Registration Badge authorizing them to accept street hails in designated corridors (e.g., Taipei Main Station and Taoyuan Airport approaches) and use taxi stands during peak hours without taxi-fleet affiliation. Platforms must geofence and record corridor pickups and submit monthly logs to MOTC; local police are instructed not to enforce municipal anti-solicitation or fare-cap provisions on badge holders within these corridors.\n\nAfter thinking carefully from their own point of view, they answer a yes/no question.\nQuestion: Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?"
+  },
+  "prompt_construction": "def prompt_fn(*, rater:str, policy:str, case:str, scenario_params:dict, instruct_tuned:bool=False) -> list[str]:\n    \"\"\"\n    Opinion statement template.\n\n    Required scenario_params keys:\n        question: the policy question being reviewed\n        positive_question: the affirmative question text\n        negative_question: the contradicting question text\n    \"\"\"\n\n    base_context = (\n        f\"{rater}\\n\\n\"\n        f\"They are reviewing opinion statements on the question: \\\"{scenario_params['question']}\\\"\\n\\n\"\n        f\"OPINION STATEMENT:\\n{policy}\\n\\n\"\n        f\"They consider how the opinion statement would translate into real-world policy actions. A candidate proposal is given below:\\n\\n\"\n        f\"POLICY PROPOSAL:\\n{case}\\n\\n\"\n        \"After thinking carefully from their own point of view, they answer a yes/no question.\\n\"\n    )\n\n    prompt1 = base_context + f\"Question: {scenario_params['positive_question']}\"\n    prompt2 = base_context + f\"Question: {scenario_params['negative_question']}\"\n\n    if instruct_tuned:\n        return [prompt1, prompt2]\n\n    prompts = [prompt1, prompt2]\n    prompts = [p + \"\\nAnswer:\" for p in prompts]\n    return prompts\n",
+  "raters": [
+    "This person is a Taoyuan taxi fleet owner who invested heavily in licenses and demands caps on app-based drivers and equal compliance costs. They lobby Taoyuan and national regulators to cap app-based drivers and require identical permits, insurance, taxes, and fare controls as traditional taxis to protect their sunk license investments. He argues unchecked ride-hailing devalues taxi licenses and urges regulators to impose strict driver caps, fare parity, and identical permits, insurance, taxes, and enforcement. He pushes MOTC and Taoyuan to fold ride-hailing into the taxi-fleet regime with driver caps, meter parity, and identical taxes and insurance. He urges MOTC and Taoyuan to enforce driver caps and full parity in permits, taxes, insurance, and fares, warning that unchecked ride-hailing will erode taxi license values and destabilize regulated fleets.",
+    "This person is a Taoyuan university student who drives part-time and wants low-entry, flexible ride-hailing rules to keep earnings viable. As a part-time Taoyuan student driver, they back relaxed licensing and low fees with flexible hours, oppose taxi-style quotas, and accept basic safety checks to keep earnings viable. As a Taoyuan student driving part-time, they favor Taiwan keeping ride-hailing rules light—low fees, no taxi-style quotas, and basic safety checks—so flexible hours remain financially worthwhile. They warn that quotas and high fees would price out students, and back app-based checks, basic inspections, and platform insurance to keep safe, flexible part-time driving viable. They urge keeping fees low and avoiding taxi-style caps, relying instead on app background checks, annual inspections, and mandatory platform insurance so part-time student work stays viable.",
+    "This person is a Taipei disability rights advocate insisting that a fixed share of ride-hailing fleets be wheelchair-accessible with strict penalties for refusal. They press MOTC and Taipei’s DOT to mandate a quota of wheelchair-accessible vehicles on ride-hailing platforms, require in-app refusal tracking, and impose steep fines or suspensions for denying service. They urge MOTC and Taipei DOT to tie platform permits to a citywide WAV quota, mandatory in‑app refusal logging with public reporting, and steep fines or suspensions for noncompliance. They argue voluntary pledges have failed, urging MOTC and Taipei DOT to tie licenses to time‑of‑day WAV coverage targets, public refusal dashboards, and escalating fines or suspensions. They also demand 24/7 district-level WAV coverage targets, mandatory driver accessibility training and fare parity, with quarterly public audits tied to ride-hailing platform license renewals.",
+    "This person is an independent Taipei driver with an older sedan who fears mandated accessibility retrofits and dispatch quotas will price him out. He opposes stricter Taiwan ride-hailing rules like mandatory accessibility retrofits and dispatch quotas unless paired with subsidies or grandfathering, fearing they’d push small Taipei drivers with older cars out of work. He urges Taiwan to phase in or subsidize accessibility retrofits and dispatch quotas for ride-hailing, warning that blanket mandates would sideline older-car Taipei drivers like him. He asks Taiwan to phase in or subsidize accessibility and quota rules so older-car independent Taipei drivers can stay on ride-hailing apps. He supports phased, subsidized compliance for accessibility retrofits and dispatch quotas, warning abrupt mandates would push older-car Taipei drivers off platforms.",
+    "This person is a Kaohsiung environmental NGO campaigner pushing for EV-only ride-hailing by 2030 and mandatory pooling in congested corridors. She lobbies Kaohsiung and MOTC to mandate EV-only ride-hailing by 2030, require pooled trips on peak corridors, and fund charging hubs to cut PM2.5 and congestion. She urges MOTC and Kaohsiung to phase in an EV-only rule for ride-hailing, require peak-hour pooling on congested corridors, and co-fund fast chargers to cut PM2.5 and congestion. She urges MOTC to require Uber and all ride-hailing to be EV-only by 2030, enforce peak-hour pooling on congested Kaohsiung corridors, and fund fast chargers to cut PM2.5 and gridlock. She supports phased EV-only ride-hailing by 2030 and compulsory pooling on peak corridors, with MOTC/Kaohsiung co-funding fast chargers and enforcement to cut PM2.5 and congestion.",
+    "This person is a Kaohsiung taxi mechanic whose livelihood depends on gasoline vehicles and worries EV mandates and fleet electrification will erase his trade. He urges Taiwan to rein in Uber and delay EV mandates for ride-hailing fleets to protect gasoline taxi repair jobs in Kaohsiung. He backs tighter limits on Uber and a slower EV transition for ride-hailing fleets to preserve Kaohsiung’s gasoline taxi repair jobs. He urges authorities to cap Uber’s fleet, enforce taxi-equivalent rules, and postpone ride-hail EV deadlines to keep Kaohsiung’s gasoline taxi repair shops alive. He tells regulators that Uber caps, taxi-rule parity, and a slower ride-hail EV timeline are needed to keep Kaohsiung’s gasoline taxi repair shops alive.",
+    "This person is a Hsinchu consumer privacy lawyer urging strict data minimization, short geolocation retention, and limits on mandatory real-name databases. In Taiwan’s ride-hailing rules, they advocate collecting only trip-essential data, deleting geolocation logs within days, and limiting real-name registries to warrant-based, case-specific access. Invoking Taiwan’s PDPA, they call for trip-only data collection, 3–7 day location deletion, and case-specific, warrant-based access to real-name records to curb profiling and breaches. They urge MOTC to tie ride-hailing licenses to privacy-by-design, encryption, and third-party deletion audits, and to ban bulk data feeds to authorities without a court order. They want MOTC to require pseudonymous, encrypted trip data, purge GPS in 3–7 days, and limit real-name disclosures to judge-approved, case-specific warrants under Taiwan’s PDPA.",
+    "This person is a Taipei ride-hailing data scientist advocating broader anonymized trip data to improve safety features, dynamic pricing, and city traffic planning. They support Taiwan mandates for privacy-safe, standardized trip data sharing with Taipei authorities to enhance safety features, fair dynamic pricing, and urban traffic planning. They back rules requiring all ride-hailing platforms, including Uber, to share standardized, privacy-safe trip data with Taipei via audited APIs to monitor safety, ensure fair surge pricing, and improve traffic flow. They urge Taiwan to mandate audited, standardized APIs for anonymized trip data from all ride-hailing firms to curb unfair surge pricing, enhance safety analytics, and improve Taipei traffic without risking privacy. They want MOTC to mandate platform-neutral, audited APIs with differential privacy and real penalties to curb surge gouging while powering citywide safety and congestion analytics.",
+    "This person is a Taichung drivers' union organizer pushing for employee status, benefits, and algorithm transparency with caps on work hours. They advocate Taiwan classifying ride-hailing drivers as employees with social insurance and paid leave, requiring transparent dispatch/pricing algorithms, and enforcing caps on daily driving hours. They press MOTC and Taichung City to classify ride-hail drivers as employees with NHI and labor insurance, mandate transparent dispatch/pricing algorithms, and enforce strict daily driving-hour caps to curb fatigue and fare manipulation. They press MOTC and Taichung to mandate employee status with NHI/labor insurance, audited transparent algorithms, and strict daily driving-hour caps for Uber/ride-hail. They campaign for MOTC and Taichung rules classifying Uber drivers as employees with NHI/labor insurance, audited transparent algorithms, and strict daily driving-hour caps to curb fatigue and pricing abuses.",
+    "This person is a Taichung single-parent driver who prefers contractor status for flexible hours and relies on surge pricing to meet family expenses. From Taichung, they back contractor status and oppose surge caps, warning that reclassification or pricing limits would undermine the flexible income they need for childcare and bills. They urge regulators to preserve contractor status and avoid surge caps, saying flexible surge earnings are essential to cover childcare and household costs in Taichung. They argue Taiwan should preserve contractor status and avoid surge caps so they can work around school hours and use peak fares to cover childcare and bills in Taichung. They urge Taiwan to keep drivers as independent contractors and permit surge pricing, warning employee status or caps would gut the flexible, peak-hour earnings that fund childcare in Taichung.",
+    "This person is a Tainan taxi plate owner-operator who invested heavily in licenses and wants strict caps on ride-hailing vehicles and identical compliance rules. They insist on strict caps and identical rules, warning that unchecked ride-hailing will flood Tainan, undercut fares, and devalue their costly taxi plate. They lobby Tainan officials to impose hard caps on ride-hailing cars and require the same meters, fees, insurance, and inspections as taxis to prevent fare undercutting and protect plate value. They advocate city-level caps and uniform taxi-equivalent rules for ride-hailing in Tainan to curb fare undercutting and preserve the value of their taxi plate. They press Tainan’s council for hard citywide caps and taxi-identical rules—meters, fees, insurance, and inspections—on ride-hailing to stop fare undercutting and protect taxi plate investments.",
+    "This person is a Taichung office worker who drives part-time on UberX for supplemental income and favors low entry barriers, dynamic pricing, and flexible hours. They favor Taiwan rules that let part-time UberX drivers work without taxi-fleet mandates or costly licenses, keep dynamic pricing, and require only streamlined safety checks. They support Taiwan rules that let part-time UberX drivers avoid taxi-fleet mandates and costly licenses, keep surge pricing, and require only streamlined safety and background checks. They back Taiwan rules letting part-time UberX drivers avoid fleet mandates and costly licenses, keep surge pricing, and undergo only streamlined safety and background checks to preserve flexible supplemental income. They argue Taiwan should keep surge pricing and streamlined checks so vetted part-time UberX drivers can earn flexibly without taxi-fleet mandates.",
+    "This person is a Taipei city traffic engineer advocating designated curb pickup zones, airport concessions, and per-trip fees to manage congestion. They support integrating Uber in Taipei via designated curb pickup zones, paid airport access concessions, and per-ride fees to reduce congestion. They also seek mandatory trip data-sharing and geofenced pickup bays at Songshan and Taoyuan, with per-ride fees funding bus lane and curb management upgrades. They advocate legalizing ride-hailing with geofenced pickup bays at Songshan and Taoyuan, paid airport access concessions, per-ride surcharges to fund bus lanes and curb upgrades, and mandatory trip data-sharing for enforcement in Taipei. They support legalizing Uber in Taipei only with geofenced pickup bays at Songshan and Taoyuan, paid airport concessions, per-ride surcharges funding bus/curb upgrades, and mandatory trip data-sharing for congestion enforcement.",
+    "This person is a ride-hailing operations manager in Taipei who opposes geofenced restrictions and added fees that slow pickups and raise rider prices. They urge Taipei to replace geofences and per-trip surcharges with data-driven curb management to reduce ETAs and keep fares affordable. They argue Taipei should replace geofences and per-ride surcharges with real-time, data-driven curb allocation and dynamic pickup zones to cut ETAs and keep fares low. They advocate piloting API-driven dynamic pickup lanes at Taipei Main Station and Xinyi, using shared telemetry to allocate curb space by demand and cut dwell times instead of imposing geofences and per-ride surcharges. They propose city-run APIs and dynamic pickup lanes at Taipei Main Station and Xinyi to replace geofences and per-ride surcharges, cutting ETAs and congestion while keeping fares low.",
+    "This person is a New Taipei disability rights advocate pushing for wheelchair-accessible vehicle quotas, driver training, and enforceable response-time standards. They urge New Taipei and national regulators to require Uber and other ride-hailing platforms to meet wheelchair-accessible vehicle quotas, mandate disability training, and enforce response-time standards. Citing long waits for wheelchair users, they urge New Taipei and MOTC to condition Uber’s license on wheelchair-accessible vehicle quotas, certified disability training, and enforceable response-time benchmarks. They also push for app accessibility filters, quarterly audits with penalties, and retrofit subsidies so Uber meets New Taipei and MOTC standards. They lobby MOTC and New Taipei to condition Uber’s license on district-level WAV quotas, certified driver training, 20-minute response targets, quarterly audits with penalties, and retrofit subsidies.",
+    "This person is a Hsinchu independent driver worried that mandatory accessibility retrofits and training costs would price small operators out. They oppose blanket accessibility retrofit and training mandates in Taiwan’s ride-hailing rules, warning the costs would push solo Hsinchu drivers off the road. They urge Taiwan to adopt phased-in rules or subsidies for accessibility upgrades, warning that blanket mandates in Hsinchu would force independent drivers to quit. They back phased timelines and subsidies for accessibility upgrades and training, warning Hsinchu’s one-car operators will quit and service will suffer if blanket mandates pass. They warn Taiwan’s blanket accessibility and training mandates would hike costs and cut service in Hsinchu, urging phased timelines and subsidies instead.",
+    "This person is a Taiwan digital privacy researcher who wants strict limits on trip-level data collection, retention, and cross-border sharing by platforms and government. They argue Taiwan’s ride-hailing rules should mandate data minimization, short retention periods, onshore storage, explicit consent for any cross-border transfers, and judicial oversight of government access. They urge Taiwan’s ride-hailing rules to enforce privacy-by-design: collect only essential trip data, keep it onshore briefly, require warrants for government access, and mandate opt-in consent for any cross-border transfers. They want Taiwan to mandate privacy-by-design: only essential trip data, onshore storage for 30 days, no continuous tracking, and any government or cross-border access only with warrants and explicit opt-in. They want licenses to require privacy-by-design: 30-day onshore storage, no persistent tracking, warrant-only government access, and opt-in cross-border transfers.",
+    "This person is a city smart mobility official seeking granular trip data and API access from platforms for enforcement, planning, and safety analytics. They back regulations requiring Uber and other platforms to share anonymized, trip-level data via standardized APIs for enforcement, planning, and safety audits, with strict privacy safeguards. They back MOTC/city mandates in Taiwan requiring Uber and TNCs to share anonymized, trip-level data via standardized, PDPA‑compliant APIs for enforcement, planning, and safety audits, with penalties for noncompliance. They support MOTC/city rules requiring Uber/TNCs to provide PDPA‑compliant, anonymized, near‑real‑time trip data via standardized APIs for curb enforcement, planning, and safety forensics, backed by independent audits and stiff penalties for noncompliance. They push for Taiwan MOTC/city mandates compelling Uber and all TNCs to expose standardized, PDPA‑compliant APIs delivering anonymized, near‑real‑time trip data for curb enforcement, planning, and safety forensics, enforced by independent audits and stiff penalties.",
+    "This person is a climate NGO campaigner urging an EV-only timeline for ride-hailing fleets and investments in fast charging at hotspots. Presses Taiwan’s MOTC to adopt a phased EV-only mandate for ride-hailing and require Uber and fleets to co-fund fast chargers at airports and transit hubs. They urge MOTC to phase out ICE ride-hailing by 2030, tie licenses to EV targets, and require Uber/fleets to co-fund fast chargers at airports and MRT hubs. They lobby MOTC to tie platform licenses to annual EV targets, sunset ICE ride-hailing by 2030, and mandate Uber and fleets co-fund fast chargers at airports, HSR and MRT hubs to cut emissions and ease range anxiety. They urge MOTC to tie platform permits to rising EV quotas, sunset ICE ride-hailing by 2030, and mandate Uber/fleets co-fund and maintain fast chargers at airports, HSR, and MRT hubs, with enforceable penalties.",
+    "This person is a small Kaohsiung taxi fleet owner with older gasoline/LPG cars who fears EV mandates will impose unaffordable upgrade costs and downtime. They push for tighter controls on Uber and a slower, subsidized EV transition, fearing upgrade costs and downtime would cripple their small Kaohsiung fleet. They urge stricter Uber licensing and enforcement, plus a slower, subsidized EV phase-in, so their aging Kaohsiung LPG fleet isn’t idled by upgrade costs. They urge holding Uber to taxi-level licensing, insurance, and fare rules while phasing in subsidized EVs slowly so Kaohsiung’s small LPG fleets survive. They want MOTC/Kaohsiung to apply taxi-level licensing, insurance, and fare rules to Uber and fund a phased EV swap with grants, scrappage bonuses, and downtime compensation.",
+    "This person is a Taichung taxi medallion investor who relies on limited plate supply to protect value and opposes rules that expand ride-hail supply. They lobby Taichung officials to cap rental-car-with-driver permits and enforce minimum fares and stricter compliance on Uber to preserve taxi plate values. They lobby Taichung to cap rental-car-with-driver permits, enforce minimum fares, and require Uber to meet taxi standards to prevent medallion devaluation. They press Taichung to cap rental-car-with-driver licenses, enforce fare floors, and require Uber to meet taxi licensing, insurance, and inspection standards to safeguard plate values. They urge Taichung to freeze new ride-hail permits and impose taxi-grade licensing, insurance, inspections, and fare floors on Uber to protect medallion values and driver incomes.",
+    "This person is an Uber Taiwan public policy lead who wants flexible pricing and easier onboarding to let more drivers meet peak demand. They advocate regulatory changes to allow dynamic pricing and streamlined, app-based licensing and insurance checks so more part-time drivers can come online during peak hours without taxi-era constraints. They urge Taiwan regulators to authorize surge pricing and app-based license/insurance verification to boost part-time driver supply at peak times while maintaining safety oversight. They contend Taiwan should legalize surge pricing and accept app-based license and insurance verification to unlock more part-time drivers at rush hours while preserving safety oversight. They argue Taiwan should authorize surge pricing and fully digital driver vetting to align with global norms, ease peak-hour shortages, and maintain strong safety oversight.",
+    "This person is a labor rights lawyer in Taipei pushing to classify ride-hail drivers as employees with guaranteed minimum pay, insurance, and benefits. They lobby Taiwan’s lawmakers to classify ride-hail drivers as employees, requiring Uber and fleets to pay minimum wage, overtime, and contribute to labor and national health insurance. They seek legal changes to deem app drivers employees and require Uber and fleets to pay minimum wage and overtime and fund labor and national health insurance. They press lawmakers to amend the Labor Standards Act and transport rules to end driver misclassification and require platforms to fund minimum pay, overtime, and NHI/labor insurance. They lobby the Legislative Yuan to reclassify app drivers as employees and impose minimum pay, overtime, and mandatory NHI/labor insurance contributions on Uber and its fleets.",
+    "This person is a part-time NTU graduate student who drives on weekends and wants to remain an independent contractor for maximum schedule flexibility. They want Taiwan to keep Uber drivers as independent contractors with flexible weekend shifts, opposing taxi-style licensing and employee mandates but accepting basic safety and insurance rules. They favor keeping Uber drivers as independent contractors with flexible weekend work, supporting background checks and insurance minimums but rejecting taxi-style licensing and employee-status mandates. To keep covering tuition on flexible weekend shifts, they want Taiwan to preserve Uber’s independent-contractor model with background checks and insurance, while rejecting taxi-style licensing and employee mandates. They support background checks and insurance minimums but want Taiwan to preserve Uber’s flexible independent-contractor model, opposing taxi-style licensing and employee reclassification so they can fund tuition with weekend driving.",
+    "This person is a disability rights advocate in Taipei demanding mandatory wheelchair-accessible vehicles, training, and penalties for refusal of rides. They want Taiwan to mandate wheelchair-accessible vehicle quotas, driver training, and penalties for ride refusals on Uber and other ride-hailing platforms. They press Taiwan’s MOTC to mandate enforceable wheelchair-accessible vehicle quotas on ride-hailing platforms, require certified disability-awareness training, and levy fines or suspensions for any driver or app that refuses wheelchair users. They urge MOTC to adopt enforceable WAV quotas, mandatory certified disability-awareness training, and fines or suspensions for refusals so Uber and other platforms provide reliable, legal access for wheelchair users. They urge MOTC to tie platform licenses to audited wheelchair-accessible vehicle quotas, require annual certified disability-awareness training for all drivers, and impose fines or suspensions on drivers or apps that refuse wheelchair users.",
+    "This person is an independent driver in New Taipei worried that required accessibility retrofits and training costs will price them out of the market. They urge phased-in or subsidized accessibility and training rules, warning that single-car drivers in New Taipei will be priced out of ride-hailing. Supportive of accessibility, they urge phased-in retrofits and subsidized training so single-car New Taipei drivers aren’t pushed out of ride-hailing. They advocate a multi-year compliance timeline with targeted subsidies or low-interest loans so New Taipei’s single-car drivers can afford accessibility retrofits and training without leaving ride-hailing. They support accessibility but want multi-year phase-ins and subsidized retrofits/training, warning single-car New Taipei drivers will otherwise be priced out.",
+    "This person is a Hualien rural bus cooperative manager concerned ride-share will siphon off paying riders and undermine subsidized lifeline routes. He urges Taiwan to restrict ride-hailing in rural Hualien or require equal service obligations to protect subsidized lifeline bus routes. He advocates caps and parity obligations on ride-hailing in Hualien—requiring coverage of remote villages and off-peak runs—to prevent subsidized lifeline bus routes from collapsing. He pushes MOTC and Hualien County to cap ride-hailing and mandate remote-village and off-peak coverage to keep subsidized lifeline bus routes viable. He wants MOTC and Hualien County to cap ride-hailing and require PSO parity—remote-village and off-peak coverage—so cherry-picking doesn’t collapse subsidized lifeline bus routes.",
+    "This person is a clinic nurse in a Hualien mountain township who needs reliable late-night ride-hailing when buses stop and taxis won’t serve. She supports clear rules allowing Uber-style ride-sharing in rural Hualien so vetted drivers can provide safe, affordable late-night rides when taxis aren’t available. She wants Taiwan to allow vetted, insured Uber-style ride-sharing in rural Hualien with clear pricing rules so healthcare workers and patients can get safe, affordable rides after buses and taxis stop. She calls for Taiwan to legalize and regulate vetted, insured rural ride-sharing with transparent fares so night-shift staff and patients have safe late-night rides when buses and taxis stop. She backs rural-specific rules legalizing vetted, insured Uber-style ride-sharing with transparent fares to fill Hualien’s late-night transport gaps.",
+    "This person is an environmental NGO campaigner in Kaohsiung pushing EV-only ride-hailing zones, idle-time limits, and strict emissions audits. They press Kaohsiung and the MOTC to mandate EV-only geofenced ride-hailing zones, strict anti-idling limits, and quarterly emissions audits for Uber and taxis. She lobbies Kaohsiung and the MOTC to tie Uber/taxi licenses to EV-only geofenced zones in high-traffic areas, 1–2 minute anti-idling limits, and quarterly third-party emissions audits. She cites Kaohsiung’s PM2.5 hotspots to demand EV-only geofenced hubs near stations and hospitals, strict 1–2 minute anti-idling, and driver EV subsidies. She urges MOTC and Kaohsiung to make Uber/taxi permits contingent on EV‑only geofenced hubs in PM2.5 hotspots, 1–2 minute anti‑idling caps, quarterly third‑party emissions audits, and paired charging buildout with driver EV subsidies.",
+    "This person is a veteran driver with a paid-off gasoline sedan in Tainan who fears costly electrification mandates and reduced vehicle resale value. He opposes EV-only requirements in Taiwan’s Uber/ride-hailing rules and seeks grandfathering and resale protections so his paid-off gas sedan can keep working in Tainan. He urges Taiwan’s ride-hailing regulators to replace EV-only mandates with phased targets, grandfathering, and resale safeguards so his paid-off gas sedan can keep operating in Tainan without becoming a stranded asset. He warns that abrupt EV-only ride-hailing rules would strand his paid-off gas sedan in Tainan and urges phased targets, grandfathering, and resale protections to safeguard drivers’ equity. He advocates replacing EV-only mandates with phased emissions targets, grandfathering for existing gas cars, and resale/buyback protections so veteran Tainan drivers aren’t left with stranded assets."
+  ],
+  "policies": [
+    {
+      "candidate_id": "122",
+      "text": "Personally, I think there should be regulations modeled on those for yellow cabs, requiring anyone who wants to drive for Uber to pass a driving certification or exam organized by the Ministry of Transportation and Communications’ supervisory authority; after passing, they can be issued a personal or commercial registration certificate, which would, on the one hand, protect all passengers and, on the other, safeguard the basic rights of all drivers.",
+      "original_text": "個人認為應比照小黃立個規範，想開uber的駕駛都須通過由交通部監理單位所舉辦的行車認證或考試，考過便可核發個人或營業用登記證，一來可保障所有乘客，另一方面可保障所有駕駛的基本權利。"
+    },
+    {
+      "candidate_id": "157",
+      "text": "I think Uber should pay the taxes it owes to the government, and there is no need for excessive government intervention—let Uber and taxis compete freely; consumers have the right to choose: if they feel Uber is unsafe or lacks safeguards, they can just take a taxi instead, and if that is the prevailing public view, then Uber will naturally be eliminated by market forces, so why does the government need to intervene so much?",
+      "original_text": "我覺得Uber應該把該繳的稅繳給政府，政府無須過多干預，讓Uber與小黃自由競爭；消費者有選擇的權利，如果覺得Uber不安全或沒保障，一樣可以去搭小黃，而這如果是大眾普遍的想法，那Uber自然會被市場機制淘汰，政府何須過多干預呢？"
+    },
+    {
+      "candidate_id": "123",
+      "text": "I think whether to legislate (or amend the law) on the Uber issue should depend on whether Uber’s services have a large enough impact; at present, the impact on people’s daily lives does not seem significant. If the representative bodies feel the impact is large enough, I support amending the law or enacting legislation.",
+      "original_text": "我覺得UBER問題是否應該立法(或修法)？應取決於UBER服務是否有夠大影響力，目前來看，影響人民日常並不大。若民意機關覺得影響性夠大，我讚成修法或立法。"
+    },
+    {
+      "candidate_id": "164",
+      "text": "In Hong Kong, the crackdown on Uber not only fines drivers but also arrests company executives; in Taiwan, cracking down on Uber just amounts to issuing fines—could the authorities please take a harder line? Letting just anyone with a car carry passengers only sacrifices passenger (public) safety.",
+      "original_text": "香港取締Uber不只是對司機開罰，也逮捕了公司負責人，台灣取締Uber只會罰罰款罷了，請鐵腕一點好嗎? 隨意車輛人員都能載客，只是犧牲掉了乘客(人民)安全。"
+    },
+    {
+      "candidate_id": "140",
+      "text": "I think that, given that outside Taipei, Taichung, and Kaohsiung, taxis in Taiwan’s other townships and cities are almost all unlicensed “white-plate” cars and always jack up the fare on the spot, it would be better to legislate and bring them all under regulation.",
+      "original_text": "我覺得既然出了北中高，台灣其他鄉鎮市的計程車幾乎都是白牌車，搭車時總是坐地起價，不如立法全數納入規範。"
+    },
+    {
+      "candidate_id": "106",
+      "text": "I think that, to find a path forward for UberX, we should set regulations different from those for commercial passenger cars and taxis, so that non-commercial, part-time private cars that are only carpooling or offsetting fuel costs have a set of rules to follow.",
+      "original_text": "我覺得要替UberX找到出口，就該訂定有別於職業小客車和計程車的法規，讓非營業車，只是要共乘或補貼油錢的，兼職性質的自用車，有一個遵守的遊戲規則"
+    },
+    {
+      "candidate_id": "173",
+      "text": "There should not be restrictions on taxis’ color, exterior styling, interior, and so on. Even the best car looks ugly when painted yellow. Such rules benefit certain manufacturers, increase vehicle purchase costs, and cause consumers to lose the sense of novelty.",
+      "original_text": "不應該限制計程車的車輛顏色外觀式樣內裝等等，再好的車噴成黃色很難看，圖利特定廠商而且造成購車成本增加，消費者失去新鮮感"
+    },
+    {
+      "candidate_id": "50",
+      "text": "I think that as public transportation has become more widespread, the share of taxis running empty has kept climbing, and opening up private cars to carry passengers won’t expand demand—it will only make it harder for taxis to stay in business.",
+      "original_text": "我覺得大眾運輸工具普及後，營業車的空車率已不斷攀升，開放自用車載客不會擴大需求，只會讓計程車更難經營。"
+    },
+    {
+      "candidate_id": "51",
+      "text": "I think any innovative, profit-seeking service is indeed an important part of social progress, but it must be run in full compliance with the law to avoid problems of social fairness and public safety arising from illegal operations.",
+      "original_text": "我覺得任何的創新服務以達營利目的的確是社會進步的重要過程，但必須完全在法律的規範下合法經營，才能避免因非法營運而產生社會公平及社會安全等問題．"
+    },
+    {
+      "candidate_id": "111",
+      "text": "I think the government should be able, by confronting the challenge posed by Uber, to simultaneously improve the regulatory and rating systems for taxis, so that taxi drivers and passengers can also enjoy service quality like Uber’s.",
+      "original_text": "我覺得政府應該能藉由面對 Uber 的挑戰，同時改善計程車的監管與評價制度，讓計程車的司機與乘客也能獲得如 Uber 一樣的服務品質。"
+    },
+    {
+      "candidate_id": "174",
+      "text": "I think that since Uber touts ride-sharing, it should focus on ride-sharing, rather than ending up with lots of professional drivers and doing the same business as taxis without being subject to professional driver regulations.",
+      "original_text": "我覺得Uber既然標榜共乘那就應該以共乘為主，而不是一堆都是職業司機，搞得跟小黃做一樣的生意卻不受職業駕駛法規管制。"
+    },
+    {
+      "candidate_id": "120",
+      "text": "I think private vehicles carrying passengers should be registered, limited to two commute trips per day (to and from work) to achieve a carpooling effect, and additional insurance should be purchased to protect passengers.",
+      "original_text": "我覺得自用車載客應該登記，每日以上下班兩趟為限，可達共乘效果，並應加買保障乘客的保險"
+    },
+    {
+      "candidate_id": "165",
+      "text": "I think the true spirit of ride-sharing should let drivers choose passengers based on the areas they’re headed to; otherwise, ride-sharing is nothing more than a cover for unlicensed private cars operating for profit.",
+      "original_text": "我覺得真正共乘的精神, 應該要讓司機能選擇去什麼地區的乘客一起搭乘, 否則共乘只是白牌車營業賺錢的包裝罷了。"
+    },
+    {
+      "candidate_id": "141",
+      "text": "I think paying taxes is an obligation for any company operating in Taiwan; however excellent Uber or its innovative model may be, it should still fulfill its legal obligation to pay taxes on income earned in Taiwan.",
+      "original_text": "我覺得繳稅是一個企業在台灣經營的義務，Uber或其新創模式再麼優秀，在台灣的所得都應該要盡到合法納稅義務。"
+    },
+    {
+      "candidate_id": "119",
+      "text": "I think taxis have already had their fuel costs subsidized by the government, yet the taxi association has still decided to raise fares; UberX should be opened to competition to let the market determine demand.",
+      "original_text": "我覺得計程車已受政府補貼油價，現在公會仍然決定調漲車費，應該開放 UberX 競爭，讓市場決定需求。"
+    },
+    {
+      "candidate_id": "151",
+      "text": "I think the current regulations governing commercial passenger vehicles are very unfriendly to the sharing economy. The law should be amended as soon as possible; that would be more environmentally friendly.",
+      "original_text": "我覺得目前管理職業客車的法規對分享經濟很不友善。應該要盡速修法，比較環保。"
+    },
+    {
+      "candidate_id": "31",
+      "text": "I think that since the Ministry of Transportation and Communications has already rejected Uber’s administrative appeal, the Taipei City Government should revoke Taiwan Yubo Digital’s company registration.",
+      "original_text": "我覺得既然交通部已駁回 Uber 的行政訴願，台北市政府就應該註銷「台灣宇博數位」的公司登記。"
+    },
+    {
+      "candidate_id": "154",
+      "text": "I think, in terms of UberX pricing, fares should be higher at night; we shouldn’t keep prices low just for passengers if that makes it unsustainable for drivers and leads to fewer vehicles on the road.",
+      "original_text": "我覺得UberX在計費上，晚上應該費用能提高，不能以低價只為了乘客，卻讓司機無力持續，造成車輛數減少。"
+    },
+    {
+      "candidate_id": "77",
+      "text": "I think UberX should be held to the same standard as taxis and display the registration certificate, license, and the driver’s full information in a clearly visible location inside the vehicle.",
+      "original_text": "我覺得 UberX 應比照計程車，將登記證、執照、駕駛完整資訊擺設於車內明顯可見之處。"
+    },
+    {
+      "candidate_id": "68",
+      "text": "I think we are already in a technological era, and many things, including laws and regulations, should be adapted to the times and local conditions rather than rigidly sticking to old rules.",
+      "original_text": "我覺得現在已經是一個科技時代，很多事物及法令規範都應該應時應地治宜，而不是墨守成規。"
+    },
+    {
+      "candidate_id": "92",
+      "text": "I think UberX’s existing mechanisms for safeguarding passengers’ rights are already sufficient, and allowing it to operate would give the public another convenient transportation option.",
+      "original_text": "我覺得UberX現有保障乘客權益的機制已經足夠，放行營運可以讓民眾多一個便捷的交通方式。"
+    },
+    {
+      "candidate_id": "71",
+      "text": "I think Uber is a sharing-platform model rather than an employment-based one. Uber oversees the partner drivers and passengers on the platform from the perspective of a platform manager.",
+      "original_text": "我覺得UBER是一個共享平台的概念，而非僱員的概念。UBER是以一個平台管理者的角度來監督在平台上的合作司機及乘客"
+    },
+    {
+      "candidate_id": "153",
+      "text": "I support legalizing Uber, giving consumers one more choice, giving taxi operators greater incentives for healthy competition, and further opening up multiple avenues for part-time work.",
+      "original_text": "我贊成uber合法化，讓消費者多一個選擇，讓計程車業者多一份良性競爭的動力，更讓兼職管道多方面開放。"
+    },
+    {
+      "candidate_id": "55",
+      "text": "I think transportation is similar in nature to food and drugs, and compared to general service-matching platforms, it should be subject to especially strict definitions and oversight.",
+      "original_text": "我覺得交通運輸和食品、藥品性質類似，比起一般服務的媒合平台來說，應該要特別嚴格的界定與把關。"
+    },
+    {
+      "candidate_id": "100",
+      "text": "I think a driver going to the same destination as the passenger is the true spirit of ride-sharing, and cruising around waiting to pick up passengers shouldn’t count as ride-sharing.",
+      "original_text": "我覺得「駕駛自己要去的目的地，和搭乘的人相同」才是共乘的精神，繞行等待載客的不能算是共乘。"
+    },
+    {
+      "candidate_id": "48",
+      "text": "I think that although UberX is said to serve the public, if you factor in the costs of legally paying taxes and insurance, its business model wouldn’t be able to continue operating.",
+      "original_text": "我覺得 UberX 雖然說是為了服務大眾，但如果加上合法納稅、保險的成本，它的商業模式就無法營運下去。"
+    },
+    {
+      "candidate_id": "94",
+      "text": "I think we should plan ahead for autonomous driving, including whether it is still necessary to build modern mass transit systems and how to handle taxi drivers’ future employment.",
+      "original_text": "我覺得要提前考慮電腦自動駕駛的情況，包括現代大眾系統是否還有興建必要，以及以後計程車司機的就業該怎麼辦。"
+    },
+    {
+      "candidate_id": "69",
+      "text": "I think that even if UberX drivers do not have professional driver’s licenses or obvious identifying markings on their vehicles, I still feel safe because every trip is recorded.",
+      "original_text": "我覺得即使Uber X沒有職業駕照或車體有明顯標示以辨識，但因其每趟行程皆有行程紀錄，也感到安全\n。"
+    },
+    {
+      "candidate_id": "156",
+      "text": "I think Uber and the government-established ride-sharing network are both matching platforms and have nothing to do with the Ministry of Transportation and Communications.",
+      "original_text": "我覺得UBER跟政府成立的共乘網 都是媒合平臺 都與交通部無關"
+    },
+    {
+      "candidate_id": "150",
+      "text": "The rules should be amended so that passenger insurance for private-use vehicles also protects passengers’ rights, or Uber should provide unified insurance coverage.",
+      "original_text": "應修改讓自用車的乘客保險也能保障乘客的權益或由UBER統一投保"
+    },
+    {
+      "candidate_id": "64",
+      "text": "Uber is an overseas company; I think Uber has a responsibility to put forward a response to the issue of paying taxes in Taiwan that can convince Taiwanese society.",
+      "original_text": "Uber 是境外公司，我認為 Uebr 有責任針對在台灣繳稅的問題提出足以說服台灣社會的因應方式。"
+    },
+    {
+      "candidate_id": "104",
+      "text": "I think that since Uber charges service fees, it has a responsibility to provide passenger insurance, and can establish additional types of insurance when needed.",
+      "original_text": "我覺得 Uber 公司既然收取收續費，有責任提供乘客保險，需要時可以另外制定保險種類。"
+    },
+    {
+      "candidate_id": "126",
+      "text": "I think every passenger’s trip can be recorded with GPS, and if something happens, Uber can access the trip records to assist the police with their investigation.",
+      "original_text": "我覺得每一位客人的行程都可以用GPS定位記錄，如果發生事情時UBER公司可以調閱行程記錄協助警方辦案"
+    },
+    {
+      "candidate_id": "143",
+      "text": "I think the law only needs to set a minimum standard that protects passengers, drivers, and other road users, and leave everything else to the market to decide.",
+      "original_text": "我覺得法律僅須訂定一個能保護乘客、司機其他用路人的最低標準，其他應交由市場機制來決定。"
+    },
+    {
+      "candidate_id": "30",
+      "text": "I think that, given UberX’s ongoing illegal conduct, every effort should be made to shut it down, and there is no need for citizens to express their opinions.",
+      "original_text": "我覺得 UberX 現行不法行為應盡一切努力使其停業，不需要國人表示意見。"
+    },
+    {
+      "candidate_id": "96",
+      "text": "I think all for-hire vehicles should adopt a passenger rating system across the board, rather than relying solely on government-issued operating permits.",
+      "original_text": "我覺得所有營業車輛都應該一律採取乘客評分機制，而不是只靠政府核發營業許可。"
+    },
+    {
+      "candidate_id": "78",
+      "text": "I feel that riding in someone else’s private car, if there’s no way to tell whether they’ve passed tests and health checks, offers no assurance at all.",
+      "original_text": "我覺得搭乘他人的自用車，若是無從判斷此人是否通過測驗及健檢，感覺非常沒有保障。"
+    },
+    {
+      "candidate_id": "87",
+      "text": "I think that although surge pricing makes people less inclined to take Uber, it’s reasonable for it to vary according to the law of supply and demand.",
+      "original_text": "我覺得雖然加成計費會讓人比較不想搭Uber，加成計費依照供需法則去變化是合理的。"
+    },
+    {
+      "candidate_id": "109",
+      "text": "I think UberX is a global app; if Taiwan wants to be part of the international community today, it should accept this platform rather than exclude it.",
+      "original_text": "我覺得UberX是國際化的App，今天台灣要融入國際，就要接受這個平台，而不是排擠它。"
+    },
+    {
+      "candidate_id": "63",
+      "text": "I think the current quality of taxi services is uneven, and this is related to the market not providing a sufficiently fair competitive environment.",
+      "original_text": "我覺得現在的計程車服務品質參差不齊，跟市場未提供足夠的公平競爭環境有關。"
+    },
+    {
+      "candidate_id": "40",
+      "text": "I think drivers should be vetted, passenger protections and drivers’ rights should both be taken into account, and above all, safety comes first.",
+      "original_text": "我覺得應該審核人員。乘客保障。駕駛權益都要兼顧。最重要還是安全第一"
+    },
+    {
+      "candidate_id": "65",
+      "text": "I think the government should establish fair regulatory rules for the transportation industry, rather than protecting specific vested interests.",
+      "original_text": "我覺得政府應該對運輸業設置公平的管制規則，而不是保護特定的既得利益者。"
+    },
+    {
+      "candidate_id": "29",
+      "text": "I think the Ministry of Transportation and Communications’ crackdown has been ineffective; it’s a sign of the incompetence of public authority.",
+      "original_text": "我覺得交通部取締效果不彰，是公權力無能的表現。"
+    },
+    {
+      "candidate_id": "80",
+      "text": "I think the logic behind Uber’s \"fare multiplier\" is very opaque, leading to the odd situation where sometimes UberBlack is cheaper than UberX.",
+      "original_text": "我覺得 Uber 「費率加成」的邏輯很不透明，導致有時候 UberBlack 會比 UberX 要便宜的奇怪情況出現。"
+    },
+    {
+      "candidate_id": "41",
+      "text": "The Ministry of Transportation and Communications should publish online the 2014 report investigating whether Uber was operating illegally.",
+      "original_text": "交通部應於線上公開2014年調查 Uber 是否違法的報告。"
+    },
+    {
+      "candidate_id": "133",
+      "text": "Legalizing Uber would allow both drivers and passengers to be better protected; I just hope the Taiwanese government can draft regulations.",
+      "original_text": "將Uber合法，能讓司機與乘客都能受到更好的保障，只希望台灣政府能擬定法規"
+    },
+    {
+      "candidate_id": "160",
+      "text": "From a regulatory standpoint, unless Uber acknowledges that it is a virtual ride-hailing company, oversight is relatively weak.",
+      "original_text": "就管理面，除非uber承認自己是虛擬叫車公司，不然管理是比較弱。"
+    },
+    {
+      "candidate_id": "139",
+      "text": "I think Uber is a response to market demand, and right now we should identify the problems, face them squarely, and solve them.",
+      "original_text": "我認為，Uber是市場需求的反應，目前應該找出問題，正視問題，解決問題。"
+    },
+    {
+      "candidate_id": "9",
+      "text": "I think the Uber platform’s dispute-resolution records should be reported to the Ministry of Transportation and Communications.",
+      "original_text": "我覺得 Uber 平台的爭端解決紀錄應呈報給交通部。"
+    },
+    {
+      "candidate_id": "37",
+      "text": "I think all relevant government agencies at every level should clearly state their position before soliciting public input.",
+      "original_text": "我覺得在徵集意見前，各級相關政府單位都應該先明確表示立場。"
+    },
+    {
+      "candidate_id": "5",
+      "text": "I think the Ministry of Transportation and Communications is responsible for proactively cracking down on white-plate cars.",
+      "original_text": "我覺得主動取締白牌車是交通部的責任。"
+    },
+    {
+      "candidate_id": "20",
+      "text": "I think UberX has already led to a situation of unfair competition with the existing domestic transportation industry.",
+      "original_text": "我覺得UberX已與現有國內運輸業產生不公平競爭的情形。"
+    },
+    {
+      "candidate_id": "18",
+      "text": "I think UberX is currently not operating in accordance with the law, which makes me feel there’s a risk when I ride.",
+      "original_text": "我覺得UberX目前未依法營業，讓我覺得搭乘時有風險。"
+    },
+    {
+      "candidate_id": "44",
+      "text": "I think private cars carrying passengers for hire without government certification already threaten public safety.",
+      "original_text": "我覺得自用車未經政府認證就自行載客營業，已經威脅到公共安全。"
+    },
+    {
+      "candidate_id": "16",
+      "text": "I think UberX private vehicles should have automobile passenger liability insurance when transporting passengers.",
+      "original_text": "我覺得 UberX 自用車載客時，應該要投保汽車乘客責任險。"
+    },
+    {
+      "candidate_id": "19",
+      "text": "I think the UberX management system isn’t transparent enough, which makes it hard for me to feel at ease.",
+      "original_text": "我覺得UberX管理制度不夠透明，讓我難以安心。"
+    },
+    {
+      "candidate_id": "32",
+      "text": "I think UberX currently can’t provide accident insurance for passengers, which makes me feel unprotected.",
+      "original_text": "我覺得 UberX 目前無法幫乘客保意外險，讓我感到沒有保障。"
+    },
+    {
+      "candidate_id": "12",
+      "text": "Uber is a matching platform, like an auction site, and it belongs to the information services industry.",
+      "original_text": "Uber 是媒合平台，就像拍賣網站，屬於資訊業。"
+    },
+    {
+      "candidate_id": "13",
+      "text": "I think taxi bodies must be painted yellow so that they are a different color from other vehicles.",
+      "original_text": "我覺得計程車身一定要塗裝成黃色的，和其他車輛顏色不同。"
+    },
+    {
+      "candidate_id": "46",
+      "text": "I think the concept of a carpool-like arrangement where the driver charges the riders is feasible.",
+      "original_text": "我覺得類似共乘，但由開車的人向共乘者收費的概念，是可行的。"
+    },
+    {
+      "candidate_id": "4",
+      "text": "I think drivers should be allowed to accept dispatches from multiple companies at the same time.",
+      "original_text": "我覺得應該開放司機同時接受多家派遣。"
+    },
+    {
+      "candidate_id": "144",
+      "text": "I think allowing Uber is an important part of enhancing Taiwan’s fundamental competitiveness.",
+      "original_text": "我覺得開放Uber是提升臺灣基礎競爭力重要的一環"
+    },
+    {
+      "candidate_id": "21",
+      "text": "I think UberX should apply to operate a transportation business in accordance with the law.",
+      "original_text": "我覺得UberX應該依法令申請經營運輸業務。"
+    },
+    {
+      "candidate_id": "145",
+      "text": "I think the existing vetting process cannot guarantee the service quality of taxi drivers.",
+      "original_text": "我覺得既有的資格審查，無法保證計程車司機的服務品質"
+    },
+    {
+      "candidate_id": "17",
+      "text": "Uber is labor dispatch, like bus company employees, and belongs to the service industry.",
+      "original_text": "Uber 是人力派遣，就像客運僱員，屬於服務業。"
+    },
+    {
+      "candidate_id": "24",
+      "text": "I think UberX drivers' personal information should be subject to government regulation.",
+      "original_text": "我覺得 UberX 司機的個人資料，應受政府管制。"
+    },
+    {
+      "candidate_id": "35",
+      "text": "I think UberX’s approach to managing driver qualifications is not rigorous enough.",
+      "original_text": "我認為 UberX 對司機資格的管理方式不夠嚴謹。"
+    },
+    {
+      "candidate_id": "7",
+      "text": "I think all drivers who carry passengers should be covered by accident insurance.",
+      "original_text": "我覺得載客的司機都應該保意外險。"
+    },
+    {
+      "candidate_id": "34",
+      "text": "I think all UberX drivers should first obtain a professional driver’s license.",
+      "original_text": "我覺得 UberX 的司機都應該先考取職業駕駛執照。"
+    },
+    {
+      "candidate_id": "8",
+      "text": "I think Uber should pay taxes to the government where it operates.",
+      "original_text": "我覺得 Uber 應該向營業地的政府納稅。"
+    },
+    {
+      "candidate_id": "6",
+      "text": "I think vehicles carrying passengers should have clear signage.",
+      "original_text": "我覺得載客的車子上應該要有明確標示。"
+    },
+    {
+      "candidate_id": "3",
+      "text": "I think fares can be flexibly increased during peak hours.",
+      "original_text": "我覺得尖峰時段可以彈性提高收費。"
+    }
+  ],
+  "cases": [
+    "Ride-hail corridor street-hail pilot: Drivers who pass the MOTC exam receive a blue Ride-hail Registration Badge authorizing them to accept street hails in designated corridors (e.g., Taipei Main Station and Taoyuan Airport approaches) and use taxi stands during peak hours without taxi-fleet affiliation. Platforms must geofence and record corridor pickups and submit monthly logs to MOTC; local police are instructed not to enforce municipal anti-solicitation or fare-cap provisions on badge holders within these corridors.",
+    "Directorate General of Highways (MOTC) creates a Commercial Ride-Hailing Driver Certificate: all Uber drivers must pass a DGH-administered exam covering traffic law, passenger safety, and first aid, undergo a criminal/medical screening, and carry a scannable registration card; platforms must verify the certificate before activation and re-verify annually, suspending noncompliant accounts within 7 days; certified drivers may accept unlimited paid trips at any time, and driving without certification incurs NT$50,000 per-violation fines on both driver and platform.",
+    "Vehicle-for-hire registration and insurance mandate: any car used on Uber must be registered with DGH as a commercial passenger vehicle, pass a semiannual safety inspection at MOTC-approved centers, and carry at least NT$20 million in commercial third-party liability plus NT$2 million per-passenger injury coverage; only drivers holding the MOTC Commercial Ride-Hailing Driver Certificate may operate these vehicles; platforms must submit monthly rosters of registered plates and automatically block vehicles with lapsed inspection or insurance; certified vehicles may operate without a two-trip daily cap, with NT$30,000–NT$90,000 penalties for violations and immediate plate suspension for repeat offenses.",
+    "Fare, tax, and data governance rule: platforms may dispatch only drivers with the MOTC Commercial Ride-Hailing Driver Certificate and must cap surge pricing at 1.8× the regulated base fare while displaying a fare breakdown in-app; platforms must transmit weekly trip-level logs (driver ID, certificate number, time, distance, fare) to DGH and the National Taxation Bureau, with 5% VAT and required income-tax withholding remitted monthly; certified drivers may operate commercially up to 60 hours per week across municipalities with no per-day trip limit; passenger identifiers must be hashed and retained no longer than 18 months for audit.",
+    "The MOTC, via the Directorate General of Highways (DGH), creates a Ride-Hail Driver Certificate (RH-C) modeled on the taxi exam: every Uber/ride-sharing driver must complete a 40-hour course, pass a road test and local-route knowledge test, and clear a background check before activation. Platforms must integrate with the DGH API to verify RH-C status in real time and auto-suspend any lapsed driver. Municipal traffic bureaus may cap the number of simultaneously active RH-C drivers per district to mirror taxi supply, allocating slots by a daily queue. Noncompliance triggers NT$50,000 fines per trip for drivers and NT$1,000,000 per month for platforms.",
+    "Only RH-C-certified drivers may operate vehicles registered as Commercial Passenger Vehicles (CPV-R) for ride-hailing; vehicles must be under 7 years old, pass a taxi-grade inspection every 6 months at MOTC centers, and carry commercial liability insurance of at least NT$30,000,000 per incident plus NT$2,000,000 passenger injury coverage. Cars must install a tamper-proof GPS, inward/outward dashcams, and an SOS button, and display a blue reflective CPV-R decal with the driver’s permit number. Platforms must upload VINs, inspection reports, and active policy numbers monthly to DGH and immediately deactivate any car with an expired item. Operating an uninspected or unmarked vehicle results in immediate impoundment and suspension of both the driver’s RH-C and the platform’s city permit.",
+    "MOF National Taxation Bureau e-invoice rule: ride-hailing platforms (e.g., Uber, taxi apps) must integrate with the government e-invoice system within 6 months, issue uniform e-invoices for every trip, and file monthly summaries of each driver’s gross receipts tied to their tax ID; drivers must register a tax ID before accepting trips; platforms face fines per missing invoice; the policy explicitly grants no special tax breaks or environmental incentives to ride-sharing and makes no amendments to existing commercial passenger-vehicle classifications.",
+    "Airport and station pickup neutrality directive (MOTC and Taoyuan International Airport Corp.): platforms may dispatch rides to designated pickup zones if the driver holds a clean police record certificate (issued within 3 months) on file with the platform and the platform remits a per-trip access fee electronically; platforms must show all-in price (including airport fee and taxes) pre-confirmation and keep trip logs for 180 days; dynamic pricing remains allowed and there will be no HOV/bus-lane privileges, EV-only discounts, or other environmental exemptions for ride-hailing, and no amendments to loosen commercial vehicle rules are contemplated.",
+    "First/Last-Mile Ride-Share Voucher: Taipei and New Taipei City Transportation Bureaus subsidize 20% of fares for UberX/UberPool trips that begin or end within 1.5 km of an MRT/HSR station between 22:00–06:00. Eligibility is limited to drivers with a 4.8+ star rating and zero serious safety flags; platforms must automatically and permanently remove any driver who falls below 4.7 or triggers a flag, and submit weekly anonymized safety/rating reports. Passengers redeem the subsidy in-app; platforms settle with the bureaus monthly. Taxis receive no exclusivity at these times or locations.",
+    "Airport Smart-Curb Permit for Ride-Share: Taoyuan International Airport Corporation designates dedicated pick-up lanes for ride-sharing platforms that certify and enforce permanent bans for drivers rated under 4.6 or implicated in severe incidents, and provide real-time surge disclosures capped at 2.5× with fare estimates before booking. Drivers must pass MOTC vehicle inspections every 6 months and carry commercial insurance; platforms must geofence the lanes and share quarterly safety audit logs with the Civil Aeronautics Administration. The permit authorizes private-car ride-shares to accept pre-booked airport trips statewide, removing the taxi-only limitation.",
+    "MOTC Platform Safety Score and Permanent Ban Rule: Applies to ride-hailing platforms and drivers. Platforms must auto-suspend any UberX driver whose average rating falls below 4.6 over 200 trips and must permanently de-list drivers found to have committed severe offenses (DUI, assault, reckless endangerment), with decisions uploaded to a national deactivation registry. All driver credentials and compliance status are shown only in the rider’s app and to regulators via a backend portal; vehicles may not display physical certificates or the driver’s full legal name, and riders see only an in-app driver ID and photo.",
+    "Taipei City enacts a Cost-Sharing Fare and Rating Confidentiality Ordinance for part-time private-car ride-sharing: platforms must price trips by a published MOTC cost formula (distance, time, and tolls) with surge pricing banned; drivers need only a short online safety module and proof of personal insurance with a ride-share endorsement, not a taxi/commercial license. Platforms may not maintain or show persistent driver scorecards or deactivate based on score thresholds; feedback is collected as free-text complaints that are viewable only by the city and not returned to passengers with outcomes, and deactivations require a regulator referral rather than automated scoring.",
+    "MOTC Centralized Feedback and Compliance Rule: Applies to all ride-sharing platforms (e.g., Uber) operating in Taiwan. Platforms must remove in-app star ratings and any public driver score displays within 90 days. Passenger feedback may only be submitted via the MOTC e-Complaint portal using T-Road digital ID; platforms may not show passengers whether feedback was received or acted upon. MOTC aggregates feedback into confidential driver compliance tiers and sends monthly suspension lists to platforms; deactivating drivers based solely on in-app ratings is prohibited. Passengers receive only a ticket number with no outcome notice. The rule explicitly forbids any requirements on vehicle color, exterior styling, or interior features.",
+    "Taipei City DOT Service Quality Certification: Applies to all ride-hailing drivers and platform operators in Taipei. Drivers must pass a biannual road-safety and customer-service inspection at DOT centers; platforms must verify attendance and results. Any rider rating tools may exist only as internal notes; publishing star scores or removing drivers for falling below a threshold is banned. DOT issues pass/fail certifications and may order temporary suspensions only after closed-door review of mystery-rider audits; audit criteria and outcomes are not disclosed to passengers or drivers. Noncompliant platforms face fines up to NTD 300,000 per incident. The policy explicitly disallows any requirements on vehicle paint color, decals, or interior styling.",
+    "The Ministry of Transportation and Communications (MOTC) issues a TNC Driver Permit rule: all Uber and ride-sharing drivers must complete a 3-hour online safety course and pass an annual vehicle roadworthiness inspection at any certified garage; platforms must verify permits and report suspensions quarterly; private vehicles may operate on platforms with their normal registration and may accept unlimited rides per day; no additional passenger insurance beyond Taiwan’s compulsory auto liability is required; the rule also forbids any agency from prescribing vehicle color, exterior branding, interior materials, or partition requirements for TNC vehicles.",
+    "Taipei City enacts a Dynamic Pricing and Dispatch Fairness Ordinance applying to ride-sharing platforms: surge multipliers are capped at 2.5x with real-time fare estimates displayed to passengers; platforms must offer 24/7 open dispatch to any approved driver and are prohibited from imposing daily trip limits; individuals using private cars may drive unlimited hours after one-time in-app identity verification without municipal vehicle registration and without purchasing extra passenger insurance; the ordinance preempts any city or district rules on paint color, wraps, signage, or interior styling for TNC cars.",
+    "The National Taxation Bureau launches an e-Receipt and Withholding scheme for TNCs: platforms must issue standardized electronic receipts and withhold 3% income tax from driver payouts, submitting driver-level earnings monthly; in return drivers may continue using privately registered vehicles and may provide unlimited rides without buying additional passenger insurance, provided they enroll in the withholding program; the Executive Yuan concurrently bars ministries and local governments from requiring specific taxi colors, exterior decals, or interior fixtures for ride-sharing fleets.",
+    "MOTC issues a regulation prohibiting pooled rides and dynamic surge pricing for ride-hailing services. All ride-hailing bookings must be scheduled at least 15 minutes in advance; on-demand hails are disallowed. The rule applies to platforms (Uber, etc.), which must disable shared-ride matching and surge multipliers, log pre-booking timestamps, and auto-cancel non-compliant requests; drivers may accept only one active passenger party at a time. MOTC audits monthly API logs; violations incur NT$100,000 per incident for platforms and NT$10,000 for drivers.",
+    "The Ministry of Transportation and Communications (MOTC) establishes a Transit Protection Geofence: ride-sharing platforms must block private-car pickups within 800 meters of MRT stations and major bus terminals from 06:00-22:00 on weekdays; only licensed yellow taxis may accept e-hails in these zones and hours. Platforms are responsible for enforcing the geofence and rejecting bookings; private-car drivers who accept blocked trips face a NT$20,000 fine and 30-day deactivation. Regulators will audit platform GPS and trip logs monthly; accessibility vehicles (wheelchair vans) are exempt and must be flagged in the driver's profile. Passengers will see only taxi options in geofenced areas during protected hours.",
+    "MOTC issues a Taxi-First Dispatch Rule: for every e-hail request, platforms must offer the trip to the nearest registered taxi via the National Taxi Availability API for a minimum 5-minute window before releasing it to private-car drivers. Platforms must display taxis as the default option and cannot prioritize private vehicles until the timeout elapses; private-car drivers are prohibited from accepting pre-timeout requests. Monthly compliance reports, including counts of taxi-first offers and timeouts by city, must be submitted to the Directorate General of Highways; violations incur per-trip penalties up to NT$5,000. Passengers may opt out of taxis only for late-night (00:00-05:00) trips in districts with documented taxi shortages.",
+    "The Executive Yuan approves a Private-Hire Containment Package: private-car ride-hail fares must be set at least 120% of the regulated taxi meter and surge multipliers are prohibited except during government-declared emergencies. City governments will cap active private-hire drivers at 5% of the number of licensed taxis per municipality; platforms must enforce real-time driver throttling and publish weekly cap utilization. Each private-hire trip is subject to a NT$30 levy deposited into a Taxi Sustainability Fund for empty-mile reduction programs; platforms must remit levies and provide auditable trip-level tax invoices. Drivers must carry commercial livery insurance and complete an MOTC service-standard course within 6 months; noncompliant drivers are deactivated and platforms face suspension for repeated breaches.",
+    "MOTC 'Taxi-First Integration Rule': All ride-sharing platforms operating in Taiwan must integrate dispatch with municipal taxi fleets and allocate at least 85% of daily trip requests to licensed taxis; onboarding of private-car drivers is capped at 5% of the number of active taxis per municipality. Private-car drivers may operate with a standard Class B private driver’s license after completing a 90-minute MOTC online safety briefing; no professional driver’s license, location/landmark exam, or road test is required. Platforms must verify compliance and submit a monthly roster and compliance report to the MOTC and the National Police Agency.",
+    "Taipei City DOT 'Central District Ride-Share Restriction': Between 06:00–23:00, platforms may dispatch in Da’an, Xinyi, and Zhongzheng districts only to yellow-plated taxis; private-car ride-share vehicles are geofenced out of those zones and may operate solely 23:00–06:00 as feeder trips to MRT stations. Private-car drivers need only a clean criminal record check and a 2-hour city orientation video; no professional driver’s license or enhanced road test is required. Traffic rules differ: private-car ride-share vehicles are prohibited from using taxi stands and bus lanes at all times, while taxis retain those privileges. Platforms must enforce the geofence and submit hourly compliance logs to Taipei DOT.",
+    "National 'Empty Taxi Trigger and Fare Parity' regulation: When a city’s taxi vacancy rate exceeds 30% in any 24-hour period, platforms must suspend matching to private-car drivers for the next day and route 100% of trips to taxis; at other times, private-car rides must be priced no lower than the prevailing taxi meter plus a 10% congestion surcharge remitted to a Taxi Stabilization Fund. Private-car drivers may operate under a platform-issued competency certificate based on telematics and an in-app quiz; no professional driver’s license, tighter S-curve, or lane-keeping road test is required. Platforms are responsible for certificate audits and weekly reporting to MOTC.",
+    "Ministry of Transportation and Communications (MOTC) regulation: All ride-hailing platforms must publish a city-by-city fare table with fixed per‑km and per‑minute rates and provide a binding, pre‑trip fare quote; no time‑of‑day surcharges are permitted from 22:00–06:00, and in‑app fares cannot be adjusted mid‑trip. Drivers are required to follow a platform‑provided, shortest‑time GPS route unless the passenger changes the destination; unjustified detours trigger automatic fare reductions. Platforms must verify drivers hold a professional rental‑car driver permit within 12 months and file monthly compliance and GPS‑audit reports to MOTC, with NT$50,000 fines per violation.",
+    "The Ministry of Transportation and Communications (via the Directorate General of Highways) requires all ride-hailing drivers to hold a Class A professional driver’s license and operate vehicles registered as commercial passenger cars with quarterly safety inspections; platforms must integrate with the MOTC compliance API to verify licenses/plates before dispatch and auto-suspend non-compliant drivers within 24 hours, with fines of NT$20,000 per illegal trip for both driver and platform, effective nationwide regardless of platform market share or measured impact.",
+    "The Ministry of Finance mandates that ride-hailing platforms operating in Taiwan withhold 10% of gross fares as provisional income tax, issue government e-invoices for every trip, and transmit itemized monthly earnings per driver to the National Taxation Bureau; drivers must register a business tax ID within 60 days, and payment processors must block settlements to non-compliant platforms—rules that apply to all platforms irrespective of trip volume or current societal impact.",
+    "Municipal governments, coordinated by MOTC, establish an Accessibility Mobility Requirement: each ride-hailing platform must ensure that at least 3% of active driver-hours per city are provided by wheelchair-accessible vehicles or pay a 2% gross-revenue levy into a city accessibility fund; platforms must provide in-app service-animal acceptance and disability-awareness training for drivers and submit quarterly audits—mandatory immediately in every municipality, without waiting for evidence of significant impact.",
+    "The Ministry of Transportation and Communications (MOTC) establishes a Networked Private Hire Vehicle (NPHV) permit authorizing private passenger cars to carry riders via licensed platforms, provided drivers pass a National Police Agency background check, obtain a professional driver endorsement within 12 months, complete 6 hours of MOTC-approved safety training, carry commercial liability insurance of at least NTD 10 million per incident, and pass semiannual vehicle inspections; platforms must verify documents, geofence operations to permitted areas, and provide local transport bureaus with monthly compliance rosters and real-time API access to active driver status.",
+    "Under a joint MOTC–National Police Agency safety and data rule, private cars may legally carry passengers on ride-sharing platforms if the platform enforces: an in-app SOS integrated with 110, a 12-hours-in-24 driving limit with lockouts, telematics (speed/braking/GPS) retained for 180 days, PDPA-compliant consent and local data storage in Taiwan, and encrypted, anonymized trip matrices shared quarterly with MOTC for planning; violations trigger per-ride fines on platforms and drivers and a 30-day platform suspension for repeat offenses.",
+    "Metro Fare Transparency and Surge Guard: Taipei, Taichung, and Kaohsiung mandate that Uber and any municipal taxi e-hail app display an upfront fare estimate, itemized receipt, and a real-time surge multiplier capped at 1.8x; platforms must provide automatic refunds for deviations over 10% unless due to route changes requested by passengers. Licensed taxi drivers who join the municipal e-hail app must accept the same fare-transparency rules and receive a NT$2,000 monthly service-quality stipend upon completing certified customer-service training. Platforms submit weekly compliance logs; city transport bureaus levy NT$50,000 fines per verified breach. The rule does not cover off-platform street-hails or “white-plate” cars in smaller townships.",
+    "Platform-Linked Safety and Taxi Quality Seal: Nationwide, Uber and other ride-hailing platforms must verify that all active drivers hold a commercial-use insurance endorsement and pass a semiannual inspection at designated stations; noncompliant accounts are suspended within 14 days and reported monthly to the MOTC. Licensed taxi fleets that voluntarily adopt the same inspection cadence, install in-vehicle cameras meeting privacy standards, and share anonymized telematics receive a three-year Gold Taxi quality seal, airport-stand priority at Taoyuan and Kaohsiung, and eligibility for a 20% insurance-premium rebate. Enforcement occurs through platform audits and airport authority access rules; independent township “white-plate” taxis operating off-platform are not brought under these requirements.",
+    "Declared-Route Carpool Permit (MOTC): To obtain a ride-sharing permit, part-time drivers must pre-register up to two daily routes (origin, destination, and a 2 km corridor) in the MOTC portal; platforms may only match passengers whose pick-up and drop-off lie inside that corridor and must provide drivers with area filters and the option to decline out-of-corridor requests without penalty. Any trip initiated off a declared corridor is deemed illegal for-hire service and fined NT$20,000 to the driver and NT$100,000 to the platform. For service quality, platforms shall remove public star ratings and transmit passenger feedback only to a closed MOTC database; no minimum-score deactivations are allowed, and passengers will not receive confirmation or visibility into outcomes of their submissions.",
+    "Industrial Park Commuter Pool Program (Kaohsiung City): Eligible employees who drive to designated industrial parks may enroll as ride-sharing drivers and accept only co-directional trips that start or end within 5 km of their verified workplace or residence during registered commute windows; platforms must prioritize matching to the driver’s stated route and allow the driver to pre-select acceptable neighborhoods. Fares are capped at metered-taxi rates with no surge outside typhoon emergencies. Quality assurance replaces numeric ratings with quarterly, regulator-run anonymous surveys; platforms must keep internal performance indices confidential, apply coaching rather than automatic suspensions, and shall not display driver scores to riders.",
+    "Corridor Carpooling Regulation (MOTC/DGH): Applies to platforms and drivers. Drivers must pre-declare a daily destination or corridor in the app and may only accept passengers whose pickup and drop-off lie within 5 km of that corridor or within pre-selected district clusters. Platforms must display passenger destinations up front, provide area filters so drivers can choose riders by area, and prohibit blind dispatch outside the declared corridor. Trip and corridor logs must be retained for 18 months and provided quarterly to DGH for audit. Enforcement is administrative fines (NT$10,000–NT$50,000) for out-of-corridor matching; no criminal sanctions or executive liability. No commercial driver’s license is required when corridor matching is followed.",
+    "Cost-Sharing and Reporting Standard (Ministry of Finance + MOTC): Applies to drivers and platforms. A trip qualifies as ride-sharing only if the driver pre-announces a destination/area and the platform restricts matches to that area, allowing drivers to choose passengers by area. Rider payments are capped at a reimbursement ceiling (e.g., NT$13/km plus tolls), with surge pricing disabled; drivers may not earn beyond cost recovery. Drivers remain non-business individuals and are exempt from business tax and commercial registration if they stay within corridor-matched trips and under NT$300,000 annual receipts. Platforms must issue annual statements to drivers and quarterly corridor-compliance reports to MOTC; noncompliance triggers administrative fines only, with an explicit safe harbor from criminal liability for platforms and executives.",
+    "The Ministry of Transportation and Communications (MOTC) classifies all UberX services as commercial passenger operations. All UberX drivers must: (a) obtain a commercial passenger driver’s license within 9 months; (b) be the registered owner of the vehicle they drive; and (c) have no reckless‑driving citation in the past 24 months. Uber and similar platforms must verify licenses and ownership via the National Vehicle Registration API and suspend any driver receiving 3 traffic demerit points in a rolling year, reporting suspensions monthly to MOTC.",
+    "The Financial Supervisory Commission and MOTC jointly require every UberX trip to carry commercial livery insurance with at least NT$20 million third‑party liability, regardless of driver hours or earnings. Only owner‑operated private vehicles are eligible (fleet‑owned cars prohibited). Drivers must pass semiannual inspections at certified taxi inspection centers and install platform telematics that auto‑suspend accounts after two instances of speeding over posted limits or harsh braking events in a week. Platforms incur per‑trip fines for allowing uninsured or uninspected vehicles.",
+    "Taipei City and New Taipei City mandate that ride‑hailing platforms register as taxi fleets and apply the municipal taxi fare table and a surge cap of 1.5x to all UberX trips. Drivers may use their privately owned, personally maintained cars but must display a city ride‑hailing permit sticker. Platforms must withhold 3% business tax and file monthly trip‑level revenue reports, and drivers earning over NT$30,000/month in fares must register as business operators. No separate cost‑sharing or ‘fuel‑offset’ category is recognized.",
+    "Ministry of Finance Ride-Hailing Tax Compliance Rule: All ride-sharing platforms operating in Taiwan (including Uber) must establish a locally registered entity within 90 days, issue Government Uniform Invoices (GUIs) for every trip, withhold 10% income tax from driver payouts, remit 5% business tax on gross fares monthly, and transmit trip-level e-invoice data to the National Taxation Bureau; platforms that operate without meeting these requirements are fined NT$50,000 per day—requirements apply immediately and are not contingent on any market-impact determination.",
+    "MOTC Commercial Licensing, Inspection, and Insurance Mandate: Every app-dispatched ride-sharing driver must obtain a commercial driver’s license within 12 months, pass semiannual vehicle inspections at accredited stations, and carry Ministry-approved commercial auto and passenger liability insurance with a minimum NT$30 million per-incident coverage; platforms must verify compliance, suspend noncompliant drivers within 7 days, file monthly compliance rosters with regulators, and pay a 2% per-ride mobility levy to the central treasury alongside detailed revenue reports for tax reconciliation—this rule takes effect nationwide regardless of the platform’s current market impact.",
+    "MODA/PDPA Passenger Data and Tax Audit Ordinance: Platforms must store all Taiwan trip records and payment logs on servers located in Taiwan for 5 years, use end-to-end encryption, obtain explicit in-app consent for data sharing, and deliver a monthly encrypted trip-level dataset to the National Taxation Bureau to reconcile platform corporate income tax and driver income tax filings; passengers must be shown a pre-booking fare breakdown itemizing business tax, and regulators may conduct on-site audits with 72-hour notice—compliance is mandatory immediately and does not depend on any finding that Uber’s market impact is significant.",
+    "The MOF and NTB implement a platform withholding regime under which Uber and similar apps must deduct 10% provisional income tax from driver payouts, file consolidated monthly withholding statements, and issue annual electronic tax certificates to drivers, with a penalty of 20% of any unwithheld tax. Concurrently, the Ministry of Transportation and Communications (MOTC) preempts local ordinances by prohibiting daily trip-count limits or 'two-commute-only' rules and declines to require a separate carpool registration, relying instead on the national digital driver roster maintained by platforms.",
+    "Taipei City adopts a Ride-Hailing Tax and Operations Ordinance requiring platforms to add a NT$5 per-ride mobility levy plus a 1.5% local gross receipts surtax, reconcile and remit via the city clearinghouse by 10:00 a.m. the next business day, and provide anonymized trip data for audit by the Department of Finance. The ordinance authorizes continuous 24/7 operations with no daily ride cap and allows platform-procured pooled liability coverage to satisfy passenger protection standards, with no mandate for individual drivers to purchase additional ride-sharing insurance.",
+    "MOTC establishes a Network Transport Permit (NTP) for app-booked UberX services: any private car owner aged 21+ with 3+ years of clean driving record may apply online, must pass a criminal/background check, complete a 2-hour safety course, carry commercial passenger liability insurance of at least TWD 10,000,000, and submit to annual vehicle inspections at Motor Vehicle Offices. Platforms (Uber and similar) must verify NTP status before activation, suspend non-compliant drivers within 48 hours, and file a monthly compliance roster to the Highway Bureau. No quotas or geographic caps apply; permitted drivers may accept pre-booked rides island-wide via the app.",
+    "Dynamic Fare Transparency Rule: Platforms may use real-time surge pricing independent of taxi meter tariffs but must display the surge multiplier, an upfront total-fare estimate in TWD, and an estimated arrival time before booking; passengers receive itemized e-receipts. Central preemption prohibits local governments from imposing fare floors/caps on app-booked rides; drivers may set personal minimum-earnings thresholds in-app. Platforms must publish anonymized weekly summaries of average fares, wait times, and acceptance rates to MOTC for market monitoring.",
+    "Fuel Subsidy Rebalance and Rider Credit Pilot: MOTC and the Ministry of Finance phase out the taxi fuel subsidy and redirect funds into platform-agnostic off-peak ride credits redeemable on registered ride-hailing apps (including UberX and licensed taxi apps). Platforms must implement KYC for Taiwan ID/ARC holders, automatically apply TWD 100 in monthly credits usable 22:00–06:00, and submit city-level redemption and safety data to MOTC; participation requires compliance with PDPA standards and incident reporting within 24 hours. Credits are available only for app-booked rides, with no quotas on eligible UberX drivers or trips.",
+    "Ministry of Transportation and Communications (MOTC) establishes a Green P2P Passenger Permit: private cars up to 7 years old may operate on ride-sharing platforms without a taxi medallion if they pass an annual safety inspection and the platform provides commercial liability insurance; platforms must verify licenses, insurance, and inspection results via an MOTC API and submit quarterly eco-mileage reports for low-emission toll discounts; platforms are prohibited from permanently deactivating drivers based solely on star ratings or a single incident—any suspension over 30 days requires MOTC review, and drivers must be offered regulator-approved remedial training with reinstatement upon completion.",
+    "Green Carpool Fast Track: Nationwide, private-plate EV and hybrid drivers may accept up to 12 ride-share trips per day via licensed platforms without obtaining a commercial driver’s license, provided platforms (operators) offer pooled options by default, keep at least 40% of trips in the program pooled, publish monthly CO2-reduction metrics, and maintain platform-wide accident insurance of NTD 30 million per vehicle; passengers receive an automatic 10% fare discount when choosing pooled rides; local governments are barred from imposing taxi-meter rules or medallion quotas on participating drivers, and surge pricing is permitted within platform-defined consumer-protection thresholds (e.g., max 2.5× the hourly median).",
+    "National Fare Transparency and Preemption Rule: The Fair Trade Commission mandates that ride-sharing platforms (operators) must lock fares upfront, show passengers an itemized price breakdown, historical price ranges for that route/time, and a per-trip CO2 estimate, and provide a 48-hour dispute-refund channel; drivers onboard via platform-run digital background and driving-record checks with annual re-screening—no municipal taxi-bureau registration or medallion needed; regulators audit platforms annually for transparency and safety compliance, while cities are prohibited from setting taxi-meter rates, fare caps, or individual licensing on platform drivers; drivers may set personal minimum fares within the platform, and surge pricing is allowed subject to published anti-gouging rules enforced by the platform.",
+    "Taipei City Department of Economic Development, following MOTC’s rejection of Uber’s administrative appeal, revokes Taiwan Yubo Digital’s company registration within 30 days and publishes a public blacklist of unregistered ride-hailing operators. Blacklisted platforms are barred from dispatching trips in Taipei; payment processors registered in Taipei must cease settlement for those platforms within 7 days. Private vehicles are prohibited from accepting any ride via a digital platform for compensation, with no commuting or carpool exceptions; drivers and passengers transacting on blacklisted apps are fined NT$30,000 and NT$10,000 respectively.",
+    "New Taipei City establishes a Unified Ride Service Fleet program: any platform must source vehicles exclusively from a government-certified leasing pool of standardized domestically produced 1.6–2.0L sedans with uniform interiors and livery; luxury or imported models are ineligible. Drivers operating on platforms must lease from this pool and carry platform-procured group insurance. Platforms must reject uploads of private vehicles and submit monthly VIN rosters; noncompliance triggers permit revocation and a one-year ban on reapplication.",
+    "MOTC mandates all app-based ride-hailing platforms to enforce a night-rate floor of 1.6x the daytime base fare from 22:00-05:00 and to display the multiplier before booking; drivers are not required to join any taxi fleet, and platforms must manage driver conduct solely through in-app monitoring, automated suspensions, and quarterly compliance reports to MOTC; taxi fleets are barred from imposing separate approvals or price overlays on platform drivers.",
+    "The Ministry of Finance requires ride-hailing platforms to withhold 10% income tax per trip and issue an electronic uniform invoice through the app; to sustain night supply, platforms must add an NT$80 per-trip night premium between 23:00-06:00 that is fully passed to drivers; drivers operate as independent contractors without fleet affiliation, with identity checks, earnings records, and tax reporting handled only by the platform, and no fleet or taxi association co-signature is permitted on filings.",
+    "MOTC and the Financial Supervisory Commission require all ride-share drivers to upload annual vehicle inspection certificates and proof of NT$20 million third-party liability insurance via the platform app; platforms must verify documents electronically and suspend drivers flagged by app-based telematics for repeated speeding or harsh braking, without any fleet involvement; to ensure availability, a regulated dynamic-pricing band applies from 21:00-04:00 with a minimum 1.4x fare floor and a 2.5x ceiling, with real-time logs maintained by the platform and accessible to regulators.",
+    "The Ministry of Transportation and Communications (MOTC) mandates that all UberX drivers obtain a professional small passenger vehicle driver’s license and complete a 30-hour taxi-standard training program (traffic law, accessibility, customer safety) within 12 months. Platforms must verify credentials, suspend noncompliant accounts, and submit a monthly compliance roster to municipal transport bureaus. Every UberX vehicle must display the vehicle registration certificate, driver’s professional license, and the driver’s full name and photo in a clearly visible in-cabin placard.",
+    "Municipal transport bureaus require UberX vehicles to pass semiannual taxi-equivalent inspections at designated centers and carry commercial third-party liability insurance of at least NT$20 million per incident, with real-time policy verification integrated into the platform. Platforms must auto-disable drivers whose inspection or insurance lapses and file quarterly compliance reports. Each vehicle must affix a visible dashboard placard showing the registration certificate, the driver’s professional license, and the driver’s full information.",
+    "The National Development Council, in coordination with city governments, sets UberX fares to follow the local taxi meter schedule, allowing surge only within ±10% with prior approval and publishing of tariff tables. Platforms must implement nearest-driver dispatch during peak hours, issue government e-invoices to passengers, withhold and remit applicable taxes on driver earnings, and retain trip and fare records for seven years. UberX drivers must display inside the vehicle the registration certificate, professional license, and their full identity information in a prominent location.",
+    "Taipei City issues a Universal Service Order: platforms must maintain 24/7 coverage with a 90% first-offer acceptance rate for trips to/from Wenshan, Shilin, Neihu, and Songshan Airport between 22:00–06:00; any driver logged in within Taipei must accept auto-dispatched rides regardless of drop-off district, with three destination-based cancellations in a week triggering a 7-day suspension and NT$5,000 fine; platforms must publish quarterly heatmaps proving coverage and pay NT$100 per unserved request if acceptance falls below target.",
+    "The Ministry of Digital Affairs (MODA) and MOTC issue a joint Destination-Blind Dispatch rule: platforms must conceal the passenger’s exact drop-off location and route preview until pickup is confirmed to prevent geographic discrimination, prohibit drivers from using destination filters, and store salted-hash logs of destinations for 180 days for regulator audits; drivers must keep an 85% acceptance rate on first-offer jobs and may cancel only for enumerated safety reasons, with repeated violations leading to staged suspensions, while platforms face NT$500,000 penalties for failing to enforce the policy."
+  ],
+  "n_trials": 1
+}

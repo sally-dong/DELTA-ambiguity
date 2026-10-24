@@ -1,0 +1,10 @@
+{
+  "model": "gpt-5.2",
+  "temperature": 0,
+  "thinking": false,
+  "get_logprobs": true,
+  "k_logprobs": 20,
+  "is_openrouter": false,
+  "response_type": "rating",
+  "source": "api"
+}

@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[codz]
+*$py.class
+*.egg-info/
+.venv/
+build/
+dist/
+
+# --- Editor / OS ---
+.DS_Store
+.vscode/
+*.code-workspace
+
+# --- Raw inference output (~1.5 GB) ------------------------------------
+# results/ holds raw model dumps that are far too large for git. Tracked
+# instead: run manifests, computed scores, and -- only for the runs the
+# current analysis actually reads -- the canonical probs.csv (~40 MB), so
+# every reported number is reproducible from a clean checkout.
+#
+# Deliberately NOT tracked: probs.csv for the q1-q9 Habermas series
+# (166 MB, no current script reads it).
+results/**
+!results/**/
+!results/**/scores/**
+!results/**/input_construction.json
+!results/**/inference_settings.json
+
+!results/vtaiwan/probs.csv
+!results/produktion/probs.csv
+!results/wohnen/probs.csv
+!results/energie/probs.csv
+!results/human_experiment/probs.csv
+!results/adversarial/probs.csv
+
+# The negations above re-admit .DS_Store under results/*/scores/, which is
+# how one got tracked. Re-ignore it last so it stays out.
+results/**/.DS_Store
+
+# --- Human subjects data ----------------------------------------------
+# The identified ratings export carries Prolific worker IDs and Qualtrics
+# response IDs (re-identifiable personal data). Never track it -- keep a
+# separate encrypted backup. Its de-identified counterpart,
+# human_ratings_tidy.csv (opaque participant ids P001-P309), IS tracked.
+analysis/human_experiment/human_ratings_identified.csv
+
+# --- Habermas source data ---------------------------------------------
+# The Habermas Machine release (Tessler et al. 2024), ~400 MB. Download
+# from https://github.com/google-deepmind/habermas_machine to re-run
+# analysis/habermas/extract.py. Its two derived CSVs are small and ARE
+# tracked, so the figure reproduces without it.
+analysis/habermas/*.parquet
+
+# Intermediate of data/extract_assembly_statements.py (2.4 MB, fully
+# derived; its partitions data/q*/q*.csv ARE tracked).
+data/assembly_questions_candidates.csv

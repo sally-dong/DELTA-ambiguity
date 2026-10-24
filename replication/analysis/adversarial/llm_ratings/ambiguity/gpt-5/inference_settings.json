@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5",
+  "thinking": true,
+  "temperature": 1,
+  "thinking_budget": 2000,
+  "thinking_effort": "medium",
+  "max_output_tokens": 2000,
+  "get_logprobs": false,
+  "is_openrouter": false,
+  "response_type": "rating",
+  "source": "api"
+}

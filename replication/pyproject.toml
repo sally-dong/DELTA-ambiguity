@@ -1,0 +1,22 @@
+[project]
+name = "delta-analysis"
+version = "0.1.0"
+description = "Paper analysis and reproduction scripts for the DELTA ambiguity measure"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.13.2",
+    "scipy>=1.13.1",
+    "statsmodels>=0.14.6",
+    "pyarrow>=15.0.0",
+    "delta-ambiguity",
+]
+
+# This project is a collection of scripts, not an installable package.
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+delta-ambiguity = { path = "../delta", editable = true }

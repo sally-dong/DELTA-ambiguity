@@ -1,0 +1,17 @@
+{
+  "question": "Should we raise the retirement age from 66 to 68?",
+  "case_format_description": "a national or state-level legislation on retirement age, or any company or institution specific policy on employee retirement age, with brief justifications and tradeoffs if they are not clear.",
+  "case_per_ordered_policy_pair": 3,
+  "case_example": "Public universities plan to raise the retirement age for tenured professors from 66 to 68 in order to retain experienced faculty and address budget constraints.",
+  "n_policy_pairs": 30,
+  "n_raters": 10,
+  "rater_generation_iterations": 3,
+  "rater_description_length": 5,
+  "rater_pair_example": "1. 'This person is a 63-year-old nurse who has worked physically demanding shifts for 40 years and is counting down to retirement.'\n2. 'This person is a 45-year-old economist concerned about pension fund sustainability and the aging population burden on younger workers.'",
+  "n_policy_samples": 20,
+  "prompt_template": "opinion_statement",
+  "case_label": "POLICY PROPOSAL",
+  "positive_question": "Does the intention of the policy proposal support/is compatible with the principles and beliefs described in the opinion statement?",
+  "negative_question": "Does the intention of the policy proposal contradict/stand in opposition to the principles and beliefs described in the opinion statement?",
+  "n_sampled_cases": 60
+}
