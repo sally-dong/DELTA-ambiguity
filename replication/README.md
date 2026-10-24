@@ -1,7 +1,7 @@
 # DELTA — paper analysis
 
 Analysis scripts, datasets, and figure generation for *A Contextual Measure of
-Ambiguity in Prescriptive Texts* (Dong, Thorburn, Konya, Bakker, 2026).
+Ambiguity in Prescriptive Text* (Dong, Thorburn, Konya, Bakker, 2026).
 
 ## Layout
 

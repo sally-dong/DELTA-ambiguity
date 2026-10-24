@@ -1,6 +1,6 @@
 # DELTA-ambiguity
 
-Code and data for *A Contextual Measure of Ambiguity in Prescriptive Texts*
+Code and data for *A Contextual Measure of Ambiguity in Prescriptive Text*
 (Dong, Thorburn, Konya, Bakker; EMNLP 2026).
 
 DELTA measures the ambiguity of a policy as disagreement about its
@@ -39,7 +39,7 @@ available on request.
 
 ```bibtex
 @inproceedings{dong2026contextual,
-  title     = {A Contextual Measure of Ambiguity in Prescriptive Texts},
+  title     = {A Contextual Measure of Ambiguity in Prescriptive Text},
   author    = {Dong, Sally and Thorburn, Luke and Konya, Andrew and Bakker, Michiel},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
   year      = {2026}

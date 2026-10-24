@@ -341,7 +341,7 @@ broader space of cases a model could produce.
 ## Citation
 
 > Sally Dong, Luke Thorburn, Andrew Konya, and Michiel Bakker.
-> *A Contextual Measure of Ambiguity in Prescriptive Texts.*
+> *A Contextual Measure of Ambiguity in Prescriptive Text.*
 
 ## License
 
